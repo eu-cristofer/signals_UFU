@@ -1,0 +1,44 @@
+name: CI with Conda
+
+# Trigger the workflow on pushes to the main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# The jobs to carry out
+jobs:
+  deploy-book:
+    # Run this job on the latest version of Ubuntu
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Check out your repository's code so the job can access it
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 2. Set up a Conda environment from your environment.yml file
+    - name: Set up Conda environment
+      uses: conda-incubator/setup-miniconda@v3
+      with:
+        auto-update-conda: true
+        python-version: "3.12"
+        environment-file: environment.yml
+        activate-environment: signals
+        use-post-environment-solve-steps: true 
+        
+    # 3. Build the Jupyter Book from the 'book/' directory
+    - name: Build the book
+      shell: bash -el {0}
+      run: |
+        jupyter-book build book/
+
+    # 4. Deploy the book's HTML to the gh-pages branch
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        # This token is provided by Actions, no need to create your own
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # The folder the action should deploy.
+        publish_dir: ./book/_build/html # <-- CHANGED: Update the path to the built HTML

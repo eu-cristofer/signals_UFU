@@ -247,4 +247,3 @@ dependencies:
       - tabulate==0.9.0
       - uc-micro-py==1.0.3
       - zipp==3.23.0
-prefix: /Users/cristofer/miniforge3/envs/signals

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Markdown Files &#8212; Signals and Systems UFU</title>
+    <title>Da Incerteza à Previsão &#8212; Signals and Systems UFU</title>
   
   
   
@@ -57,11 +57,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'motivacao';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Da Incerteza à Previsão" href="motivacao.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <link rel="next" title="Expansão Histórica e Fontes da Análise de Sinais em Vibração" href="historico.html" />
+    <link rel="prev" title="Markdown Files" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,8 +182,8 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Markdown Files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="motivacao.html">Da Incerteza à Previsão</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Da Incerteza à Previsão</a></li>
 
 
 
@@ -263,7 +265,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmotivacao.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +295,7 @@
       
       
       
-      <li><a href="_sources/markdown.md" target="_blank"
+      <li><a href="_sources/motivacao.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -377,7 +379,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Markdown Files</h1>
+    <h1>Da Incerteza à Previsão</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,11 +389,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Da Incerteza à Previsão</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios">Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios">1. A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#o-paradoxo-da-analise-aleatoria">2. O Paradoxo da Análise Aleatória</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#o-sistema-dinamico-como-um-filtro-natural">3. O Sistema Dinâmico como um Filtro Natural</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#da-aleatoriedade-a-analise-estatistica-estruturada">4. Da Aleatoriedade à Análise Estatística Estruturada</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">Conclusão</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referências</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -402,72 +411,75 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
-<h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Link to this heading">#</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.
-This is a simple file to help you get started and show off some syntax.</p>
-<section id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Link to this heading">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="da-incerteza-a-previsao">
+<h1>Da Incerteza à Previsão<a class="headerlink" href="#da-incerteza-a-previsao" title="Link to this heading">#</a></h1>
+<section id="como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios">
+<h2>Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios<a class="headerlink" href="#como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios" title="Link to this heading">#</a></h2>
+<p><strong>Resumo:</strong> A análise de sinais é um campo fundamental da engenharia e da física, tradicionalmente dividindo os sinais em duas categorias: determinísticos e aleatórios. Enquanto os primeiros são completamente previsíveis por meio de funções matemáticas, os últimos apresentam uma natureza imprevisível que desafia a análise direta. Este artigo explora como a interação de sinais aleatórios com sistemas dinâmicos — entidades físicas com massa, amortecimento e rigidez — atua como um processo de filtragem, revelando padrões e permitindo uma análise preditiva através de métodos estatísticos.</p>
 </section>
-<section id="sample-roles-and-directives">
-<h2>Sample Roles and Directives<a class="headerlink" href="#sample-roles-and-directives" title="Link to this heading">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
-</div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <a class="reference internal" href="markdown-notebooks.html"><span class="doc">Notebooks with MyST Markdown</span></a>.</p>
 </section>
-<section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="docutils container" id="id2">
+<section class="tex2jax_ignore mathjax_ignore" id="a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios">
+<h1>1. A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios<a class="headerlink" href="#a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios" title="Link to this heading">#</a></h1>
+<p>No campo do processamento de sinais, a primeira etapa de qualquer análise é a classificação do sinal. Conforme destacado pelo professor Duarte, essa classificação se divide em dois grandes grupos:</p>
+<p><strong>Sinais Determinísticos:</strong> São aqueles cujo comportamento pode ser descrito com precisão por uma função matemática explícita. O valor do sinal em qualquer instante futuro é conhecido, desde que suas condições iniciais e a função que o rege sejam conhecidas. Um exemplo clássico, citado na explanação, é o sinal de vibração gerado pelo desbalanceamento de um rotor. A não coincidência entre o centro de massa e o centro geométrico de rotação gera uma força centrífuga que se manifesta como uma vibração senoidal ou cossenoidal, perfeitamente modelável <span id="id1">[<a class="reference internal" href="#id6" title="D. J. Inman. Engineering vibration. Pearson, Boston, fourth edition edition, 2014. ISBN 978-0-13-287169-3.">1</a>]</span>. A equação que descreve essa força de desbalanceamento é dada por:</p>
+<div class="math notranslate nohighlight">
+\[F_u = m_u \cdot e \cdot \omega^2 \sin(\omega t)\]</div>
+<p>onde <span class="math notranslate nohighlight">\(m_u\)</span> é a massa desbalanceada, <span class="math notranslate nohighlight">\(e\)</span> é a excentricidade, e <span class="math notranslate nohighlight">\(\omega\)</span> é a velocidade angular.</p>
+<p><strong>Sinais Aleatórios (ou Estocásticos):</strong> Em contraste, são sinais cujo valor futuro não pode ser previsto com exatidão a partir de seus valores passados. Eles não seguem um padrão repetitivo e devem ser caracterizados por suas propriedades estatísticas, como média (<span class="math notranslate nohighlight">\(\mu\)</span>), variância (<span class="math notranslate nohighlight">\(\sigma^2\)</span>) e densidade espectral de potência (<span class="math notranslate nohighlight">\(S_{xx}(f)\)</span>). Exemplos comuns incluem o ruído térmico em um circuito eletrônico, a turbulência de um fluido ou as ondas do mar que atuam sobre um navio <span id="id2">[<a class="reference internal" href="#id7" title="Julius S. Bendat and Allan G. Piersol. Random data: analysis and measurement procedures. Wiley series in probability and statistics. Wiley, Hoboken, N.J, 4th ed edition, 2010. ISBN 978-0-470-24877-5.">2</a>]</span>.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="o-paradoxo-da-analise-aleatoria">
+<h1>2. O Paradoxo da Análise Aleatória<a class="headerlink" href="#o-paradoxo-da-analise-aleatoria" title="Link to this heading">#</a></h1>
+<p>A natureza imprevisível dos sinais aleatórios levanta uma questão fundamental: se não podemos prever o que acontecerá no próximo instante, qual o propósito de analisá-los? A resposta, como elucidado pelo professor Duarte, não está no sinal em si, mas na sua interação com um sistema dinâmico.</p>
+<p>Um sistema dinâmico é qualquer sistema físico que possui a capacidade de armazenar e dissipar energia. Seus componentes fundamentais são massa (que armazena energia cinética), rigidez (que armazena energia potencial) e amortecimento (que dissipa energia). O comportamento desses sistemas é governado por leis físicas, como a Segunda Lei de Newton, que afirma que a somatória das forças é igual à massa vezes a aceleração:</p>
+<div class="math notranslate nohighlight">
+\[\sum F = m \cdot a\]</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="o-sistema-dinamico-como-um-filtro-natural">
+<h1>3. O Sistema Dinâmico como um Filtro Natural<a class="headerlink" href="#o-sistema-dinamico-como-um-filtro-natural" title="Link to this heading">#</a></h1>
+<p>Quando um sinal aleatório atua como uma excitação (entrada) para um sistema dinâmico, o sistema não responde de forma totalmente aleatória. Em vez disso, ele atua como um filtro, moldando a resposta (saída) de acordo com suas próprias características intrínsecas.</p>
+<p>Este conceito de “filtragem” ocorre porque todo sistema dinâmico possui frequências naturais (ou modos de vibração), que são as frequências nas quais o sistema tende a oscilar com maior amplitude quando perturbado. Quando o sinal de entrada aleatório, que pode ser considerado como contendo um amplo espectro de frequências (ruído branco, por exemplo), atravessa o sistema, as componentes de frequência próximas às frequências naturais do sistema são amplificadas, enquanto outras são atenuadas <span id="id3">[<a class="reference internal" href="#id8" title="Alan V. Oppenheim and Roland W. Schafer. Discrete-time signal processing. Always learning. Pearson, Harlow, third edition, pearson new international edition edition, 2014. ISBN 978-1-292-02572-8 978-1-292-03815-5.">3</a>]</span>.</p>
+<p>Matematicamente, em um contexto digital, a resposta do sistema em um instante <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(x[k]\)</span>, depende dos valores passados da resposta e da excitação. Uma forma discretizada da equação do movimento pode ser expressa como uma equação de diferenças:</p>
+<div class="math notranslate nohighlight">
+\[x[k] = f(x[k-1], x[k-2], ..., u[k], u[k-1], ...)\]</div>
+<p>onde <span class="math notranslate nohighlight">\(x[k]\)</span> é a resposta no instante <span class="math notranslate nohighlight">\(k\)</span> e <span class="math notranslate nohighlight">\(u[k]\)</span> é a excitação. Esta dependência do passado é a própria definição de um filtro digital. A operação que descreve a interação entre o sinal de entrada e a resposta do sistema no domínio do tempo é a <strong>convolução</strong>:</p>
+<div class="math notranslate nohighlight">
+\[y(t) = \int_{-\infty}^{\infty} h(\tau) x(t-\tau) d\tau\]</div>
+<p>onde <span class="math notranslate nohighlight">\(h(t)\)</span> é a resposta ao impulso do sistema.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="da-aleatoriedade-a-analise-estatistica-estruturada">
+<h1>4. Da Aleatoriedade à Análise Estatística Estruturada<a class="headerlink" href="#da-aleatoriedade-a-analise-estatistica-estruturada" title="Link to this heading">#</a></h1>
+<p>O resultado deste processo é que o sinal de saída, embora ainda possua um caráter aleatório, não é mais “totalmente bagunçado”. Ele carrega a “assinatura” do sistema dinâmico pelo qual passou. As frequências dominantes no sinal de resposta correspondem às frequências naturais do sistema.</p>
+<p>Portanto, ao analisar estatisticamente o sinal de resposta — por exemplo, calculando sua <strong>Densidade Espectral de Potência</strong> (PSD):</p>
+<div class="math notranslate nohighlight">
+\[S_{yy}(f) = |H(f)|^2 S_{xx}(f)\]</div>
+<p>onde <span class="math notranslate nohighlight">\(S_{xx}(f)\)</span> é a PSD do sinal de entrada e <span class="math notranslate nohighlight">\(H(f)\)</span> é a função de transferência do sistema — podemos identificar esses picos de energia e, a partir deles, inferir propriedades críticas do sistema físico, como sua rigidez, amortecimento e possíveis danos estruturais <span id="id4">[<a class="reference internal" href="#id9" title="Robert Bond Randall. Vibration-based condition monitoring: industrial, aerospace and automotive applications. Wiley, Chichester, 2011. ISBN 978-0-470-97766-8.">4</a>]</span>. É assim que a análise de vibrações em uma ponte excitada pelo vento (sinal aleatório) pode revelar sua saúde estrutural.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="conclusao">
+<h1>Conclusão<a class="headerlink" href="#conclusao" title="Link to this heading">#</a></h1>
+<p>A análise de sinais aleatórios, longe de ser um exercício fútil, é uma ferramenta poderosa para entender o mundo físico. A chave para desvendar a informação contida em um sinal aparentemente caótico é reconhecer o papel fundamental dos sistemas dinâmicos. Ao atuarem como filtros naturais, esses sistemas impõem uma ordem à aleatoriedade, permitindo que, através de ferramentas estatísticas, possamos extrair informações valiosas sobre suas próprias características. A aparente imprevisibilidade da entrada se transforma em conhecimento sobre o sistema, tornando a análise de sinais aleatórios um pilar essencial para o diagnóstico de falhas, o monitoramento de estruturas e o projeto de sistemas robustos.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="referencias">
+<h1>Referências<a class="headerlink" href="#referencias" title="Link to this heading">#</a></h1>
+<div class="docutils container" id="id5">
 <div role="list" class="citation-list">
-<div class="citation" id="id4" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>BP10<span class="fn-bracket">]</span></span>
-<p>Julius S. Bendat and Allan G. Piersol. <em>Random data: analysis and measurement procedures</em>. Wiley series in probability and statistics. Wiley, Hoboken, N.J, 4th ed edition, 2010. ISBN 978-0-470-24877-5.</p>
-</div>
-<div class="citation" id="id3" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>Inm14<span class="fn-bracket">]</span></span>
+<div class="citation" id="id6" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>D. J. Inman. <em>Engineering vibration</em>. Pearson, Boston, fourth edition edition, 2014. ISBN 978-0-13-287169-3.</p>
 </div>
-<div class="citation" id="id5" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>OS14<span class="fn-bracket">]</span></span>
+<div class="citation" id="id7" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Julius S. Bendat and Allan G. Piersol. <em>Random data: analysis and measurement procedures</em>. Wiley series in probability and statistics. Wiley, Hoboken, N.J, 4th ed edition, 2010. ISBN 978-0-470-24877-5.</p>
+</div>
+<div class="citation" id="id8" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
 <p>Alan V. Oppenheim and Roland W. Schafer. <em>Discrete-time signal processing</em>. Always learning. Pearson, Harlow, third edition, pearson new international edition edition, 2014. ISBN 978-1-292-02572-8 978-1-292-03815-5.</p>
 </div>
-<div class="citation" id="id6" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span>Ran11<span class="fn-bracket">]</span></span>
+<div class="citation" id="id9" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
 <p>Robert Bond Randall. <em>Vibration-based condition monitoring: industrial, aerospace and automotive applications</em>. Wiley, Chichester, 2011. ISBN 978-0-470-97766-8.</p>
 </div>
 </div>
 </div>
-</section>
-<section id="learn-more">
-<h2>Learn more<a class="headerlink" href="#learn-more" title="Link to this heading">#</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -501,20 +513,20 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="markdown.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        <p class="prev-next-title">Markdown Files</p>
       </div>
     </a>
     <a class="right-next"
-       href="motivacao.html"
+       href="historico.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Da Incerteza à Previsão</p>
+        <p class="prev-next-title">Expansão Histórica e Fontes da Análise de Sinais em Vibração</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -534,11 +546,18 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Da Incerteza à Previsão</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios">Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios">1. A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#o-paradoxo-da-analise-aleatoria">2. O Paradoxo da Análise Aleatória</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#o-sistema-dinamico-como-um-filtro-natural">3. O Sistema Dinâmico como um Filtro Natural</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#da-aleatoriedade-a-analise-estatistica-estruturada">4. Da Aleatoriedade à Análise Estatística Estruturada</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">Conclusão</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referências</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>

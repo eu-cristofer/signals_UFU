@@ -13,6 +13,14 @@ dependencies:
   - nbconvert
   - matplotlib
   - nb_conda_kernels
+  - nbsphinx
+  - myst-parser
+  - sphinx
+  - sphinx-book-theme
+  - sphinx-copybutton
+  - sphinx-design
+  - sphinx-jupyterbook-latex
+  - sphinxcontrib-bibtex
   - pip:
       - jupyter-book
       - ghp-import

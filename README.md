@@ -26,13 +26,18 @@ This project aims to support a comprehensive literature review and practical stu
 - `results/`: Outputs of analysis, figures, and comparative tables.
 - `docs/`: Literature review notes, summaries, and bibliographic references.
 
-## Technologies Used
-
-- Python, Jupyter Notebook
-- Scientific libraries: NumPy, SciPy, scikit-learn, Matplotlib
-- Advanced spectral analysis tools
-
 ## Broad Study Plan: Literature Review
+
+### 🎯 Learning Objectives
+
+After completing this book, students will be able to:
+
+- [ ] Classify signals and systems according to their properties
+- [ ] Analyze linear time-invariant (LTI) systems using various mathematical tools
+- [ ] Apply frequency domain techniques for signal analysis and system design
+- [ ] Design basic filters for signal processing applications
+- [ ] Understand sampling theory and its implications in digital signal processing
+- [ ] Use computational tools (Python/MATLAB) for signal analysis and visualization
 
 ### 1. Fundamentals of Signals and Systems
 - Review textbooks and key papers on signals, systems, and their mathematical foundations.
@@ -59,24 +64,4 @@ This project aims to support a comprehensive literature review and practical stu
 - Prepare comparative tables and visualizations to summarize literature findings.
 
 ### 6. Practical Implementation and Experimentation
-- Translate literature insights into practical experiments using simulation and real data.
 - Validate and compare results with those reported in the literature.
-
-### 7. Documentation and Reporting
-- Maintain detailed notes and summaries of reviewed articles and books.
-- Update repository with annotated bibliographies, summaries, and code experiments.
-
-### 8. Resources & Recommended Readings
-- List foundational textbooks, review articles, and open datasets relevant to the field.
-- Example resources:
-  - "Signals and Systems" by Oppenheim & Willsky
-  - "The Scientist and Engineer's Guide to Digital Signal Processing" by Steven W. Smith
-  - Key journal articles and conference proceedings
-
-## How to Contribute
-
-Contributions are welcome! Feel free to open issues or pull requests for new literature notes, code experiments, or suggestions for expanding the review.
-
-## License
-
-This project is licensed under the MIT License.

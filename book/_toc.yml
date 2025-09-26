@@ -3,9 +3,12 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: motivacao
-- file: historico
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Intro
+    chapters:
+      - file: aula_01/00_motivacao
+        sections:
+          - file: aula_01/01_signals
+      - file: historico
+      - file: notebooks
+      - file: markdown-notebooks

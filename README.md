@@ -28,6 +28,27 @@ This project aims to support a comprehensive literature review and practical stu
 
 ## Broad Study Plan: Literature Review
 
+### Programa do Curso
+
+| Letra | Tópico                                                                 | Carga Horária         |
+|-------|------------------------------------------------------------------------|-----------------------|
+| A     | Descrições básicas e propriedades de sinais                            | 04 teóricas           |
+| B     | Fundamentos de Probabilidade                                           | 04 teóricas           |
+| C     | Processamento digital de sinais                                        | 08 teóricas / 04 lab  |
+| D     | Sistemas físicos lineares                                              | 04 teóricas           |
+| E     | Processos Estacionários                                                | 08 teóricas / 04 lab  |
+| F     | Sistemas de uma entrada e uma saída                                    | 08 teóricas / 04 lab  |
+| G     | Erros estatísticos dos estimadores                                     | 08 teóricas           |
+
+---
+
+### Aulas de Laboratório
+
+- **Descrição básica e propriedades estatísticas de sinais:** funções de correlação e auto densidades espectrais.
+- **Análise de sistemas físicos lineares.**
+- **Análise de sistemas físicos lineares – Erros nos estimadores.**
+- Aulas adicionais podem ser elaboradas para auxiliar o desenvolvimento da dissertação/tese do aluno.
+
 ### 🎯 Learning Objectives
 
 After completing this book, students will be able to:

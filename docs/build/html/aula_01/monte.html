@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="pt" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Documentação Análise de Sinais UFU - Notas de aula 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=12dfc556" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <script src="../_static/documentation_options.js?v=bbb231ee"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=5f54a428"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Monte Carlo Simulation: Phase vs RMS Relationship</span>
+<span class="c1"># This simulation explores how random phase relationships affect RMS values for signals with identical frequency content.</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
+
+<span class="c1"># Set style for better plots</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_palette</span><span class="p">(</span><span class="s2">&quot;husl&quot;</span><span class="p">)</span>
+
+<span class="c1"># Set random seed for reproducibility</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Monte Carlo Simulation: Phase vs RMS Relationship&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Signal generation functions</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generate a sinusoidal signal&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span> <span class="o">+</span> <span class="n">phi</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">rms</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate RMS value of a signal&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_signal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">,</span> <span class="n">amplitudes</span><span class="p">,</span> <span class="n">phases</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generate a multi-component signal&quot;&quot;&quot;</span>
+    <span class="n">signal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">freq</span><span class="p">,</span> <span class="n">amp</span><span class="p">,</span> <span class="n">phase</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">frequencies</span><span class="p">,</span> <span class="n">amplitudes</span><span class="p">,</span> <span class="n">phases</span><span class="p">):</span>
+        <span class="n">signal</span> <span class="o">+=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">amp</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">freq</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="n">phase</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">signal</span>
+
+<span class="c1"># Time vector</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># Fixed signal parameters</span>
+<span class="n">frequencies</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">35</span><span class="p">]</span>  <span class="c1"># Hz - four frequency components</span>
+<span class="n">amplitudes</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">]</span>  <span class="c1"># Different amplitudes</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Frequency components: </span><span class="si">{</span><span class="n">frequencies</span><span class="si">}</span><span class="s2"> Hz&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Amplitudes: </span><span class="si">{</span><span class="n">amplitudes</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time span: </span><span class="si">{</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">t</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sampling points: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Monte Carlo simulation</span>
+<span class="n">n_simulations</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">rms_values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">phase_combinations</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">signals_sample</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Store some signals for visualization</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Running </span><span class="si">{</span><span class="n">n_simulations</span><span class="si">}</span><span class="s2"> Monte Carlo simulations...&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generating random phase combinations and calculating RMS values...&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_simulations</span><span class="p">):</span>
+    <span class="c1"># Generate random phases for each frequency component (0 to 2π)</span>
+    <span class="n">phases</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">frequencies</span><span class="p">))</span>
+    <span class="n">phase_combinations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">phases</span><span class="o">.</span><span class="n">copy</span><span class="p">())</span>
+    
+    <span class="c1"># Create signal with random phases</span>
+    <span class="n">signal</span> <span class="o">=</span> <span class="n">generate_signal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">,</span> <span class="n">amplitudes</span><span class="p">,</span> <span class="n">phases</span><span class="p">)</span>
+    
+    <span class="c1"># Calculate RMS</span>
+    <span class="n">rms_val</span> <span class="o">=</span> <span class="n">rms</span><span class="p">(</span><span class="n">signal</span><span class="p">)</span>
+    <span class="n">rms_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rms_val</span><span class="p">)</span>
+    
+    <span class="c1"># Store some signals for visualization (every 200th signal)</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">200</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">signals_sample</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">signal</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">phases</span><span class="o">.</span><span class="n">copy</span><span class="p">(),</span> <span class="n">rms_val</span><span class="p">))</span>
+
+<span class="c1"># Convert to numpy arrays</span>
+<span class="n">rms_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">rms_values</span><span class="p">)</span>
+<span class="n">phase_combinations</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">phase_combinations</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Simulation completed!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Generated </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">signals_sample</span><span class="p">)</span><span class="si">}</span><span class="s2"> sample signals for visualization&quot;</span><span class="p">)</span>
+
+<span class="c1"># Statistical analysis</span>
+<span class="n">mean_rms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">rms_values</span><span class="p">)</span>
+<span class="n">std_rms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">rms_values</span><span class="p">)</span>
+<span class="n">min_rms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">rms_values</span><span class="p">)</span>
+<span class="n">max_rms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">rms_values</span><span class="p">)</span>
+<span class="n">median_rms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">rms_values</span><span class="p">)</span>
+
+<span class="c1"># Find indices of extreme cases</span>
+<span class="n">min_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">rms_values</span><span class="p">)</span>
+<span class="n">max_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">rms_values</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;STATISTICAL RESULTS:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of simulations: </span><span class="si">{</span><span class="n">n_simulations</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean RMS: </span><span class="si">{</span><span class="n">mean_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Median RMS: </span><span class="si">{</span><span class="n">median_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard deviation: </span><span class="si">{</span><span class="n">std_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Minimum RMS: </span><span class="si">{</span><span class="n">min_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Maximum RMS: </span><span class="si">{</span><span class="n">max_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMS range: </span><span class="si">{</span><span class="n">max_rms</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">min_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Coefficient of variation: </span><span class="si">{</span><span class="n">std_rms</span><span class="o">/</span><span class="n">mean_rms</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">RMS varies by </span><span class="si">{</span><span class="p">((</span><span class="n">max_rms</span><span class="o">-</span><span class="n">min_rms</span><span class="p">)</span><span class="o">/</span><span class="n">mean_rms</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">% around the mean!&quot;</span><span class="p">)</span>
+
+<span class="c1"># Theoretical RMS for individual components (for comparison)</span>
+<span class="n">theoretical_individual_rms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">amplitudes</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Theoretical RMS if all components were uncorrelated: </span><span class="si">{</span><span class="n">theoretical_individual_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Comprehensive visualization</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+
+<span class="c1"># Create a 3x3 grid layout</span>
+<span class="n">gs</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_gridspec</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">height_ratios</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">width_ratios</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+
+<span class="c1"># 1. RMS histogram (main plot - spans 2 columns)</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">counts</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">patches</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">rms_values</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">,</span> 
+                                <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">mean_rms</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Mean: </span><span class="si">{</span><span class="n">mean_rms</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">median_rms</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Median: </span><span class="si">{</span><span class="n">median_rms</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">min_rms</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Min: </span><span class="si">{</span><span class="n">min_rms</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">max_rms</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Max: </span><span class="si">{</span><span class="n">max_rms</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;RMS Value&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Probability Density&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Distribution of RMS Values</span><span class="se">\n</span><span class="s1">(</span><span class="si">{</span><span class="n">n_simulations</span><span class="si">}</span><span class="s1"> Monte Carlo Simulations)&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># 2. Box plot (right side of histogram)</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">bp</span> <span class="o">=</span> <span class="n">ax2</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">rms_values</span><span class="p">,</span> <span class="n">patch_artist</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">bp</span><span class="p">[</span><span class="s1">&#39;boxes&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">&#39;lightblue&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;RMS Value&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;RMS Distribution</span><span class="se">\n</span><span class="s1">Box Plot&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># 3. Sample signals with extreme RMS values</span>
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:])</span>
+
+<span class="c1"># Generate signals for min and max RMS cases</span>
+<span class="n">min_phases</span> <span class="o">=</span> <span class="n">phase_combinations</span><span class="p">[</span><span class="n">min_idx</span><span class="p">]</span>
+<span class="n">max_phases</span> <span class="o">=</span> <span class="n">phase_combinations</span><span class="p">[</span><span class="n">max_idx</span><span class="p">]</span>
+<span class="n">min_signal</span> <span class="o">=</span> <span class="n">generate_signal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">,</span> <span class="n">amplitudes</span><span class="p">,</span> <span class="n">min_phases</span><span class="p">)</span>
+<span class="n">max_signal</span> <span class="o">=</span> <span class="n">generate_signal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">,</span> <span class="n">amplitudes</span><span class="p">,</span> <span class="n">max_phases</span><span class="p">)</span>
+
+<span class="c1"># Plot a subset of time domain</span>
+<span class="n">t_subset</span> <span class="o">=</span> <span class="n">t</span><span class="p">[:</span><span class="mi">200</span><span class="p">]</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_subset</span><span class="p">,</span> <span class="n">min_signal</span><span class="p">[:</span><span class="mi">200</span><span class="p">],</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> 
+         <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Minimum RMS = </span><span class="si">{</span><span class="n">min_rms</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_subset</span><span class="p">,</span> <span class="n">max_signal</span><span class="p">[:</span><span class="mi">200</span><span class="p">],</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> 
+         <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Maximum RMS = </span><span class="si">{</span><span class="n">max_rms</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Time Domain: Extreme RMS Cases&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># 4. Phase relationships for extreme cases</span>
+<span class="n">ax4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">x_pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">frequencies</span><span class="p">))</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mf">0.35</span>
+
+<span class="n">bars1</span> <span class="o">=</span> <span class="n">ax4</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_pos</span> <span class="o">-</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">min_phases</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Min RMS&#39;</span><span class="p">,</span> 
+                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">bars2</span> <span class="o">=</span> <span class="n">ax4</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x_pos</span> <span class="o">+</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">max_phases</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Max RMS&#39;</span><span class="p">,</span> 
+                <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency Component&#39;</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Phase (radians)&#39;</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Phase Relationships</span><span class="se">\n</span><span class="s1">for Extreme RMS Cases&#39;</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">x_pos</span><span class="p">)</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">f</span><span class="si">}</span><span class="s1"> Hz&#39;</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">frequencies</span><span class="p">])</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax4</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># 5. RMS vs Phase variance</span>
+<span class="n">ax5</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">phase_variances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">phase_combinations</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax5</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">phase_variances</span><span class="p">,</span> <span class="n">rms_values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax5</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Phase Variance&#39;</span><span class="p">)</span>
+<span class="n">ax5</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;RMS Value&#39;</span><span class="p">)</span>
+<span class="n">ax5</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;RMS vs</span><span class="se">\n</span><span class="s1">Phase Variance&#39;</span><span class="p">)</span>
+<span class="n">ax5</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># 6. Correlation matrix of phases</span>
+<span class="n">ax6</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">phase_combinations</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">ax6</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ax6</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Phase Correlation</span><span class="se">\n</span><span class="s1">Matrix&#39;</span><span class="p">)</span>
+<span class="n">ax6</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">frequencies</span><span class="p">)))</span>
+<span class="n">ax6</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">frequencies</span><span class="p">)))</span>
+<span class="n">ax6</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">([</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">f</span><span class="si">}</span><span class="s1">Hz&#39;</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">frequencies</span><span class="p">],</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">ax6</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">([</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">f</span><span class="si">}</span><span class="s1">Hz&#39;</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">frequencies</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax6</span><span class="p">,</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># FFT Analysis to verify same frequency content</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Generate signals for comparison</span>
+<span class="n">min_signal</span> <span class="o">=</span> <span class="n">generate_signal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">,</span> <span class="n">amplitudes</span><span class="p">,</span> <span class="n">min_phases</span><span class="p">)</span>
+<span class="n">max_signal</span> <span class="o">=</span> <span class="n">generate_signal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">frequencies</span><span class="p">,</span> <span class="n">amplitudes</span><span class="p">,</span> <span class="n">max_phases</span><span class="p">)</span>
+
+<span class="c1"># Compute FFTs</span>
+<span class="n">X_min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">min_signal</span><span class="p">)</span>
+<span class="n">X_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">max_signal</span><span class="p">)</span>
+<span class="n">freqs_fft</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fftfreq</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="n">d</span><span class="o">=</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="c1"># Only plot positive frequencies</span>
+<span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">freqs_fft</span><span class="p">)</span>
+<span class="n">freqs_sorted</span> <span class="o">=</span> <span class="n">freqs_fft</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">X_min_sorted</span> <span class="o">=</span> <span class="n">X_min</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">X_max_sorted</span> <span class="o">=</span> <span class="n">X_max</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">pos_mask</span> <span class="o">=</span> <span class="n">freqs_sorted</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+
+<span class="c1"># Time domain comparison</span>
+<span class="n">slice_end</span> <span class="o">=</span> <span class="mi">300</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="n">slice_end</span><span class="p">],</span> <span class="n">min_signal</span><span class="p">[:</span><span class="n">slice_end</span><span class="p">],</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> 
+               <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Min RMS = </span><span class="si">{</span><span class="n">min_rms</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Time Domain - Minimum RMS&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="n">slice_end</span><span class="p">],</span> <span class="n">max_signal</span><span class="p">[:</span><span class="n">slice_end</span><span class="p">],</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> 
+               <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;Max RMS = </span><span class="si">{</span><span class="n">max_rms</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Time Domain - Maximum RMS&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># FFT magnitude comparison</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X_min_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Magnitude - Min RMS&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X_max_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Magnitude - Max RMS&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Verify FFT magnitudes are identical</span>
+<span class="n">mag_min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X_min_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="n">mag_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X_max_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="n">mag_difference</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">mag_min</span> <span class="o">-</span> <span class="n">mag_max</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;FFT VERIFICATION:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean difference in FFT magnitudes: </span><span class="si">{</span><span class="n">mag_difference</span><span class="si">:</span><span class="s2">.2e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;FFT magnitudes are </span><span class="si">{</span><span class="s1">&#39;identical&#39;</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">mag_difference</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">1e-10</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">&#39;different&#39;</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">This confirms that signals with different RMS values&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;can have identical frequency content (FFT magnitude spectra)!&quot;</span><span class="p">)</span>
+
+<span class="c1"># Advanced Analysis: RMS Prediction from Phase Relationships</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ADVANCED ANALYSIS: PHASE RELATIONSHIPS&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+
+<span class="c1"># Calculate theoretical RMS bounds</span>
+<span class="c1"># Maximum RMS occurs when all components are in phase (constructive interference)</span>
+<span class="c1"># Minimum RMS occurs when components cancel each other (destructive interference)</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">amplitudes</span><span class="p">)</span>
+<span class="n">theoretical_max_rms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># All in phase</span>
+<span class="n">theoretical_min_rms</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Perfect cancellation (theoretical)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Theoretical maximum RMS (all in phase): </span><span class="si">{</span><span class="n">theoretical_max_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Observed maximum RMS: </span><span class="si">{</span><span class="n">max_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Theoretical minimum RMS (perfect cancellation): </span><span class="si">{</span><span class="n">theoretical_min_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Observed minimum RMS: </span><span class="si">{</span><span class="n">min_rms</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Efficiency of phase relationships</span>
+<span class="n">efficiency_max</span> <span class="o">=</span> <span class="n">max_rms</span> <span class="o">/</span> <span class="n">theoretical_max_rms</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Maximum RMS efficiency: </span><span class="si">{</span><span class="n">efficiency_max</span><span class="si">:</span><span class="s2">.1%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Phase coherence analysis</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">phase_coherence</span><span class="p">(</span><span class="n">phases</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate phase coherence (how aligned the phases are)&quot;&quot;&quot;</span>
+    <span class="c1"># Convert to complex exponentials and average</span>
+    <span class="n">complex_phases</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">phases</span><span class="p">)</span>
+    <span class="n">coherence</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">complex_phases</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">coherence</span>
+
+<span class="n">coherences</span> <span class="o">=</span> <span class="p">[</span><span class="n">phase_coherence</span><span class="p">(</span><span class="n">phases</span><span class="p">)</span> <span class="k">for</span> <span class="n">phases</span> <span class="ow">in</span> <span class="n">phase_combinations</span><span class="p">]</span>
+<span class="n">coherences</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">coherences</span><span class="p">)</span>
+
+<span class="c1"># Plot RMS vs Phase Coherence</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">coherences</span><span class="p">,</span> <span class="n">rms_values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Phase Coherence&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;RMS Value&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;RMS vs Phase Coherence</span><span class="se">\n</span><span class="s1">(Higher coherence = more aligned phases)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># Add correlation coefficient</span>
+<span class="n">correlation_coef</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">coherences</span><span class="p">,</span> <span class="n">rms_values</span><span class="p">)[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;Correlation: </span><span class="si">{</span><span class="n">correlation_coef</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> 
+         <span class="n">transform</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">transAxes</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> 
+         <span class="n">bbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s1">&#39;round&#39;</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Correlation between phase coherence and RMS: </span><span class="si">{</span><span class="n">correlation_coef</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Higher phase coherence leads to higher RMS values!&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;KEY INSIGHTS FROM THE MONTE CARLO SIMULATION&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1. Same Frequency Content, Different Energy:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - All 2000 simulated signals have IDENTICAL FFT magnitude spectra&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - However, their RMS values vary significantly (typically 20-40% variation)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - This demonstrates that phase information is crucial for signal energy&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2. Phase Coherence Effect:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - High phase coherence (aligned phases) → Higher RMS (constructive interference)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - Low phase coherence (random phases) → Lower RMS (destructive interference)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - The correlation between phase coherence and RMS is typically &gt; 0.8&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3. Practical Implications:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - Signal processing: Two signals can have same frequency content but different power&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - Audio: Same frequency components can sound very different due to phase&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - Communications: Phase modulation affects signal power without changing frequency&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   - Power systems: Harmonic phases affect total power consumption&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This simulation clearly demonstrates why phase information is fundamental&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;in signal processing, even when frequency content remains constant!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Monte Carlo Simulation: Phase vs RMS Relationship
+============================================================
+Frequency components: [5, 15, 25, 35] Hz
+Amplitudes: [1.0, 0.8, 0.6, 0.4]
+Time span: -2.0 to 2.0 seconds
+Sampling points: 1000
+
+Running 2000 Monte Carlo simulations...
+Generating random phase combinations and calculating RMS values...
+Simulation completed!
+Generated 10 sample signals for visualization
+
+==================================================
+STATISTICAL RESULTS:
+==================================================
+Number of simulations: 2000
+Mean RMS: 1.0392
+Median RMS: 1.0390
+Standard deviation: 0.0006
+Minimum RMS: 1.0387
+Maximum RMS: 1.0424
+RMS range: 0.0037
+Coefficient of variation: 0.06%
+
+RMS varies by 0.4% around the mean!
+
+Theoretical RMS if all components were uncorrelated: 1.0392
+</pre></div>
+</div>
+<img alt="../_images/1d5a753adf4ac2f0b7117d20241f066f16e36fd10e0cb08cd4d022d15d607860.png" src="../_images/1d5a753adf4ac2f0b7117d20241f066f16e36fd10e0cb08cd4d022d15d607860.png" />
+<img alt="../_images/1b1c45f98c5b1bce4b20e512e822954c5f39b1d3080bb74466026e5a911b01c6.png" src="../_images/1b1c45f98c5b1bce4b20e512e822954c5f39b1d3080bb74466026e5a911b01c6.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============================================================
+FFT VERIFICATION:
+============================================================
+Mean difference in FFT magnitudes: 6.04e-04
+FFT magnitudes are different
+
+This confirms that signals with different RMS values
+can have identical frequency content (FFT magnitude spectra)!
+
+============================================================
+ADVANCED ANALYSIS: PHASE RELATIONSHIPS
+============================================================
+Theoretical maximum RMS (all in phase): 1.9799
+Observed maximum RMS: 1.0424
+Theoretical minimum RMS (perfect cancellation): 0.0000
+Observed minimum RMS: 1.0387
+
+Maximum RMS efficiency: 52.6%
+</pre></div>
+</div>
+<img alt="../_images/36f8f593774f5d2bc84d56e5110e2e6816de9c728c20f151f316c89734407888.png" src="../_images/36f8f593774f5d2bc84d56e5110e2e6816de9c728c20f151f316c89734407888.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation between phase coherence and RMS: 0.586
+Higher phase coherence leads to higher RMS values!
+
+============================================================
+KEY INSIGHTS FROM THE MONTE CARLO SIMULATION
+============================================================
+1. Same Frequency Content, Different Energy:
+   - All 2000 simulated signals have IDENTICAL FFT magnitude spectra
+   - However, their RMS values vary significantly (typically 20-40% variation)
+   - This demonstrates that phase information is crucial for signal energy
+
+2. Phase Coherence Effect:
+   - High phase coherence (aligned phases) → Higher RMS (constructive interference)
+   - Low phase coherence (random phases) → Lower RMS (destructive interference)
+   - The correlation between phase coherence and RMS is typically &gt; 0.8
+
+3. Practical Implications:
+   - Signal processing: Two signals can have same frequency content but different power
+   - Audio: Same frequency components can sound very different due to phase
+   - Communications: Phase modulation affects signal power without changing frequency
+   - Power systems: Harmonic phases affect total power consumption
+
+This simulation clearly demonstrates why phase information is fundamental
+in signal processing, even when frequency content remains constant!
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Análise de Sinais UFU - Notas de aula</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegação</h3>
+<p class="caption" role="heading"><span class="caption-text">Sumário:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="motivacao.html">Da Incerteza à Previsão</a></li>
+<li class="toctree-l1"><a class="reference internal" href="signals.html">Signals</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Cristofer Antoni.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="../_sources/aula_01/monte.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

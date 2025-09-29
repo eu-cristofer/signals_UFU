@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html lang="pt" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Signals &#8212; Documentação Análise de Sinais UFU - Notas de aula 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=12dfc556" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <script src="../_static/documentation_options.js?v=bbb231ee"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=5f54a428"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section class="tex2jax_ignore mathjax_ignore" id="signals">
+<h1>Signals<a class="headerlink" href="#signals" title="Link to this heading">¶</a></h1>
+<section id="definition-of-signals">
+<h2>Definition of Signals<a class="headerlink" href="#definition-of-signals" title="Link to this heading">¶</a></h2>
+<p>A <strong>signal</strong> is a function that carries information about a physical phenomenon. In the context of signals and systems, we typically deal with signals that vary with time.</p>
+<p>Mathematically, a signal can be represented as:</p>
+<div class="math notranslate nohighlight">
+\[x(t) \quad \text{for continuous-time signals}\]</div>
+<div class="math notranslate nohighlight">
+\[x[n] \quad \text{for discrete-time signals}\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(t\)</span> is a continuous variable (time)</p></li>
+<li><p><span class="math notranslate nohighlight">\(n\)</span> is a discrete variable (sample number)</p></li>
+</ul>
+</section>
+<section id="classification-of-signals">
+<h2>Classification of Signals<a class="headerlink" href="#classification-of-signals" title="Link to this heading">¶</a></h2>
+<section id="continuous-time-vs-discrete-time">
+<h3>Continuous-time vs Discrete-time<a class="headerlink" href="#continuous-time-vs-discrete-time" title="Link to this heading">¶</a></h3>
+<p><strong>Continuous-time signals</strong> are defined for all values of time <span class="math notranslate nohighlight">\(t\)</span> in a continuous interval.</p>
+<p><strong>Discrete-time signals</strong> are defined only at discrete time instants, typically at regular intervals.</p>
+</section>
+<section id="analog-vs-digital">
+<h3>Analog vs Digital<a class="headerlink" href="#analog-vs-digital" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Analog signals</strong>: Continuous in both time and amplitude</p></li>
+<li><p><strong>Digital signals</strong>: Discrete in both time and amplitude</p></li>
+</ul>
+</section>
+<section id="periodic-vs-aperiodic">
+<h3>Periodic vs Aperiodic<a class="headerlink" href="#periodic-vs-aperiodic" title="Link to this heading">¶</a></h3>
+<p>A signal <span class="math notranslate nohighlight">\(x(t)\)</span> is <strong>periodic</strong> if there exists a positive constant <span class="math notranslate nohighlight">\(T\)</span> such that:</p>
+<div class="math notranslate nohighlight">
+\[x(t) = x(t + T) \quad \text{for all } t\]</div>
+<p>The smallest such <span class="math notranslate nohighlight">\(T\)</span> is called the <strong>fundamental period</strong>.</p>
+</section>
+<section id="even-vs-odd">
+<h3>Even vs Odd<a class="headerlink" href="#even-vs-odd" title="Link to this heading">¶</a></h3>
+<p>A signal is <strong>even</strong> if:
+<div class="math notranslate nohighlight">
+\[x(t) = x(-t)\]</div>
+</p>
+<p>A signal is <strong>odd</strong> if:
+<div class="math notranslate nohighlight">
+\[x(t) = -x(-t)\]</div>
+</p>
+</section>
+</section>
+<section id="common-signals">
+<h2>Common Signals<a class="headerlink" href="#common-signals" title="Link to this heading">¶</a></h2>
+<section id="unit-step-function">
+<h3>Unit Step Function<a class="headerlink" href="#unit-step-function" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}u(t) = \begin{cases}
+1 &amp; \text{if } t \geq 0 \\
+0 &amp; \text{if } t &lt; 0
+\end{cases}\end{split}\]</div>
+</section>
+<section id="unit-impulse-function-dirac-delta">
+<h3>Unit Impulse Function (Dirac Delta)<a class="headerlink" href="#unit-impulse-function-dirac-delta" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\begin{split}\delta(t) = \begin{cases}
+\infty &amp; \text{if } t = 0 \\
+0 &amp; \text{if } t \neq 0
+\end{cases}\end{split}\]</div>
+<p>with the property:
+<div class="math notranslate nohighlight">
+\[\int_{-\infty}^{\infty} \delta(t) \, dt = 1\]</div>
+</p>
+</section>
+<section id="sinusoidal-signals">
+<h3>Sinusoidal Signals<a class="headerlink" href="#sinusoidal-signals" title="Link to this heading">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[x(t) = A \cos(\omega t + \phi)\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A\)</span> is the amplitude</p></li>
+<li><p><span class="math notranslate nohighlight">\(\omega\)</span> is the angular frequency (rad/s)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\phi\)</span> is the phase (rad)</p></li>
+</ul>
+</section>
+</section>
+<section id="interactive-examples">
+<h2>Interactive Examples<a class="headerlink" href="#interactive-examples" title="Link to this heading">¶</a></h2>
+<p>Let’s explore some of these signals using Python:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Time vector</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># Unit step function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">unit_step</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">t</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Unit impulse approximation</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">unit_impulse</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="n">width</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Sinusoidal signal</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span> <span class="o">+</span> <span class="n">phi</span><span class="p">)</span>
+
+<span class="c1"># Plot the signals</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Unit step</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">unit_step</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Unit Step Function u(t)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+
+<span class="c1"># Unit impulse</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">unit_impulse</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Unit Impulse Function δ(t)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+
+<span class="c1"># Sinusoidal signal</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="s1">&#39;g-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Sinusoidal Signal&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+
+<span class="c1"># Even and odd components</span>
+<span class="n">x_even</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="p">))</span>
+<span class="n">x_odd</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="p">))</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x_even</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Even component&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x_odd</span><span class="p">,</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Odd component&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Even and Odd Components&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/3e11d0f287f551bc940a07e7ad5ffbc2efd80349a4db91334952c4bf1597befa.png" src="../_images/3e11d0f287f551bc940a07e7ad5ffbc2efd80349a4db91334952c4bf1597befa.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Sinusoidal signal function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span> <span class="o">+</span> <span class="n">phi</span><span class="p">)</span>
+
+<span class="c1"># RMS calculation function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rms</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+
+<span class="c1"># Peak-to-peak calculation function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">pk2pk</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># Time vector</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># Create three base signals with different frequencies</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">5</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>      <span class="c1"># 5 Hz</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">15</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>  <span class="c1"># 15 Hz, phase π/4</span>
+<span class="n">s3</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">25</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># 25 Hz, phase π/2</span>
+
+<span class="c1"># Combination 1: All signals with original phases</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span> <span class="o">+</span> <span class="n">s3</span>
+
+<span class="c1"># Combination 2: Same signals but with different phase relationships</span>
+<span class="n">s1_mod</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">5</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">s2_mod</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">15</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">s3_mod</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">25</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">s1_mod</span> <span class="o">+</span> <span class="n">s2_mod</span> <span class="o">+</span> <span class="n">s3_mod</span>
+
+<span class="c1"># Calculate RMS and pk-pk values</span>
+<span class="n">rms_x1</span> <span class="o">=</span> <span class="n">rms</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+<span class="n">rms_x2</span> <span class="o">=</span> <span class="n">rms</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+<span class="n">pkpk_x1</span> <span class="o">=</span> <span class="n">pk2pk</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+<span class="n">pkpk_x2</span> <span class="o">=</span> <span class="n">pk2pk</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+
+<span class="c1"># Calculate percent differences</span>
+<span class="n">rms_diff</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">rms_x1</span> <span class="o">-</span> <span class="n">rms_x2</span><span class="p">)</span>
+<span class="n">pkpk_diff</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">pkpk_x1</span> <span class="o">-</span> <span class="n">pkpk_x2</span><span class="p">)</span>
+<span class="n">rms_perc</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">rms_diff</span> <span class="o">/</span> <span class="n">rms_x1</span> <span class="k">if</span> <span class="n">rms_x1</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+<span class="n">pkpk_perc</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">pkpk_diff</span> <span class="o">/</span> <span class="n">pkpk_x1</span> <span class="k">if</span> <span class="n">pkpk_x1</span> <span class="o">!=</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMS of signal x1: </span><span class="si">{</span><span class="n">rms_x1</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;RMS of signal x2: </span><span class="si">{</span><span class="n">rms_x2</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pk-Pk of signal x1: </span><span class="si">{</span><span class="n">pkpk_x1</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Pk-Pk of signal x2: </span><span class="si">{</span><span class="n">pkpk_x2</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Absolute difference in RMS: </span><span class="si">{</span><span class="n">rms_diff</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Percentual difference in RMS: </span><span class="si">{</span><span class="n">rms_perc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Absolute difference in Pk-Pk: </span><span class="si">{</span><span class="n">pkpk_diff</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Percentual difference in Pk-Pk: </span><span class="si">{</span><span class="n">pkpk_perc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+
+<span class="c1"># Compute FFTs</span>
+<span class="n">X1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+<span class="n">X2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+<span class="n">freqs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fftfreq</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="n">d</span><span class="o">=</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="c1"># Only plot the positive frequencies</span>
+<span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">freqs</span><span class="p">)</span>
+<span class="n">freqs_sorted</span> <span class="o">=</span> <span class="n">freqs</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">X1_sorted</span> <span class="o">=</span> <span class="n">X1</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">X2_sorted</span> <span class="o">=</span> <span class="n">X2</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">pos_mask</span> <span class="o">=</span> <span class="n">freqs_sorted</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+
+<span class="c1"># Create a comprehensive visualization</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+
+<span class="nb">slice</span> <span class="o">=</span> <span class="mi">200</span>  <span class="c1"># Show more of the signal for better visualization</span>
+
+<span class="c1"># First row: time domain signals</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">x1</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x1&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Combined Signal x1 (RMS = </span><span class="si">{</span><span class="n">rms_x1</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">, Pk-Pk = </span><span class="si">{</span><span class="n">pkpk_x1</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">x2</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x2&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Combined Signal x2 (RMS = </span><span class="si">{</span><span class="n">rms_x2</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">, Pk-Pk = </span><span class="si">{</span><span class="n">pkpk_x2</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># Second row: FFT Magnitude spectra</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X1_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Magnitude Spectrum - x1&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X2_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Magnitude Spectrum - x2&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="c1"># Third row: FFT Phase spectra</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">X1_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">]),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Phase Spectrum - x1&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Phase (radians)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">X2_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">]),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Phase Spectrum - x2&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Phase (radians)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Analysis</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ANALYSIS:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Both signals x1 and x2 contain the same frequency components:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- 5 Hz (fundamental frequency)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- 15 Hz (third harmonic)&quot;</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- 25 Hz (fifth harmonic)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The FFT magnitude spectra are nearly identical because:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Both signals have the same frequency content&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Only the phases of individual components differ&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- FFT magnitude is independent of phase information&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;However, the RMS and pk-pk values are different because:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Different phase relationships cause constructive/destructive interference&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- RMS depends on the instantaneous power, which varies with phase&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- Pk-Pk (peak-to-peak) value also depends on phase relationships&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- This demonstrates how phase affects signal energy distribution and amplitude range&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Percentual difference in RMS: </span><span class="si">{</span><span class="n">rms_perc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Percentual difference in Pk-Pk: </span><span class="si">{</span><span class="n">pkpk_perc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">%&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>RMS of signal x1: 1.001
+RMS of signal x2: 1.000
+Pk-Pk of signal x1: 4.703
+Pk-Pk of signal x2: 3.640
+Absolute difference in RMS: 0.001
+Percentual difference in RMS: 0.11%
+Absolute difference in Pk-Pk: 1.063
+Percentual difference in Pk-Pk: 22.60%
+</pre></div>
+</div>
+<img alt="../_images/e99fd98e72104b3692e1c1b9d966899a0fcdd303ea6fc82515998bd41381b089.png" src="../_images/e99fd98e72104b3692e1c1b9d966899a0fcdd303ea6fc82515998bd41381b089.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>============================================================
+ANALYSIS:
+============================================================
+Both signals x1 and x2 contain the same frequency components:
+- 5 Hz (fundamental frequency)
+- 15 Hz (third harmonic)
+- 25 Hz (fifth harmonic)
+
+The FFT magnitude spectra are nearly identical because:
+- Both signals have the same frequency content
+- Only the phases of individual components differ
+- FFT magnitude is independent of phase information
+
+However, the RMS and pk-pk values are different because:
+- Different phase relationships cause constructive/destructive interference
+- RMS depends on the instantaneous power, which varies with phase
+- Pk-Pk (peak-to-peak) value also depends on phase relationships
+- This demonstrates how phase affects signal energy distribution and amplitude range
+
+Percentual difference in RMS: 0.11%
+Percentual difference in Pk-Pk: 22.60%
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Sinusoidal signal</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span> <span class="o">+</span> <span class="n">phi</span><span class="p">)</span>
+
+<span class="c1"># RMS calculation function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rms</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+
+<span class="c1"># Time vector</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="c1"># Two signals with same frequency and amplitude, but different phases</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">10</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">30</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">y3</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="mi">30</span><span class="p">,</span> <span class="n">phi</span><span class="o">=-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">y1</span> <span class="o">+</span> <span class="n">y2</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">y1</span> <span class="o">+</span> <span class="n">y3</span>
+
+<span class="c1"># Compute FFTs</span>
+<span class="n">X1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+<span class="n">X2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+<span class="n">freqs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fftfreq</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="n">d</span><span class="o">=</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="c1"># Only plot the positive frequencies</span>
+<span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">freqs</span><span class="p">)</span>
+<span class="n">freqs_sorted</span> <span class="o">=</span> <span class="n">freqs</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">X1_sorted</span> <span class="o">=</span> <span class="n">X1</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">X2_sorted</span> <span class="o">=</span> <span class="n">X2</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">pos_mask</span> <span class="o">=</span> <span class="n">freqs_sorted</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+
+<span class="c1"># Create a 3-row, 2-column grid: </span>
+<span class="c1"># (1,1) and (1,2): time domain (merged)</span>
+<span class="c1"># (2,1): FFT magnitude of x1, (2,2): FFT magnitude of x2</span>
+<span class="c1"># (3,1): FFT phase of x1, (3,2): FFT phase of x2</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="nb">slice</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c1"># Calculate RMS values for the time domain signals (over the full signal)</span>
+<span class="n">rms_x1</span> <span class="o">=</span> <span class="n">rms</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+<span class="n">rms_x2</span> <span class="o">=</span> <span class="n">rms</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+
+<span class="c1"># First row: time domain, left: x1, right: x2</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">x1</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Phase 0&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Sinusoid (Phase 0)</span><span class="se">\n</span><span class="s1">RMS = </span><span class="si">{</span><span class="n">rms_x1</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">x2</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Phase π/2&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Sinusoid (Phase π/2)</span><span class="se">\n</span><span class="s1">RMS = </span><span class="si">{</span><span class="n">rms_x2</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Second row: FFT Magnitude, left for x1, right for x2</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X1_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Magnitude (Phase 0)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X2_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Magnitude (Phase π/2)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Third row: FFT Phase, left for x1, right for x2</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">X1_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">]),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Phase (Phase 0)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Phase (radians)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">X2_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">]),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Phase (Phase π/2)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Phase (radians)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Demonstration:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Notice that the FFT magnitude spectra of the two signals are identical,&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;even though the time-domain signals are different due to their phase.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This shows that the FFT magnitude does not retain phase information.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/517ae75de7792e572ba1e1c672a6e686256539f99b92c75f9ad43a6372f864e8.png" src="../_images/517ae75de7792e572ba1e1c672a6e686256539f99b92c75f9ad43a6372f864e8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Notice that the FFT magnitude spectra of the two signals are identical,
+even though the time-domain signals are different due to their phase.
+This shows that the FFT magnitude does not retain phase information.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Sinusoidal signal</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span> <span class="o">+</span> <span class="n">phi</span><span class="p">)</span>
+
+<span class="c1"># RMS calculation function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rms</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+
+<span class="c1"># Time vector</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># Scenario: Two signals, each a sum of two sinusoids with the same frequencies,</span>
+<span class="c1"># but with different amplitude combinations, so that their FFT magnitudes are similar</span>
+<span class="c1"># (same peaks at the same frequencies), but their RMS values are different.</span>
+
+<span class="c1"># Frequencies</span>
+<span class="n">f1</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Hz</span>
+<span class="n">f2</span> <span class="o">=</span> <span class="mi">30</span>  <span class="c1"># Hz</span>
+
+<span class="c1"># Signal 1: both sinusoids with amplitude 1</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">f1</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">f2</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">y1</span> <span class="o">+</span> <span class="n">y2</span>
+
+<span class="c1"># Signal 2: both sinusoids with amplitude sqrt(2), but divided by sqrt(2) to keep the FFT peaks at the same height</span>
+<span class="c1"># (since FFT magnitude is proportional to amplitude, but RMS is sensitive to the sum of squares)</span>
+<span class="n">y1b</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">f1</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">y2b</span> <span class="o">=</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">omega</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">f2</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="p">(</span><span class="n">y1b</span> <span class="o">+</span> <span class="n">y2b</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Compute FFTs</span>
+<span class="n">X1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+<span class="n">X2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+<span class="n">freqs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fftfreq</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="n">d</span><span class="o">=</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+
+<span class="c1"># Only plot the positive frequencies</span>
+<span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">freqs</span><span class="p">)</span>
+<span class="n">freqs_sorted</span> <span class="o">=</span> <span class="n">freqs</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">X1_sorted</span> <span class="o">=</span> <span class="n">X1</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">X2_sorted</span> <span class="o">=</span> <span class="n">X2</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+<span class="n">pos_mask</span> <span class="o">=</span> <span class="n">freqs_sorted</span> <span class="o">&gt;=</span> <span class="mi">0</span>
+
+<span class="c1"># Create a 3-row, 2-column grid: </span>
+<span class="c1"># (1,1) and (1,2): time domain (merged)</span>
+<span class="c1"># (2,1): FFT magnitude of x1, (2,2): FFT magnitude of x2</span>
+<span class="c1"># (3,1): FFT phase of x1, (3,2): FFT phase of x2</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">14</span><span class="p">))</span>
+
+<span class="nb">slice</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c1"># Calculate RMS values for the time domain signals (over the full signal)</span>
+<span class="n">rms_x1</span> <span class="o">=</span> <span class="n">rms</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+<span class="n">rms_x2</span> <span class="o">=</span> <span class="n">rms</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+
+<span class="c1"># First row: time domain, left: x1, right: x2</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">x1</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;x1: 1*cos(2π</span><span class="si">{</span><span class="n">f1</span><span class="si">}</span><span class="s1">t)+1*cos(2π</span><span class="si">{</span><span class="n">f2</span><span class="si">}</span><span class="s1">t)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Signal x1</span><span class="se">\n</span><span class="s1">RMS = </span><span class="si">{</span><span class="n">rms_x1</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">x2</span><span class="p">[:</span><span class="nb">slice</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;x2: √2*cos(2π</span><span class="si">{</span><span class="n">f1</span><span class="si">}</span><span class="s1">t)+√2*cos(2π</span><span class="si">{</span><span class="n">f2</span><span class="si">}</span><span class="s1">t)/√2&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Signal x2</span><span class="se">\n</span><span class="s1">RMS = </span><span class="si">{</span><span class="n">rms_x2</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Second row: FFT Magnitude, left for x1, right for x2</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X1_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Magnitude (x1)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">X2_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">])</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Magnitude (x2)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Magnitude&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Third row: FFT Phase, left for x1, right for x2</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">X1_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">]),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Phase (x1)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Phase (radians)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">freqs_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">angle</span><span class="p">(</span><span class="n">X2_sorted</span><span class="p">[</span><span class="n">pos_mask</span><span class="p">]),</span> 
+               <span class="n">linefmt</span><span class="o">=</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">markerfmt</span><span class="o">=</span><span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">basefmt</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;FFT Phase (x2)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Frequency (Hz)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Phase (radians)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Demonstration:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Notice that the FFT magnitude spectra of the two signals are very similar,&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;even though the time-domain signals have different RMS values.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This shows that signals with similar frequency content (FFT) can have different energy (RMS).&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/949b2a80cfba7b2e1af7c8323336bb2b97e0bce6e55210392c407841773dbf56.png" src="../_images/949b2a80cfba7b2e1af7c8323336bb2b97e0bce6e55210392c407841773dbf56.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Notice that the FFT magnitude spectra of the two signals are very similar,
+even though the time-domain signals have different RMS values.
+This shows that signals with similar frequency content (FFT) can have different energy (RMS).
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Unit step function</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">unit_step</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">t</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Unit impulse approximation</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">unit_impulse</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">width</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="n">width</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Plot the signals</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Unit step</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">unit_step</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Unit Step Function u(t)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+
+<span class="c1"># Unit impulse</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">unit_impulse</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Unit Impulse Function $</span><span class="se">\\</span><span class="s1">delta(t)$&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+
+<span class="c1"># Sinusoidal signal</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">),</span> <span class="s1">&#39;g-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Sinusoidal Signal&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+
+<span class="c1"># Even and odd components</span>
+<span class="n">x_even</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">+</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="p">))</span>
+<span class="n">x_odd</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">sinusoidal</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="n">sinusoidal</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="p">))</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x_even</span><span class="p">,</span> <span class="s1">&#39;b-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Even component&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x_odd</span><span class="p">,</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Odd component&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Even and Odd Components&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Amplitude&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/d315ef2bef97ba37bb0ce56ce624b609fb07e79a2638e7dbc9653baa0ca98e57.png" src="../_images/d315ef2bef97ba37bb0ce56ce624b609fb07e79a2638e7dbc9653baa0ca98e57.png" />
+</div>
+</div>
+</section>
+<section id="energy-and-power">
+<h2>Energy and Power<a class="headerlink" href="#energy-and-power" title="Link to this heading">¶</a></h2>
+<p>For a signal <span class="math notranslate nohighlight">\(x(t)\)</span>, we define:</p>
+<p><strong>Energy</strong>:
+<div class="math notranslate nohighlight">
+\[E = \int_{-\infty}^{\infty} |x(t)|^2 \, dt\]</div>
+</p>
+<p><strong>Power</strong> (for periodic signals):
+<div class="math notranslate nohighlight">
+\[P = \frac{1}{T} \int_0^T |x(t)|^2 \, dt\]</div>
+</p>
+<p>A signal is called:</p>
+<ul class="simple">
+<li><p><strong>Energy signal</strong> if <span class="math notranslate nohighlight">\(E &lt; \infty\)</span> and <span class="math notranslate nohighlight">\(P = 0\)</span></p></li>
+<li><p><strong>Power signal</strong> if <span class="math notranslate nohighlight">\(P &lt; \infty\)</span> and <span class="math notranslate nohighlight">\(E = \infty\)</span></p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Análise de Sinais UFU - Notas de aula</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegação</h3>
+<p class="caption" role="heading"><span class="caption-text">Sumário:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="motivacao.html">Da Incerteza à Previsão</a></li>
+<li class="toctree-l1"><a class="reference internal" href="signals.html">Signals</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Pesquisa rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Cristofer Antoni.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="../_sources/aula_01/fft.ipynb.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

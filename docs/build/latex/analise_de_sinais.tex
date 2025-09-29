@@ -32,7 +32,7 @@
 \usepackage{cmap}
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,amstext}
-\usepackage{babel}
+\usepackage[brazil]{babel}
 
 
 
@@ -64,9 +64,16 @@
 \setcounter{tocdepth}{1}
 
 
+        \usepackage{amsmath}
+        \usepackage{amsfonts}
+        \usepackage{amssymb}
+        \usepackage{textgreek}
+        \usepackage{textcomp}
+        \usepackage{gensymb}
+    
 
 \title{Análise de Sinais UFU - Notas de aula}
-\date{26 set., 2025}
+\date{29 set., 2025}
 \release{1.0}
 \author{Cristofer Antoni Souza Costa}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -88,37 +95,559 @@
 
 
 \sphinxAtStartPar
-Add your content using \sphinxcode{\sphinxupquote{reStructuredText}} syntax. See the
-\sphinxhref{https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html}{reStructuredText}
-documentation for details.
+Notas de aula, resultados computacionais e recursos de revisão bibliográfica relacionados ao estudo de sinais e sistemas, com ênfase especial em rotodinâmica e análise de falhas, desenvolvido como parte do meu mestrado.
 
 \sphinxstepscope
 
 
-\chapter{Análise de Sinais UFU}
-\label{\detokenize{introducao:analise-de-sinais-ufu}}\label{\detokenize{introducao::doc}}
+\chapter{📚 Revisão de Obras Clássicas}
+\label{\detokenize{oppenhein:revisao-de-obras-classicas}}\label{\detokenize{oppenhein::doc}}\begin{quote}
+
 \sphinxAtStartPar
-Repositório para armazenar códigos, resultados computacionais e recursos de revisão bibliográfica relacionados ao estudo de sinais e sistemas, com ênfase especial em rotodinâmica e análise de falhas, desenvolvido como parte do meu mestrado.
+\sphinxstylestrong{Objetivo:} Guia estruturado para revisão de literatura fundamental em análise de sinais e sistemas, com foco em aplicações para detecção de falhas em máquinas rotativas.
+\end{quote}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\section{📖 \sphinxstylestrong{Oppenheim \& Schafer \sphinxhyphen{} Discrete\sphinxhyphen{}Time Signal Processing}}
+\label{\detokenize{oppenhein:oppenheim-schafer-discrete-time-signal-processing}}
+
+\subsection{🎯 \sphinxstylestrong{Capítulos Essenciais}}
+\label{\detokenize{oppenhein:capitulos-essenciais}}
+
+\begin{savenotes}\sphinxattablestart
+\sphinxthistablewithglobalstyle
+\centering
+\begin{tabulary}{\linewidth}[t]{TTT}
+\sphinxtoprule
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Capítulo
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Tópico
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Relevância para HOS
+\\
+\sphinxmidrule
+\sphinxtableatstartofbodyhook
+\sphinxAtStartPar
+\sphinxstylestrong{1\sphinxhyphen{}2}
+&
+\sphinxAtStartPar
+\sphinxstylestrong{Sinais e Sistemas}
+&
+\sphinxAtStartPar
+⭐⭐⭐⭐⭐ Fundamentos teóricos indispensáveis
+\\
+\sphinxhline
+\sphinxAtStartPar
+\sphinxstylestrong{3}
+&
+\sphinxAtStartPar
+\sphinxstylestrong{Análise de Fourier}
+&
+\sphinxAtStartPar
+⭐⭐⭐⭐⭐ Ferramenta central para análise espectral
+\\
+\sphinxhline
+\sphinxAtStartPar
+\sphinxstylestrong{4}
+&
+\sphinxAtStartPar
+\sphinxstylestrong{Transformada de Laplace}
+&
+\sphinxAtStartPar
+⭐⭐⭐⭐ Modelagem de sistemas contínuos
+\\
+\sphinxhline
+\sphinxAtStartPar
+\sphinxstylestrong{5}
+&
+\sphinxAtStartPar
+\sphinxstylestrong{Transformada Z}
+&
+\sphinxAtStartPar
+⭐⭐⭐⭐ Processamento de sinais discretos
+\\
+\sphinxhline
+\sphinxAtStartPar
+\sphinxstylestrong{7}
+&
+\sphinxAtStartPar
+\sphinxstylestrong{Amostragem}
+&
+\sphinxAtStartPar
+⭐⭐⭐⭐⭐ Base para conversão digital
+\\
+\sphinxbottomrule
+\end{tabulary}
+\sphinxtableafterendhook\par
+\sphinxattableend\end{savenotes}
+
+
+\subsection{📋 \sphinxstylestrong{Checklist de Estudo}}
+\label{\detokenize{oppenhein:checklist-de-estudo}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Capítulos 1\sphinxhyphen{}2:} Compreender modelagem de sinais e classificação de sistemas
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Capítulo 3:} Dominar análise espectral e identificação de padrões
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Capítulo 4:} Aplicar modelagem de sistemas contínuos
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Capítulo 5:} Implementar processamento digital
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Capítulo 7:} Entender princípios de amostragem
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\section{🔍 \sphinxstylestrong{Perguntas Fundamentais por Capítulo}}
+\label{\detokenize{oppenhein:perguntas-fundamentais-por-capitulo}}
+
+\subsection{📊 \sphinxstylestrong{Capítulo 1\sphinxhyphen{}2: Sinais e Sistemas Básicos}}
+\label{\detokenize{oppenhein:capitulo-1-2-sinais-e-sistemas-basicos}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{🎯 Objetivo:} Estabelecer fundamentos para modelagem e classificação de sistemas
+\end{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Para sua dissertação, pergunte\sphinxhyphen{}se:}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Como posso modelar um sinal de vibração de máquina rotativa como uma função matemática?
+
+\item {} 
+\sphinxAtStartPar
+ Que propriedades de sinais são relevantes para detectar falhas (periodicidade, energia, potência)?
+
+\item {} 
+\sphinxAtStartPar
+ Como classificar sistemas de máquinas rotativas (linear/não\sphinxhyphen{}linear, invariante/variante no tempo)?
+
+\item {} 
+\sphinxAtStartPar
+ Qual a relação entre a resposta impulsiva de um sistema e sua função de transferência?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\subsection{🌊 \sphinxstylestrong{Capítulo 3: Análise de Fourier}}
+\label{\detokenize{oppenhein:capitulo-3-analise-de-fourier}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{🚨 CRÍTICO para HOS} | \sphinxstylestrong{⭐ Prioridade Máxima}
+\end{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Perguntas essenciais:}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Como a Transformada de Fourier revela componentes de frequência em sinais de vibração?
+
+\item {} 
+\sphinxAtStartPar
+ Que informações sobre falhas podem ser extraídas do espectro de potência?
+
+\item {} 
+\sphinxAtStartPar
+ Como identificar harmônicos e sub\sphinxhyphen{}harmônicos característicos de trincas?
+
+\item {} 
+\sphinxAtStartPar
+ Qual a diferença entre análise de Fourier clássica e espectros de ordem superior?
+
+\item {} 
+\sphinxAtStartPar
+ Como a fase do espectro se relaciona com não\sphinxhyphen{}linearidades do sistema?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\subsection{⚡ \sphinxstylestrong{Capítulo 4: Transformada de Laplace}}
+\label{\detokenize{oppenhein:capitulo-4-transformada-de-laplace}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{🎯 Foco:} Modelagem de sistemas contínuos
+\end{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Para modelagem de sistemas:}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Como modelar a dinâmica de um eixo rotativo usando funções de transferência?
+
+\item {} 
+\sphinxAtStartPar
+ Como incluir não\sphinxhyphen{}linearidades (trincas, desalinhamentos) no modelo?
+
+\item {} 
+\sphinxAtStartPar
+ Qual a relação entre pólos/zeros e frequências naturais do sistema?
+
+\item {} 
+\sphinxAtStartPar
+ Como a estabilidade do sistema se relaciona com a detecção de falhas?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\subsection{🔢 \sphinxstylestrong{Capítulo 5: Transformada Z}}
+\label{\detokenize{oppenhein:capitulo-5-transformada-z}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{💻 Foco:} Processamento digital
+\end{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Para processamento digital:}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Como discretizar adequadamente sinais de vibração contínuos?
+
+\item {} 
+\sphinxAtStartPar
+ Qual a taxa de amostragem necessária para capturar características de falhas?
+
+\item {} 
+\sphinxAtStartPar
+ Como implementar algoritmos de HOS em processamento digital?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\section{🚀 \sphinxstylestrong{Perguntas Específicas para HOS (Espectros de Ordem Superior)}}
+\label{\detokenize{oppenhein:perguntas-especificas-para-hos-espectros-de-ordem-superior}}
+
+\subsection{🧠 \sphinxstylestrong{Conceitos Avançados}}
+\label{\detokenize{oppenhein:conceitos-avancados}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{🎯 Foco:} Fundamentos teóricos de HOS
+\end{quote}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Moments e Cumulants}: Como momentos de ordem superior revelam não\sphinxhyphen{}linearidades?
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Bi\sphinxhyphen{}espectro}: Que informações sobre acoplamentos de fase são relevantes para falhas?
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Tri\sphinxhyphen{}espectro}: Como detectar não\sphinxhyphen{}linearidades de terceira ordem em máquinas rotativas?
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{Coherencia de ordem superior}: Como medir dependências não\sphinxhyphen{}lineares entre componentes?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\subsection{🔧 \sphinxstylestrong{Aplicação Prática}}
+\label{\detokenize{oppenhein:aplicacao-pratica}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{💡 Foco:} Implementação e processamento
+\end{quote}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Como extrair características invariantes no tempo de sinais de vibração?
+
+\item {} 
+\sphinxAtStartPar
+ Que pré\sphinxhyphen{}processamento é necessário antes da análise HOS?
+
+\item {} 
+\sphinxAtStartPar
+ Como lidar com ruído em sinais reais vs. simulados?
+
+\item {} 
+\sphinxAtStartPar
+ Qual a relação entre HOS e análise de modulação de amplitude/frequência?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\section{📊 \sphinxstylestrong{Perguntas de Metodologia}}
+\label{\detokenize{oppenhein:perguntas-de-metodologia}}
+
+\subsection{✅ \sphinxstylestrong{Validação e Comparação}}
+\label{\detokenize{oppenhein:validacao-e-comparacao}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{🔬 Foco:} Rigor científico e reprodutibilidade
+\end{quote}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Como validar resultados de HOS com dados experimentais da literatura?
+
+\item {} 
+\sphinxAtStartPar
+ Que métricas usar para comparar eficácia de diferentes técnicas?
+
+\item {} 
+\sphinxAtStartPar
+ Como estabelecer thresholds para detecção de falhas?
+
+\item {} 
+\sphinxAtStartPar
+ Qual a sensibilidade dos métodos HOS a parâmetros de simulação?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\subsection{💻 \sphinxstylestrong{Implementação Computacional}}
+\label{\detokenize{oppenhein:implementacao-computacional}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{⚙️ Foco:} Aspectos práticos de implementação
+\end{quote}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Como implementar algoritmos HOS eficientemente em Python/MATLAB?
+
+\item {} 
+\sphinxAtStartPar
+ Que ferramentas de visualização são adequadas para HOS?
+
+\item {} 
+\sphinxAtStartPar
+ Como otimizar parâmetros computacionais (janelas, sobreposição, etc.)?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\section{🎯 \sphinxstylestrong{Perguntas de Pesquisa Avançada}}
+\label{\detokenize{oppenhein:perguntas-de-pesquisa-avancada}}
+
+\subsection{💡 \sphinxstylestrong{Inovação e Contribuição}}
+\label{\detokenize{oppenhein:inovacao-e-contribuicao}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{🌟 Foco:} Contribuições originais e avanços
+\end{quote}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Que limitações das técnicas HOS atuais posso superar?
+
+\item {} 
+\sphinxAtStartPar
+ Como combinar HOS com outras técnicas (wavelets, análise de modulação)?
+
+\item {} 
+\sphinxAtStartPar
+ Que novas características posso extrair para diferentes tipos de falhas?
+
+\item {} 
+\sphinxAtStartPar
+ Como generalizar a metodologia para diferentes tipos de máquinas?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\subsection{🏭 \sphinxstylestrong{Aplicação Industrial}}
+\label{\detokenize{oppenhein:aplicacao-industrial}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{🔧 Foco:} Viabilidade e aplicabilidade prática
+\end{quote}
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Como tornar a metodologia robusta para condições operacionais reais?
+
+\item {} 
+\sphinxAtStartPar
+ Que simplificações são aceitáveis sem perder eficácia?
+
+\item {} 
+\sphinxAtStartPar
+ Como integrar com sistemas de monitoramento online?
+
+\item {} 
+\sphinxAtStartPar
+ Qual o custo\sphinxhyphen{}benefício vs. técnicas tradicionais?
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\section{🎓 \sphinxstylestrong{Dica de Pesquisador Sênior}}
+\label{\detokenize{oppenhein:dica-de-pesquisador-senior}}\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{💡 Abordagem Ativa de Leitura}
+\end{quote}
+
+
+\subsection{🚨 \sphinxstylestrong{Não leia passivamente!}}
+\label{\detokenize{oppenhein:nao-leia-passivamente}}
+\sphinxAtStartPar
+Para cada conceito, pergunte\sphinxhyphen{}se:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{“Como isso se aplica ao meu problema?”}
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{“Que limitações isso tem?”}
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{“Como posso estender ou melhorar isso?”}
+
+\item {} 
+\sphinxAtStartPar
+ \sphinxstylestrong{“Que perguntas isso gera para pesquisa futura?”}
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+
+
+\subsection{🎯 \sphinxstylestrong{Resultado Esperado}}
+\label{\detokenize{oppenhein:resultado-esperado}}
+\sphinxAtStartPar
+Essa abordagem ativa transformará sua leitura em uma \sphinxstylestrong{ferramenta poderosa} para desenvolver uma dissertação \sphinxstylestrong{inovadora} e \sphinxstylestrong{tecnicamente sólida}.
+
+
+\bigskip\hrule\bigskip
+
+
+
+\section{📝 \sphinxstylestrong{Resumo de Progresso}}
+\label{\detokenize{oppenhein:resumo-de-progresso}}
+
+\subsection{✅ \sphinxstylestrong{Checklist Geral}}
+\label{\detokenize{oppenhein:checklist-geral}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+ Revisar capítulos fundamentais (1\sphinxhyphen{}2, 3, 4, 5, 7)
+
+\item {} 
+\sphinxAtStartPar
+ Responder perguntas específicas por capítulo
+
+\item {} 
+\sphinxAtStartPar
+ Dominar conceitos de HOS
+
+\item {} 
+\sphinxAtStartPar
+ Desenvolver metodologia de validação
+
+\item {} 
+\sphinxAtStartPar
+ Implementar soluções computacionais
+
+\item {} 
+\sphinxAtStartPar
+ Identificar contribuições originais
+
+\item {} 
+\sphinxAtStartPar
+ Avaliar aplicabilidade industrial
+
+\end{itemize}
+
+
+\bigskip\hrule\bigskip
+
+\begin{quote}
+
+\sphinxAtStartPar
+\sphinxstylestrong{📚 Recursos Adicionais:} Considere complementar com literatura específica sobre HOS, análise de vibração e detecção de falhas em máquinas rotativas.
+\end{quote}
 
 \sphinxstepscope
 
 
 \chapter{Da Incerteza à Previsão}
-\label{\detokenize{motivacao:da-incerteza-a-previsao}}\label{\detokenize{motivacao::doc}}
+\label{\detokenize{aula_01/motivacao:da-incerteza-a-previsao}}\label{\detokenize{aula_01/motivacao::doc}}
 
 \section{Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios}
-\label{\detokenize{motivacao:como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios}}
+\label{\detokenize{aula_01/motivacao:como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios}}
 \sphinxAtStartPar
 \sphinxstylestrong{Resumo:} A análise de sinais é um campo fundamental da engenharia e da física, tradicionalmente dividindo os sinais em duas categorias: determinísticos e aleatórios. Enquanto os primeiros são completamente previsíveis por meio de funções matemáticas, os últimos apresentam uma natureza imprevisível que desafia a análise direta. Este artigo explora como a interação de sinais aleatórios com sistemas dinâmicos — entidades físicas com massa, amortecimento e rigidez — atua como um processo de filtragem, revelando padrões e permitindo uma análise preditiva através de métodos estatísticos.
 
 
 \section{A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios}
-\label{\detokenize{motivacao:a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios}}
+\label{\detokenize{aula_01/motivacao:a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios}}
 \sphinxAtStartPar
 No campo do processamento de sinais, a primeira etapa de qualquer análise é a classificação do sinal. Conforme destacado pelo professor Duarte, essa classificação se divide em dois grandes grupos:
 
 \sphinxAtStartPar
-\sphinxstylestrong{Sinais Determinísticos:} São aqueles cujo comportamento pode ser descrito com precisão por uma função matemática explícita. O valor do sinal em qualquer instante futuro é conhecido, desde que suas condições iniciais e a função que o rege sejam conhecidas. Um exemplo clássico, citado na explanação, é o sinal de vibração gerado pelo desbalanceamento de um rotor. A não coincidência entre o centro de massa e o centro geométrico de rotação gera uma força centrífuga que se manifesta como uma vibração senoidal ou cossenoidal, perfeitamente modelável {[}\hyperlink{cite.motivacao:id6}{1}{]}. A equação que descreve essa força de desbalanceamento é dada por:
+\sphinxstylestrong{Sinais Determinísticos:} São aqueles cujo comportamento pode ser descrito com precisão por uma função matemática explícita. O valor do sinal em qualquer instante futuro é conhecido, desde que suas condições iniciais e a função que o rege sejam conhecidas. Um exemplo clássico, citado na explanação, é o sinal de vibração gerado pelo desbalanceamento de um rotor. A não coincidência entre o centro de massa e o centro geométrico de rotação gera uma força centrífuga que se manifesta como uma vibração senoidal ou cossenoidal, perfeitamente modelável {[}\hyperlink{cite.aula_01/motivacao:id6}{1}{]}. A equação que descreve essa força de desbalanceamento é dada por:
 \begin{equation*}
 \begin{split}F_u = m_u \cdot e \cdot \omega^2 \sin(\omega t)\end{split}
 \end{equation*}
@@ -126,11 +655,11 @@ No campo do processamento de sinais, a primeira etapa de qualquer análise é a 
 onde \(m_u\) é a massa desbalanceada, \(e\) é a excentricidade, e \(\omega\) é a velocidade angular.
 
 \sphinxAtStartPar
-\sphinxstylestrong{Sinais Aleatórios (ou Estocásticos):} Em contraste, são sinais cujo valor futuro não pode ser previsto com exatidão a partir de seus valores passados. Eles não seguem um padrão repetitivo e devem ser caracterizados por suas propriedades estatísticas, como média (\(\mu\)), variância (\(\sigma^2\)) e densidade espectral de potência (\(S_{xx}(f)\)). Exemplos comuns incluem o ruído térmico em um circuito eletrônico, a turbulência de um fluido ou as ondas do mar que atuam sobre um navio {[}\hyperlink{cite.motivacao:id7}{2}{]}.
+\sphinxstylestrong{Sinais Aleatórios (ou Estocásticos):} Em contraste, são sinais cujo valor futuro não pode ser previsto com exatidão a partir de seus valores passados. Eles não seguem um padrão repetitivo e devem ser caracterizados por suas propriedades estatísticas, como média (\(\mu\)), variância (\(\sigma^2\)) e densidade espectral de potência (\(S_{xx}(f)\)). Exemplos comuns incluem o ruído térmico em um circuito eletrônico, a turbulência de um fluido ou as ondas do mar que atuam sobre um navio {[}\hyperlink{cite.aula_01/motivacao:id7}{2}{]}.
 
 
 \section{O Paradoxo da Análise Aleatória}
-\label{\detokenize{motivacao:o-paradoxo-da-analise-aleatoria}}
+\label{\detokenize{aula_01/motivacao:o-paradoxo-da-analise-aleatoria}}
 \sphinxAtStartPar
 A natureza imprevisível dos sinais aleatórios levanta uma questão fundamental: se não podemos prever o que acontecerá no próximo instante, qual o propósito de analisá\sphinxhyphen{}los? A resposta, como elucidado pelo professor Duarte, não está no sinal em si, mas na sua interação com um sistema dinâmico.
 
@@ -141,12 +670,12 @@ Um sistema dinâmico é qualquer sistema físico que possui a capacidade de arma
 \end{equation*}
 
 \section{O Sistema Dinâmico como um Filtro Natural}
-\label{\detokenize{motivacao:o-sistema-dinamico-como-um-filtro-natural}}
+\label{\detokenize{aula_01/motivacao:o-sistema-dinamico-como-um-filtro-natural}}
 \sphinxAtStartPar
 Quando um sinal aleatório atua como uma excitação (entrada) para um sistema dinâmico, o sistema não responde de forma totalmente aleatória. Em vez disso, ele atua como um filtro, moldando a resposta (saída) de acordo com suas próprias características intrínsecas.
 
 \sphinxAtStartPar
-Este conceito de «filtragem» ocorre porque todo sistema dinâmico possui frequências naturais (ou modos de vibração), que são as frequências nas quais o sistema tende a oscilar com maior amplitude quando perturbado. Quando o sinal de entrada aleatório, que pode ser considerado como contendo um amplo espectro de frequências (ruído branco, por exemplo), atravessa o sistema, as componentes de frequência próximas às frequências naturais do sistema são amplificadas, enquanto outras são atenuadas {[}\hyperlink{cite.motivacao:id8}{3}{]}.
+Este conceito de “filtragem” ocorre porque todo sistema dinâmico possui frequências naturais (ou modos de vibração), que são as frequências nas quais o sistema tende a oscilar com maior amplitude quando perturbado. Quando o sinal de entrada aleatório, que pode ser considerado como contendo um amplo espectro de frequências (ruído branco, por exemplo), atravessa o sistema, as componentes de frequência próximas às frequências naturais do sistema são amplificadas, enquanto outras são atenuadas {[}\hyperlink{cite.aula_01/motivacao:id8}{3}{]}.
 
 \sphinxAtStartPar
 Matematicamente, em um contexto digital, a resposta do sistema em um instante \(k\), \(x[k]\), depende dos valores passados da resposta e da excitação. Uma forma discretizada da equação do movimento pode ser expressa como uma equação de diferenças:
@@ -163,9 +692,9 @@ onde \(h(t)\) é a resposta ao impulso do sistema.
 
 
 \section{Da Aleatoriedade à Análise Estatística Estruturada}
-\label{\detokenize{motivacao:da-aleatoriedade-a-analise-estatistica-estruturada}}
+\label{\detokenize{aula_01/motivacao:da-aleatoriedade-a-analise-estatistica-estruturada}}
 \sphinxAtStartPar
-O resultado deste processo é que o sinal de saída, embora ainda possua um caráter aleatório, não é mais «totalmente bagunçado». Ele carrega a «assinatura» do sistema dinâmico pelo qual passou. As frequências dominantes no sinal de resposta correspondem às frequências naturais do sistema.
+O resultado deste processo é que o sinal de saída, embora ainda possua um caráter aleatório, não é mais “totalmente bagunçado”. Ele carrega a “assinatura” do sistema dinâmico pelo qual passou. As frequências dominantes no sinal de resposta correspondem às frequências naturais do sistema.
 
 \sphinxAtStartPar
 Portanto, ao analisar estatisticamente o sinal de resposta — por exemplo, calculando sua \sphinxstylestrong{Densidade Espectral de Potência} (PSD):
@@ -173,30 +702,981 @@ Portanto, ao analisar estatisticamente o sinal de resposta — por exemplo, calc
 \begin{split}S_{yy}(f) = |H(f)|^2 S_{xx}(f)\end{split}
 \end{equation*}
 \sphinxAtStartPar
-onde \(S_{xx}(f)\) é a PSD do sinal de entrada e \(H(f)\) é a função de transferência do sistema — podemos identificar esses picos de energia e, a partir deles, inferir propriedades críticas do sistema físico, como sua rigidez, amortecimento e possíveis danos estruturais {[}\hyperlink{cite.motivacao:id9}{4}{]}. É assim que a análise de vibrações em uma ponte excitada pelo vento (sinal aleatório) pode revelar sua saúde estrutural.
+onde \(S_{xx}(f)\) é a PSD do sinal de entrada e \(H(f)\) é a função de transferência do sistema — podemos identificar esses picos de energia e, a partir deles, inferir propriedades críticas do sistema físico, como sua rigidez, amortecimento e possíveis danos estruturais {[}\hyperlink{cite.aula_01/motivacao:id9}{4}{]}. É assim que a análise de vibrações em uma ponte excitada pelo vento (sinal aleatório) pode revelar sua saúde estrutural.
 
 
 \section{Conclusão}
-\label{\detokenize{motivacao:conclusao}}
+\label{\detokenize{aula_01/motivacao:conclusao}}
 \sphinxAtStartPar
 A análise de sinais aleatórios, longe de ser um exercício fútil, é uma ferramenta poderosa para entender o mundo físico. A chave para desvendar a informação contida em um sinal aparentemente caótico é reconhecer o papel fundamental dos sistemas dinâmicos. Ao atuarem como filtros naturais, esses sistemas impõem uma ordem à aleatoriedade, permitindo que, através de ferramentas estatísticas, possamos extrair informações valiosas sobre suas próprias características. A aparente imprevisibilidade da entrada se transforma em conhecimento sobre o sistema, tornando a análise de sinais aleatórios um pilar essencial para o diagnóstico de falhas, o monitoramento de estruturas e o projeto de sistemas robustos.
 
 
 \section{Referências}
-\label{\detokenize{motivacao:referencias}}
+\label{\detokenize{aula_01/motivacao:referencias}}
+\sphinxstepscope
+
+
+\chapter{Signals}
+\label{\detokenize{aula_01/signals:signals}}\label{\detokenize{aula_01/signals::doc}}
+
+\section{Definition of Signals}
+\label{\detokenize{aula_01/signals:definition-of-signals}}
+\sphinxAtStartPar
+A \sphinxstylestrong{signal} is a function that carries information about a physical phenomenon {[}\hyperlink{cite.aula_01/signals:id7}{1}{]}. In the context of signals and systems, we typically deal with signals that vary with time.
+
+\sphinxAtStartPar
+Mathematically, a signal can be represented as:
+\begin{equation*}
+\begin{split}x(t) \quad \text{for continuous-time signals}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}x[n] \quad \text{for discrete-time signals}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+where:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\(t\) is a continuous variable (time)
+
+\item {} 
+\sphinxAtStartPar
+\(n\) is a discrete variable (sample number)
+
+\end{itemize}
+
+
+\section{Classification of Signals}
+\label{\detokenize{aula_01/signals:classification-of-signals}}
+
+\subsection{Continuous\sphinxhyphen{}time vs Discrete\sphinxhyphen{}time}
+\label{\detokenize{aula_01/signals:continuous-time-vs-discrete-time}}
+\sphinxAtStartPar
+\sphinxstylestrong{Continuous\sphinxhyphen{}time signals} are defined for all values of time \(t\) in a continuous interval.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Discrete\sphinxhyphen{}time signals} are defined only at discrete time instants, typically at regular intervals.
+
+
+\subsection{Analog vs Digital}
+\label{\detokenize{aula_01/signals:analog-vs-digital}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Analog signals}: Continuous in both time and amplitude
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Digital signals}: Discrete in both time and amplitude
+
+\end{itemize}
+
+
+\subsection{Periodic vs Aperiodic}
+\label{\detokenize{aula_01/signals:periodic-vs-aperiodic}}
+\sphinxAtStartPar
+A signal \(x(t)\) is \sphinxstylestrong{periodic} if there exists a positive constant \(T\) such that:
+\begin{equation*}
+\begin{split}x(t) = x(t + T) \quad \text{for all } t\end{split}
+\end{equation*}
+\sphinxAtStartPar
+The smallest such \(T\) is called the \sphinxstylestrong{fundamental period}.
+
+
+\subsection{Even vs Odd}
+\label{\detokenize{aula_01/signals:even-vs-odd}}
+\sphinxAtStartPar
+A signal is \sphinxstylestrong{even} if:
+\begin{equation*}
+\begin{split}x(t) = x(-t)\end{split}
+\end{equation*}
+
+\sphinxAtStartPar
+A signal is \sphinxstylestrong{odd} if:
+\begin{equation*}
+\begin{split}x(t) = -x(-t)\end{split}
+\end{equation*}
+
+
+\section{Common Signals}
+\label{\detokenize{aula_01/signals:common-signals}}
+
+\subsection{Unit Step Function}
+\label{\detokenize{aula_01/signals:unit-step-function}}\begin{equation*}
+\begin{split}u(t) = \begin{cases}
+1 & \text{if } t \geq 0 \\
+0 & \text{if } t < 0
+\end{cases}\end{split}
+\end{equation*}
+
+\subsection{Unit Impulse Function (Dirac Delta)}
+\label{\detokenize{aula_01/signals:unit-impulse-function-dirac-delta}}\begin{equation*}
+\begin{split}\delta(t) = \begin{cases}
+\infty & \text{if } t = 0 \\
+0 & \text{if } t \neq 0
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+with the property:
+\begin{equation*}
+\begin{split}\int_{-\infty}^{\infty} \delta(t) \, dt = 1\end{split}
+\end{equation*}
+
+
+\subsection{Sinusoidal Signals}
+\label{\detokenize{aula_01/signals:sinusoidal-signals}}\begin{equation*}
+\begin{split}x(t) = A \cos(\omega t + \phi)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+where:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\(A\) is the amplitude
+
+\item {} 
+\sphinxAtStartPar
+\(\omega\) is the angular frequency (rad/s)
+
+\item {} 
+\sphinxAtStartPar
+\(\phi\) is the phase (rad)
+
+\end{itemize}
+
+
+\section{Interactive Examples}
+\label{\detokenize{aula_01/signals:interactive-examples}}
+\sphinxAtStartPar
+Let’s explore some of these signals using Python:
+
+\begin{sphinxuseclass}{cell}
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Unit step function}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{unit\PYGZus{}step}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{t} \PYG{o}{\PYGZgt{}}\PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit impulse approximation}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{unit\PYGZus{}impulse}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mf}{0.1}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{\PYGZlt{}}\PYG{o}{=} \PYG{n}{width}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{n}{width}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Plot the signals}
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit step}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{unit\PYGZus{}step}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Unit Step Function u(t)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit impulse}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{unit\PYGZus{}impulse}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Unit Impulse Function \PYGZdl{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{delta(t)\PYGZdl{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Sinusoidal signal}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{g\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sinusoidal Signal}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Even and odd components}
+\PYG{n}{x\PYGZus{}even} \PYG{o}{=} \PYG{l+m+mf}{0.5} \PYG{o}{*} \PYG{p}{(}\PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{+} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{x\PYGZus{}odd} \PYG{o}{=} \PYG{l+m+mf}{0.5} \PYG{o}{*} \PYG{p}{(}\PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{x\PYGZus{}even}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Even component}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{x\PYGZus{}odd}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Odd component}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Even and Odd Components}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell_output}
+\noindent\sphinxincludegraphics{{d315ef2bef97ba37bb0ce56ce624b609fb07e79a2638e7dbc9653baa0ca98e57}.png}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+
+\section{Energy and Power}
+\label{\detokenize{aula_01/signals:energy-and-power}}
+\sphinxAtStartPar
+For a signal \(x(t)\), we define:
+
+\sphinxAtStartPar
+\sphinxstylestrong{Energy}:
+\begin{equation*}
+\begin{split}E = \int_{-\infty}^{\infty} |x(t)|^2 \, dt\end{split}
+\end{equation*}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Power} (for periodic signals):
+\begin{equation*}
+\begin{split}P = \frac{1}{T} \int_0^T |x(t)|^2 \, dt\end{split}
+\end{equation*}
+
+\sphinxAtStartPar
+A signal is called:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Energy signal} if \(E < \infty\) and \(P = 0\)
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Power signal} if \(P < \infty\) and \(E = \infty\)
+
+\end{itemize}
+
+
+\section{Referências}
+\label{\detokenize{aula_01/signals:referencias}}
+\sphinxstepscope
+
+
+\chapter{Signals}
+\label{\detokenize{aula_01/fft:signals}}\label{\detokenize{aula_01/fft::doc}}
+
+\section{Definition of Signals}
+\label{\detokenize{aula_01/fft:definition-of-signals}}
+\sphinxAtStartPar
+A \sphinxstylestrong{signal} is a function that carries information about a physical phenomenon. In the context of signals and systems, we typically deal with signals that vary with time.
+
+\sphinxAtStartPar
+Mathematically, a signal can be represented as:
+\begin{equation*}
+\begin{split}x(t) \quad \text{for continuous-time signals}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}x[n] \quad \text{for discrete-time signals}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+where:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\(t\) is a continuous variable (time)
+
+\item {} 
+\sphinxAtStartPar
+\(n\) is a discrete variable (sample number)
+
+\end{itemize}
+
+
+\section{Classification of Signals}
+\label{\detokenize{aula_01/fft:classification-of-signals}}
+
+\subsection{Continuous\sphinxhyphen{}time vs Discrete\sphinxhyphen{}time}
+\label{\detokenize{aula_01/fft:continuous-time-vs-discrete-time}}
+\sphinxAtStartPar
+\sphinxstylestrong{Continuous\sphinxhyphen{}time signals} are defined for all values of time \(t\) in a continuous interval.
+
+\sphinxAtStartPar
+\sphinxstylestrong{Discrete\sphinxhyphen{}time signals} are defined only at discrete time instants, typically at regular intervals.
+
+
+\subsection{Analog vs Digital}
+\label{\detokenize{aula_01/fft:analog-vs-digital}}\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Analog signals}: Continuous in both time and amplitude
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Digital signals}: Discrete in both time and amplitude
+
+\end{itemize}
+
+
+\subsection{Periodic vs Aperiodic}
+\label{\detokenize{aula_01/fft:periodic-vs-aperiodic}}
+\sphinxAtStartPar
+A signal \(x(t)\) is \sphinxstylestrong{periodic} if there exists a positive constant \(T\) such that:
+\begin{equation*}
+\begin{split}x(t) = x(t + T) \quad \text{for all } t\end{split}
+\end{equation*}
+\sphinxAtStartPar
+The smallest such \(T\) is called the \sphinxstylestrong{fundamental period}.
+
+
+\subsection{Even vs Odd}
+\label{\detokenize{aula_01/fft:even-vs-odd}}
+\sphinxAtStartPar
+A signal is \sphinxstylestrong{even} if:
+\begin{equation*}
+\begin{split}x(t) = x(-t)\end{split}
+\end{equation*}
+
+\sphinxAtStartPar
+A signal is \sphinxstylestrong{odd} if:
+\begin{equation*}
+\begin{split}x(t) = -x(-t)\end{split}
+\end{equation*}
+
+
+\section{Common Signals}
+\label{\detokenize{aula_01/fft:common-signals}}
+
+\subsection{Unit Step Function}
+\label{\detokenize{aula_01/fft:unit-step-function}}\begin{equation*}
+\begin{split}u(t) = \begin{cases}
+1 & \text{if } t \geq 0 \\
+0 & \text{if } t < 0
+\end{cases}\end{split}
+\end{equation*}
+
+\subsection{Unit Impulse Function (Dirac Delta)}
+\label{\detokenize{aula_01/fft:unit-impulse-function-dirac-delta}}\begin{equation*}
+\begin{split}\delta(t) = \begin{cases}
+\infty & \text{if } t = 0 \\
+0 & \text{if } t \neq 0
+\end{cases}\end{split}
+\end{equation*}
+\sphinxAtStartPar
+with the property:
+\begin{equation*}
+\begin{split}\int_{-\infty}^{\infty} \delta(t) \, dt = 1\end{split}
+\end{equation*}
+
+
+\subsection{Sinusoidal Signals}
+\label{\detokenize{aula_01/fft:sinusoidal-signals}}\begin{equation*}
+\begin{split}x(t) = A \cos(\omega t + \phi)\end{split}
+\end{equation*}
+\sphinxAtStartPar
+where:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\(A\) is the amplitude
+
+\item {} 
+\sphinxAtStartPar
+\(\omega\) is the angular frequency (rad/s)
+
+\item {} 
+\sphinxAtStartPar
+\(\phi\) is the phase (rad)
+
+\end{itemize}
+
+
+\section{Interactive Examples}
+\label{\detokenize{aula_01/fft:interactive-examples}}
+\sphinxAtStartPar
+Let’s explore some of these signals using Python:
+
+\begin{sphinxuseclass}{cell}
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+
+\PYG{c+c1}{\PYGZsh{} Time vector}
+\PYG{n}{t} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1000}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit step function}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{unit\PYGZus{}step}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{t} \PYG{o}{\PYGZgt{}}\PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit impulse approximation}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{unit\PYGZus{}impulse}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mf}{0.1}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{\PYGZlt{}}\PYG{o}{=} \PYG{n}{width}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{n}{width}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Sinusoidal signal}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{A} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{omega} \PYG{o}{*} \PYG{n}{t} \PYG{o}{+} \PYG{n}{phi}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Plot the signals}
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit step}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{unit\PYGZus{}step}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Unit Step Function u(t)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit impulse}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{unit\PYGZus{}impulse}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Unit Impulse Function δ(t)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Sinusoidal signal}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{g\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sinusoidal Signal}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Even and odd components}
+\PYG{n}{x\PYGZus{}even} \PYG{o}{=} \PYG{l+m+mf}{0.5} \PYG{o}{*} \PYG{p}{(}\PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{+} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{x\PYGZus{}odd} \PYG{o}{=} \PYG{l+m+mf}{0.5} \PYG{o}{*} \PYG{p}{(}\PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{x\PYGZus{}even}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Even component}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{x\PYGZus{}odd}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Odd component}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Even and Odd Components}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell_output}
+\noindent\sphinxincludegraphics{{3e11d0f287f551bc940a07e7ad5ffbc2efd80349a4db91334952c4bf1597befa}.png}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell}
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+
+\PYG{c+c1}{\PYGZsh{} Sinusoidal signal function}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{A} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{omega} \PYG{o}{*} \PYG{n}{t} \PYG{o}{+} \PYG{n}{phi}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} RMS calculation function}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{rms}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{square}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Peak\PYGZhy{}to\PYGZhy{}peak calculation function}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{pk2pk}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{max}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{np}\PYG{o}{.}\PYG{n}{min}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Time vector}
+\PYG{n}{t} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1000}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Create three base signals with different frequencies}
+\PYG{n}{s1} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}      \PYG{c+c1}{\PYGZsh{} 5 Hz}
+\PYG{n}{s2} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mf}{0.8}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{15}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{/}\PYG{l+m+mi}{4}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} 15 Hz, phase π/4}
+\PYG{n}{s3} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mf}{0.6}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{25}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} 25 Hz, phase π/2}
+
+\PYG{c+c1}{\PYGZsh{} Combination 1: All signals with original phases}
+\PYG{n}{x1} \PYG{o}{=} \PYG{n}{s1} \PYG{o}{+} \PYG{n}{s2} \PYG{o}{+} \PYG{n}{s3}
+
+\PYG{c+c1}{\PYGZsh{} Combination 2: Same signals but with different phase relationships}
+\PYG{n}{s1\PYGZus{}mod} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{/}\PYG{l+m+mi}{3}\PYG{p}{)}
+\PYG{n}{s2\PYGZus{}mod} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mf}{0.8}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{15}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{/}\PYG{l+m+mi}{6}\PYG{p}{)}
+\PYG{n}{s3\PYGZus{}mod} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mf}{0.6}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{25}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{/}\PYG{l+m+mi}{3}\PYG{p}{)}
+\PYG{n}{x2} \PYG{o}{=} \PYG{n}{s1\PYGZus{}mod} \PYG{o}{+} \PYG{n}{s2\PYGZus{}mod} \PYG{o}{+} \PYG{n}{s3\PYGZus{}mod}
+
+\PYG{c+c1}{\PYGZsh{} Calculate RMS and pk\PYGZhy{}pk values}
+\PYG{n}{rms\PYGZus{}x1} \PYG{o}{=} \PYG{n}{rms}\PYG{p}{(}\PYG{n}{x1}\PYG{p}{)}
+\PYG{n}{rms\PYGZus{}x2} \PYG{o}{=} \PYG{n}{rms}\PYG{p}{(}\PYG{n}{x2}\PYG{p}{)}
+\PYG{n}{pkpk\PYGZus{}x1} \PYG{o}{=} \PYG{n}{pk2pk}\PYG{p}{(}\PYG{n}{x1}\PYG{p}{)}
+\PYG{n}{pkpk\PYGZus{}x2} \PYG{o}{=} \PYG{n}{pk2pk}\PYG{p}{(}\PYG{n}{x2}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Calculate percent differences}
+\PYG{n}{rms\PYGZus{}diff} \PYG{o}{=} \PYG{n+nb}{abs}\PYG{p}{(}\PYG{n}{rms\PYGZus{}x1} \PYG{o}{\PYGZhy{}} \PYG{n}{rms\PYGZus{}x2}\PYG{p}{)}
+\PYG{n}{pkpk\PYGZus{}diff} \PYG{o}{=} \PYG{n+nb}{abs}\PYG{p}{(}\PYG{n}{pkpk\PYGZus{}x1} \PYG{o}{\PYGZhy{}} \PYG{n}{pkpk\PYGZus{}x2}\PYG{p}{)}
+\PYG{n}{rms\PYGZus{}perc} \PYG{o}{=} \PYG{l+m+mi}{100} \PYG{o}{*} \PYG{n}{rms\PYGZus{}diff} \PYG{o}{/} \PYG{n}{rms\PYGZus{}x1} \PYG{k}{if} \PYG{n}{rms\PYGZus{}x1} \PYG{o}{!=} \PYG{l+m+mi}{0} \PYG{k}{else} \PYG{l+m+mi}{0}
+\PYG{n}{pkpk\PYGZus{}perc} \PYG{o}{=} \PYG{l+m+mi}{100} \PYG{o}{*} \PYG{n}{pkpk\PYGZus{}diff} \PYG{o}{/} \PYG{n}{pkpk\PYGZus{}x1} \PYG{k}{if} \PYG{n}{pkpk\PYGZus{}x1} \PYG{o}{!=} \PYG{l+m+mi}{0} \PYG{k}{else} \PYG{l+m+mi}{0}
+
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{RMS of signal x1: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}x1}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{RMS of signal x2: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}x2}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pk\PYGZhy{}Pk of signal x1: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{pkpk\PYGZus{}x1}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Pk\PYGZhy{}Pk of signal x2: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{pkpk\PYGZus{}x2}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Absolute difference in RMS: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}diff}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Percentual difference in RMS: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}perc}\PYG{l+s+si}{:}\PYG{l+s+s2}{.2f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZpc{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Absolute difference in Pk\PYGZhy{}Pk: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{pkpk\PYGZus{}diff}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Percentual difference in Pk\PYGZhy{}Pk: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{pkpk\PYGZus{}perc}\PYG{l+s+si}{:}\PYG{l+s+s2}{.2f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZpc{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Compute FFTs}
+\PYG{n}{X1} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fft}\PYG{p}{(}\PYG{n}{x1}\PYG{p}{)}
+\PYG{n}{X2} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fft}\PYG{p}{(}\PYG{n}{x2}\PYG{p}{)}
+\PYG{n}{freqs} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fftfreq}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{n}{d}\PYG{o}{=}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Only plot the positive frequencies}
+\PYG{n}{idx} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{argsort}\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{)}
+\PYG{n}{freqs\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{freqs}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{X1\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{X1}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{X2\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{X2}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{pos\PYGZus{}mask} \PYG{o}{=} \PYG{n}{freqs\PYGZus{}sorted} \PYG{o}{\PYGZgt{}}\PYG{o}{=} \PYG{l+m+mi}{0}
+
+\PYG{c+c1}{\PYGZsh{} Create a comprehensive visualization}
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{15}\PYG{p}{,} \PYG{l+m+mi}{12}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n+nb}{slice} \PYG{o}{=} \PYG{l+m+mi}{200}  \PYG{c+c1}{\PYGZsh{} Show more of the signal for better visualization}
+
+\PYG{c+c1}{\PYGZsh{} First row: time domain signals}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{x1}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mf}{1.5}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{x1}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Combined Signal x1 (RMS = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}x1}\PYG{l+s+si}{:}\PYG{l+s+s1}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{, Pk\PYGZhy{}Pk = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{pkpk\PYGZus{}x1}\PYG{l+s+si}{:}\PYG{l+s+s1}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.3}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{x2}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mf}{1.5}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{x2}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Combined Signal x2 (RMS = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}x2}\PYG{l+s+si}{:}\PYG{l+s+s1}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{, Pk\PYGZhy{}Pk = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{pkpk\PYGZus{}x2}\PYG{l+s+si}{:}\PYG{l+s+s1}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.3}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Second row: FFT Magnitude spectra}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{X1\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{bo}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Magnitude Spectrum \PYGZhy{} x1}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Magnitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.3}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{40}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{X2\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ro}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Magnitude Spectrum \PYGZhy{} x2}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Magnitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.3}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{40}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Third row: FFT Phase spectra}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{angle}\PYG{p}{(}\PYG{n}{X1\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{bo}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Phase Spectrum \PYGZhy{} x1}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Phase (radians)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.3}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{40}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{angle}\PYG{p}{(}\PYG{n}{X2\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ro}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Phase Spectrum \PYGZhy{} x2}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Phase (radians)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{alpha}\PYG{o}{=}\PYG{l+m+mf}{0.3}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlim}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{40}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Analysis}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{o}{*}\PYG{l+m+mi}{60}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{ANALYSIS:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{=}\PYG{l+s+s2}{\PYGZdq{}}\PYG{o}{*}\PYG{l+m+mi}{60}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Both signals x1 and x2 contain the same frequency components:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} 5 Hz (fundamental frequency)}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} 15 Hz (third harmonic)}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}  
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} 25 Hz (fifth harmonic)}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{The FFT magnitude spectra are nearly identical because:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} Both signals have the same frequency content}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} Only the phases of individual components differ}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} FFT magnitude is independent of phase information}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{However, the RMS and pk\PYGZhy{}pk values are different because:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} Different phase relationships cause constructive/destructive interference}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} RMS depends on the instantaneous power, which varies with phase}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} Pk\PYGZhy{}Pk (peak\PYGZhy{}to\PYGZhy{}peak) value also depends on phase relationships}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{\PYGZhy{} This demonstrates how phase affects signal energy distribution and amplitude range}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Percentual difference in RMS: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}perc}\PYG{l+s+si}{:}\PYG{l+s+s2}{.2f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZpc{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Percentual difference in Pk\PYGZhy{}Pk: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{pkpk\PYGZus{}perc}\PYG{l+s+si}{:}\PYG{l+s+s2}{.2f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZpc{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell_output}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+RMS of signal x1: 1.001
+RMS of signal x2: 1.000
+Pk\PYGZhy{}Pk of signal x1: 4.703
+Pk\PYGZhy{}Pk of signal x2: 3.640
+Absolute difference in RMS: 0.001
+Percentual difference in RMS: 0.11\PYGZpc{}
+Absolute difference in Pk\PYGZhy{}Pk: 1.063
+Percentual difference in Pk\PYGZhy{}Pk: 22.60\PYGZpc{}
+\end{sphinxVerbatim}
+
+\noindent\sphinxincludegraphics{{e99fd98e72104b3692e1c1b9d966899a0fcdd303ea6fc82515998bd41381b089}.png}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+============================================================
+ANALYSIS:
+============================================================
+Both signals x1 and x2 contain the same frequency components:
+\PYGZhy{} 5 Hz (fundamental frequency)
+\PYGZhy{} 15 Hz (third harmonic)
+\PYGZhy{} 25 Hz (fifth harmonic)
+
+The FFT magnitude spectra are nearly identical because:
+\PYGZhy{} Both signals have the same frequency content
+\PYGZhy{} Only the phases of individual components differ
+\PYGZhy{} FFT magnitude is independent of phase information
+
+However, the RMS and pk\PYGZhy{}pk values are different because:
+\PYGZhy{} Different phase relationships cause constructive/destructive interference
+\PYGZhy{} RMS depends on the instantaneous power, which varies with phase
+\PYGZhy{} Pk\PYGZhy{}Pk (peak\PYGZhy{}to\PYGZhy{}peak) value also depends on phase relationships
+\PYGZhy{} This demonstrates how phase affects signal energy distribution and amplitude range
+
+Percentual difference in RMS: 0.11\PYGZpc{}
+Percentual difference in Pk\PYGZhy{}Pk: 22.60\PYGZpc{}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell}
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+
+\PYG{c+c1}{\PYGZsh{} Sinusoidal signal}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{A} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{omega} \PYG{o}{*} \PYG{n}{t} \PYG{o}{+} \PYG{n}{phi}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} RMS calculation function}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{rms}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{square}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Time vector}
+\PYG{n}{t} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1000}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Two signals with same frequency and amplitude, but different phases}
+\PYG{n}{y1} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{y2} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{30}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{y3} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{l+m+mi}{30}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{o}{\PYGZhy{}}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{n}{x1} \PYG{o}{=} \PYG{n}{y1} \PYG{o}{+} \PYG{n}{y2}
+\PYG{n}{x2} \PYG{o}{=} \PYG{n}{y1} \PYG{o}{+} \PYG{n}{y3}
+
+\PYG{c+c1}{\PYGZsh{} Compute FFTs}
+\PYG{n}{X1} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fft}\PYG{p}{(}\PYG{n}{x1}\PYG{p}{)}
+\PYG{n}{X2} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fft}\PYG{p}{(}\PYG{n}{x2}\PYG{p}{)}
+\PYG{n}{freqs} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fftfreq}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{n}{d}\PYG{o}{=}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Only plot the positive frequencies}
+\PYG{n}{idx} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{argsort}\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{)}
+\PYG{n}{freqs\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{freqs}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{X1\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{X1}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{X2\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{X2}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{pos\PYGZus{}mask} \PYG{o}{=} \PYG{n}{freqs\PYGZus{}sorted} \PYG{o}{\PYGZgt{}}\PYG{o}{=} \PYG{l+m+mi}{0}
+
+\PYG{c+c1}{\PYGZsh{} Create a 3\PYGZhy{}row, 2\PYGZhy{}column grid: }
+\PYG{c+c1}{\PYGZsh{} (1,1) and (1,2): time domain (merged)}
+\PYG{c+c1}{\PYGZsh{} (2,1): FFT magnitude of x1, (2,2): FFT magnitude of x2}
+\PYG{c+c1}{\PYGZsh{} (3,1): FFT phase of x1, (3,2): FFT phase of x2}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{14}\PYG{p}{,} \PYG{l+m+mi}{14}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n+nb}{slice} \PYG{o}{=} \PYG{l+m+mi}{100}
+
+\PYG{c+c1}{\PYGZsh{} Calculate RMS values for the time domain signals (over the full signal)}
+\PYG{n}{rms\PYGZus{}x1} \PYG{o}{=} \PYG{n}{rms}\PYG{p}{(}\PYG{n}{x1}\PYG{p}{)}
+\PYG{n}{rms\PYGZus{}x2} \PYG{o}{=} \PYG{n}{rms}\PYG{p}{(}\PYG{n}{x2}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} First row: time domain, left: x1, right: x2}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{x1}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Phase 0}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sinusoid (Phase 0)}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{RMS = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}x1}\PYG{l+s+si}{:}\PYG{l+s+s1}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{x2}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Phase π/2}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sinusoid (Phase π/2)}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{RMS = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}x2}\PYG{l+s+si}{:}\PYG{l+s+s1}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Second row: FFT Magnitude, left for x1, right for x2}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{X1\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{bo}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Magnitude (Phase 0)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Magnitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{X2\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ro}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Magnitude (Phase π/2)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Magnitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Third row: FFT Phase, left for x1, right for x2}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{angle}\PYG{p}{(}\PYG{n}{X1\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{bo}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Phase (Phase 0)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Phase (radians)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{angle}\PYG{p}{(}\PYG{n}{X2\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ro}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Phase (Phase π/2)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Phase (radians)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Demonstration:}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Notice that the FFT magnitude spectra of the two signals are identical,}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{even though the time\PYGZhy{}domain signals are different due to their phase.}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{This shows that the FFT magnitude does not retain phase information.}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell_output}
+\noindent\sphinxincludegraphics{{517ae75de7792e572ba1e1c672a6e686256539f99b92c75f9ad43a6372f864e8}.png}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+Notice that the FFT magnitude spectra of the two signals are identical,
+even though the time\PYGZhy{}domain signals are different due to their phase.
+This shows that the FFT magnitude does not retain phase information.
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell}
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{matplotlib}\PYG{n+nn}{.}\PYG{n+nn}{pyplot}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{plt}
+
+\PYG{c+c1}{\PYGZsh{} Sinusoidal signal}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{A} \PYG{o}{*} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{omega} \PYG{o}{*} \PYG{n}{t} \PYG{o}{+} \PYG{n}{phi}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} RMS calculation function}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{rms}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{square}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Time vector}
+\PYG{n}{t} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1000}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Scenario: Two signals, each a sum of two sinusoids with the same frequencies,}
+\PYG{c+c1}{\PYGZsh{} but with different amplitude combinations, so that their FFT magnitudes are similar}
+\PYG{c+c1}{\PYGZsh{} (same peaks at the same frequencies), but their RMS values are different.}
+
+\PYG{c+c1}{\PYGZsh{} Frequencies}
+\PYG{n}{f1} \PYG{o}{=} \PYG{l+m+mi}{10}  \PYG{c+c1}{\PYGZsh{} Hz}
+\PYG{n}{f2} \PYG{o}{=} \PYG{l+m+mi}{30}  \PYG{c+c1}{\PYGZsh{} Hz}
+
+\PYG{c+c1}{\PYGZsh{} Signal 1: both sinusoids with amplitude 1}
+\PYG{n}{y1} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{n}{f1}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{y2} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{n}{f2}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{x1} \PYG{o}{=} \PYG{n}{y1} \PYG{o}{+} \PYG{n}{y2}
+
+\PYG{c+c1}{\PYGZsh{} Signal 2: both sinusoids with amplitude sqrt(2), but divided by sqrt(2) to keep the FFT peaks at the same height}
+\PYG{c+c1}{\PYGZsh{} (since FFT magnitude is proportional to amplitude, but RMS is sensitive to the sum of squares)}
+\PYG{n}{y1b} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{n}{f1}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{y2b} \PYG{o}{=} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{A}\PYG{o}{=}\PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{,} \PYG{n}{omega}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{o}{*}\PYG{n}{f2}\PYG{p}{,} \PYG{n}{phi}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{n}{x2} \PYG{o}{=} \PYG{p}{(}\PYG{n}{y1b} \PYG{o}{+} \PYG{n}{y2b}\PYG{p}{)} \PYG{o}{/} \PYG{n}{np}\PYG{o}{.}\PYG{n}{sqrt}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Compute FFTs}
+\PYG{n}{X1} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fft}\PYG{p}{(}\PYG{n}{x1}\PYG{p}{)}
+\PYG{n}{X2} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fft}\PYG{p}{(}\PYG{n}{x2}\PYG{p}{)}
+\PYG{n}{freqs} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{fft}\PYG{o}{.}\PYG{n}{fftfreq}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{n}{d}\PYG{o}{=}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Only plot the positive frequencies}
+\PYG{n}{idx} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{argsort}\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{)}
+\PYG{n}{freqs\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{freqs}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{X1\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{X1}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{X2\PYGZus{}sorted} \PYG{o}{=} \PYG{n}{X2}\PYG{p}{[}\PYG{n}{idx}\PYG{p}{]}
+\PYG{n}{pos\PYGZus{}mask} \PYG{o}{=} \PYG{n}{freqs\PYGZus{}sorted} \PYG{o}{\PYGZgt{}}\PYG{o}{=} \PYG{l+m+mi}{0}
+
+\PYG{c+c1}{\PYGZsh{} Create a 3\PYGZhy{}row, 2\PYGZhy{}column grid: }
+\PYG{c+c1}{\PYGZsh{} (1,1) and (1,2): time domain (merged)}
+\PYG{c+c1}{\PYGZsh{} (2,1): FFT magnitude of x1, (2,2): FFT magnitude of x2}
+\PYG{c+c1}{\PYGZsh{} (3,1): FFT phase of x1, (3,2): FFT phase of x2}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{14}\PYG{p}{,} \PYG{l+m+mi}{14}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n+nb}{slice} \PYG{o}{=} \PYG{l+m+mi}{100}
+
+\PYG{c+c1}{\PYGZsh{} Calculate RMS values for the time domain signals (over the full signal)}
+\PYG{n}{rms\PYGZus{}x1} \PYG{o}{=} \PYG{n}{rms}\PYG{p}{(}\PYG{n}{x1}\PYG{p}{)}
+\PYG{n}{rms\PYGZus{}x2} \PYG{o}{=} \PYG{n}{rms}\PYG{p}{(}\PYG{n}{x2}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} First row: time domain, left: x1, right: x2}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{x1}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{x1: 1*cos(2π}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{f1}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{t)+1*cos(2π}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{f2}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{t)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Signal x1}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{RMS = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}x1}\PYG{l+s+si}{:}\PYG{l+s+s1}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{x2}\PYG{p}{[}\PYG{p}{:}\PYG{n+nb}{slice}\PYG{p}{]}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{x2: √2*cos(2π}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{f1}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{t)+√2*cos(2π}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{f2}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{t)/√2}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Signal x2}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{RMS = }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{rms\PYGZus{}x2}\PYG{l+s+si}{:}\PYG{l+s+s1}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Second row: FFT Magnitude, left for x1, right for x2}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{X1\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{bo}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Magnitude (x1)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Magnitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{X2\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ro}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Magnitude (x2)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Magnitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Third row: FFT Phase, left for x1, right for x2}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{angle}\PYG{p}{(}\PYG{n}{X1\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{bo}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Phase (x1)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Phase (radians)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{stem}\PYG{p}{(}\PYG{n}{freqs\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{angle}\PYG{p}{(}\PYG{n}{X2\PYGZus{}sorted}\PYG{p}{[}\PYG{n}{pos\PYGZus{}mask}\PYG{p}{]}\PYG{p}{)}\PYG{p}{,} 
+               \PYG{n}{linefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{markerfmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ro}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{basefmt}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ }\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{FFT Phase (x2)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Frequency (Hz)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Phase (radians)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Demonstration:}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Notice that the FFT magnitude spectra of the two signals are very similar,}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{even though the time\PYGZhy{}domain signals have different RMS values.}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{This shows that signals with similar frequency content (FFT) can have different energy (RMS).}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell_output}
+\noindent\sphinxincludegraphics{{949b2a80cfba7b2e1af7c8323336bb2b97e0bce6e55210392c407841773dbf56}.png}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+Notice that the FFT magnitude spectra of the two signals are very similar,
+even though the time\PYGZhy{}domain signals have different RMS values.
+This shows that signals with similar frequency content (FFT) can have different energy (RMS).
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell}
+\begin{sphinxuseclass}{cell_input}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Unit step function}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{unit\PYGZus{}step}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{t} \PYG{o}{\PYGZgt{}}\PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit impulse approximation}
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{unit\PYGZus{}impulse}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{width}\PYG{o}{=}\PYG{l+m+mf}{0.1}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n}{np}\PYG{o}{.}\PYG{n}{where}\PYG{p}{(}\PYG{n}{np}\PYG{o}{.}\PYG{n}{abs}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{\PYGZlt{}}\PYG{o}{=} \PYG{n}{width}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{o}{/}\PYG{n}{width}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Plot the signals}
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axes} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{12}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit step}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{unit\PYGZus{}step}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Unit Step Function u(t)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Unit impulse}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{unit\PYGZus{}impulse}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Unit Impulse Function \PYGZdl{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{delta(t)\PYGZdl{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Sinusoidal signal}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{g\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sinusoidal Signal}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Even and odd components}
+\PYG{n}{x\PYGZus{}even} \PYG{o}{=} \PYG{l+m+mf}{0.5} \PYG{o}{*} \PYG{p}{(}\PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{+} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{x\PYGZus{}odd} \PYG{o}{=} \PYG{l+m+mf}{0.5} \PYG{o}{*} \PYG{p}{(}\PYG{n}{sinusoidal}\PYG{p}{(}\PYG{n}{t}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{sinusoidal}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{t}\PYG{p}{)}\PYG{p}{)}
+
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{x\PYGZus{}even}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{b\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Even component}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{t}\PYG{p}{,} \PYG{n}{x\PYGZus{}odd}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{r\PYGZhy{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Odd component}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{linewidth}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Even and Odd Components}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{k+kc}{True}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Time (s)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axes}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Amplitude}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{(}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\end{sphinxuseclass}
+\begin{sphinxuseclass}{cell_output}
+\noindent\sphinxincludegraphics{{d315ef2bef97ba37bb0ce56ce624b609fb07e79a2638e7dbc9653baa0ca98e57}.png}
+
+\end{sphinxuseclass}
+\end{sphinxuseclass}
+
+\section{Energy and Power}
+\label{\detokenize{aula_01/fft:energy-and-power}}
+\sphinxAtStartPar
+For a signal \(x(t)\), we define:
+
+\sphinxAtStartPar
+\sphinxstylestrong{Energy}:
+\begin{equation*}
+\begin{split}E = \int_{-\infty}^{\infty} |x(t)|^2 \, dt\end{split}
+\end{equation*}
+
+\sphinxAtStartPar
+\sphinxstylestrong{Power} (for periodic signals):
+\begin{equation*}
+\begin{split}P = \frac{1}{T} \int_0^T |x(t)|^2 \, dt\end{split}
+\end{equation*}
+
+\sphinxAtStartPar
+A signal is called:
+\begin{itemize}
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Energy signal} if \(E < \infty\) and \(P = 0\)
+
+\item {} 
+\sphinxAtStartPar
+\sphinxstylestrong{Power signal} if \(P < \infty\) and \(E = \infty\)
+
+\end{itemize}
+
 \begin{sphinxthebibliography}{1}
-\bibitem[1]{motivacao:id6}
+\bibitem[1]{aula_01/motivacao:id6}
 \sphinxAtStartPar
 D. J. Inman. \sphinxstyleemphasis{Engineering vibration}. Pearson, Boston, fourth edition edition, 2014. ISBN 978\sphinxhyphen{}0\sphinxhyphen{}13\sphinxhyphen{}287169\sphinxhyphen{}3.
-\bibitem[2]{motivacao:id7}
+\bibitem[2]{aula_01/motivacao:id7}
 \sphinxAtStartPar
 Julius S. Bendat and Allan G. Piersol. \sphinxstyleemphasis{Random data: analysis and measurement procedures}. Wiley series in probability and statistics. Wiley, Hoboken, N.J, 4th ed edition, 2010. ISBN 978\sphinxhyphen{}0\sphinxhyphen{}470\sphinxhyphen{}24877\sphinxhyphen{}5.
-\bibitem[3]{motivacao:id8}
+\bibitem[3]{aula_01/motivacao:id8}
 \sphinxAtStartPar
 Alan V. Oppenheim and Roland W. Schafer. \sphinxstyleemphasis{Discrete\sphinxhyphen{}time signal processing}. Always learning. Pearson, Harlow, third edition, pearson new international edition edition, 2014. ISBN 978\sphinxhyphen{}1\sphinxhyphen{}292\sphinxhyphen{}02572\sphinxhyphen{}8 978\sphinxhyphen{}1\sphinxhyphen{}292\sphinxhyphen{}03815\sphinxhyphen{}5.
-\bibitem[4]{motivacao:id9}
+\bibitem[4]{aula_01/motivacao:id9}
 \sphinxAtStartPar
 Robert Bond Randall. \sphinxstyleemphasis{Vibration\sphinxhyphen{}based condition monitoring: industrial, aerospace and automotive applications}. Wiley, Chichester, 2011. ISBN 978\sphinxhyphen{}0\sphinxhyphen{}470\sphinxhyphen{}97766\sphinxhyphen{}8.
+\bibitem[1]{aula_01/signals:id7}
+\sphinxAtStartPar
+Alan V. Oppenheim, Alan S. Willsky, and Syed Hamid Nawab. \sphinxstyleemphasis{Signals and systems}. Prentice\sphinxhyphen{}Hall signal processing series. Prentice Hall, Upper Saddle River, NJ, 2. ed edition, 1997. ISBN 978\sphinxhyphen{}0\sphinxhyphen{}13\sphinxhyphen{}814757\sphinxhyphen{}0.
 \end{sphinxthebibliography}
 
 

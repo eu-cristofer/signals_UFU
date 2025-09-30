@@ -12,7 +12,6 @@ Notas de aula, resultados computacionais e recursos de revisão bibliográfica r
    :maxdepth: 2
    :caption: Sumário:
 
-   oppenhein
    aula_01/motivacao
    aula_01/signals
    aula_01/fft

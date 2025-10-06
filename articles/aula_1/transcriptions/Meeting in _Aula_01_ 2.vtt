@@ -1,0 +1,5371 @@
+WEBVTT
+
+03841c0a-cf61-46b8-9028-faac0ea315df/20-0
+00:00:03.047 --> 00:00:07.807
+<v Marcus Antonio Viana Duarte>Sinais, ela tem como objetivo é,
+a gente fala, é.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/26-0
+00:00:09.207 --> 00:00:10.287
+<v Marcus Antonio Viana Duarte>Sintetizar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/27-0
+00:00:10.207 --> 00:00:11.407
+<v marcusfilipesr>Ela me tinha uma informação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/29-0
+00:00:12.167 --> 00:00:12.487
+<v Marcus Antonio Viana Duarte>Oi.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/32-0
+00:00:15.527 --> 00:00:16.167
+<v Marcus Antonio Viana Duarte>Repete.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/81-0
+00:00:19.047 --> 00:00:25.113
+<v Marcus Antonio Viana Duarte>OAO objetivo da análise de sinais é pegar
+essa essa informação. Ela vem com ruído,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/81-1
+00:00:25.113 --> 00:00:30.082
+<v Marcus Antonio Viana Duarte>né? Principalmente assim,
+quando nós estamos trabalhando com sinais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/81-2
+00:00:30.082 --> 00:00:33.516
+<v Marcus Antonio Viana Duarte>industriais,
+você nunca vai ter um sinal que é</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/81-3
+00:00:33.516 --> 00:00:34.247
+<v Marcus Antonio Viana Duarte>bonitinho.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/130-0
+00:00:34.927 --> 00:00:38.784
+<v Marcus Antonio Viana Duarte>Certo,
+ele vem todo contaminado e o objetivo da</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/130-1
+00:00:38.784 --> 00:00:45.052
+<v Marcus Antonio Viana Duarte>análise de sinais é a gente tirar a
+informação que nos interessa no sinal que</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/130-2
+00:00:45.052 --> 00:00:49.953
+<v Marcus Antonio Viana Duarte>nós temos acesso,
+como nós somos da área de projetos, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/130-3
+00:00:49.953 --> 00:00:53.087
+<v Marcus Antonio Viana Duarte>Nós vamos trabalhar com sinais que são.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/161-0
+00:00:54.287 --> 00:00:59.523
+<v Marcus Antonio Viana Duarte>Onde fica ao longo do tempo, certo?
+É as famosas waves, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/161-1
+00:00:59.523 --> 00:01:05.109
+<v Marcus Antonio Viana Duarte>São as séries temporais,
+no caso específico, né? Da minha área,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/161-2
+00:01:05.109 --> 00:01:09.647
+<v Marcus Antonio Viana Duarte>nós trabalhamos na parte de a vibrações e
+acústica.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/207-0
+00:01:10.767 --> 00:01:13.791
+<v Marcus Antonio Viana Duarte>Então essa que é a ideia da análise de
+sinais,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/207-1
+00:01:13.791 --> 00:01:19.068
+<v Marcus Antonio Viana Duarte>é fazer uma condensação da informação de
+tal maneira que a gente possa ter acesso</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/207-2
+00:01:19.068 --> 00:01:22.671
+<v Marcus Antonio Viana Duarte>a elas, certo?
+Hoje nós vamos ter a primeira aula aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/207-3
+00:01:22.671 --> 00:01:24.087
+<v Marcus Antonio Viana Duarte>A parte de introdução.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/210-0
+00:01:25.327 --> 00:01:26.927
+<v Marcus Antonio Viana Duarte>Alguém grava essa aula.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/216-0
+00:01:28.447 --> 00:01:29.567
+<v Marcus Antonio Viana Duarte>Eu não sei fazer isso não.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/227-0
+00:01:32.247 --> 00:01:36.647
+<v Marcus Antonio Viana Duarte>Vocês pode. É grave, pode gravar beleza.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/280-0
+00:01:38.487 --> 00:01:44.639
+<v Marcus Antonio Viana Duarte>E aí pode ficar para depois o povo ter
+acesso. Então, até teoricamente, vamos lá,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/280-1
+00:01:44.639 --> 00:01:50.041
+<v Marcus Antonio Viana Duarte>então vamos pro as Apresentações,
+vamos começar a apurar aqui depois eu</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/280-2
+00:01:50.041 --> 00:01:54.167
+<v Marcus Antonio Viana Duarte>também vou subir essas essas
+Apresentações para vocês.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/282-0
+00:01:54.887 --> 00:01:56.367
+<v Marcus Antonio Viana Duarte>Eu não gosto de subir antes.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/335-0
+00:01:58.807 --> 00:02:02.396
+<v Marcus Antonio Viana Duarte>Porque senão,
+vocês passam na frente da apresentação e</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/335-1
+00:02:02.396 --> 00:02:06.377
+<v Marcus Antonio Viana Duarte>eu me perco, certo?
+Então você que define bem o que que é 11</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/335-2
+00:02:06.377 --> 00:02:09.509
+<v Marcus Antonio Viana Duarte>sinal?
+Você tem uma área de telescópio que está</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/335-3
+00:02:09.509 --> 00:02:12.967
+<v Marcus Antonio Viana Duarte>captando 1000000 de informações AA vários
+megahertz.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/362-0
+00:02:14.087 --> 00:02:16.792
+<v Marcus Antonio Viana Duarte>E daí?
+O que que adianta ter esse tanto de coisa</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/362-1
+00:02:16.792 --> 00:02:20.767
+<v Marcus Antonio Viana Duarte>se você não condensar isso de tal maneira
+que o cérebro humano consiga?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/374-0
+00:02:22.047 --> 00:02:26.847
+<v Marcus Antonio Viana Duarte>É rotular certo?
+Você precisa rotular esse sinal.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/400-0
+00:02:28.247 --> 00:02:32.531
+<v Marcus Antonio Viana Duarte>Então, fundamental sinais,
+eu sou o professor Marcos Antonio gera</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/400-1
+00:02:32.531 --> 00:02:35.127
+<v Marcus Antonio Viana Duarte>Duarte, sou professor aposentado da ufa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/410-0
+00:02:36.567 --> 00:02:41.767
+<v Marcus Antonio Viana Duarte>Certo, mas atualmente eu.
+Eu sou professor voluntário.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/444-0
+00:02:43.327 --> 00:02:47.461
+<v Marcus Antonio Viana Duarte>Da pós graduação,
+eu só posso dar aula na pós em memória,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/444-1
+00:02:47.461 --> 00:02:50.598
+<v Marcus Antonio Viana Duarte>né?
+O professor Francisco Paulo lebre neto,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/444-2
+00:02:50.598 --> 00:02:52.807
+<v Marcus Antonio Viana Duarte>que é a pessoa que eu acho que.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/461-0
+00:02:54.247 --> 00:02:58.447
+<v Marcus Antonio Viana Duarte>Eu conheci um tal de Marconi,
+que era muito bom de análise de sinais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/495-0
+00:02:59.767 --> 00:03:04.133
+<v Marcus Antonio Viana Duarte>Um americano,
+e eu acho que esse o lepre é referência,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/495-1
+00:03:04.133 --> 00:03:09.770
+<v Marcus Antonio Viana Duarte>sabe? Ele sempre me orientou,
+eu sempre fui muito grato a tudo que ele</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/495-2
+00:03:09.770 --> 00:03:10.087
+<v Marcus Antonio Viana Duarte>fez.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/525-0
+00:03:11.767 --> 00:03:15.121
+<v Marcus Antonio Viana Duarte>Teoricamente,
+era ele que era pra tá aqui dando esse</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/525-1
+00:03:15.121 --> 00:03:19.613
+<v Marcus Antonio Viana Duarte>curso, não tenho memória a ele.
+Sem falar que provavelmente das minhas</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/525-2
+00:03:19.613 --> 00:03:22.207
+<v Marcus Antonio Viana Duarte>aposentações vou roubar muita coisa dele.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/532-0
+00:03:23.447 --> 00:03:26.127
+<v Marcus Antonio Viana Duarte>Grande lembra Deus te cuidar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/596-0
+00:03:28.207 --> 00:03:31.848
+<v Marcus Antonio Viana Duarte>Então vamos lá, várias sinais,
+pra que que a gente vai fazer a várias</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/596-1
+00:03:31.848 --> 00:03:34.449
+<v Marcus Antonio Viana Duarte>sinais, gente. Eu falo muito pessoal,
+o seguinte,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/596-2
+00:03:34.449 --> 00:03:37.570
+<v Marcus Antonio Viana Duarte>o mais importante da analisacidais é a
+primeira coisa aqui,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/571-0
+00:03:36.847 --> 00:03:37.247
+<v Victor Goncalves Marques>Sou.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/596-3
+00:03:37.570 --> 00:03:40.534
+<v Marcus Antonio Viana Duarte>ganhar dinheiro sem muito insosso. Aliás,
+falando nisso,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/596-4
+00:03:40.534 --> 00:03:43.447
+<v Marcus Antonio Viana Duarte>eu estou fazendo minha apresentação,
+vocês estão vendo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/602-0
+00:03:44.087 --> 00:03:46.567
+<v Victor Goncalves Marques>Isso é falar sobre isso. A gente não.
+Eu não estou vendo aqui não.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/613-0
+00:03:47.127 --> 00:03:50.447
+<v Marcus Antonio Viana Duarte>Tá muito legal. Apresentação tá ótimo,
+mas também você não.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/629-0
+00:03:52.167 --> 00:03:55.607
+<v Marcus Antonio Viana Duarte>Se eu não fizer o pequeno,
+o share é que não adianta nada, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/630-0
+00:03:57.927 --> 00:03:58.167
+<v Marcus Antonio Viana Duarte>Uh.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/649-0
+00:03:59.327 --> 00:04:04.419
+<v Marcus Antonio Viana Duarte>Eu tô. Eu, eu tô aqui em São Paulo,
+num num lugar aqui que eu não gostei</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/649-1
+00:04:04.419 --> 00:04:05.047
+<v Marcus Antonio Viana Duarte>muito da.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/671-0
+00:04:07.527 --> 00:04:12.160
+<v Marcus Antonio Viana Duarte>Vou até tirar minha câmera internet aqui
+não é aquela, mas foi, então vamos,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/671-1
+00:04:12.160 --> 00:04:14.927
+<v Marcus Antonio Viana Duarte>vamos voltar para o nosso sinal,
+não vai dar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/672-0
+00:04:16.327 --> 00:04:16.807
+<v Marcus Antonio Viana Duarte>Uhu.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/736-0
+00:04:19.167 --> 00:04:24.546
+<v Marcus Antonio Viana Duarte>Eu IA acabar a aula e ninguém IA falar,
+né? Obrigado, Hein. Tava lá então,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/694-0
+00:04:24.167 --> 00:04:24.807
+<v marcusfilipesr>Estão vendo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/736-1
+00:04:24.546 --> 00:04:29.137
+<v Marcus Antonio Viana Duarte>essa aqui é a ideia,
+então vamos embora o Francisco lembro, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/736-2
+00:04:29.137 --> 00:04:34.301
+<v Marcus Antonio Viana Duarte>Foi meu coorientador de doutorado,
+a pessoa que eu sempre gostei muito,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/736-3
+00:04:34.301 --> 00:04:37.887
+<v Marcus Antonio Viana Duarte>vamos lá, sinais para aqui,
+vamos começar por aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/782-0
+00:04:38.207 --> 00:04:43.878
+<v Marcus Antonio Viana Duarte>O principal motivo de análise mais é isso,
+gente. Ganhar dinheiro sem muito esforço,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/782-1
+00:04:43.878 --> 00:04:48.215
+<v Marcus Antonio Viana Duarte>porque infelizmente tem muita pouca gente
+que entende disso, tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/782-2
+00:04:48.215 --> 00:04:53.419
+<v Marcus Antonio Viana Duarte>E a grande vantagem da gente entender
+disso é que você vai estar envolvido em</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/782-3
+00:04:53.419 --> 00:04:54.887
+<v Marcus Antonio Viana Duarte>tudo quanto é projeto.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/791-0
+00:04:55.287 --> 00:04:58.567
+<v Marcus Antonio Viana Duarte>Hoje eu sou eu sou envolvido uns 56
+projetos aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/813-0
+00:04:59.887 --> 00:05:06.647
+<v Marcus Antonio Viana Duarte>ANPE outros graças aos análises finais,
+certo e sem muito esforço, porque se você.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/863-0
+00:05:08.207 --> 00:05:12.695
+<v Marcus Antonio Viana Duarte>Aprofundar bem nisso aí vocês vão ver que
+tem uma certa lógica,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/863-1
+00:05:12.695 --> 00:05:16.763
+<v Marcus Antonio Viana Duarte>coisa e que a gente consegue trabalhar
+sem sofrer demais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/863-2
+00:05:16.763 --> 00:05:22.583
+<v Marcus Antonio Viana Duarte>Eu brinco muito que eu falo o seguinte,
+se eu der um curso de dinâmica não linear,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/863-3
+00:05:22.583 --> 00:05:24.687
+<v Marcus Antonio Viana Duarte>de conhecimento, ninguém sabe.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/914-0
+00:05:25.127 --> 00:05:29.552
+<v Marcus Antonio Viana Duarte>Pode escrever, porque eu.
+Eu não faço nada de difícil, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/914-1
+00:05:29.552 --> 00:05:33.121
+<v Marcus Antonio Viana Duarte>Da minha vida, não gosto.
+Eu sou meio preguiçoso,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/914-2
+00:05:33.121 --> 00:05:38.046
+<v Marcus Antonio Viana Duarte>eu adoro vibrações, certo?
+MX 2 ponto mais ser x ponto mais cara x é</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/914-3
+00:05:38.046 --> 00:05:40.687
+<v Marcus Antonio Viana Duarte>igual fgt, só tem uma equação, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/938-0
+00:05:41.567 --> 00:05:45.347
+<v Marcus Antonio Viana Duarte>E a análise sinais também tem uns 10 dos
+procedimentos que a gente faz que a gente</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/938-1
+00:05:45.347 --> 00:05:47.487
+<v Marcus Antonio Viana Duarte>consegue resolver a maior parte dos
+problemas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/979-0
+00:05:48.847 --> 00:05:52.091
+<v Marcus Antonio Viana Duarte>Ah,
+mas e outra coisa muito importante hoje</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/979-1
+00:05:52.091 --> 00:05:57.694
+<v Marcus Antonio Viana Duarte>em dia e a é a machina e a ele lá na
+engenharia a gente usa mais machina de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/979-2
+00:05:57.694 --> 00:06:03.887
+<v Marcus Antonio Viana Duarte>Leda do que IA. É a menina do momento, né?
+É, IA para cá, IA para lá. IAIAIAIA, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/996-0
+00:06:05.687 --> 00:06:11.327
+<v Marcus Antonio Viana Duarte>Mas a grande jogada é o seguinte,
+se você não souber nada de alguma coisa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1062-0
+00:06:12.647 --> 00:06:17.934
+<v Marcus Antonio Viana Duarte>AIA também não vai saber nada, certo?
+Então quando a gente vai preparar</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1062-1
+00:06:17.934 --> 00:06:22.120
+<v Marcus Antonio Viana Duarte>features, né?
+Quando você preparar os dados para um IAO,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1062-2
+00:06:22.120 --> 00:06:26.526
+<v Marcus Antonio Viana Duarte>seu conhecimento de análise de sinais é
+fundamental, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1062-3
+00:06:26.526 --> 00:06:31.887
+<v Marcus Antonio Viana Duarte>Principalmente na machina em ler.
+Hoje em dia tem um modo de ferramenta.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1120-0
+00:06:32.647 --> 00:06:35.951
+<v Marcus Antonio Viana Duarte>Para te ajudar a escolher os melhores
+entradas,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1120-1
+00:06:35.951 --> 00:06:40.701
+<v Marcus Antonio Viana Duarte>os melhores parâmetros no treinamento de
+uma de uma machina em Lena.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1120-2
+00:06:40.701 --> 00:06:44.832
+<v Marcus Antonio Viana Duarte>Mas aí meu conhecimento de análise de
+sinais é fundamental.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1120-3
+00:06:44.832 --> 00:06:49.857
+<v Marcus Antonio Viana Duarte>Eu mesmo que eu IA e o pessoal me chama
+de oráculo, né? Porque chega lá,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1120-4
+00:06:49.857 --> 00:06:51.647
+<v Marcus Antonio Viana Duarte>não tá dando nada a certo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1177-0
+00:06:51.767 --> 00:06:56.367
+<v Marcus Antonio Viana Duarte>Ah, não coloca um cartão a curtose aí,
+puf, aí começa a dar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1177-1
+00:06:56.367 --> 00:07:00.062
+<v Marcus Antonio Viana Duarte>Então isso aí é não adianta dar é machine
+laser.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1177-2
+00:07:00.062 --> 00:07:06.246
+<v Marcus Antonio Viana Duarte>Eu trabalho com inteligência artificial
+desde 1997 e ao longo desse tempo todo eu</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1177-3
+00:07:06.246 --> 00:07:10.167
+<v Marcus Antonio Viana Duarte>aprendi uma coisa só,
+se alimenta ela com porcaria.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1237-0
+00:07:10.447 --> 00:07:14.659
+<v Marcus Antonio Viana Duarte>Vai sair porcaria,
+então essa patinha na sinais é muito</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1237-1
+00:07:14.659 --> 00:07:18.720
+<v Marcus Antonio Viana Duarte>importante.
+Se você quer mexer com yá e machine leer,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1237-2
+00:07:18.720 --> 00:07:24.587
+<v Marcus Antonio Viana Duarte>em vez de começar a baixar código do da
+internet Python e ficar chutando para</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1237-3
+00:07:24.587 --> 00:07:29.025
+<v Marcus Antonio Viana Duarte>tudo enquanto é lado,
+eu aconselho a fazer um bom curso em</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1237-4
+00:07:29.025 --> 00:07:29.927
+<v Marcus Antonio Viana Duarte>relacionais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1276-0
+00:07:30.327 --> 00:07:38.054
+<v Marcus Antonio Viana Duarte>E um bom curso de estatística, certo?
+Porque inteligência artificial nada mais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1276-1
+00:07:38.054 --> 00:07:44.509
+<v Marcus Antonio Viana Duarte>é do que estatística na vida,
+tudo que a gente faz é estatística.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1276-2
+00:07:44.509 --> 00:07:47.247
+<v Marcus Antonio Viana Duarte>Eu falo que estatística é a.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1290-0
+00:07:48.567 --> 00:07:53.007
+<v Marcus Antonio Viana Duarte>A única é ciência da engenharia,
+que é isapa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1306-0
+00:07:54.807 --> 00:08:00.647
+<v Marcus Antonio Viana Duarte>Professor, você tá meio maluco, tá, né?
+Ué, a gente é a única que tem, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1343-0
+00:08:02.047 --> 00:08:07.336
+<v Marcus Antonio Viana Duarte>O frango é, por exemplo, termodinâmica.
+Vamos calcular a transmissão de calor de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1343-1
+00:08:07.336 --> 00:08:12.167
+<v Marcus Antonio Viana Duarte>um frango esférico isotrópico.
+Alguém já viu um franguicérico isotrópico?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1351-0
+00:08:13.767 --> 00:08:16.887
+<v Marcus Antonio Viana Duarte>Certo, o frango é real, então.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1376-0
+00:08:18.367 --> 00:08:23.217
+<v Marcus Antonio Viana Duarte>Para resolver o problema,
+é só estatística que resolve e machina e</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1376-1
+00:08:23.217 --> 00:08:25.967
+<v Marcus Antonio Viana Duarte>lei de IA é é pura estatística também.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1413-0
+00:08:27.767 --> 00:08:33.530
+<v Marcus Antonio Viana Duarte>Bom litoral miia, né? Primais?
+Importante que é isso, né,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1413-1
+00:08:33.530 --> 00:08:40.087
+<v Marcus Antonio Viana Duarte>que é o tal explanation você uma IA
+Moderna. Hoje você coloca 11,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1413-2
+00:08:40.087 --> 00:08:43.167
+<v Marcus Antonio Viana Duarte>Monte de camadas aí No No adip.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1455-0
+00:08:43.967 --> 00:08:49.841
+<v Marcus Antonio Viana Duarte>Usando técnicas modernas, CNN LSM certo,
+e ela começa a dar resultado,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1455-1
+00:08:49.841 --> 00:08:56.295
+<v Marcus Antonio Viana Duarte>e daí se você não tiver o conhecimento,
+né? Da nossa área, lógico engenharia,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1455-2
+00:08:56.295 --> 00:08:59.687
+<v Marcus Antonio Viana Duarte>você tá controlando um processo qualquer.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1478-0
+00:09:00.207 --> 00:09:03.207
+<v Marcus Antonio Viana Duarte>Conselho temporais,
+se você não tiver conhecido na cidade</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1478-1
+00:09:03.207 --> 00:09:06.777
+<v Marcus Antonio Viana Duarte>para saber o que está saindo,
+você vai aceitar o que estiver saindo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1478-2
+00:09:06.777 --> 00:09:07.087
+<v Marcus Antonio Viana Duarte>certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1525-0
+00:09:08.487 --> 00:09:13.170
+<v Marcus Antonio Viana Duarte>E tem aula comigo, né? Tem aula comigo.
+É bem divertido, tranquilo. Eu queria,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1525-1
+00:09:13.170 --> 00:09:15.838
+<v Marcus Antonio Viana Duarte>eu tinha.
+Eu queria que eu estava totalmente</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1525-2
+00:09:15.838 --> 00:09:20.640
+<v Marcus Antonio Viana Duarte>preparado para o curso presencial, né?
+Aí eu fiquei sabendo que tinha um pessoal</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1525-3
+00:09:20.640 --> 00:09:23.367
+<v Marcus Antonio Viana Duarte>do Rio que tinha interesse. Eu falei Ah,
+não.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1533-0
+00:09:24.687 --> 00:09:28.407
+<v Marcus Antonio Viana Duarte>Vamos dar um jeito, então vamos,
+eu não gosto muito de ser.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1591-0
+00:09:29.847 --> 00:09:34.447
+<v Marcus Antonio Viana Duarte>Online? Não, mas tá bom, ótimo,
+porque a gente consegue agradar mais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1591-1
+00:09:34.447 --> 00:09:39.647
+<v Marcus Antonio Viana Duarte>pessoas. Vamos lá agora o porquê, né?
+Porque que vão fazer análise de sinais?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1591-2
+00:09:39.647 --> 00:09:42.780
+<v Marcus Antonio Viana Duarte>Vamos pegar aqui uns exemplozinho isso
+aqui ó,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1591-3
+00:09:42.780 --> 00:09:48.047
+<v Marcus Antonio Viana Duarte>2 terras do outro lado que eu orientei
+isso aí é um pedacinho 4000 pontos num.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1623-0
+00:09:50.167 --> 00:09:54.744
+<v Marcus Antonio Viana Duarte>Eletro, encéfalo,
+então isso aí normalmente é 32 canais,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1623-1
+00:09:54.744 --> 00:10:01.007
+<v Marcus Antonio Viana Duarte>a pessoa fica 5 horas adquirindo isso de
+um paciente, depois é analisar isso.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1671-0
+00:10:02.407 --> 00:10:06.492
+<v Marcus Antonio Viana Duarte>No olhão fica meio difícil, né?
+Você achar qualquer coisa aí,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1671-1
+00:10:06.492 --> 00:10:09.985
+<v Marcus Antonio Viana Duarte>então você é obrigado a fazer uma
+condensação dessa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1671-2
+00:10:09.985 --> 00:10:13.609
+<v Marcus Antonio Viana Duarte>Toda essa informação que tem aí pra
+depois o analista,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1671-3
+00:10:13.609 --> 00:10:17.167
+<v Marcus Antonio Viana Duarte>já com esse dado condensado tomar uma
+decisão, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1689-0
+00:10:17.927 --> 00:10:22.684
+<v Marcus Antonio Viana Duarte>Vocês não sabe não,
+mas esse cara aí tá com alcance num</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1689-1
+00:10:22.684 --> 00:10:25.487
+<v Marcus Antonio Viana Duarte>desses picotes aí significa isso.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1733-0
+00:10:27.407 --> 00:10:34.204
+<v Marcus Antonio Viana Duarte>Certo, então outro exemplo, né?
+O monitoramento e sem monitoramento é de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1733-1
+00:10:34.204 --> 00:10:39.045
+<v Marcus Antonio Viana Duarte>rota hoje em dia,
+graças aos sensores fullyler, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1733-2
+00:10:39.045 --> 00:10:43.607
+<v Marcus Antonio Viana Duarte>Normalmente os a tendência,
+a indústria 4 é 4.0.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1775-0
+00:10:44.527 --> 00:10:49.145
+<v Marcus Antonio Viana Duarte>É você usar os flares da vida,
+então a pessoa adquire o sinal.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1775-1
+00:10:49.145 --> 00:10:52.517
+<v Marcus Antonio Viana Duarte>Esse sinal tá aí, certo?
+Do jeito que ele tá,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1775-2
+00:10:52.517 --> 00:10:58.527
+<v Marcus Antonio Viana Duarte>ele tem pouca de atividade, até ouro. Ah,
+não, ele tá ali, tem um pico ali de 3G.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1811-0
+00:10:59.007 --> 00:11:04.811
+<v Marcus Antonio Viana Duarte>Né? Parece que parece.
+Tem qualquer coisa aqui da vai pra lá,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1811-1
+00:11:04.811 --> 00:11:09.118
+<v Marcus Antonio Viana Duarte>Vem Pra Cá,
+então do jeito que ele se notado,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1811-2
+00:11:09.118 --> 00:11:12.207
+<v Marcus Antonio Viana Duarte>é muito legal se você passar, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1867-0
+00:11:13.607 --> 00:11:18.364
+<v Marcus Antonio Viana Duarte>Usando análise de sinais,
+você chega numa coisa mais interessante,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1867-1
+00:11:18.364 --> 00:11:22.766
+<v Marcus Antonio Viana Duarte>certo? Ah, tá sinal estacionado?
+Eu saio do domínio do tempo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1867-2
+00:11:22.766 --> 00:11:28.446
+<v Marcus Antonio Viana Duarte>vou pro domínio da frequência e eu vou
+ver legal a marca tava dando a 22 e meio</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1867-3
+00:11:28.446 --> 00:11:31.783
+<v Marcus Antonio Viana Duarte>rapaz,
+o segundo hormônio tá alto pra caramba.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1867-4
+00:11:31.783 --> 00:11:33.487
+<v Marcus Antonio Viana Duarte>Essa máquina pode estar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1881-0
+00:11:33.527 --> 00:11:36.989
+<v Marcus Antonio Viana Duarte>Um pequeno problema,
+um pequeno problema de desalinhamento,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1881-1
+00:11:36.989 --> 00:11:39.527
+<v Marcus Antonio Viana Duarte>porque eu estou na estou na aceleração,
+né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1882-0
+00:11:41.007 --> 00:11:42.367
+<v Marcus Antonio Viana Duarte>E?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1887-0
+00:11:44.047 --> 00:11:46.087
+<v Marcus Antonio Viana Duarte>2020, 30, nada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1899-0
+00:11:48.647 --> 00:11:51.327
+<v Marcus Antonio Viana Duarte>Essa máquina tá com problema Sério de
+rolamento.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1923-0
+00:11:53.927 --> 00:12:00.214
+<v Marcus Antonio Viana Duarte>Mas assim você, uma mudança de domínio,
+o que que você está fazendo aqui?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1923-1
+00:12:00.214 --> 00:12:03.527
+<v Marcus Antonio Viana Duarte>Tem um mundo de informações, seu sinal.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1963-0
+00:12:04.967 --> 00:12:12.156
+<v Marcus Antonio Viana Duarte>O objetivo da análise cidade é você
+condensar isso, que virá 12345. Pronto,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1963-1
+00:12:12.156 --> 00:12:17.169
+<v Marcus Antonio Viana Duarte>certo? E aí,
+você consegue tomar uma decisão em cima</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1963-2
+00:12:17.169 --> 00:12:20.007
+<v Marcus Antonio Viana Duarte>disso, né? Nem sempre é fácil.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1986-0
+00:12:20.487 --> 00:12:25.173
+<v Marcus Antonio Viana Duarte>Né? Isso aqui é uma serviço,
+uma coisa que eu fiz da gente, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/1986-1
+00:12:25.173 --> 00:12:29.127
+<v Marcus Antonio Viana Duarte>Ruim de prensa legal, né?
+Aí eu fui lá olhar esperto.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2027-0
+00:12:31.087 --> 00:12:35.379
+<v Marcus Antonio Viana Duarte>Tudo está do mesmo,
+tanto não serviu pra nada eu sair de um</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2027-1
+00:12:35.379 --> 00:12:40.173
+<v Marcus Antonio Viana Duarte>domínio pro outro, certo?
+Aí você tem que usar outras técnicas pra</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2027-2
+00:12:40.173 --> 00:12:42.247
+<v Marcus Antonio Viana Duarte>poder condensar a informação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2038-0
+00:12:44.087 --> 00:12:47.607
+<v Marcus Antonio Viana Duarte>Está aqui Oo relap de 2 máquinas aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2039-0
+00:12:48.967 --> 00:12:49.127
+<v Marcus Antonio Viana Duarte>Da?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2055-0
+00:12:50.527 --> 00:12:56.527
+<v Marcus Antonio Viana Duarte>Tem um Salto temporal aí você passa para
+o domínio, é tá com frequência aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2078-0
+00:12:58.607 --> 00:13:03.313
+<v Marcus Antonio Viana Duarte>O Duarte.
+Mas aí parece que se o objetivo era fazer</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2078-1
+00:13:03.313 --> 00:13:05.847
+<v Marcus Antonio Viana Duarte>a condensação da informação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2132-0
+00:13:07.647 --> 00:13:11.638
+<v Marcus Antonio Viana Duarte>A da luz certo?
+Aí é que tá mais complicado que o lado de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2132-1
+00:13:11.638 --> 00:13:15.905
+<v Marcus Antonio Viana Duarte>cá. Tem técnica de análise,
+sinais pra dar uma melhorada, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2132-2
+00:13:15.905 --> 00:13:19.208
+<v Marcus Antonio Viana Duarte>Você transformar isso em algo palatável,
+certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2132-3
+00:13:19.208 --> 00:13:23.887
+<v Marcus Antonio Viana Duarte>Então essa que é a ideia da gente ter
+bendito do análise de sinais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2178-0
+00:13:25.047 --> 00:13:29.028
+<v Marcus Antonio Viana Duarte>Às vezes é muito difícil, certo?
+Isso é o famoso, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2178-1
+00:13:29.028 --> 00:13:32.936
+<v Marcus Antonio Viana Duarte>Você tá com uma máquina de batimento de
+desgramento,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2178-2
+00:13:32.936 --> 00:13:37.655
+<v Marcus Antonio Viana Duarte>você olha o espectrograma tem frequência,
+não tá aquela beleza,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2178-3
+00:13:37.655 --> 00:13:42.447
+<v Marcus Antonio Viana Duarte>você olha o maior tempo foto pra ver se
+você não vai achar nada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2223-0
+00:13:43.207 --> 00:13:48.855
+<v Marcus Antonio Viana Duarte>Você pode fazer uma transformação angular,
+aí você tira o espectro e de repente você</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2223-1
+00:13:48.855 --> 00:13:52.509
+<v Marcus Antonio Viana Duarte>tira alguma coisa.
+Eu sei que são várias maneiras, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2223-2
+00:13:52.509 --> 00:13:58.023
+<v Marcus Antonio Viana Duarte>O seu sinal tá aqui, sua série temporal,
+você tem vários caminhos para poder tirar</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2223-3
+00:13:58.023 --> 00:13:58.887
+<v Marcus Antonio Viana Duarte>a informação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2272-0
+00:13:59.567 --> 00:14:03.022
+<v Marcus Antonio Viana Duarte>Certo,
+então pra isso tem uma análise de sinais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2272-1
+00:14:03.022 --> 00:14:08.662
+<v Marcus Antonio Viana Duarte>O sinal tem uma informação e você vai
+usar as técnicas de análise de sinais pra</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2272-2
+00:14:08.662 --> 00:14:14.091
+<v Marcus Antonio Viana Duarte>poder retirar essa informação do contexto,
+né global, certo, gente? O sinal,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2272-3
+00:14:14.091 --> 00:14:17.687
+<v Marcus Antonio Viana Duarte>assim que vocês veem em laboratório na
+bancadinha.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2297-0
+00:14:18.007 --> 00:14:23.276
+<v Marcus Antonio Viana Duarte>É lindo, certo? É lindo,
+isso é tão lindo que eu tenho 11 software</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2297-1
+00:14:23.276 --> 00:14:27.287
+<v Marcus Antonio Viana Duarte>pra detectar a velocidade enquanto
+estação usando.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2300-0
+00:14:28.687 --> 00:14:29.767
+<v Marcus Antonio Viana Duarte>Análise de sinais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2351-0
+00:14:30.927 --> 00:14:35.889
+<v Marcus Antonio Viana Duarte>De indústria pode jogar o britador lá,
+que ele crava a frequência de rotação de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2351-1
+00:14:35.889 --> 00:14:39.549
+<v Marcus Antonio Viana Duarte>laboratório. Dificilmente ele é acerto,
+tá certo? Ou seja,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2351-2
+00:14:39.549 --> 00:14:44.697
+<v Marcus Antonio Viana Duarte>o sinal de laboratório é tão impinho que
+fica até difícil de fazer qualquer coisa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2351-3
+00:14:44.697 --> 00:14:46.247
+<v Marcus Antonio Viana Duarte>Sinal de é um sinal real.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2387-0
+00:14:47.447 --> 00:14:53.317
+<v Marcus Antonio Viana Duarte>O buraco é bem mais embaixo, certo?
+Tirando as turbomáquinas da Petrobras,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2387-1
+00:14:53.317 --> 00:14:59.266
+<v Marcus Antonio Viana Duarte>que fica lá dormindo a ponto, sim,
+ponto 6 só com componentes na frequência</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2387-2
+00:14:59.266 --> 00:15:00.127
+<v Marcus Antonio Viana Duarte>de rotação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2397-0
+00:15:01.687 --> 00:15:05.887
+<v Marcus Antonio Viana Duarte>Normalmente na indústria o jogo e vai se
+pesar, está certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2436-0
+00:15:08.927 --> 00:15:14.851
+<v Marcus Antonio Viana Duarte>Pensava no Windows, sei lá,
+eu estava lá no nordeste lá e na hora eu</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2436-1
+00:15:14.851 --> 00:15:20.087
+<v Marcus Antonio Viana Duarte>entrei no vestiário,
+tinha um mecânico puto da cara porque o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2436-2
+00:15:20.087 --> 00:15:23.607
+<v Marcus Antonio Viana Duarte>chefe dele chamou a atenção dele, porque.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2458-0
+00:15:24.087 --> 00:15:28.654
+<v Marcus Antonio Viana Duarte>Pô, errei de desalinhamento só de 5 mm.
+O cara que se enchendo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2458-1
+00:15:28.654 --> 00:15:30.367
+<v Marcus Antonio Viana Duarte>me enchendo a paciência.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2480-0
+00:15:31.927 --> 00:15:35.747
+<v Marcus Antonio Viana Duarte>Pois é, beleza com esse,
+com esse pradão de precisão,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2480-1
+00:15:35.747 --> 00:15:38.647
+<v Marcus Antonio Viana Duarte>elas são feitos, haja mais sinais, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2493-0
+00:15:39.967 --> 00:15:43.722
+<v Marcus Antonio Viana Duarte>Às vezes não é mais difícil ainda.
+Sistema é que estou bendito,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2493-1
+00:15:43.722 --> 00:15:45.247
+<v Marcus Antonio Viana Duarte>do moinho de renda, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2509-0
+00:15:47.047 --> 00:15:51.767
+<v Marcus Antonio Viana Duarte>Um bicho desse.
+Normalmente ele tem 4950 sensores.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2572-0
+00:15:52.967 --> 00:15:56.674
+<v Marcus Antonio Viana Duarte>Só que é bonito.
+Vamos fazer análise de sinais disso,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2572-1
+00:15:56.674 --> 00:16:01.411
+<v Marcus Antonio Viana Duarte>vamos analisar a vibração,
+o que quer que seja nessa brincadeira que</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2572-2
+00:16:01.411 --> 00:16:06.011
+<v Marcus Antonio Viana Duarte>tem o bendito do é um redutor de
+planetária redutor de planetária,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2572-3
+00:16:06.011 --> 00:16:10.198
+<v Marcus Antonio Viana Duarte>é a morte pra quem faz análise de sinais
+de vibração, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2572-4
+00:16:10.198 --> 00:16:12.807
+<v Marcus Antonio Viana Duarte>O trem roda na frequência muito baixo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2615-0
+00:16:14.207 --> 00:16:19.811
+<v Marcus Antonio Viana Duarte>E você vai fazer uma medição muito longe
+do do ponto onde a informação está sendo</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2615-1
+00:16:19.811 --> 00:16:25.210
+<v Marcus Antonio Viana Duarte>gerada aí, campeão, é só ruído, viu?
+Análise de sinais do curso vamos ter aqui</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2615-2
+00:16:25.210 --> 00:16:29.037
+<v Marcus Antonio Viana Duarte>não resolve não,
+tem que ser análise de sinais avançada</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2615-3
+00:16:29.037 --> 00:16:29.447
+<v Marcus Antonio Viana Duarte>mesmo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2672-0
+00:16:29.847 --> 00:16:34.738
+<v Marcus Antonio Viana Duarte>Certo, o analisador de sinais,
+mas afrontado que existe no mundo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2672-1
+00:16:34.738 --> 00:16:39.406
+<v Marcus Antonio Viana Duarte>é o cérebro humano, certo?
+Uma coisa que acontece muito nessas</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2672-2
+00:16:39.406 --> 00:16:45.334
+<v Marcus Antonio Viana Duarte>fazendas eólicas é que você está gastando
+uma Fortuna de monitoramento de tempo</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2672-3
+00:16:45.334 --> 00:16:45.927
+<v Marcus Antonio Viana Duarte>real aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2677-0
+00:16:46.327 --> 00:16:48.767
+<v Marcus Antonio Viana Duarte>Aí uma Bela hora, o campeão liga lá para.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2727-0
+00:16:50.327 --> 00:16:53.283
+<v Marcus Antonio Viana Duarte>Liga lá pro escritório. Olha,
+não é por nada, não,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2727-1
+00:16:53.283 --> 00:16:56.180
+<v Marcus Antonio Viana Duarte>mas eu acho que hoje que aquele aquele
+catavento,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2727-2
+00:16:56.180 --> 00:16:59.252
+<v Marcus Antonio Viana Duarte>aquele catavento lá no número 7,
+tá com a ruído, tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2727-3
+00:16:59.252 --> 00:17:03.077
+<v Marcus Antonio Viana Duarte>Com a zoeira meio estranha,
+aí eles vão lá e eles descobrem que o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2727-4
+00:17:03.077 --> 00:17:05.047
+<v Marcus Antonio Viana Duarte>bicho tá com defeito mesmo, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2774-0
+00:17:05.927 --> 00:17:08.887
+<v Marcus Antonio Viana Duarte>Ou seja,
+nunca quando vocês estiverem entrando em</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2774-1
+00:17:08.887 --> 00:17:13.090
+<v Marcus Antonio Viana Duarte>uma tese, etcetera, Oo orientador,
+vai falar assim, Ah, é bem facinho.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2774-2
+00:17:13.090 --> 00:17:18.004
+<v Marcus Antonio Viana Duarte>É só substituir o ouvido humano. Sai fora.
+O ouvido humano é o analisador que está</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2774-3
+00:17:18.004 --> 00:17:20.727
+<v Marcus Antonio Viana Duarte>sendo desenvolvido há bilhões de anos,
+certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2816-0
+00:17:22.087 --> 00:17:25.377
+<v Marcus Antonio Viana Duarte>É bom,
+a gente consegue hoje em dia fazer muita</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2816-1
+00:17:25.377 --> 00:17:28.530
+<v Marcus Antonio Viana Duarte>coisa, tá? Então,
+nem sempre a coisa é fácil,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2816-2
+00:17:28.530 --> 00:17:33.602
+<v Marcus Antonio Viana Duarte>o duro é achar sinal onde o sinal,
+onde o nível de ruído é muito acima do</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2816-3
+00:17:33.602 --> 00:17:35.247
+<v Marcus Antonio Viana Duarte>sinal, a gente consegue.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2828-0
+00:17:36.447 --> 00:17:39.960
+<v Marcus Antonio Viana Duarte>Pra isso que teu curso é a análise.
+Sinais, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2828-1
+00:17:39.960 --> 00:17:42.887
+<v Marcus Antonio Viana Duarte>Às vezes fica mais complicado ainda, tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2880-0
+00:17:44.807 --> 00:17:48.320
+<v Marcus Antonio Viana Duarte>O sinal é que tem um bispectro,
+uma terceira ordem,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2880-1
+00:17:48.320 --> 00:17:51.428
+<v Marcus Antonio Viana Duarte>isso aí são ferramentas de análise de
+sinais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2880-2
+00:17:51.428 --> 00:17:55.279
+<v Marcus Antonio Viana Duarte>Esse bispectro se o seu orientador for
+Aldemir cavalini,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2880-3
+00:17:55.279 --> 00:18:00.887
+<v Marcus Antonio Viana Duarte>você vai entender alguma coisa, porque eu,
+por exemplo, nunca vi nada nessa época.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2902-0
+00:18:01.567 --> 00:18:08.086
+<v Marcus Antonio Viana Duarte>Mas, de acordo com o Aldemir,
+ele é ótimo para detectar trinca em</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2902-1
+00:18:08.086 --> 00:18:09.567
+<v Marcus Antonio Viana Duarte>rotores, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2927-0
+00:18:10.687 --> 00:18:16.111
+<v Marcus Antonio Viana Duarte>Tá aí Oo que tá acontecendo? É o seguinte,
+antigamente, qual a análise dos sinais?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2927-1
+00:18:16.111 --> 00:18:19.967
+<v Marcus Antonio Viana Duarte>Era o seguinte, tava lá o sinal,
+você tinha um analisador.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2981-0
+00:18:22.167 --> 00:18:27.075
+<v Marcus Antonio Viana Duarte>No domínio do tempo que você pegava o
+livro RMS do sinal condensação,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2981-1
+00:18:27.075 --> 00:18:31.632
+<v Marcus Antonio Viana Duarte>você pegava a energia de vibração da
+máquina. Só que a Fernanda,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2981-2
+00:18:31.632 --> 00:18:36.470
+<v Marcus Antonio Viana Duarte>o cenário foi avançando, foram avançando.
+Hoje em dia, em vez delas,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2981-3
+00:18:36.470 --> 00:18:40.746
+<v Marcus Antonio Viana Duarte>condensar o sinais.
+Está parecendo que está complicando mais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2981-4
+00:18:40.746 --> 00:18:41.167
+<v Marcus Antonio Viana Duarte>ainda.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/2982-0
+00:18:41.567 --> 00:18:42.367
+<v Marcus Antonio Viana Duarte>Mas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3030-0
+00:18:44.367 --> 00:18:48.323
+<v Marcus Antonio Viana Duarte>Viva aí há, né?
+Treina uma CNN que ela se vira pra achar</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3030-1
+00:18:48.323 --> 00:18:53.459
+<v Marcus Antonio Viana Duarte>alguma coisa. Aí é uma análise.
+Essa análise é mais Moderna hoje em dia a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3030-2
+00:18:53.459 --> 00:18:58.247
+<v Marcus Antonio Viana Duarte>gente já não faz só a gente,
+a gente sempre tem uma ferramenta de de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3030-3
+00:18:58.247 --> 00:19:00.607
+<v Marcus Antonio Viana Duarte>pileiro pra ajudar a gente, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3054-0
+00:19:02.167 --> 00:19:08.080
+<v Marcus Antonio Viana Duarte>O curso de análise que eu tinha vontade
+de dar por um motivo de base de vocês,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3054-1
+00:19:08.080 --> 00:19:09.727
+<v Marcus Antonio Viana Duarte>eu não consigo, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3112-0
+00:19:11.567 --> 00:19:16.630
+<v Marcus Antonio Viana Duarte>Então o programa do curso é esse.
+Hoje nós temos com as 4 aulas teóricas aí</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3112-1
+00:19:16.630 --> 00:19:20.361
+<v Marcus Antonio Viana Duarte>de decisões básicas, né?
+Como ele tá se fosse como ele?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3112-2
+00:19:20.361 --> 00:19:24.358
+<v Marcus Antonio Viana Duarte>Nós estamos online,
+eu acho que nós não vamos gastar essa 4</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3112-3
+00:19:24.358 --> 00:19:27.822
+<v Marcus Antonio Viana Duarte>horas não.
+Nós vamos entrar um pouco em fundamentos</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3112-4
+00:19:27.822 --> 00:19:29.687
+<v Marcus Antonio Viana Duarte>de probabilidade ainda hoje.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3131-0
+00:19:30.807 --> 00:19:33.766
+<v Marcus Antonio Viana Duarte>Depois nós vamos entrar numa parte gente,
+aí vem a parte,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3131-1
+00:19:33.766 --> 00:19:36.367
+<v Marcus Antonio Viana Duarte>essa parte é muito interessante,
+que é a parte de.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3174-0
+00:19:38.367 --> 00:19:44.054
+<v Marcus Antonio Viana Duarte>Vamos trabalhar bastante da bendita da
+FFT. Tem um tal de espectro pra cá,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3174-1
+00:19:44.054 --> 00:19:47.921
+<v Marcus Antonio Viana Duarte>espectro pra lá, espectro pra cá,
+espectro pra lá.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3174-2
+00:19:47.921 --> 00:19:53.607
+<v Marcus Antonio Viana Duarte>Se a gente entender direitinho aqui que
+vem a ser esse tal desse espectro.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3192-0
+00:19:54.607 --> 00:19:59.525
+<v Marcus Antonio Viana Duarte>A gente só faz lambança, tá? Então,
+talvez eu uso mais,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3192-1
+00:19:59.525 --> 00:20:02.687
+<v Marcus Antonio Viana Duarte>que é 8 horas de aula em cima disso.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3259-0
+00:20:04.287 --> 00:20:09.241
+<v Marcus Antonio Viana Duarte>Depois da parte da transferência, né?
+Do input output, são sistemas físicos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3259-1
+00:20:09.241 --> 00:20:13.359
+<v Marcus Antonio Viana Duarte>Nós vamos ater aos lineares sinais,
+análise de sinais avançada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3259-2
+00:20:13.359 --> 00:20:18.507
+<v Marcus Antonio Viana Duarte>A gente pode tirar esse linear e colocar
+um não aqui da frente. E é lógico, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3259-3
+00:20:18.507 --> 00:20:22.367
+<v Marcus Antonio Viana Duarte>Análise de sinais a gente fica nos
+processos estacionários.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3302-0
+00:20:23.407 --> 00:20:27.240
+<v Marcus Antonio Viana Duarte>Certo?
+E onde é que nós vamos entrar com os</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3302-1
+00:20:27.240 --> 00:20:32.815
+<v Marcus Antonio Viana Duarte>laboratórios, depois o sistema siso, né?
+Seguir por também, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3302-2
+00:20:32.815 --> 00:20:36.909
+<v Marcus Antonio Viana Duarte>Vai ter a teórica de laboratório.
+Eu acho que,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3302-3
+00:20:36.909 --> 00:20:43.007
+<v Marcus Antonio Viana Duarte>como nós estamos usando online,
+eu vou dar pelo menos eu vou colocar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3342-0
+00:20:43.047 --> 00:20:46.913
+<v Marcus Antonio Viana Duarte>Até o mínimo evento,
+porque hoje em dia não tem muito sentido.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3342-1
+00:20:46.913 --> 00:20:51.269
+<v Marcus Antonio Viana Duarte>A gente fica só no ciso, não.
+A gente usa o ciso para pegar a parte de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3342-2
+00:20:51.269 --> 00:20:55.687
+<v Marcus Antonio Viana Duarte>embasamento estatístico e é muito
+importante esse realmente o seguinte.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3375-0
+00:20:56.807 --> 00:21:02.166
+<v Marcus Antonio Viana Duarte>Quando você apresenta um resultado de uma
+análise de sinais,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3375-1
+00:21:02.166 --> 00:21:06.646
+<v Marcus Antonio Viana Duarte>se não tiver uma estatística junto,
+não vale nada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3375-2
+00:21:06.646 --> 00:21:10.247
+<v Marcus Antonio Viana Duarte>O que que é uma estatística? Duarte, ora.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3412-0
+00:21:12.887 --> 00:21:20.379
+<v Marcus Antonio Viana Duarte>Uma estatística significa uma média e uma
+confiança nesse valor que você fez.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3412-1
+00:21:20.379 --> 00:21:25.950
+<v Marcus Antonio Viana Duarte>Olha aqui, ó nossa,
+a gente tá vendo aqui que em 14 Hertz</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3412-2
+00:21:25.950 --> 00:21:27.967
+<v Marcus Antonio Viana Duarte>teve uma variação de.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3465-0
+00:21:28.687 --> 00:21:33.534
+<v Marcus Antonio Viana Duarte>Ponto 3G entre o entre o sinal normal e o
+sinal de anomalia.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3465-1
+00:21:33.534 --> 00:21:38.699
+<v Marcus Antonio Viana Duarte>Qual que é o intervalo de com vigência?
+Se você falar que é 90%,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3465-2
+00:21:38.699 --> 00:21:43.546
+<v Marcus Antonio Viana Duarte>é um g fazer esse ponto.
+3G não vale nada se você sabe que o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3465-3
+00:21:43.546 --> 00:21:46.327
+<v Marcus Antonio Viana Duarte>intervalo de confiança é ponto 001.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3501-0
+00:21:46.887 --> 00:21:52.743
+<v Marcus Antonio Viana Duarte>Então, sinal realmente que saiu,
+mas não ali mesmo. Então, pessoal, é nós,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3501-1
+00:21:52.743 --> 00:21:56.959
+<v Marcus Antonio Viana Duarte>né? Que somos da área técnica.
+Nós temos que ter seu.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3501-2
+00:21:56.959 --> 00:22:01.487
+<v Marcus Antonio Viana Duarte>Não existe assim de ir na média, certo?
+Na média, deu 30.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3551-0
+00:22:02.407 --> 00:22:06.890
+<v Marcus Antonio Viana Duarte>Que na média deu 30.
+Eu tenho 90% de confiança,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3551-1
+00:22:06.890 --> 00:22:12.495
+<v Marcus Antonio Viana Duarte>que está entre 28 e 32 ponto.
+É assim que a gente trabalha.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3551-2
+00:22:12.495 --> 00:22:18.846
+<v Marcus Antonio Viana Duarte>É lógico que as estatísticas são
+estatísticas, são estimativas, né,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3551-3
+00:22:18.846 --> 00:22:20.527
+<v Marcus Antonio Viana Duarte>dos valores reais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3596-0
+00:22:21.727 --> 00:22:26.769
+<v Marcus Antonio Viana Duarte>E ela, é lógico que ela é sujeito a erro,
+certo? E aí, se tiver tempo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3596-1
+00:22:26.769 --> 00:22:31.029
+<v Marcus Antonio Viana Duarte>a gente vai inventando qualquer coisa,
+um estudinho melhor,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3596-2
+00:22:31.029 --> 00:22:36.568
+<v Marcus Antonio Viana Duarte>aí eu vou tentar dar uma. Esse curso,
+seu curso básico do curso de engenharia</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3596-3
+00:22:36.568 --> 00:22:37.207
+<v Marcus Antonio Viana Duarte>mecânica.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3653-0
+00:22:37.607 --> 00:22:42.268
+<v Marcus Antonio Viana Duarte>Da da nossa pós-graduação,
+então a gente não tem muito Liberdade de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3653-1
+00:22:42.268 --> 00:22:46.518
+<v Marcus Antonio Viana Duarte>inventar não, certo?
+Mas eu acho achar um buraquinho aí, não.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3653-2
+00:22:46.518 --> 00:22:50.494
+<v Marcus Antonio Viana Duarte>Vamos colocar algumas coisas,
+umas análises mais Moderna.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3653-3
+00:22:50.494 --> 00:22:54.607
+<v Marcus Antonio Viana Duarte>Vou tentar fazer pelo mesmo tempo,
+frequência ou pegar uma.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3665-0
+00:22:55.927 --> 00:22:58.713
+<v Marcus Antonio Viana Duarte>É só isso, vou inventar porque agora,
+certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3665-1
+00:22:58.713 --> 00:23:01.127
+<v Marcus Antonio Viana Duarte>Então esse é o nosso programa de curso.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3722-0
+00:23:03.007 --> 00:23:07.446
+<v Marcus Antonio Viana Duarte>As aulas de laboratório, né?
+Nós vamos ter uma aula base que as</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3722-1
+00:23:07.446 --> 00:23:11.955
+<v Marcus Antonio Viana Duarte>decisões básicas e propriedades
+estatísticas de sinais. Ou seja,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3722-2
+00:23:11.955 --> 00:23:15.146
+<v Marcus Antonio Viana Duarte>a ideia exata é norma. É pra aprender,
+mexer,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3722-3
+00:23:15.146 --> 00:23:20.487
+<v Marcus Antonio Viana Duarte>olhar o que que uma analisadora apresenta
+pra gente, o que que a gente pode?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3757-0
+00:23:21.727 --> 00:23:25.101
+<v Marcus Antonio Viana Duarte>Quais suas ferramentas são pra AI pra
+quem quiser.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3757-1
+00:23:25.101 --> 00:23:29.468
+<v Marcus Antonio Viana Duarte>Depois nós temos o sistema físico linear,
+né, que é o caso de um.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3757-2
+00:23:29.468 --> 00:23:32.247
+<v Marcus Antonio Viana Duarte>Vamos fazer uma brincadeira com o póstico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3769-0
+00:23:33.447 --> 00:23:36.567
+<v Marcus Antonio Viana Duarte>O Chico fazia com grau Liberdade.
+Eu tentar complicar um pouco mais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3813-0
+00:23:37.687 --> 00:23:42.676
+<v Marcus Antonio Viana Duarte>Depois da parte de erro, né?
+E aí a aulas de laboratório adicionais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3813-1
+00:23:42.676 --> 00:23:47.151
+<v Marcus Antonio Viana Duarte>podem ser elaboradas aí ao longo do
+período dos laboratório,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3813-2
+00:23:47.151 --> 00:23:52.287
+<v Marcus Antonio Viana Duarte>vão ser realizados no bloco um m, né?
+Lá no laboratório do lepro, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3824-0
+00:23:52.887 --> 00:23:56.207
+<v Marcus Antonio Viana Duarte>Ol laboratório dinâmico do sistemas
+becham.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3862-0
+00:23:57.887 --> 00:24:04.550
+<v Marcus Antonio Viana Duarte>E os horários são assim, nós vamos,
+vai ser normalmente Na Na quarta,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3862-1
+00:24:04.550 --> 00:24:10.928
+<v Marcus Antonio Viana Duarte>que aí eu vou, dou aula.
+Mas como a nossa não sei por ter bastante</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3862-2
+00:24:10.928 --> 00:24:12.927
+<v Marcus Antonio Viana Duarte>aluno, graças a Deus.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3903-0
+00:24:13.487 --> 00:24:20.034
+<v Marcus Antonio Viana Duarte>Aí, provavelmente um pouco desses alunos,
+de repente porque é laboratório com muita</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3903-1
+00:24:20.034 --> 00:24:24.009
+<v Marcus Antonio Viana Duarte>gente, se é pra olhar,
+vamos fazer virtual, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3903-2
+00:24:24.009 --> 00:24:28.607
+<v Marcus Antonio Viana Duarte>Laboratório é pra pôr a mão,
+então colocar é 18 alunos de.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3963-0
+00:24:29.167 --> 00:24:35.319
+<v Marcus Antonio Viana Duarte>E volta do analisador não serve para nada,
+então eu pretendo provavelmente quarta e</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3963-1
+00:24:35.319 --> 00:24:40.079
+<v Marcus Antonio Viana Duarte>quinta na parte da manhã.
+Separar os grupos aí para que a pessoa</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3963-2
+00:24:40.079 --> 00:24:45.424
+<v Marcus Antonio Viana Duarte>possa aproveitar melhor, certo?
+Você fazer um curso de análise de sinais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3963-3
+00:24:45.424 --> 00:24:48.207
+<v Marcus Antonio Viana Duarte>e ele não colocou a mão no analisador.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3967-0
+00:24:48.567 --> 00:24:51.047
+<v Marcus Antonio Viana Duarte>Pelo amor de Deus, né?
+Você não aprendeu nada?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/3981-0
+00:24:52.487 --> 00:24:56.287
+<v Marcus Antonio Viana Duarte>Certo, se é para fazer virtual,
+não precisa ter laboratório, Combinado?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4031-0
+00:24:57.727 --> 00:25:02.917
+<v Marcus Antonio Viana Duarte>Então, quem tem mais Liberdade na quinta,
+aí já me avisa, Ah, não dá,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4031-1
+00:25:02.917 --> 00:25:07.144
+<v Marcus Antonio Viana Duarte>se quiser eu posso.
+Nós vamos ter aí uns 45 laboratório,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4031-2
+00:25:07.144 --> 00:25:10.480
+<v Marcus Antonio Viana Duarte>ou seja,
+não vai ser toda semana e nós vamos</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4031-3
+00:25:10.480 --> 00:25:12.927
+<v Marcus Antonio Viana Duarte>conversando a respeito disso, tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4052-0
+00:25:13.687 --> 00:25:21.827
+<v Marcus Antonio Viana Duarte>18, olhando eu mexendo no analisador,
+aí não, eu faço tudo virtual meu, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4052-1
+00:25:21.827 --> 00:25:23.887
+<v Marcus Antonio Viana Duarte>No máximo aí quarto.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4055-0
+00:25:26.487 --> 00:25:27.767
+<v Marcus Antonio Viana Duarte>Certo, beleza.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4082-0
+00:25:30.447 --> 00:25:36.230
+<v Marcus Antonio Viana Duarte>O sistema de avaliação vai ser lista de
+exercícios laboratório. Vai ter relatório,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4082-1
+00:25:36.230 --> 00:25:39.087
+<v Marcus Antonio Viana Duarte>né? Você vai chegar lá, já vai treinando.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4133-0
+00:25:40.287 --> 00:25:46.345
+<v Marcus Antonio Viana Duarte>Vocês vão fazer os os os procedimentos,
+eu vou fazer bastante força que vocês</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4133-1
+00:25:46.345 --> 00:25:50.539
+<v Marcus Antonio Viana Duarte>façam mesmo.
+Eu vou ficar só de sapo e aí vocês façam</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4133-2
+00:25:50.539 --> 00:25:54.190
+<v Marcus Antonio Viana Duarte>relatórios,
+lista de exercícios nosso lista de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4133-3
+00:25:54.190 --> 00:25:57.607
+<v Marcus Antonio Viana Duarte>exercício vai ser tirado do ramo,
+não data.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4175-0
+00:25:58.447 --> 00:26:02.507
+<v Marcus Antonio Viana Duarte>Nossa, que legal ter um livro,
+ele é o melhor. Ah,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4175-1
+00:26:02.507 --> 00:26:06.726
+<v Marcus Antonio Viana Duarte>já fizeram muitos livros bons,
+já andaram os sinais?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4175-2
+00:26:06.726 --> 00:26:11.980
+<v Marcus Antonio Viana Duarte>Até eu já pensei em fazer um,
+mas bateu o redondata ninguém bate.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4175-3
+00:26:11.980 --> 00:26:14.687
+<v Marcus Antonio Viana Duarte>Se você souber o redondata de cor.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4189-0
+00:26:15.207 --> 00:26:20.931
+<v Marcus Antonio Viana Duarte>Você é o bom de análise de sinais,
+só que o bicho é intragável,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4189-1
+00:26:20.931 --> 00:26:23.167
+<v Marcus Antonio Viana Duarte>pelo amor de Deus, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4206-0
+00:26:28.087 --> 00:26:34.087
+<v Marcus Antonio Viana Duarte>Descrições básicas e propriedades dos
+sinais. Bom.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4209-0
+00:26:35.607 --> 00:26:36.847
+<v Marcus Antonio Viana Duarte>Nós vamos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4222-0
+00:26:38.927 --> 00:26:42.167
+<v Marcus Antonio Viana Duarte>É essa aula lá para as 10 acaba, né,
+porque vai no palco.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4270-0
+00:26:45.887 --> 00:26:50.207
+<v Marcus Antonio Viana Duarte>Dando uma olhada aqui,
+os nossos sinais é o seguinte,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4270-1
+00:26:50.207 --> 00:26:54.767
+<v Marcus Antonio Viana Duarte>eles são a gente que classifica eles e 2
+grandes grupos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4270-2
+00:26:54.767 --> 00:27:00.447
+<v Marcus Antonio Viana Duarte>Eu pode ser determinística, né?
+São sinais que podem ser representados</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4270-3
+00:27:00.447 --> 00:27:03.327
+<v Marcus Antonio Viana Duarte>por uma função matemática explícita.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4331-0
+00:27:04.207 --> 00:27:08.329
+<v Marcus Antonio Viana Duarte>Por exemplo,
+11 desbalanceamento de um de um rotor que</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4331-1
+00:27:08.329 --> 00:27:11.776
+<v Marcus Antonio Viana Duarte>está dormindo, só tem o desbalanceamento,
+né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4331-2
+00:27:11.776 --> 00:27:16.197
+<v Marcus Antonio Viana Duarte>Devido AO centro elástico não bater com o
+centro de massa,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4331-3
+00:27:16.197 --> 00:27:21.668
+<v Marcus Antonio Viana Duarte>ele vai gerar um sinal que vai poder ser
+representado muito bem por uma,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4331-4
+00:27:21.668 --> 00:27:22.567
+<v Marcus Antonio Viana Duarte>por um seno.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4371-0
+00:27:23.847 --> 00:27:29.280
+<v Marcus Antonio Viana Duarte>O seno é um cosseno, certo?
+Tem sinais são os subsinais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4371-1
+00:27:29.280 --> 00:27:37.429
+<v Marcus Antonio Viana Duarte>deterministros e os aleatórios, ou seja,
+são sinais que você dado o instante atual.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4371-2
+00:27:37.429 --> 00:27:41.407
+<v Marcus Antonio Viana Duarte>Você não sabe qual é o valor do instante.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4415-0
+00:27:42.327 --> 00:27:45.815
+<v Marcus Antonio Viana Duarte>Na próxima aquisição, certo, então,
+sinais aleatórios,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4415-1
+00:27:45.815 --> 00:27:50.508
+<v Marcus Antonio Viana Duarte>a gente trabalha com eles de maneira
+estatística e nunca se pode usar uma</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4415-2
+00:27:50.508 --> 00:27:55.073
+<v Marcus Antonio Viana Duarte>função explícita. Ô, Eduardo,
+a gente não sabe o que que vai acontecer,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4415-3
+00:27:55.073 --> 00:27:57.927
+<v Marcus Antonio Viana Duarte>pra que que a gente vai analisar esse
+bicho?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4454-0
+00:27:58.767 --> 00:28:02.195
+<v Marcus Antonio Viana Duarte>Realmente,
+eu já me fiz essa pergunta várias vezes</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4454-1
+00:28:02.195 --> 00:28:07.103
+<v Marcus Antonio Viana Duarte>ao longo da vida. Se o sinal relatório,
+não sei o que que vai acontecer,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4454-2
+00:28:07.103 --> 00:28:12.144
+<v Marcus Antonio Viana Duarte>pra que que vai analisar esse treco?
+Só que tem uma característica que é o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4454-3
+00:28:12.144 --> 00:28:13.287
+<v Marcus Antonio Viana Duarte>sistema dinâmico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4501-0
+00:28:13.647 --> 00:28:16.945
+<v Marcus Antonio Viana Duarte>Né?
+Sistema dinâmico é uma coisa que tem</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4501-1
+00:28:16.945 --> 00:28:20.966
+<v Marcus Antonio Viana Duarte>massa que tem amortecimento,
+que tem sua rigidez,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4501-2
+00:28:20.966 --> 00:28:27.319
+<v Marcus Antonio Viana Duarte>sua capacidade de armazenar energia,
+tudo que pode armazenar energia cinética,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4501-3
+00:28:27.319 --> 00:28:28.767
+<v Marcus Antonio Viana Duarte>energia potencial.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4539-0
+00:28:29.127 --> 00:28:35.817
+<v Marcus Antonio Viana Duarte>Eu posso considerar como sistema humano
+dinâmico e quando você tem um,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4539-1
+00:28:35.817 --> 00:28:43.167
+<v Marcus Antonio Viana Duarte>o sinal de entrada é um sinal totalmente
+aleatório, certo? Você tem um navio?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4568-0
+00:28:44.327 --> 00:28:48.137
+<v Marcus Antonio Viana Duarte>Tá lá, onda para cá, onda para lá,
+onda para lá.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4568-1
+00:28:48.137 --> 00:28:54.046
+<v Marcus Antonio Viana Duarte>Lógico que ele oscila de maneira
+aleatória, só que ele tem massa, tá certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4568-2
+00:28:54.046 --> 00:28:56.767
+<v Marcus Antonio Viana Duarte>Aí vem o nosso querido Isaac lildo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4588-0
+00:28:58.247 --> 00:29:03.687
+<v Marcus Antonio Viana Duarte>Mas é somatório das forças, isto é,
+igual a massa vezes da aceleração.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4630-0
+00:29:05.327 --> 00:29:09.689
+<v Marcus Antonio Viana Duarte>Se a gente pegar, né? Essa?
+Essa equação do new de colocar ela</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4630-1
+00:29:09.689 --> 00:29:13.219
+<v Marcus Antonio Viana Duarte>descretizar, né?
+Hoje em dia a gente trabalha, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4630-2
+00:29:13.219 --> 00:29:16.681
+<v Marcus Antonio Viana Duarte>Com análise de sinais analógico,
+não existe mais,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4630-3
+00:29:16.681 --> 00:29:19.727
+<v Marcus Antonio Viana Duarte>você sempre vai converter isso pra
+digital.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4665-0
+00:29:20.567 --> 00:29:27.115
+<v Marcus Antonio Viana Duarte>Se a gente digitar é discretizar problema.
+Diferenças centrais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4665-1
+00:29:27.115 --> 00:29:34.890
+<v Marcus Antonio Viana Duarte>A gente vai falar que a somatória das
+forças externas vezes Delta t vai ser</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4665-2
+00:29:34.890 --> 00:29:37.447
+<v Marcus Antonio Viana Duarte>igual x de menos um mais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4684-0
+00:29:39.127 --> 00:29:45.767
+<v Marcus Antonio Viana Duarte>X de mais um olha x de menos,
+2 mais x de −2 − 1.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4689-0
+00:29:47.367 --> 00:29:48.767
+<v Marcus Antonio Viana Duarte>Menos 2 x de.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4693-0
+00:29:50.927 --> 00:29:52.167
+<v Marcus Antonio Viana Duarte>Essa aqui é a relação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4730-0
+00:29:53.487 --> 00:29:59.783
+<v Marcus Antonio Viana Duarte>Olha, gente, se uma coisa, né,
+uma resposta, um sinal,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4730-1
+00:29:59.783 --> 00:30:08.138
+<v Marcus Antonio Viana Duarte>ele depende do passado, certo?
+X DeX de menos um x de menos 2 x de menos</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4730-2
+00:30:08.138 --> 00:30:08.367
+<v Marcus Antonio Viana Duarte>3.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4732-0
+00:30:08.767 --> 00:30:10.167
+<v Marcus Antonio Viana Duarte>Isso chama filtro?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4776-0
+00:30:11.527 --> 00:30:16.639
+<v Marcus Antonio Viana Duarte>Certo, então todo o sinal,
+por mais aleatório que seja,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4776-1
+00:30:16.639 --> 00:30:21.750
+<v Marcus Antonio Viana Duarte>quando ele passa pelo sistema dinâmico,
+ele é filtrado,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4776-2
+00:30:21.750 --> 00:30:28.687
+<v Marcus Antonio Viana Duarte>aí ele não fica tão aleatório, certo?
+Porque quando você passa pelo filtro.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4814-0
+00:30:28.927 --> 00:30:33.149
+<v Marcus Antonio Viana Duarte>Algumas componentes de frequência vão ser
+maximizadas,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4814-1
+00:30:33.149 --> 00:30:36.988
+<v Marcus Antonio Viana Duarte>vão vão passar com mais facilidade do que
+outras.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4814-2
+00:30:36.988 --> 00:30:43.052
+<v Marcus Antonio Viana Duarte>Então aquele sinal que teoricamente é
+totalmente bagunçado quando ele convolui</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4814-3
+00:30:43.052 --> 00:30:44.127
+<v Marcus Antonio Viana Duarte>com o sistema.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4856-0
+00:30:44.767 --> 00:30:48.639
+<v Marcus Antonio Viana Duarte>Fiz,
+sai alguma coisa que você consegue fazer</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4856-1
+00:30:48.639 --> 00:30:53.016
+<v Marcus Antonio Viana Duarte>alguma correlação entre o que tá
+acontecendo agora,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4856-2
+00:30:53.016 --> 00:31:00.087
+<v Marcus Antonio Viana Duarte>o que que pode acontecer no futuro, certo?
+Isso é muito importante conceitualmente.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4905-0
+00:31:00.727 --> 00:31:03.486
+<v Marcus Antonio Viana Duarte>Tá,
+e todo o sistema físico ele tem</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4905-1
+00:31:03.486 --> 00:31:08.697
+<v Marcus Antonio Viana Duarte>frequências preferenciais.
+O violão tem a dele. A ponte tem a dele.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4905-2
+00:31:08.697 --> 00:31:14.061
+<v Marcus Antonio Viana Duarte>O ser humano tem a dele, né?
+A frequência natural do nosso estômago a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4905-3
+00:31:14.061 --> 00:31:16.207
+<v Marcus Antonio Viana Duarte>turno aí de 2 restos e meio.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4940-0
+00:31:17.527 --> 00:31:23.787
+<v Marcus Antonio Viana Duarte>O coração está em torno de 30 e poucos,
+o resto pescoço tem 40 e poucos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4940-1
+00:31:23.787 --> 00:31:28.246
+<v Marcus Antonio Viana Duarte>O olho tem 60,
+então quando você o sinal aleatório,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4940-2
+00:31:28.246 --> 00:31:30.647
+<v Marcus Antonio Viana Duarte>passa pelo sistema dinâmico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4973-0
+00:31:31.767 --> 00:31:35.280
+<v Marcus Antonio Viana Duarte>Ele é filtrado,
+então vai ter características</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4973-1
+00:31:35.280 --> 00:31:38.640
+<v Marcus Antonio Viana Duarte>repetibilidades que poderão ser
+observadas,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4973-2
+00:31:38.640 --> 00:31:44.367
+<v Marcus Antonio Viana Duarte>mas só o que tem que ser feito,
+tudo do ponto de vista estatístico, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/4984-0
+00:31:46.567 --> 00:31:50.407
+<v Marcus Antonio Viana Duarte>Análise mais,
+sem estatística não serve para nada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5013-0
+00:31:51.927 --> 00:31:58.777
+<v Marcus Antonio Viana Duarte>Então tá aí os sinais determinísticos,
+ele pode ser sinais periódicos, ou seja,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5013-1
+00:31:58.777 --> 00:32:02.287
+<v Marcus Antonio Viana Duarte>de tanto em tanto tempo, ele vai repetir?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5055-0
+00:32:03.487 --> 00:32:07.651
+<v Marcus Antonio Viana Duarte>O seu pátria, né? Sua forma,
+esses periódicos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5055-1
+00:32:07.651 --> 00:32:14.385
+<v Marcus Antonio Viana Duarte>Ele pode ser um sinal harmônico, ou seja,
+ele é representado por apenas uma</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5055-2
+00:32:14.385 --> 00:32:21.207
+<v Marcus Antonio Viana Duarte>frequência, um seno ou um cosseno,
+ou eles podem ser uma soma de harmônicos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5103-0
+00:32:23.327 --> 00:32:28.054
+<v Marcus Antonio Viana Duarte>Esses 2 aqui que que a gente faz na vida
+a gente estudar isso,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5103-1
+00:32:28.054 --> 00:32:32.930
+<v Marcus Antonio Viana Duarte>porque quando tem esse graças ao nosso
+amigo fourier, você soma,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5103-2
+00:32:32.930 --> 00:32:37.807
+<v Marcus Antonio Viana Duarte>você transforma o seu sistema for linear,
+você transforma o seu.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5162-0
+00:32:38.567 --> 00:32:42.408
+<v Marcus Antonio Viana Duarte>Sinal periódico na soma de vários
+harmônicos,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5162-1
+00:32:42.408 --> 00:32:48.252
+<v Marcus Antonio Viana Duarte>que é bem fácil os não periódicos, né?
+Nós temos os pseudoperiódicos,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5162-2
+00:32:48.252 --> 00:32:52.511
+<v Marcus Antonio Viana Duarte>que são sinais de indústria, certo?
+Ele se repete,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5162-3
+00:32:52.511 --> 00:32:57.687
+<v Marcus Antonio Viana Duarte>mas tem um Monte de 3 junto,
+passa um trem, passa um negócio.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5204-0
+00:32:57.767 --> 00:33:03.347
+<v Marcus Antonio Viana Duarte>Então, tem uma variabilidade nele.
+Apesar dele, ele tenta recompor, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5204-1
+00:33:03.347 --> 00:33:08.385
+<v Marcus Antonio Viana Duarte>Esses pseudos periódicos que a gente
+acaba trabalhando, técnico,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5204-2
+00:33:08.385 --> 00:33:13.732
+<v Marcus Antonio Viana Duarte>estatística e os traz transscientes,
+aqueles que morrem na janela de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5204-3
+00:33:13.732 --> 00:33:15.127
+<v Marcus Antonio Viana Duarte>observação, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5265-0
+00:33:15.367 --> 00:33:20.487
+<v Marcus Antonio Viana Duarte>Então você está olhando o sinal,
+ele pufa daí a pouco ele parou na sua</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5265-1
+00:33:20.487 --> 00:33:26.401
+<v Marcus Antonio Viana Duarte>janela de observação. Ele é transiente,
+então o movimento de um satélite é um gás</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5265-2
+00:33:26.401 --> 00:33:32.242
+<v Marcus Antonio Viana Duarte>bem de um sinal harmônico distribuição de
+temperatura de um corpo submetido a um</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5265-3
+00:33:32.242 --> 00:33:35.127
+<v Marcus Antonio Viana Duarte>fluxo de calor, ele pode se representar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5279-0
+00:33:35.207 --> 00:33:39.075
+<v Marcus Antonio Viana Duarte>Apresentado por uma equação movimento de
+um sistema de um Pedro,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5279-1
+00:33:39.075 --> 00:33:42.407
+<v Marcus Antonio Viana Duarte>são coisas que podem ser representadas
+por uma equação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5307-0
+00:33:44.927 --> 00:33:48.999
+<v Marcus Antonio Viana Duarte>Pros sinais periódicos,
+quem manda é a nossa querida,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5307-1
+00:33:48.999 --> 00:33:54.127
+<v Marcus Antonio Viana Duarte>as funções harmônicas, né?
+Que nós temos 10. A cena de zero é zero.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5363-0
+00:33:55.487 --> 00:33:59.949
+<v Marcus Antonio Viana Duarte>Beleza e que tem o então tem o eixo do
+tempo, o sinal.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5363-1
+00:33:59.949 --> 00:34:06.845
+<v Marcus Antonio Viana Duarte>É lógico que o sinal harmônico ele existe
+desde o menos infinito, até mais infinito.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5363-2
+00:34:06.845 --> 00:34:12.767
+<v Marcus Antonio Viana Duarte>Só que nós vamos enxergá-lo numa janela
+que eu chamo de janela amostral.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5379-0
+00:34:13.567 --> 00:34:19.691
+<v Marcus Antonio Viana Duarte>Você vai pegar esse sinal durante um
+determinado tempo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5379-1
+00:34:19.691 --> 00:34:23.847
+<v Marcus Antonio Viana Duarte>e esse sinal ele pode ser apresentado.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5398-0
+00:34:25.767 --> 00:34:33.727
+<v Marcus Antonio Viana Duarte>Um ceno ou um cosseno, certo? Lembrando,
+né, que um ceno é um cosseno.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5451-0
+00:34:35.167 --> 00:34:39.543
+<v Marcus Antonio Viana Duarte>Como a diferença é de 90°, né?
+Se você avança o sin(90°),</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5451-1
+00:34:39.543 --> 00:34:43.692
+<v Marcus Antonio Viana Duarte>ele vira cosseno,
+então tanto faz você colocar seno ou</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5451-2
+00:34:43.692 --> 00:34:47.465
+<v Marcus Antonio Viana Duarte>cosseno aqui que vai mudar esse teto que
+tá aqui,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5451-3
+00:34:47.465 --> 00:34:50.407
+<v Marcus Antonio Viana Duarte>que é o que é a fase para trigo a zero.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5500-0
+00:34:51.207 --> 00:34:56.023
+<v Marcus Antonio Viana Duarte>Fase só existe se tiver referência
+pessoal. A fase meu sinal deu tanto.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5500-1
+00:34:56.023 --> 00:35:00.773
+<v Marcus Antonio Viana Duarte>Qual que é a referência? Ah,
+na hora que eu comecei a adquirir beleza,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5500-2
+00:35:00.773 --> 00:35:05.455
+<v Marcus Antonio Viana Duarte>Ah, o sinal 2 está defasado,
+de 30° em relação ao sinal um qual que é</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5500-3
+00:35:05.455 --> 00:35:07.127
+<v Marcus Antonio Viana Duarte>a referência? O sinal um.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5553-0
+00:35:07.727 --> 00:35:12.403
+<v Marcus Antonio Viana Duarte>Isso é muito importante que o pessoal,
+a amplitude vai bem, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5553-1
+00:35:12.403 --> 00:35:17.006
+<v Marcus Antonio Viana Duarte>A amplitude é a excursão do sinal,
+é o é o envelope de beleza,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5553-2
+00:35:17.006 --> 00:35:21.975
+<v Marcus Antonio Viana Duarte>mas na hora que chega na fase,
+tem muita gente que se perde, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5553-3
+00:35:21.975 --> 00:35:25.847
+<v Marcus Antonio Viana Duarte>Então esse sinal ele tem um,
+ele tem um período, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5598-0
+00:35:26.207 --> 00:35:31.851
+<v Marcus Antonio Viana Duarte>De tp e tp, ele vai repetir, certo?
+Só assim, já que já que o curso,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5598-1
+00:35:31.851 --> 00:35:37.331
+<v Marcus Antonio Viana Duarte>se eu ficar falando aqui falando que tá
+aí, não tem graça nenhuma,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5598-2
+00:35:37.331 --> 00:35:43.956
+<v Marcus Antonio Viana Duarte>eu vou dar 11 improve se eu mandar vocês
+medirem as frequências AA frequência de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5598-3
+00:35:43.956 --> 00:35:44.447
+<v Marcus Antonio Viana Duarte>sinal.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5608-0
+00:35:45.007 --> 00:35:50.407
+<v Marcus Antonio Viana Duarte>Olhando aí no tempo,
+vocês vão tentar achar o período aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5612-0
+00:35:51.847 --> 00:35:53.047
+<v Marcus Antonio Viana Duarte>Ou aqui?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5623-0
+00:35:57.607 --> 00:36:00.127
+<v Marcus Antonio Viana Duarte>Alguém chuta sua aula no segue brava,
+gente.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5633-0
+00:36:02.407 --> 00:36:04.247
+<v Marcus Antonio Viana Duarte>Vocês vão pegar esse período aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5638-0
+00:36:04.367 --> 00:36:05.007
+<v marcusfilipesr>Pico-pico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5649-0
+00:36:06.327 --> 00:36:08.833
+<v Marcus Antonio Viana Duarte>É,
+vocês vão pegar de pico a pico ou pela</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5649-1
+00:36:08.833 --> 00:36:09.847
+<v Marcus Antonio Viana Duarte>passagem do zero.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5660-0
+00:36:12.807 --> 00:36:15.767
+<v Marcus Antonio Viana Duarte>Pode falar, fala aqui,
+é pra gente aproveitar as coisas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5707-0
+00:36:18.967 --> 00:36:22.432
+<v Marcus Antonio Viana Duarte>Vocês têm 50% de chance de acertar.
+Vamos lá,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5707-1
+00:36:22.432 --> 00:36:27.930
+<v Marcus Antonio Viana Duarte>alguém dá um palpite pela passagem do
+zero já já nós vamos ver o motivo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5677-0
+00:36:23.687 --> 00:36:24.527
+<v marcusfilipesr>Sabe, no zero.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5707-2
+00:36:27.930 --> 00:36:31.997
+<v Marcus Antonio Viana Duarte>por que que a gente faz pela passagem do
+zero, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5707-3
+00:36:31.997 --> 00:36:34.407
+<v Marcus Antonio Viana Duarte>Toda vez que a gente quer saber.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5749-0
+00:36:35.047 --> 00:36:39.816
+<v Marcus Antonio Viana Duarte>Período no sinal temporal. A gente recusa,
+né? O sinal ascendente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5749-1
+00:36:39.816 --> 00:36:45.581
+<v Marcus Antonio Viana Duarte>as passagens pelo zero ou descendente,
+tanto faz. Já não vou ver o motivo certo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5749-2
+00:36:45.581 --> 00:36:49.353
+<v Marcus Antonio Viana Duarte>então esse sinal,
+ele é caracterizado por amplitude,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5749-3
+00:36:49.353 --> 00:36:50.207
+<v Marcus Antonio Viana Duarte>por período.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5798-0
+00:36:50.607 --> 00:36:56.599
+<v Marcus Antonio Viana Duarte>Frequência é o número de vezes,
+a frequência em Hertz é o número de vezes</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5798-1
+00:36:56.599 --> 00:37:01.376
+<v Marcus Antonio Viana Duarte>que ele vai repetir em um segundo.
+Quando você fala assim,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5798-2
+00:37:01.376 --> 00:37:07.367
+<v Marcus Antonio Viana Duarte>a frequência da rede é 60 Hertz, ou seja,
+tem 60 período em cada segundo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5836-0
+00:37:07.887 --> 00:37:11.354
+<v Marcus Antonio Viana Duarte>Está relacionado através de um.
+É o período,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5836-1
+00:37:11.354 --> 00:37:17.133
+<v Marcus Antonio Viana Duarte>é um sobre a frequência do sinal e é
+lógico que quando a gente está usando</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5836-2
+00:37:17.133 --> 00:37:21.757
+<v Marcus Antonio Viana Duarte>funções harmônicas,
+nós temos que transformar o nosso amigo</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5836-3
+00:37:21.757 --> 00:37:22.527
+<v Marcus Antonio Viana Duarte>Hertz, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5875-0
+00:37:23.007 --> 00:37:30.795
+<v Marcus Antonio Viana Duarte>Ciclos por segundo, não é unidade certo,
+você tem que passar pro nosso amigo</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5875-1
+00:37:30.795 --> 00:37:35.750
+<v Marcus Antonio Viana Duarte>radianos por segundo aí tudo bem.
+Então você aí,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5875-2
+00:37:35.750 --> 00:37:40.807
+<v Marcus Antonio Viana Duarte>você tem que pegar OF zero e multiplicar
+por 2 π.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5925-0
+00:37:41.887 --> 00:37:45.543
+<v Marcus Antonio Viana Duarte>Certo,
+então a frequência em radianos é 2 π a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5925-1
+00:37:45.543 --> 00:37:51.106
+<v Marcus Antonio Viana Duarte>frequência e hairs. Não adoro você.
+Tá achando que nós é meio pastel?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5925-2
+00:37:51.106 --> 00:37:57.464
+<v Marcus Antonio Viana Duarte>É das coisas simples que a gente erra,
+certo? Às vezes a gente sabe o complexo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5925-3
+00:37:57.464 --> 00:37:59.927
+<v Marcus Antonio Viana Duarte>o que é bobo. A gente não sabe.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5928-0
+00:38:00.847 --> 00:38:02.327
+<v Marcus Antonio Viana Duarte>E, por incrível que pareça.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5950-0
+00:38:03.727 --> 00:38:10.142
+<v Marcus Antonio Viana Duarte>Teoricamente, todo o sinal periódico,
+ele é muito bem representado pela série</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5950-1
+00:38:10.142 --> 00:38:11.047
+<v Marcus Antonio Viana Duarte>de fourier.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/5952-0
+00:38:12.527 --> 00:38:13.287
+<v Marcus Antonio Viana Duarte>Beleza.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6002-0
+00:38:14.927 --> 00:38:19.225
+<v Marcus Antonio Viana Duarte>Na vida real,
+o que mais dá trabalho é espectro de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6002-1
+00:38:19.225 --> 00:38:25.293
+<v Marcus Antonio Viana Duarte>sinal periódico. Ridículo, né?
+Nós vamos ver porque em aulas futuras tá</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6002-2
+00:38:25.293 --> 00:38:29.085
+<v Marcus Antonio Viana Duarte>o trem danado.
+É quando o sinal é periódico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6002-3
+00:38:29.085 --> 00:38:32.287
+<v Marcus Antonio Viana Duarte>Você fazer uma análise espectral dele.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6028-0
+00:38:37.447 --> 00:38:40.621
+<v Marcus Antonio Viana Duarte>Aí quando você tem, né?
+Um sinal periódico,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6028-1
+00:38:40.621 --> 00:38:45.887
+<v Marcus Antonio Viana Duarte>lá você tem e normalmente a gente fala,
+né, o que tá aqui, gente? É ODC.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6065-0
+00:38:47.327 --> 00:38:51.820
+<v Marcus Antonio Viana Duarte>Certo, a parte,
+o A0 do tempo cosseno certo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6065-1
+00:38:51.820 --> 00:38:59.209
+<v Marcus Antonio Viana Duarte>aqui está a representação de série de
+furi do sinal periódico, né? Então,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6065-2
+00:38:59.209 --> 00:39:00.207
+<v Marcus Antonio Viana Duarte>tem a 0/2.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6121-0
+00:39:01.927 --> 00:39:05.588
+<v Marcus Antonio Viana Duarte>Que é?
+A gente chama isso aqui de nível médio,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6121-1
+00:39:05.588 --> 00:39:10.573
+<v Marcus Antonio Viana Duarte>é o nível médio do sinal, certo?
+É o tanto que a oscilação, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6121-2
+00:39:10.573 --> 00:39:14.780
+<v Marcus Antonio Viana Duarte>O sinal de temporal,
+ele está oscilando o tanto que a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6121-3
+00:39:14.780 --> 00:39:19.687
+<v Marcus Antonio Viana Duarte>oscilação ele está oscilando em torno
+dessa, desse valor aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6175-0
+00:39:20.447 --> 00:39:27.037
+<v Marcus Antonio Viana Duarte>Esse aqui nós chamamos média nível DC,
+tá aí vem esse bicho aqui que é o é o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6175-1
+00:39:27.037 --> 00:39:32.600
+<v Marcus Antonio Viana Duarte>fundamental, é o primeiro deles.
+A gente chama de um x, ou seja,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6175-2
+00:39:32.600 --> 00:39:36.708
+<v Marcus Antonio Viana Duarte>a harmônica, fundamental,
+primeira a harmônica.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6175-3
+00:39:36.708 --> 00:39:39.447
+<v Marcus Antonio Viana Duarte>E aí você vai ter as harmônicas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6188-0
+00:39:39.527 --> 00:39:45.604
+<v Marcus Antonio Viana Duarte>Mais alta, ordem. Certo,
+isso aí pra gente acertando o palavreado,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6188-1
+00:39:45.604 --> 00:39:47.327
+<v Marcus Antonio Viana Duarte>então devia descer.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6221-0
+00:39:48.687 --> 00:39:55.610
+<v Marcus Antonio Viana Duarte>OX, eu sei a primeira Harmonia, e aí vai?
+Então quando o assunto fala assim, ih,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6221-1
+00:39:55.610 --> 00:40:01.934
+<v Marcus Antonio Viana Duarte>o quarto x tá forte pra caramba.
+Nossa senhora, deve ser folga no mancal,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6221-2
+00:40:01.934 --> 00:40:02.447
+<v Marcus Antonio Viana Duarte>certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6272-0
+00:40:04.527 --> 00:40:10.425
+<v Marcus Antonio Viana Duarte>Então, é a ideia das anas sinais é isso,
+né? Eu. Eu tô dando exemplo de vibração,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6272-1
+00:40:10.425 --> 00:40:15.388
+<v Marcus Antonio Viana Duarte>porque eu trabalho muito é com a parte de
+vibração, tá certo? Então,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6272-2
+00:40:15.388 --> 00:40:20.567
+<v Marcus Antonio Viana Duarte>quando você condensa a coisa,
+o cara bate o olho aqui. Ah, rapaz, olha.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6309-0
+00:40:20.847 --> 00:40:23.805
+<v Marcus Antonio Viana Duarte>E segunda arma tá muito maior que o
+primeiro, né? Nossa, vai,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6309-1
+00:40:23.805 --> 00:40:26.906
+<v Marcus Antonio Viana Duarte>tá desalinhado que dói,
+você fica parecendo um cara inteligente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6309-2
+00:40:26.906 --> 00:40:30.007
+<v Marcus Antonio Viana Duarte>todo mundo fica olhando assim, cara,
+como é que o cara sabe, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6311-0
+00:40:31.287 --> 00:40:31.767
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6358-0
+00:40:33.527 --> 00:40:37.251
+<v Marcus Antonio Viana Duarte>Não pode fazer igual.
+Aconteceu com uma equipe.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6358-1
+00:40:37.251 --> 00:40:42.371
+<v Marcus Antonio Viana Duarte>Aí se eu não vou falar o nome,
+não sei por que carregar as dagas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6358-2
+00:40:42.371 --> 00:40:48.887
+<v Marcus Antonio Viana Duarte>Eles olharam o espectro numa direção só e
+chegaram à conclusão que era empenamento.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6377-0
+00:40:49.447 --> 00:40:53.317
+<v Marcus Antonio Viana Duarte>Emperamento emperramento tem uma
+característica de subir todo mundo</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6377-1
+00:40:53.317 --> 00:40:54.967
+<v Marcus Antonio Viana Duarte>harmônico de subir harmônico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6417-0
+00:40:56.247 --> 00:40:59.278
+<v Marcus Antonio Viana Duarte>E sobe muito o quarto também.
+O terceiro é,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6417-1
+00:40:59.278 --> 00:41:02.791
+<v Marcus Antonio Viana Duarte>tem um do meio aqui que sobe.
+Legal é emperamento.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6417-2
+00:41:02.791 --> 00:41:07.888
+<v Marcus Antonio Viana Duarte>Tiraram o rotorzinho de algumas toneladas,
+passaram o relógio comparador,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6417-3
+00:41:07.888 --> 00:41:10.367
+<v Marcus Antonio Viana Duarte>não tinha emperamento nenhum, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6464-0
+00:41:11.967 --> 00:41:15.652
+<v Marcus Antonio Viana Duarte>Aí não é análise de sinais,
+é burrice sinal, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6464-1
+00:41:15.652 --> 00:41:20.542
+<v Marcus Antonio Viana Duarte>Você acha que é empenamento?
+Você é obrigado a olhar pelo menos em 2</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6464-2
+00:41:20.542 --> 00:41:26.070
+<v Marcus Antonio Viana Duarte>direções. Eles só olharam na radial,
+aí aquela a fama da manutenção preditiva</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6464-3
+00:41:26.070 --> 00:41:27.487
+<v Marcus Antonio Viana Duarte>vai para o lixo, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6529-0
+00:41:28.767 --> 00:41:32.528
+<v Marcus Antonio Viana Duarte>Então, legal,
+uma coisa que a gente sabe é isso a essas</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6529-1
+00:41:32.528 --> 00:41:36.221
+<v Marcus Antonio Viana Duarte>amplitudes.
+Aqui é o termo é a raiz quadrada do então.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6529-2
+00:41:36.221 --> 00:41:39.243
+<v Marcus Antonio Viana Duarte>Quando a gente representa um sinal
+espectro,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6529-3
+00:41:39.243 --> 00:41:44.145
+<v Marcus Antonio Viana Duarte>normalmente a gente representa as
+amplitudes que é a raiz quadrada de do</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6529-4
+00:41:44.145 --> 00:41:47.167
+<v Marcus Antonio Viana Duarte>termo seno,
+mas o termo cosseno ao quadrado.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6566-0
+00:41:47.847 --> 00:41:52.238
+<v Marcus Antonio Viana Duarte>E a fase né?
+Que é a tangente do termo seno sobre o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6566-1
+00:41:52.238 --> 00:41:58.234
+<v Marcus Antonio Viana Duarte>termo cosseno, isso é convenção,
+nada impede de que fosse que fosse ao</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6566-2
+00:41:58.234 --> 00:42:01.527
+<v Marcus Antonio Viana Duarte>contrário. Mas isso vem lá da elétrica.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6575-0
+00:42:02.927 --> 00:42:08.047
+<v Marcus Antonio Viana Duarte>É sempre assim, certo?
+O tempo c sobre tempo com c.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6631-0
+00:42:11.527 --> 00:42:16.414
+<v Marcus Antonio Viana Duarte>Então, os pseudos periódicos,
+eles têm essa os periódicos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6631-1
+00:42:16.414 --> 00:42:23.041
+<v Marcus Antonio Viana Duarte>Eles têm características, o seguinte,
+o máximo divisor comum, né? No caso aqui,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6631-2
+00:42:23.041 --> 00:42:27.928
+<v Marcus Antonio Viana Duarte>nosso amigo é o 24, é dividido por 2,
+50 é dividido por 2.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6631-3
+00:42:27.928 --> 00:42:31.407
+<v Marcus Antonio Viana Duarte>Então nossa frequência básica vai ser o 2.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6674-0
+00:42:32.247 --> 00:42:39.182
+<v Marcus Antonio Viana Duarte>Certo? E se a gente olhar espectro,
+vai ter 3 componentes, um 1002, um 1004,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6674-1
+00:42:39.182 --> 00:42:45.216
+<v Marcus Antonio Viana Duarte>2 vezes a harmônica básica e uma 25 × 25
+vezes a harmônica básica,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6674-2
+00:42:45.216 --> 00:42:46.927
+<v Marcus Antonio Viana Duarte>o pseudo periódico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6683-0
+00:42:47.167 --> 00:42:51.887
+<v Marcus Antonio Viana Duarte>Acontece o seguinte,
+você tem um sinal base forte.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6735-0
+00:42:53.167 --> 00:42:57.015
+<v Marcus Antonio Viana Duarte>Certo?
+E tem um encarequinha lá que você tem um</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6735-1
+00:42:57.015 --> 00:43:03.428
+<v Marcus Antonio Viana Duarte>número irracional aqui, certo? Ou seja,
+esse aqui não é múltiplo do sinal base,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6735-2
+00:43:03.428 --> 00:43:07.677
+<v Marcus Antonio Viana Duarte>então você olha o sinal,
+ele parece que é periódico,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6735-3
+00:43:07.677 --> 00:43:12.647
+<v Marcus Antonio Viana Duarte>mas aí da a pouco aquele aquele o bom
+exemplo é esse aqui, ó.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6761-0
+00:43:15.247 --> 00:43:18.927
+<v Marcus Antonio Viana Duarte>Esse bichinho aí,
+se você pegar sua janela de observação</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6761-1
+00:43:18.927 --> 00:43:22.607
+<v Marcus Antonio Viana Duarte>desse tamanho,
+você vai pegar um sinal periódico bonito.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6777-0
+00:43:24.087 --> 00:43:30.578
+<v Marcus Antonio Viana Duarte>Só que, né?
+Tem o Zé chatinho lá que vai fazer essa</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6777-1
+00:43:30.578 --> 00:43:31.327
+<v Marcus Antonio Viana Duarte>coisa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6818-0
+00:43:33.767 --> 00:43:38.432
+<v Marcus Antonio Viana Duarte>Deixar o analista meio maluco tá?
+Então essa aí que é cara,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6818-1
+00:43:38.432 --> 00:43:43.175
+<v Marcus Antonio Viana Duarte>é o tal do piscina do periódico.
+Ele é fortemente periódico,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6818-2
+00:43:43.175 --> 00:43:49.007
+<v Marcus Antonio Viana Duarte>mas tem uma caquinha lá, certo?
+Normalmente essa caquinha em sinais reais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6844-0
+00:43:49.527 --> 00:43:57.011
+<v Marcus Antonio Viana Duarte>É modulação modulação de fases ou de
+amplitude, certo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6844-1
+00:43:57.011 --> 00:44:03.407
+<v Marcus Antonio Viana Duarte>então você olha lá porque aqui tem e
+conforme.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6872-0
+00:44:04.887 --> 00:44:08.342
+<v Marcus Antonio Viana Duarte>A coisa só se repete depois de 3040
+segundos, ou seja,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6872-1
+00:44:08.342 --> 00:44:12.487
+<v Marcus Antonio Viana Duarte>você já fez sua análise há muito tempo,
+e aí que ele vai repetir.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6892-0
+00:44:17.447 --> 00:44:20.556
+<v Marcus Antonio Viana Duarte>Então se deu um número irracional na
+jogada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6892-1
+00:44:20.556 --> 00:44:24.287
+<v Marcus Antonio Viana Duarte>O sinal já não pode ser mais considerado,
+entende, ó.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6935-0
+00:44:25.807 --> 00:44:32.457
+<v Marcus Antonio Viana Duarte>Agora sinais transientes os principais
+que a gente usa na nossa área de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6935-1
+00:44:32.457 --> 00:44:39.846
+<v Marcus Antonio Viana Duarte>vibrações e acústica que estão esse meu
+primeiro amigo é o decremento é ele cai</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6935-2
+00:44:39.846 --> 00:44:41.047
+<v Marcus Antonio Viana Duarte>ao longo, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6955-0
+00:44:41.527 --> 00:44:45.668
+<v Marcus Antonio Viana Duarte>Cai ao longo do tempo exponencialmente,
+certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6955-1
+00:44:45.668 --> 00:44:48.927
+<v Marcus Antonio Viana Duarte>Eu falo que Deus adorava a função aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6993-0
+00:44:50.007 --> 00:44:56.162
+<v Marcus Antonio Viana Duarte>Ele adorava o exponencial,
+porque os sinônimos todos tende a cair ao</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6993-1
+00:44:56.162 --> 00:45:03.297
+<v Marcus Antonio Viana Duarte>longo do tempo de falar ele exponencial,
+aquele carbono catuze. Ah, essa, esse,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/6993-2
+00:45:03.297 --> 00:45:05.527
+<v Marcus Antonio Viana Duarte>esse osso aqui foi lá do.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7008-0
+00:45:06.847 --> 00:45:13.527
+<v Marcus Antonio Viana Duarte>Tem 5300 anos atrás.
+É porque assume-se um modelo que.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7016-0
+00:45:16.087 --> 00:45:18.567
+<v Marcus Antonio Viana Duarte>A radiação cais poder ser aumento.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7026-0
+00:45:20.007 --> 00:45:26.047
+<v Marcus Antonio Viana Duarte>Contê se além disso sinal oscila.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7024-0
+00:45:24.167 --> 00:45:24.647
+<v marcusfilipesr>Cante.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7030-0
+00:45:27.607 --> 00:45:27.967
+<v marcusfilipesr>Torrent?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7032-0
+00:45:27.807 --> 00:45:29.247
+<v Marcus Antonio Viana Duarte>E aí, oi.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7051-0
+00:45:30.167 --> 00:45:35.287
+<v marcusfilipesr>É no ainda no anterior.
+Ali é sobre a questão do pseudoperiódico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7095-0
+00:45:36.807 --> 00:45:41.555
+<v marcusfilipesr>Tendo o você consegue dentro do sinal,
+por exemplo, você falou assim,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7095-1
+00:45:41.555 --> 00:45:46.438
+<v marcusfilipesr>assumindo que você tem uma modulação aí
+de do intervalo de 30 segundos,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7095-2
+00:45:46.438 --> 00:45:50.847
+<v marcusfilipesr>você tá fazendo uma janela de 10 segundos,
+você conseguiria ver.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7102-0
+00:45:52.007 --> 00:45:54.287
+<v marcusfilipesr>Ou em janelas menores que teria isso não,
+né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7176-0
+00:45:52.127 --> 00:45:56.828
+<v Marcus Antonio Viana Duarte>Ah, é, não, não.
+Aí você tem que ter a paciência disso aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7176-1
+00:45:56.828 --> 00:46:02.086
+<v Marcus Antonio Viana Duarte>Oi, um minuto aí que vem,
+aí vem a jogada dos anais dos sinais da</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7139-0
+00:45:57.047 --> 00:46:00.825
+<v marcusfilipesr>Entendeu? Por algum motivo,
+você teria que fazer a mais, né? Falar,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7139-1
+00:46:00.825 --> 00:46:03.047
+<v marcusfilipesr>vou vou aquisitar um minuto, seria isso?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7176-2
+00:46:02.086 --> 00:46:05.990
+<v Marcus Antonio Viana Duarte>vida, né, gente?
+A primeira coisa de o primeiro,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7146-0
+00:46:04.327 --> 00:46:04.767
+<v marcusfilipesr>Entendi.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7176-3
+00:46:05.990 --> 00:46:11.567
+<v Marcus Antonio Viana Duarte>o primeiro sinal que a gente analisa,
+eu tenho um amigo que o Israel.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7157-0
+00:46:07.367 --> 00:46:07.727
+<v marcusfilipesr>Entendi.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7226-0
+00:46:11.847 --> 00:46:16.135
+<v Marcus Antonio Viana Duarte>Lá da UFTMA, primeira coisa que fala,
+você viu o sinal do tempo certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7226-1
+00:46:16.135 --> 00:46:20.905
+<v Marcus Antonio Viana Duarte>Porque quando a gente normalmente no
+curso de análise de sinais, o pessoal Ah,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7226-2
+00:46:20.905 --> 00:46:25.072
+<v Marcus Antonio Viana Duarte>é, vamos fazer espectro, vamos fazer isso,
+vamos fazer transformada,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7226-3
+00:46:25.072 --> 00:46:27.367
+<v Marcus Antonio Viana Duarte>vamos fazer ricos, vamos fazer coisas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7235-0
+00:46:28.087 --> 00:46:31.527
+<v Marcus Antonio Viana Duarte>No sinal do tempo é fundamental, certo?
+Você olha o bichinho.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7279-0
+00:46:32.807 --> 00:46:37.106
+<v Marcus Antonio Viana Duarte>Certo? E olha bem, aconselho é o seguinte,
+espera aí,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7279-1
+00:46:37.106 --> 00:46:40.768
+<v Marcus Antonio Viana Duarte>você vai tomar aí você vai tomar sua
+decisão,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7279-2
+00:46:40.768 --> 00:46:47.057
+<v Marcus Antonio Viana Duarte>qual que vai ser seu tempo de aquisição e
+vai pra ir lá fora porque o que mais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7279-3
+00:46:47.057 --> 00:46:48.967
+<v Marcus Antonio Viana Duarte>existe, né? É modulação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7292-0
+00:46:49.327 --> 00:46:56.647
+<v Marcus Antonio Viana Duarte>De frequência de fase e sinais, certo?
+É uma vez eu estava numa pesquisa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7307-0
+00:46:57.927 --> 00:47:03.967
+<v Marcus Antonio Viana Duarte>Com a tekans minha ideia lá, falei assim,
+Ah, vou chegar lá, vou pegar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7364-0
+00:47:05.647 --> 00:47:11.087
+<v Marcus Antonio Viana Duarte>Aceleração em 50 pontos.
+Depois eu faço uma correlação e aí eu sei,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7364-1
+00:47:11.087 --> 00:47:14.687
+<v Marcus Antonio Viana Duarte>aí eu uso um de base e consigo obter a
+fase,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7364-2
+00:47:14.687 --> 00:47:20.767
+<v Marcus Antonio Viana Duarte>eu vou ver o vou ver o compressor vibrar.
+Eu queria fazer uma ODS com 2 com</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7364-3
+00:47:20.767 --> 00:47:21.967
+<v Marcus Antonio Viana Duarte>acelerontes só.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7410-0
+00:47:23.287 --> 00:47:29.409
+<v Marcus Antonio Viana Duarte>Eu só esqueci do batimento certo,
+voltou lá de novo com uns 10 ACLE nome,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7410-1
+00:47:29.409 --> 00:47:35.531
+<v Marcus Antonio Viana Duarte>fazer coisas e isso não deu em nada.
+Então a gente tem que tomar bastante</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7410-2
+00:47:35.531 --> 00:47:41.487
+<v Marcus Antonio Viana Duarte>cuidado. Se você chegou no lugar,
+está fazendo OOOOOO, pode saber aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7420-0
+00:47:42.807 --> 00:47:46.847
+<v Marcus Antonio Viana Duarte>Você tem alguma coisa no meio que está
+atrapalhando?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7443-0
+00:47:47.967 --> 00:47:52.693
+<v Marcus Antonio Viana Duarte>Coisas, por exemplo. 2 é Ah,
+mas acontece que é normalmente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7443-1
+00:47:52.693 --> 00:47:55.327
+<v Marcus Antonio Viana Duarte>se você tem uma modulação de fase.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7454-0
+00:47:58.087 --> 00:48:03.207
+<v Marcus Antonio Viana Duarte>Porque a você tem uma mudança da
+velocidade.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7507-0
+00:48:04.807 --> 00:48:09.831
+<v Marcus Antonio Viana Duarte>De rotação da máquina, né?
+Engrenagem acontece isso. Teoricamente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7507-1
+00:48:09.831 --> 00:48:12.905
+<v Marcus Antonio Viana Duarte>se.
+Se o engrenagem ocorresse em cima do</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7507-2
+00:48:12.905 --> 00:48:17.178
+<v Marcus Antonio Viana Duarte>diâmetro primitivo,
+obrigatoriamente você teria um sinal</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7507-3
+00:48:17.178 --> 00:48:21.527
+<v Marcus Antonio Viana Duarte>bonitinho, né? Frequência,
+rotação e frequência de malha.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7551-0
+00:48:22.327 --> 00:48:26.743
+<v Marcus Antonio Viana Duarte>Só que isso nunca existe.
+Primeiro que devido a montagem,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7551-1
+00:48:26.743 --> 00:48:31.083
+<v Marcus Antonio Viana Duarte>você sempre pode ter um errinho quando
+você tem um erro,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7551-2
+00:48:31.083 --> 00:48:36.869
+<v Marcus Antonio Viana Duarte>você muda a velocidade da movida durante
+um ciclo e quando não tem um erro,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7551-3
+00:48:36.869 --> 00:48:38.087
+<v Marcus Antonio Viana Duarte>a própria carga.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7605-0
+00:48:38.727 --> 00:48:43.407
+<v Marcus Antonio Viana Duarte>Quando você joga a carga,
+o dente deflete quando o dente deflete</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7605-1
+00:48:43.407 --> 00:48:48.807
+<v Marcus Antonio Viana Duarte>você sai do drama primitivo de novo,
+certo? Então toda engrenagem faz uma,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7605-2
+00:48:48.807 --> 00:48:53.199
+<v Marcus Antonio Viana Duarte>não tem jeito, tá certo?
+Ela tem sempre modulação compressor</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7605-3
+00:48:53.199 --> 00:48:57.447
+<v Marcus Antonio Viana Duarte>compressor. Ele, esse compressor rotativo,
+principalmente.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7613-0
+00:48:58.447 --> 00:49:02.407
+<v Marcus Antonio Viana Duarte>Tem, tem bate feio também,
+abre a minha máquina.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7672-0
+00:49:03.847 --> 00:49:08.160
+<v Marcus Antonio Viana Duarte>A potência do Carvalho tem uns 800
+cavalos sobrando,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7672-1
+00:49:08.160 --> 00:49:14.588
+<v Marcus Antonio Viana Duarte>está bem dimensionado e não vai ter essa
+variaçãozinha beleza aí você coloca 2</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7672-2
+00:49:14.588 --> 00:49:19.552
+<v Marcus Antonio Viana Duarte>perto uma da outra,
+uma está rodando a 59 e 8 e a outra está</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7672-3
+00:49:19.552 --> 00:49:20.447
+<v Marcus Antonio Viana Duarte>rodando em.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7676-0
+00:49:20.967 --> 00:49:23.487
+<v Marcus Antonio Viana Duarte>5977.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7720-0
+00:49:27.047 --> 00:49:32.837
+<v Marcus Antonio Viana Duarte>Aí é aí que vem o batimento,
+as 2 modula e aí sim, aí é,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7720-1
+00:49:32.837 --> 00:49:39.032
+<v Marcus Antonio Viana Duarte>é 2030 segundos pra você retornar a
+condição inicial, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7720-2
+00:49:39.032 --> 00:49:46.447
+<v Marcus Antonio Viana Duarte>A vida de quem mexe com o sinal real é
+divertido. Isso eu falo pra você.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7786-0
+00:49:50.607 --> 00:49:53.967
+<v Marcus Antonio Viana Duarte>E eu, normalmente,
+quando eu dou consultoria nessa área,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7786-1
+00:49:53.967 --> 00:49:58.801
+<v Marcus Antonio Viana Duarte>eu sempre Marco 2 visita, não professor,
+mas é longe, vem uma vez só, eu Marco 2,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7786-2
+00:49:58.801 --> 00:50:02.043
+<v Marcus Antonio Viana Duarte>Ah, da segunda,
+eu vou lá mostrar o resultado de vocês</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7786-3
+00:50:02.043 --> 00:50:04.990
+<v Marcus Antonio Viana Duarte>que toda a lambança que eu errei na
+primeira, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7786-4
+00:50:04.990 --> 00:50:07.407
+<v Marcus Antonio Viana Duarte>Quando eu chego em laboratório com calma.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7790-0
+00:50:07.807 --> 00:50:09.847
+<v Marcus Antonio Viana Duarte>Aí você volta lá na segunda e conserto.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7795-0
+00:50:10.927 --> 00:50:13.367
+<v Marcus Antonio Viana Duarte>Certo, e é só seu amigo, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7839-0
+00:50:15.167 --> 00:50:23.329
+<v Marcus Antonio Viana Duarte>É um sinal que ele tem onde l dura dura,
+certo tempo, tem amplitude e depois cai,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7839-1
+00:50:23.329 --> 00:50:29.899
+<v Marcus Antonio Viana Duarte>certo? Os cara aqui não.
+Ovelha muito também 11 aproximação dele.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7839-2
+00:50:29.899 --> 00:50:32.487
+<v Marcus Antonio Viana Duarte>Então esses são os sinais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7847-0
+00:50:32.887 --> 00:50:37.927
+<v Marcus Antonio Viana Duarte>Transeuntes mais comuns em vibrações e
+acústicas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7855-0
+00:50:40.487 --> 00:50:44.727
+<v Marcus Antonio Viana Duarte>Esse nosso amigo aí, né ele?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7896-0
+00:50:46.047 --> 00:50:50.891
+<v Marcus Antonio Viana Duarte>Agora vamos lá, né,
+pra pra quando você sai do tempo e vai</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7896-1
+00:50:50.891 --> 00:50:56.639
+<v Marcus Antonio Viana Duarte>pra frequência aquela história que eu
+falei, né? Todo sistema físico,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7896-2
+00:50:56.639 --> 00:51:01.072
+<v Marcus Antonio Viana Duarte>ele é um filtro.
+Passo abaixo que que isso significa,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7896-3
+00:51:01.072 --> 00:51:01.647
+<v Marcus Antonio Viana Duarte>Duarte?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7903-0
+00:51:02.047 --> 00:51:06.407
+<v Marcus Antonio Viana Duarte>Significa que 1 hora o espectro vai
+abaixar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7922-0
+00:51:09.487 --> 00:51:15.117
+<v Marcus Antonio Viana Duarte>Certo,
+nunca existe o espectro totalmente reto,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7922-1
+00:51:15.117 --> 00:51:18.167
+<v Marcus Antonio Viana Duarte>tem o tem o nome Big Bang.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7924-0
+00:51:19.487 --> 00:51:19.927
+<v Marcus Antonio Viana Duarte>7.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7960-0
+00:51:21.807 --> 00:51:28.529
+<v Marcus Antonio Viana Duarte>Sinais reais esse espectro tem que
+abaixar só pra adiantar pros senhores a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/7960-1
+00:51:28.529 --> 00:51:35.967
+<v Marcus Antonio Viana Duarte>energia que o sinal tem é a integral de
+baixo dessa da da é a área em baixo dessa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8012-0
+00:51:38.887 --> 00:51:43.042
+<v Marcus Antonio Viana Duarte>Do pau esperto. Ora,
+como existe energia infinita 1 hora,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8012-1
+00:51:43.042 --> 00:51:46.338
+<v Marcus Antonio Viana Duarte>outra tem que abaixar.
+Isso é uma explicação,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8012-2
+00:51:46.338 --> 00:51:51.998
+<v Marcus Antonio Viana Duarte>um a explicação que eu gosto é as que eu
+falei com vocês. Então, se tem dessa,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8012-3
+00:51:51.998 --> 00:51:53.287
+<v Marcus Antonio Viana Duarte>se tem dessa você.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8055-0
+00:51:53.887 --> 00:52:00.634
+<v Marcus Antonio Viana Duarte>A resposta do presente depende da
+incitação e da resposta no passado e se</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8055-1
+00:52:00.634 --> 00:52:06.561
+<v Marcus Antonio Viana Duarte>depende do passado, é o filtro,
+é o filtro passar abaixo 1 hora.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8055-2
+00:52:06.561 --> 00:52:08.567
+<v Marcus Antonio Viana Duarte>A energia cai, beleza?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8068-0
+00:52:09.007 --> 00:52:14.647
+<v Marcus Antonio Viana Duarte>Explicação matemática, energia infinita,
+explicação física tem nessa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8082-0
+00:52:15.847 --> 00:52:19.847
+<v Marcus Antonio Viana Duarte>Aqui, esse sinal aqui,
+ele já tem essa característica, não é ele.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8123-0
+00:52:22.247 --> 00:52:28.681
+<v Marcus Antonio Viana Duarte>Tem uma região que ele vai ter uma peito
+de braço bem mais alta. Depois ele cai,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8123-1
+00:52:28.681 --> 00:52:32.572
+<v Marcus Antonio Viana Duarte>certo,
+que é as famosas frequências naturais que</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8123-2
+00:52:32.572 --> 00:52:38.847
+<v Marcus Antonio Viana Duarte>a gente chama de ressonância e as nossas
+coleguinha aqui e tem essa cara aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8186-0
+00:52:41.207 --> 00:52:44.587
+<v Marcus Antonio Viana Duarte>Então,
+só de você bater o olho no espectro, Ah,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8186-1
+00:52:44.587 --> 00:52:48.460
+<v Marcus Antonio Viana Duarte>sai assim, ensaia assado e sai pra lá.
+Isso aí, gente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8186-2
+00:52:48.460 --> 00:52:52.192
+<v Marcus Antonio Viana Duarte>vocês tem que ter o hábito de associar
+essas coisas,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8186-3
+00:52:52.192 --> 00:52:56.487
+<v Marcus Antonio Viana Duarte>que aí facilita bastante a vida,
+porque o que mais acontece.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8196-0
+00:52:56.647 --> 00:53:00.807
+<v Marcus Antonio Viana Duarte>Numa aquisição de sinal em campo,
+é você não adquirir nada, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8239-0
+00:53:02.527 --> 00:53:05.116
+<v Marcus Antonio Viana Duarte>Se você não souber nada de análise de
+sinais,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8239-1
+00:53:05.116 --> 00:53:09.336
+<v Marcus Antonio Viana Duarte>você vai adquirir uma vibração de uma
+marca. Você não vai adquirir é nada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8239-2
+00:53:09.336 --> 00:53:12.769
+<v Marcus Antonio Viana Duarte>Então, quando você está mexendo,
+você já está olhando, olha,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8239-3
+00:53:12.769 --> 00:53:14.007
+<v Marcus Antonio Viana Duarte>o analisador fala, ih.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8266-0
+00:53:15.407 --> 00:53:21.259
+<v Marcus Antonio Viana Duarte>Ih, certo, uma vez eu fiz uma ajuda,
+ajudei muito, o ator estava lá, sofrendo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8266-1
+00:53:21.259 --> 00:53:23.407
+<v Marcus Antonio Viana Duarte>sofrendo, sofrendo, sofrendo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8308-0
+00:53:24.607 --> 00:53:30.311
+<v Marcus Antonio Viana Duarte>E aí o Duarte senou que tinha que ter
+isso, o Duarte senou que tem aquilo aí,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8308-1
+00:53:30.311 --> 00:53:35.430
+<v Marcus Antonio Viana Duarte>o Duarte chegou, e aí, Duarte,
+vocês já ligaram o cabo no analisador?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8308-2
+00:53:35.430 --> 00:53:36.527
+<v Marcus Antonio Viana Duarte>Lógico que não.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8337-0
+00:53:40.967 --> 00:53:46.691
+<v Marcus Antonio Viana Duarte>Não tenho milhões de conhecimento de
+análise, você vai adquirir tudo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8337-1
+00:53:46.691 --> 00:53:51.352
+<v Marcus Antonio Viana Duarte>vai ir para casa,
+só esqueceu de conectar o cabo entre o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8337-2
+00:53:51.352 --> 00:53:53.887
+<v Marcus Antonio Viana Duarte>sensor e o e o gravador, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8357-0
+00:53:56.167 --> 00:54:00.450
+<v Marcus Antonio Viana Duarte>Ah, isso acontece só com a gente *****.
+Já aconteceu comigo também está.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8357-1
+00:54:00.450 --> 00:54:01.447
+<v Marcus Antonio Viana Duarte>Fica triste, não?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8369-0
+00:54:04.487 --> 00:54:08.289
+<v Marcus Antonio Viana Duarte>Então,
+os sinais aleatórios eles podem ser</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8369-1
+00:54:08.289 --> 00:54:09.527
+<v Marcus Antonio Viana Duarte>estacionários.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8407-0
+00:54:10.807 --> 00:54:14.741
+<v Marcus Antonio Viana Duarte>Ou não estacionários,
+o sinal está sensional,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8407-1
+00:54:14.741 --> 00:54:21.497
+<v Marcus Antonio Viana Duarte>foi estacionário e tem outra divisão e
+pode ser ergótico ou não ergóticos isso</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8407-2
+00:54:21.497 --> 00:54:25.687
+<v Marcus Antonio Viana Duarte>nacional e não estacionário, meu amigo,
+esquece.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8446-0
+00:54:27.047 --> 00:54:31.828
+<v Marcus Antonio Viana Duarte>Não é graças a esses efeitos,
+filtros da vida a tendência, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8446-1
+00:54:31.828 --> 00:54:36.458
+<v Marcus Antonio Viana Duarte>Que como Deus, gosta de jogar dados,
+a tendência dos sinais,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8446-2
+00:54:36.458 --> 00:54:41.087
+<v Marcus Antonio Viana Duarte>seres estacionários e principalmente eles
+são ergógicos, tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8480-0
+00:54:42.007 --> 00:54:49.529
+<v Marcus Antonio Viana Duarte>Esses são os mais fáceis de analisar.
+Esse aqui já complica um pouquinho e esse</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8480-1
+00:54:49.529 --> 00:54:54.230
+<v Marcus Antonio Viana Duarte>nosso amigo aqui aí.
+A análise está avançada, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8480-2
+00:54:54.230 --> 00:54:58.367
+<v Marcus Antonio Viana Duarte>Você vai usar filtros temporais,
+né pronir?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8530-0
+00:54:58.687 --> 00:55:03.896
+<v Marcus Antonio Viana Duarte>LSTM por aí pra ver se tira alguma coisa,
+nem pelo menos você tira tendência,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8530-1
+00:55:03.896 --> 00:55:07.703
+<v Marcus Antonio Viana Duarte>nem sempre com muita sorte, né?
+Altura das ondas do mar,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8530-2
+00:55:07.703 --> 00:55:11.644
+<v Marcus Antonio Viana Duarte>resposta de um sistema mecânico em uma
+situação aleatória,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8530-3
+00:55:11.644 --> 00:55:13.647
+<v Marcus Antonio Viana Duarte>ele é estacionário e ergótico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8566-0
+00:55:14.287 --> 00:55:20.295
+<v Marcus Antonio Viana Duarte>Ruído induzido é a antena.
+A nossa sorte é que a natureza ela gosta</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8566-1
+00:55:20.295 --> 00:55:24.271
+<v Marcus Antonio Viana Duarte>de ruído branco,
+o que que é o ruído branco?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8566-2
+00:55:24.271 --> 00:55:30.367
+<v Marcus Antonio Viana Duarte>É o ruído que tem todas as frequências,
+então naturalmente, né, mar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8618-0
+00:55:32.047 --> 00:55:37.005
+<v Marcus Antonio Viana Duarte>Vento, os fenômenos naturais,
+eles tende a ter serem fenômeno aleatório,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8618-1
+00:55:37.005 --> 00:55:39.789
+<v Marcus Antonio Viana Duarte>né?
+Você nunca consegue prever o próximo</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8618-2
+00:55:39.789 --> 00:55:42.573
+<v Marcus Antonio Viana Duarte>passo?
+Medir agora não sei o que que vai</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8618-3
+00:55:42.573 --> 00:55:46.852
+<v Marcus Antonio Viana Duarte>acontecer daqui a pouco,
+mas eles tende a ter uma distribuição</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8618-4
+00:55:46.852 --> 00:55:47.327
+<v Marcus Antonio Viana Duarte>normal.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8627-0
+00:55:47.967 --> 00:55:51.407
+<v Marcus Antonio Viana Duarte>A normalidade das coisas,
+aí fica mais fácil pra gente trabalhar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8670-0
+00:55:53.007 --> 00:55:56.802
+<v Marcus Antonio Viana Duarte>Beleza, então,
+aqui nós temos bendito do sinal,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8670-1
+00:55:56.802 --> 00:56:02.810
+<v Marcus Antonio Viana Duarte>então vamos lá, o sinal é o é aleatório,
+você vai fazer uma amostragem, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8670-2
+00:56:02.810 --> 00:56:06.447
+<v Marcus Antonio Viana Duarte>Aqui essa amostragem você faz ela do
+tempo e.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8695-0
+00:56:07.887 --> 00:56:15.536
+<v Marcus Antonio Viana Duarte>No espaço, por exemplo,
+de vibração de um flep numa da decolagem</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8695-1
+00:56:15.536 --> 00:56:24.127
+<v Marcus Antonio Viana Duarte>de uma aeronave, subiu a aeronave subiu,
+a outra, subiu outra pra então.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8727-0
+00:56:24.567 --> 00:56:30.550
+<v Marcus Antonio Viana Duarte>Você tem temporal espacial, certo?
+Esse tipo de sinais,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8727-1
+00:56:30.550 --> 00:56:36.961
+<v Marcus Antonio Viana Duarte>a gente chama eles de processo,
+estocástico certo? Ou seja,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8727-2
+00:56:36.961 --> 00:56:40.487
+<v Marcus Antonio Viana Duarte>é um fenômeno aleatório do tempo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8728-0
+00:56:42.207 --> 00:56:42.727
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8775-0
+00:56:43.807 --> 00:56:48.201
+<v Marcus Antonio Viana Duarte>Quando aleatório, é só. Aqui é análise.
+Sinais é análise,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8775-1
+00:56:48.201 --> 00:56:52.670
+<v Marcus Antonio Viana Duarte>sinais não é fundamentos de anais, sinais,
+só estatística.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8775-2
+00:56:52.670 --> 00:56:58.124
+<v Marcus Antonio Viana Duarte>Quando o treino anda pro lado de cá,
+aí tem esse nome, bonito processo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8775-3
+00:56:58.124 --> 00:56:59.487
+<v Marcus Antonio Viana Duarte>estocástico certo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8821-0
+00:57:00.527 --> 00:57:04.019
+<v Marcus Antonio Viana Duarte>Mas vamos lá,
+o que que nós vamos fazer com esse</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8821-1
+00:57:04.019 --> 00:57:08.722
+<v Marcus Antonio Viana Duarte>bendito desse processo? Estocástico.
+O que acontece é o seguinte,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8821-2
+00:57:08.722 --> 00:57:12.641
+<v Marcus Antonio Viana Duarte>quando a coisa é aleatória,
+ela tem um viés aleatório.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8821-3
+00:57:12.641 --> 00:57:15.847
+<v Marcus Antonio Viana Duarte>Nós trabalhamos com parâmetros
+estatísticos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8854-0
+00:57:16.327 --> 00:57:21.785
+<v Marcus Antonio Viana Duarte>Certo, o que que são?
+Parâmetros estatísticos são os momentos,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8854-1
+00:57:21.785 --> 00:57:26.290
+<v Marcus Antonio Viana Duarte>né? Primeiro momento é a média,
+a famosa média, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8854-2
+00:57:26.290 --> 00:57:32.007
+<v Marcus Antonio Viana Duarte>Primeiro momento de segunda ordem é o é o
+valor médio quadrático.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8886-0
+00:57:33.327 --> 00:57:39.413
+<v Marcus Antonio Viana Duarte>O primeiro momento é o segundo momento.
+Central é a variância. Terceiro momento,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8886-1
+00:57:39.413 --> 00:57:44.447
+<v Marcus Antonio Viana Duarte>central esquilos 4 momentos, central,
+curtose e vai para ir afora.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8897-0
+00:57:45.807 --> 00:57:49.687
+<v Marcus Antonio Viana Duarte>Para que que você vai fazer isso?
+É totalmente aleatório.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8916-0
+00:57:51.207 --> 00:57:57.518
+<v Marcus Antonio Viana Duarte>Pra que que existe essa estatística?
+Ela existe pra você classificar a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8916-1
+00:57:57.518 --> 00:57:58.407
+<v Marcus Antonio Viana Duarte>população?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8955-0
+00:58:00.207 --> 00:58:07.075
+<v Marcus Antonio Viana Duarte>Tá certo? Se o sinal da máquina um,
+a média dela a curtos, o esquilos,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8955-1
+00:58:07.075 --> 00:58:14.619
+<v Marcus Antonio Viana Duarte>o erro metro quadrado foi igual o da
+máquina 2 significa que elas pertencem a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/8955-2
+00:58:14.619 --> 00:58:16.167
+<v Marcus Antonio Viana Duarte>mesma população.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9002-0
+00:58:17.567 --> 00:58:22.715
+<v Marcus Antonio Viana Duarte>Certo, mas um Belo dia,
+a máquina 2 resolve mudar sua média,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9002-1
+00:58:22.715 --> 00:58:28.708
+<v Marcus Antonio Viana Duarte>sua energia significa que a máquina 2
+está com uma anomalia, tá certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9002-2
+00:58:28.708 --> 00:58:33.687
+<v Marcus Antonio Viana Duarte>Então pra isso que a gente,
+apesar da coisa ser aleatória.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9031-0
+00:58:34.207 --> 00:58:41.482
+<v Marcus Antonio Viana Duarte>A gente se vira no strito, certo? Então,
+processos aleatórios a gente usa,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9031-1
+00:58:41.482 --> 00:58:49.047
+<v Marcus Antonio Viana Duarte>tem que usar estatísticos os momentos
+estatísticos, beleza, ótimo, então sim.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9040-0
+00:58:51.527 --> 00:58:53.887
+<v Marcus Antonio Viana Duarte>A propriedade estatística aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9045-0
+00:58:55.007 --> 00:58:56.407
+<v Marcus Antonio Viana Duarte>Foi igual a daqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9065-0
+00:58:57.527 --> 00:59:01.044
+<v Marcus Antonio Viana Duarte>Que foi igual a daqui,
+que foi igual a daqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9065-1
+00:59:01.044 --> 00:59:04.407
+<v Marcus Antonio Viana Duarte>A gente fala que o processo é
+estacionário.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9067-0
+00:59:05.767 --> 00:59:06.207
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9112-0
+00:59:10.047 --> 00:59:13.962
+<v Marcus Antonio Viana Duarte>Normalmente,
+o curso de análise de sinais fundamental,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9112-1
+00:59:13.962 --> 00:59:19.300
+<v Marcus Antonio Viana Duarte>que é o que nós estamos fazendo,
+a gente só mexe com o sinal estacionário.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9112-2
+00:59:19.300 --> 00:59:25.207
+<v Marcus Antonio Viana Duarte>Isso é muito importante você colocar na
+sua cabeça na hora que você vai trabalhar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9132-0
+00:59:25.887 --> 00:59:29.699
+<v Marcus Antonio Viana Duarte>Por exemplo,
+o caso que ele brincou aí do batimento,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9132-1
+00:59:29.699 --> 00:59:33.367
+<v Marcus Antonio Viana Duarte>se eu analisar 10 segundos de sinal com
+batimento.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9194-0
+00:59:34.727 --> 00:59:38.877
+<v Marcus Antonio Viana Duarte>Eu vou ver que ele tá é,
+eu tô vendo e eu acho que ele é</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9194-1
+00:59:38.877 --> 00:59:43.246
+<v Marcus Antonio Viana Duarte>estacionário. Se olhar 20 segundos,
+ele não é estacionário.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9194-2
+00:59:43.246 --> 00:59:48.853
+<v Marcus Antonio Viana Duarte>A média nos primeiros no primeiro 5
+segundos de aquisição é diferente dos de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9194-3
+00:59:48.853 --> 00:59:53.367
+<v Marcus Antonio Viana Duarte>10 segundos, que é diferente do de 12,
+que é diferente do 15.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9243-0
+00:59:55.007 --> 00:59:58.621
+<v Marcus Antonio Viana Duarte>É aí complicou seu Eduardo,
+mas você fica olhando 2 horas,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9243-1
+00:59:58.621 --> 01:00:03.155
+<v Marcus Antonio Viana Duarte>aí ele fica estacionário de tanto em
+tanto, ele vai ter a repetibilidade,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9243-2
+01:00:03.155 --> 01:00:08.239
+<v Marcus Antonio Viana Duarte>então essas definições é uma coisa mais.
+A gente é que tem que conseguir colocar o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9243-3
+01:00:08.239 --> 01:00:10.567
+<v Marcus Antonio Viana Duarte>sinal. Onde é que a gente quer, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9245-0
+01:00:11.527 --> 01:00:12.767
+<v Marcus Antonio Viana Duarte>Beleza, então.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9251-0
+01:00:14.207 --> 01:00:16.127
+<v Marcus Antonio Viana Duarte>Se as estatísticas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9253-0
+01:00:17.607 --> 01:00:18.247
+<v Marcus Antonio Viana Duarte>Aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9279-0
+01:00:20.007 --> 01:00:25.730
+<v Marcus Antonio Viana Duarte>Né? São constantes, não é estacionário?
+Ah, então o que que significa?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9279-1
+01:00:25.730 --> 01:00:30.727
+<v Marcus Antonio Viana Duarte>Significa que a gente pode trabalhar com
+amossas finitas, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9319-0
+01:00:33.327 --> 01:00:37.551
+<v Marcus Antonio Viana Duarte>Em vez de eu pegar 870000 pontos ou AO
+voo da,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9319-1
+01:00:37.551 --> 01:00:43.393
+<v Marcus Antonio Viana Duarte>a decolagem da via inteira até chegar lá
+em cima eu pego aí, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9319-2
+01:00:43.393 --> 01:00:47.167
+<v Marcus Antonio Viana Duarte>12 minutos de sinais estacionário, beleza.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9329-0
+01:00:47.647 --> 01:00:51.803
+<v Marcus Antonio Viana Duarte>Eu uso isso pra poder fazer as minhas
+previsões. Estatísticas. Pegaram a ideia,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9329-1
+01:00:51.803 --> 01:00:52.167
+<v Marcus Antonio Viana Duarte>galera.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9342-0
+01:00:54.687 --> 01:00:58.087
+<v Marcus Antonio Viana Duarte>Bom, é, mas aí tem um problema.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9341-0
+01:00:56.567 --> 01:00:56.687
+<v marcusfilipesr>Sim.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9357-0
+01:01:00.607 --> 01:01:03.367
+<v Marcus Antonio Viana Duarte>Então a gente tem um plano de ar,
+mostra trabalho com estatística.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9367-0
+01:01:05.287 --> 01:01:09.007
+<v Marcus Antonio Viana Duarte>Agora tem uma outra,
+uma outra coisa também, sim.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9371-0
+01:01:11.167 --> 01:01:13.607
+<v Marcus Antonio Viana Duarte>As propriedades aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9378-0
+01:01:15.087 --> 01:01:18.647
+<v Marcus Antonio Viana Duarte>Certo de correlação e média.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9402-0
+01:01:20.447 --> 01:01:24.950
+<v Marcus Antonio Viana Duarte>Ao longo do tempo de um sinal,
+foi igual a propriedade.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9402-1
+01:01:24.950 --> 01:01:28.247
+<v Marcus Antonio Viana Duarte>Aqui a gente fala que o sinal é ergótico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9404-0
+01:01:29.647 --> 01:01:30.007
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9428-0
+01:01:32.687 --> 01:01:37.342
+<v Marcus Antonio Viana Duarte>Então, legal, estamos aí.
+Então as principais propriedades que nós</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9428-1
+01:01:37.342 --> 01:01:41.510
+<v Marcus Antonio Viana Duarte>temos é essa, né?
+Quando a gente está trabalhando com sinal</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9428-2
+01:01:41.510 --> 01:01:41.927
+<v Marcus Antonio Viana Duarte>média.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9458-0
+01:01:43.087 --> 01:01:52.684
+<v Marcus Antonio Viana Duarte>Tá, e a tal da correlação,
+por que que a correlação faz o arte? Olha,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9458-1
+01:01:52.684 --> 01:01:59.127
+<v Marcus Antonio Viana Duarte>você faz um produto do XT um com XT,
+2 beleza?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9467-0
+01:02:00.327 --> 01:02:03.127
+<v Marcus Antonio Viana Duarte>Se esse VZ, se for positivo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9498-0
+01:02:04.367 --> 01:02:10.171
+<v Marcus Antonio Viana Duarte>Esse meses, se for negativo esse meses,
+se for zero, esse meses é positivo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9498-1
+01:02:10.171 --> 01:02:15.745
+<v Marcus Antonio Viana Duarte>E etcetera não tem correlação.
+Na hora que você somar esses produtos vai</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9498-2
+01:02:15.745 --> 01:02:16.967
+<v Marcus Antonio Viana Duarte>dar zero, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9549-0
+01:02:19.327 --> 01:02:22.718
+<v Marcus Antonio Viana Duarte>Aí a gente fala que o sinal não tem
+correlação,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9549-1
+01:02:22.718 --> 01:02:27.804
+<v Marcus Antonio Viana Duarte>mas se quando esse aqui tá subir,
+tá positivo, esse também tá positivo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9549-2
+01:02:27.804 --> 01:02:31.054
+<v Marcus Antonio Viana Duarte>esse aqui tá zero esse aqui tá perto de
+zero,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9549-3
+01:02:31.054 --> 01:02:34.727
+<v Marcus Antonio Viana Duarte>esse aqui tá negativo de carro também,
+tá negativo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9564-0
+01:02:36.007 --> 01:02:38.891
+<v Marcus Antonio Viana Duarte>E quando você fizer esses produtos e
+somar,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9564-1
+01:02:38.891 --> 01:02:41.447
+<v Marcus Antonio Viana Duarte>vai dar alguma coisa diferente de zero?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9609-0
+01:02:42.727 --> 01:02:46.520
+<v Marcus Antonio Viana Duarte>Então a gente fala que o instante t 2
+está, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9609-1
+01:02:46.520 --> 01:02:51.578
+<v Marcus Antonio Viana Duarte>Tem uma correlação com o instante t um
+valor exato. Eu não sei,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9609-2
+01:02:51.578 --> 01:02:55.608
+<v Marcus Antonio Viana Duarte>mas eu sei que se aqui tiver subindo lá
+na frente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9609-3
+01:02:55.608 --> 01:02:58.927
+<v Marcus Antonio Viana Duarte>tem grande chance de estar subindo também.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9620-0
+01:02:59.607 --> 01:03:03.849
+<v Marcus Antonio Viana Duarte>Certo? Ou seja,
+você consegue fazer um controle,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9620-1
+01:03:03.849 --> 01:03:05.407
+<v Marcus Antonio Viana Duarte>né probabilístico?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9651-0
+01:03:06.647 --> 01:03:10.818
+<v Marcus Antonio Viana Duarte>Fazendo a previsão Futura com o tempo
+presente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9651-1
+01:03:10.818 --> 01:03:16.206
+<v Marcus Antonio Viana Duarte>apesar de você ter um viés aí que é
+aleatório, certo? Beleza,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9651-2
+01:03:16.206 --> 01:03:19.247
+<v Marcus Antonio Viana Duarte>então são essas 2 propriedades, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9678-0
+01:03:20.927 --> 01:03:27.962
+<v Marcus Antonio Viana Duarte>Aqui foi igual as daqui.
+A gente fala que sinal é o é. É ergótico,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9678-1
+01:03:27.962 --> 01:03:31.847
+<v Marcus Antonio Viana Duarte>estacionário e ergótico estacionário.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9687-0
+01:03:33.247 --> 01:03:39.447
+<v Marcus Antonio Viana Duarte>É gótico, estacionário.
+Quando não importa o ponto.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9695-0
+01:03:40.807 --> 01:03:42.967
+<v Marcus Antonio Viana Duarte>Ótimo.
+Podemos trabalhar com a ***** ferida.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9712-0
+01:03:44.207 --> 01:03:48.487
+<v Marcus Antonio Viana Duarte>É gótico. Ah,
+não precisa fazer 30000 experimento.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9750-0
+01:03:49.567 --> 01:03:53.722
+<v Marcus Antonio Viana Duarte>Basta que tem um compressor aqui,
+nós vamos fazer com ele.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9750-1
+01:03:53.722 --> 01:03:57.595
+<v Marcus Antonio Viana Duarte>Ele representa o universo dos
+compressores da fábrica,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9750-2
+01:03:57.595 --> 01:04:01.327
+<v Marcus Antonio Viana Duarte>beleza de entender a diferença que muda é
+a análise.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9772-0
+01:04:04.327 --> 01:04:08.532
+<v Marcus Antonio Viana Duarte>Lógico que a gente sempre faz com 23, né?
+Engenheiro,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9772-1
+01:04:08.532 --> 01:04:11.647
+<v Marcus Antonio Viana Duarte>gosta de fazer pelo menos 3 que vai que?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9774-0
+01:04:13.207 --> 01:04:13.727
+<v Marcus Antonio Viana Duarte>Beleza.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9789-0
+01:04:15.167 --> 01:04:18.967
+<v marcusfilipesr>Professor, como é que é aí o ergodi,
+a definição?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9781-0
+01:04:16.247 --> 01:04:16.647
+<v Marcus Antonio Viana Duarte>Fui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9826-0
+01:04:18.767 --> 01:04:24.252
+<v Marcus Antonio Viana Duarte>Oo hergótico é o seguinte,
+a média e a correlação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9826-1
+01:04:24.252 --> 01:04:30.274
+<v Marcus Antonio Viana Duarte>Ela não depende da voz,
+ela depende só do do, do legue,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9826-2
+01:04:30.274 --> 01:04:31.887
+<v Marcus Antonio Viana Duarte>do tempo certo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9823-0
+01:04:31.967 --> 01:04:32.287
+<v marcusfilipesr>De Natal?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9872-0
+01:04:33.767 --> 01:04:37.046
+<v Marcus Antonio Viana Duarte>Então, quando acontece isso,
+você não precisa pegar todos os</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9872-1
+01:04:37.046 --> 01:04:40.539
+<v Marcus Antonio Viana Duarte>compressores da fábrica, né?
+Quando você estiver fazendo análise</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9872-2
+01:04:40.539 --> 01:04:43.011
+<v Marcus Antonio Viana Duarte>compressor,
+você pega 23 e pode fazer análise</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9872-3
+01:04:43.011 --> 01:04:45.376
+<v Marcus Antonio Viana Duarte>tranquila.
+Quem vai representar todo mundo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9872-4
+01:04:45.376 --> 01:04:45.967
+<v Marcus Antonio Viana Duarte>Ele é gott.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9874-0
+01:04:47.287 --> 01:04:47.767
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9875-0
+01:04:47.327 --> 01:04:47.767
+<v marcusfilipesr>Uhum, entendi.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9920-0
+01:04:49.687 --> 01:04:53.209
+<v Marcus Antonio Viana Duarte>E ele é estacionário quando você fala o
+seguinte,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9920-1
+01:04:53.209 --> 01:04:57.575
+<v Marcus Antonio Viana Duarte>eu não preciso esperar o fenômeno acabar.
+Eu posso. Como ele,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9920-2
+01:04:57.575 --> 01:05:00.956
+<v Marcus Antonio Viana Duarte>essas propriedades aqui são variantes do
+tempo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9920-3
+01:05:00.956 --> 01:05:04.407
+<v Marcus Antonio Viana Duarte>Eu posso trabalhar com amostras finitas,
+beleza?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9921-0
+01:05:04.247 --> 01:05:05.447
+<v marcusfilipesr>Beleza, beleza.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9923-0
+01:05:06.807 --> 01:05:07.047
+<v marcusfilipesr>Valeu.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9935-0
+01:05:12.047 --> 01:05:15.447
+<v Marcus Antonio Viana Duarte>Aí quando o sinal, né? Não é,
+não é estacionar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9951-0
+01:05:17.007 --> 01:05:19.300
+<v Marcus Antonio Viana Duarte>Oo,
+que que a gente pode fazer são os</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/9951-1
+01:05:19.300 --> 01:05:20.687
+<v Marcus Antonio Viana Duarte>envelopes, né? Ou seja.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10002-0
+01:05:22.767 --> 01:05:26.617
+<v Marcus Antonio Viana Duarte>Ao longo do tempo,
+qual que é a tendência da coisa certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10002-1
+01:05:26.617 --> 01:05:31.862
+<v Marcus Antonio Viana Duarte>Aí a gente tem que usar outros tipos.
+Normalmente a gente usa séries temporais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10002-2
+01:05:31.862 --> 01:05:35.247
+<v Marcus Antonio Viana Duarte>para tentar prever isso,
+ação essas coisas também.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10002-3
+01:05:35.247 --> 01:05:38.367
+<v Marcus Antonio Viana Duarte>A gente consegue fazer alguma
+previsibilidade.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10004-0
+01:05:38.807 --> 01:05:39.327
+<v Marcus Antonio Viana Duarte>Tá bom?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10018-0
+01:05:41.247 --> 01:05:47.247
+<v Marcus Antonio Viana Duarte>Então é isso,
+amostra estacionário tem pouca variação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10018-1
+01:05:47.247 --> 01:05:49.647
+<v Marcus Antonio Viana Duarte>Tá certo? Pouca gente.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10048-0
+01:05:51.207 --> 01:05:57.631
+<v Marcus Antonio Viana Duarte>É coisa de pedreiro, né engenheiro?
+Tem que colocar 11 teste de hipótese</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10048-1
+01:05:57.631 --> 01:06:01.327
+<v Marcus Antonio Viana Duarte>nisso. Tá? Vamos ver isso depois do curso.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10080-0
+01:06:03.007 --> 01:06:09.386
+<v Marcus Antonio Viana Duarte>Então as propriedades descritivas básicas
+de qualquer sinal é essa média,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10080-1
+01:06:09.386 --> 01:06:14.127
+<v Marcus Antonio Viana Duarte>média quadrado,
+que são parâmetros do do da população.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10128-0
+01:06:15.527 --> 01:06:19.713
+<v Marcus Antonio Viana Duarte>E as funções, densidade e probabilidade,
+todas parâmetros.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10128-1
+01:06:19.713 --> 01:06:25.177
+<v Marcus Antonio Viana Duarte>Se você conhecer a função densidade e
+probabilidade de uma população morreu.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10128-2
+01:06:25.177 --> 01:06:28.725
+<v Marcus Antonio Viana Duarte>Você é Deus, certo?
+Você sabe todos os parâmetros</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10128-3
+01:06:28.725 --> 01:06:29.647
+<v Marcus Antonio Viana Duarte>estatísticos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10174-0
+01:06:30.767 --> 01:06:36.941
+<v Marcus Antonio Viana Duarte>As funções de auto correlação que elas
+correlacionam isso aí pra sinais, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10174-1
+01:06:36.941 --> 01:06:40.629
+<v Marcus Antonio Viana Duarte>Processos estocásticos ela correlaciona.
+Ela,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10174-2
+01:06:40.629 --> 01:06:46.883
+<v Marcus Antonio Viana Duarte>olha qual que é a tendência do futuro em
+função do presente e as funções auto</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10174-3
+01:06:46.883 --> 01:06:48.567
+<v Marcus Antonio Viana Duarte>densidades espectral.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10193-0
+01:06:49.407 --> 01:06:54.932
+<v Marcus Antonio Viana Duarte>Elas são a você pegar as funções de
+auto-cordenação e levar para o domínio da</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10193-1
+01:06:54.932 --> 01:06:56.207
+<v Marcus Antonio Viana Duarte>frequência, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10214-0
+01:06:57.607 --> 01:07:02.112
+<v Marcus Antonio Viana Duarte>Aí tem vários trabalhos aqui,
+um pouco antigo, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10214-1
+01:07:02.112 --> 01:07:06.087
+<v Marcus Antonio Viana Duarte>Porque eu peguei do Chico,
+aí joguei pra cá.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10218-0
+01:07:12.127 --> 01:07:13.207
+<v Marcus Antonio Viana Duarte>Tem coisas boas aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10235-0
+01:07:14.967 --> 01:07:21.087
+<v Marcus Antonio Viana Duarte>Então a AI vamos avançando aqui vamos ver
+que horas que nós vamos dar um time.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10246-0
+01:07:22.727 --> 01:07:27.047
+<v Marcus Antonio Viana Duarte>Dá para 9 meses, dá uma parada,
+então são harmônico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10249-0
+01:07:28.687 --> 01:07:29.567
+<v Marcus Antonio Viana Duarte>Caiu o bichinho.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10296-0
+01:07:30.807 --> 01:07:35.440
+<v Marcus Antonio Viana Duarte>Certo, que igual eu falei,
+o senhor é harmônica, eu vou pegar,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10296-1
+01:07:35.440 --> 01:07:39.706
+<v Marcus Antonio Viana Duarte>jogar no analisador e obter o espectro,
+vai dar sede foi,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10296-2
+01:07:39.706 --> 01:07:45.516
+<v Marcus Antonio Viana Duarte>e nem sempre ele é um chatinho para lá,
+mas ele tem essa característica ou uma</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10296-3
+01:07:45.516 --> 01:07:47.207
+<v Marcus Antonio Viana Duarte>coisa muito importante.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10318-0
+01:07:47.967 --> 01:07:53.854
+<v Marcus Antonio Viana Duarte>É você saber as soluções, densidade,
+probabilidade, é diverso. Tipo de sinal,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10318-1
+01:07:53.854 --> 01:07:56.647
+<v Marcus Antonio Viana Duarte>o sinal harmônica. Ele tem essa cara.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10320-0
+01:07:57.967 --> 01:07:58.487
+<v Marcus Antonio Viana Duarte>De?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10347-0
+01:07:59.687 --> 01:08:04.332
+<v Marcus Antonio Viana Duarte>Da distribuição de probabilidade dele,
+certo? Na belada,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10347-1
+01:08:04.332 --> 01:08:08.407
+<v Marcus Antonio Viana Duarte>a probabilidade de você achar um valor na
+belada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10384-0
+01:08:09.847 --> 01:08:13.860
+<v Marcus Antonio Viana Duarte>É muito maior do que a se a shayra que,
+na passagem do zero,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10384-1
+01:08:13.860 --> 01:08:19.057
+<v Marcus Antonio Viana Duarte>aí tá explicado porque que a gente usa a
+passagem do zero pra medir período de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10384-2
+01:08:19.057 --> 01:08:20.767
+<v Marcus Antonio Viana Duarte>sinal do domínio do tempo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10432-0
+01:08:22.007 --> 01:08:27.204
+<v Marcus Antonio Viana Duarte>A probabilidade de você tá positivo ou
+negativo, tá certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10432-1
+01:08:27.204 --> 01:08:34.251
+<v Marcus Antonio Viana Duarte>A probabilidade de você errar isso é bem
+menor do que você errar lá. 2.1 2.2 2.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10432-2
+01:08:34.251 --> 01:08:38.127
+<v Marcus Antonio Viana Duarte>3 você acha que é o máximo?
+Mas como daqui?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10475-0
+01:08:38.887 --> 01:08:42.602
+<v Marcus Antonio Viana Duarte>Certo?
+A probabilidade de ter valores você tem</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10475-1
+01:08:42.602 --> 01:08:48.055
+<v Marcus Antonio Viana Duarte>mais valores aqui do que aqui,
+então AA tendência é você errar mais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10475-2
+01:08:48.055 --> 01:08:52.639
+<v Marcus Antonio Viana Duarte>Quando você vai pelos Picos,
+daí a explicação científica,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10475-3
+01:08:52.639 --> 01:08:55.247
+<v Marcus Antonio Viana Duarte>porque que quando você vai olhar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10476-0
+01:08:56.047 --> 01:08:56.807
+<v Marcus Antonio Viana Duarte>É?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10527-0
+01:08:58.727 --> 01:09:02.099
+<v Marcus Antonio Viana Duarte>Período de qualquer coisa,
+você pega um tacômetro.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10527-1
+01:09:02.099 --> 01:09:06.661
+<v Marcus Antonio Viana Duarte>Aí eu coloquei um tacômetro.
+Eu vou olhar pelo pico ou pela passagem</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10527-2
+01:09:06.661 --> 01:09:09.769
+<v Marcus Antonio Viana Duarte>do zero,
+você vai olhar pela passagem do zero,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10527-3
+01:09:09.769 --> 01:09:13.207
+<v Marcus Antonio Viana Duarte>que aí a probabilidade de você errar o
+lugar certo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10558-0
+01:09:13.647 --> 01:09:20.722
+<v Marcus Antonio Viana Duarte>Diminui bastante, certo?
+Passou no zero é zero. Passou no máximo,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10558-1
+01:09:20.722 --> 01:09:28.011
+<v Marcus Antonio Viana Duarte>nem tem. Pode ser o máximo. Menorzinho,
+o máximo menorzinho, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10558-2
+01:09:28.011 --> 01:09:30.047
+<v Marcus Antonio Viana Duarte>Tá aí a explicação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10575-0
+01:09:30.287 --> 01:09:37.064
+<v Marcus Antonio Viana Duarte>Então quando você bate o olho no sinal
+desse pulso, tem essa cara,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10575-1
+01:09:37.064 --> 01:09:40.807
+<v Marcus Antonio Viana Duarte>você já sabe que o sinal é harmônico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10603-0
+01:09:42.087 --> 01:09:49.068
+<v Marcus Antonio Viana Duarte>Se você olhar para a curtose dele der 2,
+aí você tem certeza que ele é arbônico é</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10603-1
+01:09:49.068 --> 01:09:51.367
+<v Marcus Antonio Viana Duarte>o parâmetro de quarta hora.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10620-0
+01:09:54.367 --> 01:09:58.806
+<v Marcus Antonio Viana Duarte>Né?
+A função de alta correlação de um sinal a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10620-1
+01:09:58.806 --> 01:10:00.447
+<v Marcus Antonio Viana Duarte>harmônica é essa.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10634-0
+01:10:01.567 --> 01:10:07.127
+<v Marcus Antonio Viana Duarte>Periodicamente você vai ter, né?
+Só pega os valores daqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10647-0
+01:10:09.727 --> 01:10:14.127
+<v Marcus Antonio Viana Duarte>Só vou conseguir repetir isso se eu
+sempre pegar nos períodos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10676-0
+01:10:15.407 --> 01:10:19.978
+<v Marcus Antonio Viana Duarte>E da função de autocarrelação também é
+uma função harmônica. Detalhe,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10676-1
+01:10:19.978 --> 01:10:24.287
+<v Marcus Antonio Viana Duarte>toda a função de autocarrelação.
+O valor máximo está no zero, tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10678-0
+01:10:27.287 --> 01:10:27.967
+<v Marcus Antonio Viana Duarte>Sempre.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10695-0
+01:10:32.007 --> 01:10:40.407
+<v Marcus Antonio Viana Duarte>A função densidade espectral é um Delta
+de dirra aqui nessa frequência.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10698-0
+01:10:41.527 --> 01:10:42.447
+<v Marcus Antonio Viana Duarte>Eduardo, espera aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10730-0
+01:10:43.727 --> 01:10:48.227
+<v Marcus Antonio Viana Duarte>Delta de dia, que. Que ***** é essa?
+Eu fiz a quando eu fiz ODSM realmente o</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10730-1
+01:10:48.227 --> 01:10:51.207
+<v Marcus Antonio Viana Duarte>professor falou desse tal desse Delta de
+dia aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10763-0
+01:10:52.327 --> 01:10:58.369
+<v Marcus Antonio Viana Duarte>Dessa dia que a gente é uma função que
+antes do tempo ter igual a zero é zero.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10763-1
+01:10:58.369 --> 01:11:04.487
+<v Marcus Antonio Viana Duarte>Depois do tempo ter igual a zero é zero
+do tempo ter igual a zero era infinito.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10769-0
+01:11:06.167 --> 01:11:08.487
+<v Marcus Antonio Viana Duarte>E a energia dela é unitária.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10794-0
+01:11:10.207 --> 01:11:14.202
+<v Marcus Antonio Viana Duarte>Mas isso não é função.
+Isso aí a gente chama de pseudo função,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10794-1
+01:11:14.202 --> 01:11:18.007
+<v Marcus Antonio Viana Duarte>por isso que ele é representado desse
+jeito. Ó Chapeuzinho.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10828-0
+01:11:21.007 --> 01:11:26.107
+<v Marcus Antonio Viana Duarte>O único Delta de dias que real que eu
+conheço foi a criação do universo, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10828-1
+01:11:26.107 --> 01:11:29.485
+<v Marcus Antonio Viana Duarte>Deus está lá sem fazer nada.
+Vou criar o universo.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10828-2
+01:11:29.485 --> 01:11:31.207
+<v Marcus Antonio Viana Duarte>Ponto fez o Delta de dias.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10857-0
+01:11:33.487 --> 01:11:36.270
+<v Marcus Antonio Viana Duarte>Fez-se a luz. Foi isso aí por aí afora,
+certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10857-1
+01:11:36.270 --> 01:11:39.881
+<v Marcus Antonio Viana Duarte>Mas é uma função que a gente usa muito em
+análise de sinais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10857-2
+01:11:39.881 --> 01:11:42.367
+<v Marcus Antonio Viana Duarte>Ela tem muitas propriedades interessantes.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10895-0
+01:11:44.567 --> 01:11:49.937
+<v Marcus Antonio Viana Duarte>Na época que a Nasi sinais não tinha
+livro, não tinha internet, não tinha nada.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10895-1
+01:11:49.937 --> 01:11:55.576
+<v Marcus Antonio Viana Duarte>A gente era bom nesses trem, rapaz. Agora,
+hoje em dia vocês não tem paciência mais</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10895-2
+01:11:55.576 --> 01:11:56.247
+<v Marcus Antonio Viana Duarte>pra ficar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10953-0
+01:11:57.487 --> 01:12:04.240
+<v Marcus Antonio Viana Duarte>Pedir pra vocês prova me faz em 1 hora,
+uma FFT sem usar calculadora de 32 pontos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10953-1
+01:12:04.240 --> 01:12:08.715
+<v Marcus Antonio Viana Duarte>Era assim que a gente aprendia as coisas.
+Hoje em dia,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10953-2
+01:12:08.715 --> 01:12:14.654
+<v Marcus Antonio Viana Duarte>a Duarte vai fazer isso pra nós aprender,
+pô, hoje em dia tem parto, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10953-3
+01:12:14.654 --> 01:12:16.607
+<v Marcus Antonio Viana Duarte>Tem tanta ferramenta aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10963-0
+01:12:17.527 --> 01:12:21.047
+<v Marcus Antonio Viana Duarte>Né? AZLLM deixa vocês fazer,
+vamos preocupar com coisas mais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10986-0
+01:12:22.487 --> 01:12:25.703
+<v Marcus Antonio Viana Duarte>Importante,
+o importante é a gente saber a essência.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10986-1
+01:12:25.703 --> 01:12:29.647
+<v Marcus Antonio Viana Duarte>Eu não sei mexer com a estreia não,
+mas eu sei que é importante.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/10990-0
+01:12:30.927 --> 01:12:31.887
+<v Marcus Antonio Viana Duarte>Eu também, senão.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11036-0
+01:12:32.807 --> 01:12:36.335
+<v marcusfilipesr>E qual que é o significado, por exemplo,
+dessa dessa, dessa função?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11036-1
+01:12:36.335 --> 01:12:39.397
+<v marcusfilipesr>Alta densidade espectral,
+aí dentro de um sinal harmônico,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11036-2
+01:12:39.397 --> 01:12:41.887
+<v marcusfilipesr>por exemplo, ela, ele,
+ele seu de alta de Dirk.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11052-0
+01:12:40.407 --> 01:12:42.912
+<v Marcus Antonio Viana Duarte>Pois é,
+quando por isso que eu falo que o grande</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11052-1
+01:12:42.912 --> 01:12:46.847
+<v Marcus Antonio Viana Duarte>problema da da de quando você sai do
+domínio do tempo pra vir pros espectro.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11098-0
+01:12:48.007 --> 01:12:52.762
+<v Marcus Antonio Viana Duarte>Isso é que nem é função, tá certo?
+Então você faz o spec de um sinal real,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11098-1
+01:12:52.762 --> 01:12:55.615
+<v Marcus Antonio Viana Duarte>você vai pegar uma aproximação disso,
+certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11098-2
+01:12:55.615 --> 01:13:00.687
+<v Marcus Antonio Viana Duarte>Aí você tem erro já amplitue ter erro de
+fase, erro de tudo quando você pensar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11132-0
+01:13:01.847 --> 01:13:04.031
+<v marcusfilipesr>Ah,
+tá No No essa porção aqui da cidade</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11106-0
+01:13:02.047 --> 01:13:03.167
+<v Marcus Antonio Viana Duarte>É engraçado, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11132-1
+01:13:04.031 --> 01:13:06.653
+<v marcusfilipesr>espectral seria uma FFTA.
+Gente fez OFTA gente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11144-0
+01:13:06.247 --> 01:13:10.829
+<v Marcus Antonio Viana Duarte>É a transformado,
+a transformada de fourier,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11132-2
+01:13:06.653 --> 01:13:08.127
+<v marcusfilipesr>devia ter um pico ali no X.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11144-1
+01:13:10.829 --> 01:13:14.087
+<v Marcus Antonio Viana Duarte>da da função de auto correlação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11134-0
+01:13:10.847 --> 01:13:11.047
+<v marcusfilipesr>Uhum.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11148-0
+01:13:14.847 --> 01:13:16.647
+<v marcusfilipesr>Entendi, entendi.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11178-0
+01:13:15.287 --> 01:13:20.447
+<v Marcus Antonio Viana Duarte>Certo, então porque,
+teoricamente é uma função só, é periódica.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11178-1
+01:13:20.447 --> 01:13:25.687
+<v Marcus Antonio Viana Duarte>Se desde menos infinito até mais infinito
+ela se repetir, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11180-0
+01:13:27.687 --> 01:13:28.047
+<v Marcus Antonio Viana Duarte>Google.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11182-0
+01:13:30.847 --> 01:13:31.247
+<v marcusfilipesr>Pronto.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11231-0
+01:13:32.567 --> 01:13:36.151
+<v Marcus Antonio Viana Duarte>Você pode falar aqui,
+ó o Duarte entre esse tempo aqui?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11231-1
+01:13:36.151 --> 01:13:39.735
+<v Marcus Antonio Viana Duarte>Até esse tempo aqui,
+eu acho que ela é periódica, cara.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11231-2
+01:13:39.735 --> 01:13:44.023
+<v Marcus Antonio Viana Duarte>Tá se repetindo, certo?
+Mas ninguém garante que o próximo vai ser,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11231-3
+01:13:44.023 --> 01:13:46.647
+<v Marcus Antonio Viana Duarte>né? Então você tem essa incerteza, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11255-0
+01:13:47.967 --> 01:13:51.766
+<v Marcus Antonio Viana Duarte>E aí, Davi,
+quando você tem outra coisa também essa,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11255-1
+01:13:51.766 --> 01:13:55.207
+<v Marcus Antonio Viana Duarte>qual, qual é a energia dessa função aqui,
+Hein?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11276-0
+01:13:56.487 --> 01:14:00.210
+<v Marcus Antonio Viana Duarte>Você pega o valor médio,
+você leva ao quadrado, some,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11276-1
+01:14:00.210 --> 01:14:04.967
+<v Marcus Antonio Viana Duarte>soma os bichos desde mesmo dos infinitos.
+Está infinito. É infinito.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11310-0
+01:14:06.847 --> 01:14:12.881
+<v Marcus Antonio Viana Duarte>Por isso, teoricamente,
+a área de baixo aqui é a energia do sinal.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11310-1
+01:14:12.881 --> 01:14:17.925
+<v Marcus Antonio Viana Duarte>Então esse trem aqui tem que ser pra cá,
+é zero pra cá,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11310-2
+01:14:17.925 --> 01:14:21.167
+<v Marcus Antonio Viana Duarte>é zero e aqui vale infinito, beleza.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11312-0
+01:14:22.767 --> 01:14:23.247
+<v marcusfilipesr>Beleza.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11339-0
+01:14:25.807 --> 01:14:28.963
+<v Marcus Antonio Viana Duarte>Então,
+quando a gente faz um espectro de um</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11339-1
+01:14:28.963 --> 01:14:34.487
+<v Marcus Antonio Viana Duarte>sinal que na nossa tela lá da analisadora
+ele tá com a cara que é periódico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11346-0
+01:14:35.727 --> 01:14:37.407
+<v Marcus Antonio Viana Duarte>Nós estamos cometendo muitos erros, tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11354-0
+01:14:38.807 --> 01:14:41.105
+<v Marcus Antonio Viana Duarte>Lógico,
+vamos aprender como é que faz para lidar</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11354-1
+01:14:41.105 --> 01:14:41.527
+<v Marcus Antonio Viana Duarte>com isso?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11392-0
+01:14:48.447 --> 01:14:51.078
+<v Marcus Antonio Viana Duarte>Aí nessa,
+se nós temos um sinal ahmônico mais um</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11392-1
+01:14:51.078 --> 01:14:55.373
+<v Marcus Antonio Viana Duarte>ruído branco, que que é o ruído branco,
+isso aí é a hipótese que a gente sempre</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11392-2
+01:14:55.373 --> 01:14:58.487
+<v Marcus Antonio Viana Duarte>usa em análise. Sinais, fundamental,
+análise, sinais, um.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11439-0
+01:14:59.647 --> 01:15:04.774
+<v Marcus Antonio Viana Duarte>As perturbações externas que vão aparecer,
+elas têm em média 0 e 1,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11439-1
+01:15:04.774 --> 01:15:10.880
+<v Marcus Antonio Viana Duarte>distribuição de probabilidade normal,
+certo? A gente chama isso de ruído branco.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11439-2
+01:15:10.880 --> 01:15:16.007
+<v Marcus Antonio Viana Duarte>Você tem todas as frequências.
+Você excita de todas as frequências.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11442-0
+01:15:16.807 --> 01:15:18.487
+<v Marcus Antonio Viana Duarte>De maneira aleatória?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11462-0
+01:15:20.247 --> 01:15:23.830
+<v Marcus Antonio Viana Duarte>Isso é o famoso ruim do branco.
+Isso é hipótese bem boa, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11462-1
+01:15:23.830 --> 01:15:26.767
+<v Marcus Antonio Viana Duarte>Por causa por causa do teorema do limite
+central.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11479-0
+01:15:28.367 --> 01:15:31.484
+<v Marcus Antonio Viana Duarte>Então,
+se você pegar a função de autocorrelação</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11479-1
+01:15:31.484 --> 01:15:32.847
+<v Marcus Antonio Viana Duarte>disso, acontece isso.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11511-0
+01:15:34.607 --> 01:15:40.229
+<v Marcus Antonio Viana Duarte>Calma, isso não é isso, não aqui só é.
+Não tem só a Mônica aqui, não,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11511-1
+01:15:40.229 --> 01:15:44.887
+<v Marcus Antonio Viana Duarte>isso aqui é só a lá,
+a função da cidade de probabilidade.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11523-0
+01:15:46.087 --> 01:15:50.578
+<v Marcus Antonio Viana Duarte>Do nosso amigo ruim do branco,
+ela tem a distribuição normal,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11523-1
+01:15:50.578 --> 01:15:51.447
+<v Marcus Antonio Viana Duarte>mede a zero.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11552-0
+01:15:53.207 --> 01:15:58.146
+<v Marcus Antonio Viana Duarte>E quando você faz um sinal harmônico,
+mais um Rio do branco que faz a função de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11552-1
+01:15:58.146 --> 01:16:01.047
+<v Marcus Antonio Viana Duarte>autocorrelação, ela tem essa cara aqui,
+certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11586-0
+01:16:02.527 --> 01:16:07.223
+<v Marcus Antonio Viana Duarte>Beleza, então,
+conforme você vai afastando a origem,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11586-1
+01:16:07.223 --> 01:16:12.806
+<v Marcus Antonio Viana Duarte>ele tende a cair sempre.
+Sinal real é assim o meu estimador de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11586-2
+01:16:12.806 --> 01:16:16.527
+<v Marcus Antonio Viana Duarte>rotação de máquina real. Eu uso isso aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11637-0
+01:16:20.007 --> 01:16:23.646
+<v Marcus Antonio Viana Duarte>Certo,
+então eu assumo que na máquina real tem</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11637-1
+01:16:23.646 --> 01:16:27.905
+<v Marcus Antonio Viana Duarte>bastante trem e tal,
+e isso vai cair exponencialmente.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11637-2
+01:16:27.905 --> 01:16:32.861
+<v Marcus Antonio Viana Duarte>Aí eu consigo usar em vez de usar 111 FFT,
+representando série,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11637-3
+01:16:32.861 --> 01:16:36.887
+<v Marcus Antonio Viana Duarte>ela representa a fourier.
+Vocês não vão ver também?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11691-0
+01:16:37.367 --> 01:16:40.864
+<v Marcus Antonio Viana Duarte>E daí? Fica bonito agora,
+quando você pega esse sinalzinho de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11691-1
+01:16:40.864 --> 01:16:43.741
+<v Marcus Antonio Viana Duarte>laboratório,
+só tem o harmoni que um Zinho e aí eu</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11691-2
+01:16:43.741 --> 01:16:46.786
+<v Marcus Antonio Viana Duarte>quebro a cara certo.
+O meu estimador não estima nada,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11691-3
+01:16:46.786 --> 01:16:51.242
+<v Marcus Antonio Viana Duarte>mas tá bom. Então essa tem essa tendência.
+Então, gente, quando você olha, pô,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11691-4
+01:16:51.242 --> 01:16:53.047
+<v Marcus Antonio Viana Duarte>por isso que é importante olhar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11697-0
+01:16:53.367 --> 01:16:57.367
+<v Marcus Antonio Viana Duarte>Você já olhou? OPA, o trem é assim.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11702-0
+01:17:01.647 --> 01:17:02.847
+<v Marcus Antonio Viana Duarte>E a dais sinais?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11757-0
+01:17:04.207 --> 01:17:08.028
+<v Marcus Antonio Viana Duarte>Você já de cara,
+você já tem que saber o que que você quer,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11757-1
+01:17:08.028 --> 01:17:13.249
+<v Marcus Antonio Viana Duarte>tá? De acordo com o que eu tô querendo,
+que eu tô pensando, tá legal? Ah, não tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11757-2
+01:17:13.249 --> 01:17:17.770
+<v Marcus Antonio Viana Duarte>E deixa eu ver se os cabos tá certo.
+Se assim Acre de sensor no pifou,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11757-3
+01:17:17.770 --> 01:17:19.807
+<v Marcus Antonio Viana Duarte>se o rito de rede tá muito alto.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11764-0
+01:17:20.367 --> 01:17:24.327
+<v Marcus Antonio Viana Duarte>Aí você vai para área de instrumentação,
+beleza?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11822-0
+01:17:27.487 --> 01:17:31.288
+<v Marcus Antonio Viana Duarte>Aí a função alta densidade,
+espectro de então sarmonte,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11822-1
+01:17:31.288 --> 01:17:34.275
+<v Marcus Antonio Viana Duarte>mas o ruído branco você tem o Delta
+Didier,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11822-2
+01:17:34.275 --> 01:17:39.976
+<v Marcus Antonio Viana Duarte>que é aqui e espectro do ruído branco do
+ruído. Esse ruído não é branco, né? Então,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11822-3
+01:17:39.976 --> 01:17:43.438
+<v Marcus Antonio Viana Duarte>teoricamente,
+espectro do ruído branco que ele vai</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11822-4
+01:17:43.438 --> 01:17:44.727
+<v Marcus Antonio Viana Duarte>daqui até infinito.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11823-0
+01:17:45.407 --> 01:17:46.007
+<v Marcus Antonio Viana Duarte>Mais?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11831-0
+01:17:47.127 --> 01:17:50.807
+<v Marcus Antonio Viana Duarte>No mundo real,
+1 hora o bicho bico abaixo o bico.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11851-0
+01:17:54.247 --> 01:18:01.047
+<v Marcus Antonio Viana Duarte>Legal, quando você tem o sinal harmônico,
+mais o ruído de banda estreita.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11882-0
+01:18:02.127 --> 01:18:06.722
+<v Marcus Antonio Viana Duarte>Tá vendo Duarte complicar o que?
+Que é o ruído de baixo, de estreita?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11882-1
+01:18:06.722 --> 01:18:09.677
+<v Marcus Antonio Viana Duarte>Duarte, uai, é,
+quando o seu ruído é branco?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11882-2
+01:18:09.677 --> 01:18:13.287
+<v Marcus Antonio Viana Duarte>Ele é cita todas as frequências.
+Ele passa num filtro.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11931-0
+01:18:14.487 --> 01:18:20.467
+<v Marcus Antonio Viana Duarte>Por exemplo, de 20 BRL até 30. Olha aí,
+a gente fala que o ruim do banco ele já</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11931-1
+01:18:20.467 --> 01:18:25.774
+<v Marcus Antonio Viana Duarte>não é aquela bagunça a mais.
+Ele já tem uma meia-carne de ser um sinal</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11931-2
+01:18:25.774 --> 01:18:30.109
+<v Marcus Antonio Viana Duarte>periódico, certo?
+A amplitude dele é que ninguém sabe que</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11931-3
+01:18:30.109 --> 01:18:32.127
+<v Marcus Antonio Viana Duarte>horas onde é que vai parar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11950-0
+01:18:32.327 --> 01:18:36.547
+<v Marcus Antonio Viana Duarte>Certo,
+então ele tem a função densidade de</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11950-1
+01:18:36.547 --> 01:18:39.687
+<v Marcus Antonio Viana Duarte>probabilidade, e tem essa clara.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11985-0
+01:18:41.367 --> 01:18:45.770
+<v Marcus Antonio Viana Duarte>Certo? Ou seja,
+ela tem que ser um harmônico, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11985-1
+01:18:45.770 --> 01:18:51.054
+<v Marcus Antonio Viana Duarte>Por causa da do filtro,
+só deixa passar algumas frequências</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/11985-2
+01:18:51.054 --> 01:18:52.727
+<v Marcus Antonio Viana Duarte>preferenciais, mas.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12010-0
+01:18:54.527 --> 01:18:57.331
+<v Marcus Antonio Viana Duarte>O ruído branco que espalha pra tudo
+quanto é canto,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12010-1
+01:18:57.331 --> 01:19:00.567
+<v Marcus Antonio Viana Duarte>você tem esse tem essa função de
+densidade e probabilidade.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12020-0
+01:19:02.127 --> 01:19:05.407
+<v Marcus Antonio Viana Duarte>E a função de auto com relação é assim.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12022-0
+01:19:08.407 --> 01:19:08.887
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12045-0
+01:19:10.727 --> 01:19:15.374
+<v Marcus Antonio Viana Duarte>A função alta densidade espectral tem
+essa cara. Quem.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12045-1
+01:19:15.374 --> 01:19:20.527
+<v Marcus Antonio Viana Duarte>Quem que é bom de vibração,
+aí levanta a mão todo mundo, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12050-0
+01:19:23.647 --> 01:19:25.007
+<v marcusfilipesr>Bots, bots forte, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12053-0
+01:19:25.687 --> 01:19:26.047
+<v Marcus Antonio Viana Duarte>Oi.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12060-0
+01:19:26.807 --> 01:19:28.207
+<v marcusfilipesr>Falar que é bom é forte, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12063-0
+01:19:29.687 --> 01:19:30.127
+<v Marcus Antonio Viana Duarte>Uai.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12087-0
+01:19:31.727 --> 01:19:34.646
+<v Marcus Antonio Viana Duarte>Mas vamos fazer assim,
+quando você olha o sinal dele,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12087-1
+01:19:34.646 --> 01:19:38.105
+<v Marcus Antonio Viana Duarte>você me parece com. Ok,
+não parece uma resposta que seja o grau</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12087-2
+01:19:38.105 --> 01:19:38.807
+<v Marcus Antonio Viana Duarte>de Liberdade.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12093-0
+01:19:41.447 --> 01:19:43.207
+<v Marcus Antonio Viana Duarte>Função, resposta em frequência.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12150-0
+01:19:44.927 --> 01:19:51.150
+<v Marcus Antonio Viana Duarte>Certo, então isso não é muito comum.
+O ruído aleatório é filtrado pelas</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12150-1
+01:19:51.150 --> 01:19:58.236
+<v Marcus Antonio Viana Duarte>frequências naturais. O sistema dinâmico.
+Então ele tem a função de alto espectro</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12150-2
+01:19:58.236 --> 01:20:02.298
+<v Marcus Antonio Viana Duarte>dele.
+Ele tem essa cara de resposta do sistema</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12150-3
+01:20:02.298 --> 01:20:03.767
+<v Marcus Antonio Viana Duarte>de 1° de verdade.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12188-0
+01:20:10.247 --> 01:20:13.601
+<v Marcus Antonio Viana Duarte>Bom, aí vem, né? O ruído branco,
+a função de densidade,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12188-1
+01:20:13.601 --> 01:20:17.973
+<v Marcus Antonio Viana Duarte>probabilidade é essa de subversão normal
+a função de de altos correlato,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12188-2
+01:20:17.973 --> 01:20:21.087
+<v Marcus Antonio Viana Duarte>o ruído branco puro é um Delta de dias
+que aqui tá.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12204-0
+01:20:23.807 --> 01:20:29.807
+<v Marcus Antonio Viana Duarte>O Rui do branco real, ele tem essa cara.
+Caio cai muito forte aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12226-0
+01:20:34.607 --> 01:20:40.242
+<v Marcus Antonio Viana Duarte>Oo alto espectro dele vai ter essa cara,
+né? Ele cai, ele é.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12226-1
+01:20:40.242 --> 01:20:42.367
+<v Marcus Antonio Viana Duarte>Ele tem energia finita.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12259-0
+01:20:43.927 --> 01:20:46.624
+<v Marcus Antonio Viana Duarte>Eu só.
+É só o analisador que tem lá no</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12259-1
+01:20:46.624 --> 01:20:51.464
+<v Marcus Antonio Viana Duarte>laboratório do lpm que eu que eu que ele
+gera o rido branco, decente,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12259-2
+01:20:51.464 --> 01:20:53.607
+<v Marcus Antonio Viana Duarte>esse rido branco, a gente gera.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12330-0
+01:21:07.647 --> 01:21:11.500
+<v Marcus Antonio Viana Duarte>Eu pego os ruídos brancos gerados pelo
+que seja,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12330-1
+01:21:11.500 --> 01:21:17.477
+<v Marcus Antonio Viana Duarte>estou usando o matilab ou Python.
+Eu pego o gerador de ruído branco deles e</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12330-2
+01:21:17.477 --> 01:21:22.588
+<v Marcus Antonio Viana Duarte>uso o teorema do limite central.
+Em vez de usar só um, SoMo 500,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12330-3
+01:21:22.588 --> 01:21:26.127
+<v Marcus Antonio Viana Duarte>que devido ao teorema do limite central,
+né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12343-0
+01:21:26.247 --> 01:21:30.239
+<v Marcus Antonio Viana Duarte>A soma de várias variadas, aleatório,
+tem instrução normal.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12343-1
+01:21:30.239 --> 01:21:32.567
+<v Marcus Antonio Viana Duarte>Aí eu dou a melhorada neles, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12372-0
+01:21:33.967 --> 01:21:38.423
+<v Marcus Antonio Viana Duarte>Mas, ou seja,
+não acreditem muito que o ruído gerado</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12372-1
+01:21:38.423 --> 01:21:43.887
+<v Marcus Antonio Viana Duarte>pelos pelos seus, né?
+Aí eu vou fazer o seguinte, vou fazer uma?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12410-0
+01:21:45.287 --> 01:21:50.458
+<v Marcus Antonio Viana Duarte>Meu modelo aqui do rotor,
+vou jogar um ruim do branco, não joga,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12410-1
+01:21:50.458 --> 01:21:54.914
+<v Marcus Antonio Viana Duarte>não pega direto, vai pega uns 500,
+faz a média, aí sim,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12410-2
+01:21:54.914 --> 01:21:59.687
+<v Marcus Antonio Viana Duarte>aí isso aí com certeza deve ter cara de
+ruim do branco, tá?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12451-0
+01:22:02.327 --> 01:22:07.719
+<v Marcus Antonio Viana Duarte>Aí é o seguinte, outra coisa, né?
+A grande jogada do análise de sinais é</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12451-1
+01:22:07.719 --> 01:22:11.708
+<v Marcus Antonio Viana Duarte>relação a entrada e saída, né?
+Está lá o navi branco,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12451-2
+01:22:11.708 --> 01:22:15.253
+<v Marcus Antonio Viana Duarte>o mar tá empurrando,
+a entrada é a zona do mar.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12451-3
+01:22:15.253 --> 01:22:17.247
+<v Marcus Antonio Viana Duarte>Saída da oscilação do navi.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12470-0
+01:22:19.447 --> 01:22:25.714
+<v Marcus Antonio Viana Duarte>Tá lá o rodoan excitação dos
+balanceamentos, alinhamento, folga,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12470-1
+01:22:25.714 --> 01:22:26.967
+<v Marcus Antonio Viana Duarte>lubrificação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12491-0
+01:22:28.647 --> 01:22:32.593
+<v Marcus Antonio Viana Duarte>A resposta,
+a vibração que está lá no bancal certo e</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12491-1
+01:22:32.593 --> 01:22:36.167
+<v Marcus Antonio Viana Duarte>assim vai. Então,
+normalmente a gente trabalha.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12536-0
+01:22:37.527 --> 01:22:41.980
+<v Marcus Antonio Viana Duarte>Com 2 variadas, tá aí?
+As as propriedades são essa aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12536-1
+01:22:41.980 --> 01:22:45.785
+<v Marcus Antonio Viana Duarte>A função de densidade,
+probabilidade conjunta,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12536-2
+01:22:45.785 --> 01:22:49.428
+<v Marcus Antonio Viana Duarte>função e relação cruzada, função,
+densidade.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12536-3
+01:22:49.428 --> 01:22:54.447
+<v Marcus Antonio Viana Duarte>Isso é essa amiga aqui é transformada de
+fogueira dessa aqui.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12551-0
+01:22:55.087 --> 01:22:59.137
+<v Marcus Antonio Viana Duarte>Certo?
+E aí nós temos as funções resposta em</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12551-1
+01:22:59.137 --> 01:23:00.487
+<v Marcus Antonio Viana Duarte>frequência, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12597-0
+01:23:02.287 --> 01:23:08.676
+<v Marcus Antonio Viana Duarte>E as funções de coerência,
+a função resposta em frequência mostra a</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12597-1
+01:23:08.676 --> 01:23:16.474
+<v Marcus Antonio Viana Duarte>relação de amplitudes e fase da saída em
+função da entrada e a função de coerência</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12597-2
+01:23:16.474 --> 01:23:18.447
+<v Marcus Antonio Viana Duarte>mostra o quão linear.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12602-0
+01:23:19.087 --> 01:23:21.767
+<v Marcus Antonio Viana Duarte>É essa relação?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12617-0
+01:23:24.087 --> 01:23:30.367
+<v Marcus Antonio Viana Duarte>Essa função de coerência deu ponto 9
+ótimo, deu ponto 2.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12635-0
+01:23:33.007 --> 01:23:38.767
+<v Marcus Antonio Viana Duarte>Não tem, não tem correlação,
+só tem ruído nessa porcaria, certo?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12667-0
+01:23:40.447 --> 01:23:44.717
+<v Marcus Antonio Viana Duarte>Então por isso que o jornal de sinais tem
+que ser vocês tem que por a mão na massa,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12667-1
+01:23:44.717 --> 01:23:47.767
+<v Marcus Antonio Viana Duarte>vocês tem que ter o hábito de olhar e deu
+isso e deu carro.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12668-0
+01:23:49.647 --> 01:23:50.087
+<v Marcus Antonio Viana Duarte>Então?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12726-0
+01:23:51.927 --> 01:23:57.249
+<v Marcus Antonio Viana Duarte>Primeira coisa que a gente preocupa
+sempre é avaliação a normalidade do sinal,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12726-1
+01:23:57.249 --> 01:24:01.762
+<v Marcus Antonio Viana Duarte>né? Indicações de efeitos não lineares,
+análise de luzes extremos,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12726-2
+01:24:01.762 --> 01:24:05.669
+<v Marcus Antonio Viana Duarte>detecção de periodicidade sem são as
+aplicações iniciais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12726-3
+01:24:05.669 --> 01:24:08.767
+<v Marcus Antonio Viana Duarte>Quando a gente tá vendo os sinais
+aleatórios.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12767-0
+01:24:09.527 --> 01:24:13.198
+<v Marcus Antonio Viana Duarte>Desolação de atrasos, né? Radares,
+sonares,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12767-1
+01:24:13.198 --> 01:24:18.787
+<v Marcus Antonio Viana Duarte>localização de Fontes de distúrbio rica
+vai para fora, a reis, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12767-2
+01:24:18.787 --> 01:24:25.127
+<v Marcus Antonio Viana Duarte>A reis de microfone a reis de ação,
+identificação de caminho de propagação.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12797-0
+01:24:26.007 --> 01:24:31.808
+<v Marcus Antonio Viana Duarte>Então isso aí é a base da coisa, né?
+Determinação das propriedades do sistema</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12797-1
+01:24:31.808 --> 01:24:36.567
+<v Marcus Antonio Viana Duarte>a partir dos sinais de entrada de saída,
+né? Ajuste de modelos.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12821-0
+01:24:37.687 --> 01:24:42.150
+<v Marcus Antonio Viana Duarte>Predição da saída a partir dos sinais de
+entrada, né? Função resposta,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12821-1
+01:24:42.150 --> 01:24:45.167
+<v Marcus Antonio Viana Duarte>impulso unitário, função, resposta,
+frequência.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12880-0
+01:24:47.007 --> 01:24:50.813
+<v Marcus Antonio Viana Duarte>Especificação de dados,
+dinâmica e testes de sistemas,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12880-1
+01:24:50.813 --> 01:24:55.587
+<v Marcus Antonio Viana Duarte>testes acelerados de cambota,
+4 identificação da energia emitida por</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12880-2
+01:24:55.587 --> 01:24:58.908
+<v Marcus Antonio Viana Duarte>fonte de ruído essa aqui são as
+aplicações, né?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12880-3
+01:24:58.908 --> 01:25:02.367
+<v Marcus Antonio Viana Duarte>Nós temos de do nosso curso de análise de
+sinais.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12903-0
+01:25:02.767 --> 01:25:05.170
+<v Marcus Antonio Viana Duarte>Ele é bastante amplo e variável,
+então certeza,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12903-1
+01:25:05.170 --> 01:25:09.276
+<v Marcus Antonio Viana Duarte>vocês estão no curso é que vocês querem
+usar isso para fazer alguma dessas coisas</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12903-2
+01:25:09.276 --> 01:25:09.927
+<v Marcus Antonio Viana Duarte>que estão aí.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12921-0
+01:25:11.447 --> 01:25:15.983
+<v Marcus Antonio Viana Duarte>Aí nós vamos depois entrar no bendito dos
+modelos, né? As relações de entrada,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12921-1
+01:25:15.983 --> 01:25:16.327
+<v Marcus Antonio Viana Duarte>saída.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12932-0
+01:25:19.607 --> 01:25:22.167
+<v Marcus Antonio Viana Duarte>E conforme eu prometi, 9 e meia paradinha.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12957-0
+01:25:23.647 --> 01:25:28.428
+<v Marcus Antonio Viana Duarte>15 minutos, vocês ir no banheiro, né?
+Então nós fica aqui, ba, ba, ba, ba, ba,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12957-1
+01:25:28.428 --> 01:25:32.967
+<v Marcus Antonio Viana Duarte>ba, ba, ba, Combinado. Tem alguém na aula?
+Deixa eu só ver, né? Que eu tô?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12961-0
+01:25:33.807 --> 01:25:34.647
+<v Gabriel Assun&#231;&#227;o Nicchetti>Beleza, professor.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12966-0
+01:25:35.127 --> 01:25:35.687
+<v Lucas Sleyder Machado Dicencio>Tá mentira.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/13011-0
+01:25:35.167 --> 01:25:40.020
+<v Marcus Antonio Viana Duarte>Aí é até que tem 12345-6789, tá bom?
+Tem 22, então falou,</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12976-0
+01:25:36.487 --> 01:25:37.287
+<v Richard Samir Hernandez Mesa>Combinado?</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/13011-1
+01:25:40.020 --> 01:25:46.043
+<v Marcus Antonio Viana Duarte>então eu tiro a câmera e saio o cheque.
+Na hora que volta a aula que tá</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/12986-0
+01:25:40.047 --> 01:25:40.567
+<v marcusfilipesr>Obrigado.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/13011-2
+01:25:46.043 --> 01:25:47.047
+<v Marcus Antonio Viana Duarte>continuando.</v>
+
+03841c0a-cf61-46b8-9028-faac0ea315df/13010-0
+01:25:48.567 --> 01:25:48.847
+<v Lucas Sleyder Machado Dicencio>Beleza.</v>

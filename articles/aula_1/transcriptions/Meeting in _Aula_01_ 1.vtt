@@ -1,0 +1,4039 @@
+WEBVTT
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/43-0
+00:00:03.536 --> 00:00:08.292
+<v Marcus Antonio Viana Duarte>Aí depois nós vamos entrar com essa
+relação, né? Entrada e saída,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/43-1
+00:00:08.292 --> 00:00:12.976
+<v Marcus Antonio Viana Duarte>entrada e saída Sisu significa o seguinte,
+você tem uma entrada.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/71-0
+00:00:14.296 --> 00:00:18.967
+<v Marcus Antonio Viana Duarte>Esse aqui é o modelo certo?
+Você tem uma entrada,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/71-1
+00:00:18.967 --> 00:00:24.666
+<v Marcus Antonio Viana Duarte>você tem uma função resposta em
+frequência e ela tem a loja,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/71-2
+00:00:24.666 --> 00:00:28.216
+<v Marcus Antonio Viana Duarte>tem uma saída. O modelo assume-se, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/81-0
+00:00:31.096 --> 00:00:34.816
+<v Marcus Antonio Viana Duarte>Que você a essa saída vai ser somado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/98-0
+00:00:35.976 --> 00:00:45.776
+<v Marcus Antonio Viana Duarte>Um sinal de um ruído branco, média a zero,
+variância constante e você pega a sua.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/126-0
+00:00:47.856 --> 00:00:54.047
+<v Marcus Antonio Viana Duarte>Você mede a saída, tá certo aí, né?
+Os nosso objetivo desse sisos?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/126-1
+00:00:54.047 --> 00:01:00.976
+<v Marcus Antonio Viana Duarte>Nesse single entrar uma entrada,
+uma saída, é você estimar esse cara aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/128-0
+00:01:02.216 --> 00:01:02.776
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/147-0
+00:01:04.336 --> 00:01:07.984
+<v Marcus Antonio Viana Duarte>Ô Duarte,
+mas esse porque que não pode ter esse</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/147-1
+00:01:07.984 --> 00:01:09.656
+<v Marcus Antonio Viana Duarte>ruído aqui da entrada?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/149-0
+00:01:13.296 --> 00:01:13.576
+<v Marcus Antonio Viana Duarte>Pode?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/208-0
+00:01:15.576 --> 00:01:20.845
+<v Marcus Antonio Viana Duarte>Mas aí complica o Cadin, certo?
+Aí a gente tem que usar umas ferramentas</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/208-1
+00:01:20.845 --> 00:01:26.403
+<v Marcus Antonio Viana Duarte>melhores, mas como nós não é isso aí,
+isso aí eu falo, eu vou fazer isso aí,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/208-2
+00:01:26.403 --> 00:01:30.012
+<v Marcus Antonio Viana Duarte>eu não conto isso.
+Aí eu consigo fazer pra vocês.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/208-3
+00:01:30.012 --> 00:01:35.136
+<v Marcus Antonio Viana Duarte>Mas normalmente o modelo que a modelagem
+que tá no Randon data é essa.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/239-0
+00:01:36.336 --> 00:01:40.984
+<v Marcus Antonio Viana Duarte>Porque quando se o ruído entrar aqui,
+ele é transferido.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/239-1
+00:01:40.984 --> 00:01:47.181
+<v Marcus Antonio Viana Duarte>Como é que você vai identificar isso?
+Se se aqui dentro tem um ruído certo,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/239-2
+00:01:47.181 --> 00:01:49.056
+<v Marcus Antonio Viana Duarte>então aqui pode e pode.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/278-0
+00:01:50.456 --> 00:01:55.534
+<v Marcus Antonio Viana Duarte>Abdo artista,
+esse ruído não for ruído branco tem jeito?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/278-1
+00:01:55.534 --> 00:02:01.859
+<v Marcus Antonio Viana Duarte>Tem. Se não for, mede a zero. Faço.
+Você faz uma análise de tendência,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/278-2
+00:02:01.859 --> 00:02:06.936
+<v Marcus Antonio Viana Duarte>tira a tendência e toca coisa e se não
+for ruído branco?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/318-0
+00:02:07.576 --> 00:02:13.803
+<v Marcus Antonio Viana Duarte>Aí vocês começam a complicar a minha vida,
+né? Mas também a gente consegue fazer,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/318-1
+00:02:13.803 --> 00:02:17.600
+<v Marcus Antonio Viana Duarte>mas aí o buraco é mais em baixo.
+Pra nossa sorte,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/318-2
+00:02:17.600 --> 00:02:21.776
+<v Marcus Antonio Viana Duarte>99% da das análises que a gente faz em em
+laboratório.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/355-0
+00:02:23.336 --> 00:02:30.336
+<v Marcus Antonio Viana Duarte>E aí umas 9. Ele tem 2 de campo.
+Essa hipótese é bem boa, somente do siso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/355-1
+00:02:30.336 --> 00:02:36.870
+<v Marcus Antonio Viana Duarte>Aí nós temos AO tal do sivo, né?
+Nós temos uma única aí, uma entrada,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/355-2
+00:02:36.870 --> 00:02:38.176
+<v Marcus Antonio Viana Duarte>várias saídas.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/363-0
+00:02:39.936 --> 00:02:44.176
+<v Marcus Antonio Viana Duarte>Tá certo? AI, já complicou, Eduardo, não.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/383-0
+00:02:45.616 --> 00:02:50.759
+<v Marcus Antonio Viana Duarte>Por cimo,
+nada mais é do que um Monte de siso,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/383-1
+00:02:50.759 --> 00:02:55.136
+<v Marcus Antonio Viana Duarte>tá certo? Você tem es e es, estimo é es.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/411-0
+00:02:56.416 --> 00:03:02.370
+<v Marcus Antonio Viana Duarte>Tem esse e esse chima ex tem esse e esse
+chima ex não tem problema,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/411-1
+00:03:02.370 --> 00:03:07.536
+<v Marcus Antonio Viana Duarte>o símbolo não vai atrapalhar a vida de
+ninguém. AI o miso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/446-0
+00:03:10.656 --> 00:03:14.444
+<v Marcus Antonio Viana Duarte>Misto também tranquilo.
+Você tem várias entradas,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/446-1
+00:03:14.444 --> 00:03:18.079
+<v Marcus Antonio Viana Duarte>uma saída pega isso,
+mas esse de mais isso vai.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/446-2
+00:03:18.079 --> 00:03:22.472
+<v Marcus Antonio Viana Duarte>A coisa só complica um pouco quando
+treinou o mimo nossa,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/446-3
+00:03:22.472 --> 00:03:24.896
+<v Marcus Antonio Viana Duarte>o Chico nem colocou o mimo aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/448-0
+00:03:26.736 --> 00:03:26.976
+<v Marcus Antonio Viana Duarte>É?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/473-0
+00:03:29.136 --> 00:03:32.961
+<v Marcus Antonio Viana Duarte>Parece me preparo algo, mas eu preparei.
+Esqueci de olhar,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/473-1
+00:03:32.961 --> 00:03:36.656
+<v Marcus Antonio Viana Duarte>existe o mico que aí são várias entradas,
+várias saídas.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/530-0
+00:03:38.936 --> 00:03:43.837
+<v Marcus Antonio Viana Duarte>Que é a tendência Moderna.
+Antigamente a gente tinha dinheiro para</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/530-1
+00:03:43.837 --> 00:03:48.446
+<v Marcus Antonio Viana Duarte>comprar um Shake, certo? E uma celerome,
+então tudo era Assis.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/530-2
+00:03:48.446 --> 00:03:52.689
+<v Marcus Antonio Viana Duarte>Aí a celerome é mais barato,
+passou a ser se uma entrada,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/530-3
+00:03:52.689 --> 00:03:56.566
+<v Marcus Antonio Viana Duarte>várias saídas,
+mas hoje em dia a tendência Moderna é</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/530-4
+00:03:56.566 --> 00:03:57.736
+<v Marcus Antonio Viana Duarte>você ter várias.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/539-0
+00:03:57.896 --> 00:04:04.256
+<v Marcus Antonio Viana Duarte>É citações várias saídas,
+aí você consegue estimar isso aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/587-0
+00:04:05.496 --> 00:04:10.723
+<v Marcus Antonio Viana Duarte>Usando o tal do mimo,
+o mimo já não é direto, mas nós vamos, eu,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/587-1
+00:04:10.723 --> 00:04:14.824
+<v Marcus Antonio Viana Duarte>eu, eu pretendo, né?
+Dar 11 up no nosso curso, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/587-2
+00:04:14.824 --> 00:04:21.096
+<v Marcus Antonio Viana Duarte>Quando a gente for trabalhar com isso,
+eu vou fugir um pouco do do, do usual.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/636-0
+00:04:21.816 --> 00:04:26.783
+<v Marcus Antonio Viana Duarte>Nós vamos pôr o Rio daqui e vamos fazer
+mico, tá? Prometo para vocês,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/636-1
+00:04:26.783 --> 00:04:30.615
+<v Marcus Antonio Viana Duarte>se eu esquecer, vocês me levam. Ah,
+tinha o mico, pô.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/636-2
+00:04:30.615 --> 00:04:35.724
+<v Marcus Antonio Viana Duarte>As bancada hoje não é só o Cel velho,
+não é só o chegue mais não, cara.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/636-3
+00:04:35.724 --> 00:04:38.136
+<v Marcus Antonio Viana Duarte>Chega e já faz um foguete inteiro.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/652-0
+00:04:38.456 --> 00:04:41.880
+<v Marcus Antonio Viana Duarte>Tá bom? Então vamos fazer o que aí,
+pessoal?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/652-1
+00:04:41.880 --> 00:04:45.456
+<v Marcus Antonio Viana Duarte>O grande desejo é um dos grandes
+objetivos da.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/703-0
+00:04:46.936 --> 00:04:51.113
+<v Marcus Antonio Viana Duarte>Da análise de sinais, né?
+Porque se o sinal que entra fosse que eu</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/703-1
+00:04:51.113 --> 00:04:54.293
+<v Marcus Antonio Viana Duarte>saía, saia bonitinho.
+Vamos até análise de sinais.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/703-2
+00:04:54.293 --> 00:04:58.470
+<v Marcus Antonio Viana Duarte>O grande a grande jogada da análise de
+sinais é o seguinte, legal,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/703-3
+00:04:58.470 --> 00:05:02.896
+<v Marcus Antonio Viana Duarte>fiz a estimada, mas é uma estimada.
+Se é estimada, não é o valor real.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/747-0
+00:05:04.216 --> 00:05:08.760
+<v Marcus Antonio Viana Duarte>Se não é o valor real,
+nós precisamos ter confiança aí que a</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/747-1
+00:05:08.760 --> 00:05:12.931
+<v Marcus Antonio Viana Duarte>gente vem, né?
+Toda uma análise de erros em cima disso,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/747-2
+00:05:12.931 --> 00:05:17.027
+<v Marcus Antonio Viana Duarte>o medido erro de baias,
+o medido erro de variança, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/747-3
+00:05:17.027 --> 00:05:19.336
+<v Marcus Antonio Viana Duarte>Aí o Randon data usa esse erro.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/761-0
+00:05:19.696 --> 00:05:24.238
+<v Marcus Antonio Viana Duarte>Normalizado aqui, gente,
+quando você está em estatística,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/761-1
+00:05:24.238 --> 00:05:25.256
+<v Marcus Antonio Viana Duarte>é o seguinte.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/771-0
+00:05:26.456 --> 00:05:31.696
+<v Marcus Antonio Viana Duarte>A letra grega é o parâmetro populacional.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/776-0
+00:05:33.296 --> 00:05:35.736
+<v Marcus Antonio Viana Duarte>Letra romana ou.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/814-0
+00:05:38.216 --> 00:05:41.765
+<v Marcus Antonio Viana Duarte>Letra grega com Chapeuzinho é a
+estimativa certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/814-1
+00:05:41.765 --> 00:05:45.810
+<v Marcus Antonio Viana Duarte>Nós vamos lá trabalhar um pouco em cima
+disso agora, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/814-2
+00:05:45.810 --> 00:05:51.416
+<v Marcus Antonio Viana Duarte>Que eu vou tentar dar essa aula até lá
+para as 11. Olha eu paro que também há.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/825-0
+00:05:54.136 --> 00:05:59.696
+<v Marcus Antonio Viana Duarte>Online 4 horas ninguém aguenta,
+mas só um exemplo.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/868-0
+00:06:01.296 --> 00:06:05.290
+<v Marcus Antonio Viana Duarte>Média,
+todo mundo usa a média pra cá e média pra</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/868-1
+00:06:05.290 --> 00:06:11.158
+<v Marcus Antonio Viana Duarte>cá, média pra cá, média pra lá,
+tudo tá na média. Só que assim a média,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/868-2
+00:06:11.158 --> 00:06:14.336
+<v Marcus Antonio Viana Duarte>uma característica da população, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/885-0
+00:06:15.656 --> 00:06:24.056
+<v Marcus Antonio Viana Duarte>Qual que é o nível médio certo de da
+população brasileira?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/885-1
+00:06:24.056 --> 00:06:28.896
+<v Marcus Antonio Viana Duarte>É um parâmetro certo da população.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/887-0
+00:06:30.176 --> 00:06:31.736
+<v Marcus Antonio Viana Duarte>Esse número é exato.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/939-0
+00:06:33.456 --> 00:06:38.833
+<v Marcus Antonio Viana Duarte>Ah, mas tem gente morrendo,
+gente nascendo gente diminuindo com a</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/939-1
+00:06:38.833 --> 00:06:44.373
+<v Marcus Antonio Viana Duarte>favor e também não importa.
+Ele é variante, mas ele é exato, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/939-2
+00:06:44.373 --> 00:06:49.750
+<v Marcus Antonio Viana Duarte>Dura a média da população brasileira,
+um 6895 34. Ele vai até lá.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/939-3
+00:06:49.750 --> 00:06:51.216
+<v Marcus Antonio Viana Duarte>É um número exato.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/976-0
+00:06:52.936 --> 00:06:57.530
+<v Marcus Antonio Viana Duarte>Agora, quando você pega uma amostra,
+ou seja,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/976-1
+00:06:57.530 --> 00:07:05.020
+<v Marcus Antonio Viana Duarte>o substrato da população e calcula né?
+Somatório das alturas dividido pelo</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/976-2
+00:07:05.020 --> 00:07:08.216
+<v Marcus Antonio Viana Duarte>número de de pessoas da amostra.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/991-0
+00:07:08.496 --> 00:07:13.698
+<v Marcus Antonio Viana Duarte>Você está fazendo uma estimativa da média
+populacional.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/991-1
+00:07:13.698 --> 00:07:16.856
+<v Marcus Antonio Viana Duarte>Você está fazendo uma estatística.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1013-0
+00:07:18.616 --> 00:07:23.135
+<v Marcus Antonio Viana Duarte>Então a média amostral é uma estatística
+da média,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1013-1
+00:07:23.135 --> 00:07:28.096
+<v Marcus Antonio Viana Duarte>então média da altura média da população
+brasileira fi.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1021-0
+00:07:30.736 --> 00:07:33.256
+<v Marcus Antonio Viana Duarte>Peguei 500 pessoa medi.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1024-0
+00:07:34.496 --> 00:07:35.496
+<v Marcus Antonio Viana Duarte>Fiz chapéu.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1054-0
+00:07:37.016 --> 00:07:41.256
+<v Marcus Antonio Viana Duarte>Isso aqui é uma estatística,
+isso aqui é uma variável aleatória,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1054-1
+00:07:41.256 --> 00:07:44.256
+<v Marcus Antonio Viana Duarte>porque que é variável, aleatória,
+essa não é.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1112-0
+00:07:45.656 --> 00:07:50.037
+<v Marcus Antonio Viana Duarte>Esse é o valor real. Pronto, não existe.
+Agora essa aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1112-1
+00:07:50.037 --> 00:07:55.400
+<v Marcus Antonio Viana Duarte>Se você mandar 10 pesquisador pegar 500
+pessoas em lugares diferentes,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1112-2
+00:07:55.400 --> 00:07:59.555
+<v Marcus Antonio Viana Duarte>um vai achar um 69.1.
+O outro vai achar um ponto 67.3,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1112-3
+00:07:59.555 --> 00:08:01.216
+<v Marcus Antonio Viana Duarte>outro vai achar e tal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1158-0
+00:08:01.736 --> 00:08:05.540
+<v Marcus Antonio Viana Duarte>Ele só vai saber quanto é que é depois
+que ele faz o experimento,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1158-1
+00:08:05.540 --> 00:08:08.536
+<v Marcus Antonio Viana Duarte>isso aí que ele chama de variável
+aleatória, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1158-2
+00:08:08.536 --> 00:08:11.936
+<v Marcus Antonio Viana Duarte>Então isso é muito importante.
+Vocês ter em mente isso aí,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1158-3
+00:08:11.936 --> 00:08:15.336
+<v Marcus Antonio Viana Duarte>o Chapeuzinho é uma estatística,
+é uma variável aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1209-0
+00:08:16.936 --> 00:08:20.840
+<v Marcus Antonio Viana Duarte>Se é uma variável aleatória,
+ela não tem valorizado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1209-1
+00:08:20.840 --> 00:08:25.848
+<v Marcus Antonio Viana Duarte>Se ela não tem valorizados,
+nós somos obrigados a ter o que entrar.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1209-2
+00:08:25.848 --> 00:08:30.193
+<v Marcus Antonio Viana Duarte>O bendito do intervalo de confiança.
+O meu grande exemplo,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1209-3
+00:08:30.193 --> 00:08:34.096
+<v Marcus Antonio Viana Duarte>que eu uso é eu e o Bill Gates em média,
+cara nossa.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1243-0
+00:08:34.816 --> 00:08:42.391
+<v Marcus Antonio Viana Duarte>Nosso patrimônio tá em alguns bilhões de
+dólares do do arte rico. Vai em média, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1243-1
+00:08:42.391 --> 00:08:49.155
+<v Marcus Antonio Viana Duarte>Vai olhar o intervalo de confiança,
+tá certo? Então, média, sem confiança,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1243-2
+00:08:49.155 --> 00:08:50.056
+<v Marcus Antonio Viana Duarte>não vá, é.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1281-0
+00:08:50.576 --> 00:08:56.023
+<v Marcus Antonio Viana Duarte>Estatísticas sem confiança não vale nada
+e é nisso aí que nós vamos brincar um</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1281-1
+00:08:56.023 --> 00:08:59.678
+<v Marcus Antonio Viana Duarte>pouco agora,
+pra eu poder preencher mais um tempo na</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1281-2
+00:08:59.678 --> 00:09:02.574
+<v Marcus Antonio Viana Duarte>aula.
+Vou tentar sempre ser mais rápido a</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1281-3
+00:09:02.574 --> 00:09:03.056
+<v Marcus Antonio Viana Duarte>teoria.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1331-0
+00:09:04.336 --> 00:09:09.530
+<v Marcus Antonio Viana Duarte>Se fosse luz, IA demonstrar etcetera,
+etcetera, mas já passou dessa época.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1331-1
+00:09:09.530 --> 00:09:13.338
+<v Marcus Antonio Viana Duarte>Fui caçar coisa aqui que não tem nada a
+ver. Na média,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1331-2
+00:09:13.338 --> 00:09:18.531
+<v Marcus Antonio Viana Duarte>eu estou sempre devendo uns 3 quartos,
+relatórios pra Petrobras, vamos lá,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1331-3
+00:09:18.531 --> 00:09:20.816
+<v Marcus Antonio Viana Duarte>vamos voltar pro Zé que eu estou.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1335-0
+00:09:32.336 --> 00:09:32.616
+<v Marcus Antonio Viana Duarte>Olá.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1341-0
+00:09:34.536 --> 00:09:36.016
+<v Marcus Antonio Viana Duarte>Daqui um cadinho.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1388-0
+00:09:38.776 --> 00:09:44.157
+<v Marcus Antonio Viana Duarte>Então vamos lá trabalhar um pouco em cima
+dessa parte aí da da medida, da média,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1388-1
+00:09:44.157 --> 00:09:49.140
+<v Marcus Antonio Viana Duarte>então uma coisa que a gente tem que saber
+bastante, o que que a população,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1388-2
+00:09:49.140 --> 00:09:53.856
+<v Marcus Antonio Viana Duarte>ela define? O conjunto, vasto,
+em geral impossível de conhecer, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1401-0
+00:09:54.976 --> 00:09:59.496
+<v Marcus Antonio Viana Duarte>Qual que é o nível de ruído de todos os
+carros Onix da Chevrolet?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1406-0
+00:10:01.656 --> 00:10:03.656
+<v Marcus Antonio Viana Duarte>É um número, mas ninguém sabe.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1456-0
+00:10:04.976 --> 00:10:09.077
+<v Marcus Antonio Viana Duarte>Certo,
+aí você vai pegar uma amostra aleatória</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1456-1
+00:10:09.077 --> 00:10:15.969
+<v Marcus Antonio Viana Duarte>dessa população aí que vem a grande.
+Uma coisa que vocês tem que saber a fundo</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1456-2
+00:10:15.969 --> 00:10:21.290
+<v Marcus Antonio Viana Duarte>amostra aleatória significa que eu vou lá
+e perguntando, lá,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1456-3
+00:10:21.290 --> 00:10:24.256
+<v Marcus Antonio Viana Duarte>sem me preocupar de como é que eu?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1460-0
+00:10:24.296 --> 00:10:26.896
+<v Marcus Antonio Viana Duarte>Eu vou pegar aleatoriamente,
+eu pego alguém.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1464-0
+00:10:28.136 --> 00:10:30.416
+<v Marcus Antonio Viana Duarte>Errado, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1477-0
+00:10:31.656 --> 00:10:38.056
+<v Marcus Antonio Viana Duarte>A amostra aleatória,
+ela tem que ser hierarquizada, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1526-0
+00:10:39.536 --> 00:10:45.824
+<v Marcus Antonio Viana Duarte>Vou calcular a altura média da população
+brasileira da mulher brasileira.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1526-1
+00:10:45.824 --> 00:10:51.348
+<v Marcus Antonio Viana Duarte>Aí eu vou lá para Porto Alegre,
+pego 30 mulher lá, nessa altura,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1526-2
+00:10:51.348 --> 00:10:55.256
+<v Marcus Antonio Viana Duarte>a altura média da mulher brasileira é 1 e
+82.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1542-0
+00:10:56.216 --> 00:11:01.496
+<v Marcus Antonio Viana Duarte>Intervalo de confiança é de um 78 até 1 e
+85.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1556-0
+00:11:02.576 --> 00:11:05.976
+<v Marcus Antonio Viana Duarte>Você fez uma estatística,
+só que essa estatística tem algum valor.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1595-0
+00:11:07.776 --> 00:11:12.693
+<v Marcus Antonio Viana Duarte>Nenhum. Você usou uma amostra.
+É enviesada que a gente chama</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1595-1
+00:11:12.693 --> 00:11:16.804
+<v Marcus Antonio Viana Duarte>contendência,
+então pra ser uma amostra aleatória,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1595-2
+00:11:16.804 --> 00:11:22.044
+<v Marcus Antonio Viana Duarte>você tem que fazer o seguinte,
+São Paulo tem tantos por cento da</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1595-3
+00:11:22.044 --> 00:11:23.736
+<v Marcus Antonio Viana Duarte>população brasileira.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1608-0
+00:11:24.016 --> 00:11:27.219
+<v Marcus Antonio Viana Duarte>Ah, aleatoriamente, né?
+Em São Paulo eu vou pegar tantos por</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1608-1
+00:11:27.219 --> 00:11:28.216
+<v Marcus Antonio Viana Duarte>cento da minha voz.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1632-0
+00:11:30.136 --> 00:11:32.939
+<v Marcus Antonio Viana Duarte>Certo, Minas tem tantos por cento. Ah,
+aleatório,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1632-1
+00:11:32.939 --> 00:11:37.256
+<v Marcus Antonio Viana Duarte>e Minas é isso aí que chama bolsa
+aleatória? Isso é muito importante, gente.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1650-0
+00:11:39.376 --> 00:11:46.976
+<v Marcus Antonio Viana Duarte>Estatística é uma ciência exata,
+desde que a amostra seja aleatória, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1653-0
+00:11:48.176 --> 00:11:48.896
+<v Marcus Antonio Viana Duarte>Entende?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1686-0
+00:11:51.256 --> 00:11:56.785
+<v Marcus Antonio Viana Duarte>Quem faz experimentação não pode ser
+preguiçoso. Se você é preguiçoso,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1686-1
+00:11:56.785 --> 00:12:02.936
+<v Marcus Antonio Viana Duarte>vai mexer com o modelo de elemento ferido,
+que na experimentação a coisa pega.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1709-0
+00:12:04.616 --> 00:12:07.455
+<v Marcus Antonio Viana Duarte>Certo,
+coisa mais difícil em experimentação de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1709-1
+00:12:07.455 --> 00:12:10.656
+<v Marcus Antonio Viana Duarte>laboratório,
+é você conseguir uma amostra aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1729-0
+00:12:12.576 --> 00:12:16.340
+<v Marcus Antonio Viana Duarte>Uma vez nós fizemos até que tentamos,
+mas trabalho 11,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1729-1
+00:12:16.340 --> 00:12:18.256
+<v Marcus Antonio Viana Duarte>grande multinacional selate.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1762-0
+00:12:19.776 --> 00:12:25.167
+<v Marcus Antonio Viana Duarte>A mostrar a inclusão todos os fundamentos
+da estatística, pá, pá, pá, pá,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1762-1
+00:12:25.167 --> 00:12:30.558
+<v Marcus Antonio Viana Duarte>pá fez o negócio. Trem ficou bom.
+Aí veio uma auditoria Internacional pra</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1762-2
+00:12:30.558 --> 00:12:32.816
+<v Marcus Antonio Viana Duarte>ver se o trem ficou bom, rapaz.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1786-0
+00:12:34.336 --> 00:12:38.419
+<v Marcus Antonio Viana Duarte>O lugar que nós fizemos,
+as amostras aleatória,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1786-1
+00:12:38.419 --> 00:12:42.416
+<v Marcus Antonio Viana Duarte>nunca fez tanto calor no dia que é
+bendita da.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1821-0
+00:12:43.776 --> 00:12:49.856
+<v Marcus Antonio Viana Duarte>Do pessoal que veio fazer a validação,
+chegou a que dali emitia a celândia,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1821-1
+00:12:49.856 --> 00:12:55.456
+<v Marcus Antonio Viana Duarte>mas era as luzinhas saindo pra tudo
+quanto é lado e puta que lá *****</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1821-2
+00:12:55.456 --> 00:12:56.256
+<v Marcus Antonio Viana Duarte>ferrou-se.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1875-0
+00:12:57.376 --> 00:13:02.078
+<v Marcus Antonio Viana Duarte>A nossa amostra aleatória não levar em
+consideração quando está fazendo muito</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1875-1
+00:13:02.078 --> 00:13:06.901
+<v Marcus Antonio Viana Duarte>calor, certo? Ainda bem que ferrou-se,
+porque senão todo carro que fosse para o</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1875-2
+00:13:06.901 --> 00:13:11.121
+<v Marcus Antonio Viana Duarte>ele já começou a falar muito.
+Então se o carro fosse para o nordeste,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1875-3
+00:13:11.121 --> 00:13:14.496
+<v Marcus Antonio Viana Duarte>IA dar problema,
+IA vazar óleo para tudo quanto é lado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1924-0
+00:13:14.776 --> 00:13:17.822
+<v Marcus Antonio Viana Duarte>Então é você conseguir uma amostra
+aleatória,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1924-1
+00:13:17.822 --> 00:13:22.258
+<v Marcus Antonio Viana Duarte>não é um negócio tão simples assim,
+não é coisa de sentar, pensar,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1924-2
+00:13:22.258 --> 00:13:27.951
+<v Marcus Antonio Viana Duarte>porque quando você está trabalhando nível,
+tese, tudo bem, certo? Nível tese está lá,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1924-3
+00:13:27.951 --> 00:13:32.056
+<v Marcus Antonio Viana Duarte>fez o experimento, fez as coisas, validou,
+apresentou, tchau.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1930-0
+00:13:33.096 --> 00:13:36.376
+<v Marcus Antonio Viana Duarte>Mas se você está resolvendo um problema
+real de indústria.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1979-0
+00:13:37.816 --> 00:13:43.546
+<v Marcus Antonio Viana Duarte>Aí a coisa é um pouco mais complicada,
+porque não vai parar na prateleira a sua</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1979-1
+00:13:43.546 --> 00:13:47.484
+<v Marcus Antonio Viana Duarte>pesquisa, certo?
+Ela vai transformar em milhares de de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1979-2
+00:13:47.484 --> 00:13:51.352
+<v Marcus Antonio Viana Duarte>consequências.
+Então a gente tem que tomar um cuidado</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/1979-3
+00:13:51.352 --> 00:13:54.216
+<v Marcus Antonio Viana Duarte>muito grande com essa amostra aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2008-0
+00:13:56.216 --> 00:13:59.203
+<v Marcus Antonio Viana Duarte>Então,
+uma amostra aleatória é uma amostra em</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2008-1
+00:13:59.203 --> 00:14:04.136
+<v Marcus Antonio Viana Duarte>que a probabilidade de cada elemento ser
+selecionado é conhecida, entendeu?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2010-0
+00:14:05.416 --> 00:14:06.416
+<v Marcus Antonio Viana Duarte>O que que eu amarrei?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2064-0
+00:14:08.056 --> 00:14:13.626
+<v Marcus Antonio Viana Duarte>Certo? Ah, beleza. Então,
+quando eu tô fazendo a média da população</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2064-1
+00:14:13.626 --> 00:14:18.050
+<v Marcus Antonio Viana Duarte>brasileira,
+a probabilidade de eu pegar um Paulista é</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2064-2
+00:14:18.050 --> 00:14:21.818
+<v Marcus Antonio Viana Duarte>30%. Por quê?
+São Paulo tem 30% da população.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2064-3
+00:14:21.818 --> 00:14:25.176
+<v Marcus Antonio Viana Duarte>Tô dando como exemplo, tá? Então a gente.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2122-0
+00:14:25.936 --> 00:14:29.072
+<v Marcus Antonio Viana Duarte>Quando a gente faz engenharia, eles não.
+Estatística.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2122-1
+00:14:29.072 --> 00:14:33.078
+<v Marcus Antonio Viana Duarte>No segundo período a gente tá torcendo
+pra não levar pau em cálculo,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2122-2
+00:14:33.078 --> 00:14:37.026
+<v Marcus Antonio Viana Duarte>a gente pega estatística,
+enfia na gaveta e nunca mais mexe certo e</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2122-3
+00:14:37.026 --> 00:14:40.045
+<v Marcus Antonio Viana Duarte>a gente tem essa ideia. Ah não.
+A mostra aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2122-4
+00:14:40.045 --> 00:14:43.296
+<v Marcus Antonio Viana Duarte>Chega lá perguntando aleatoriamente,
+lá vai se dar não.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2138-0
+00:14:44.056 --> 00:14:47.654
+<v Marcus Antonio Viana Duarte>A amostra aleatória quando AA
+probabilidade de cada elemento está na</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2138-1
+00:14:47.654 --> 00:14:48.696
+<v Marcus Antonio Viana Duarte>amostra é conhecida.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2140-0
+00:14:50.416 --> 00:14:50.896
+<v Marcus Antonio Viana Duarte>Entendeu?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2152-0
+00:14:53.136 --> 00:14:57.976
+<v Marcus Antonio Viana Duarte>Sem isso não serve estatística,
+não serve para nada.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2188-0
+00:14:59.896 --> 00:15:06.470
+<v Marcus Antonio Viana Duarte>Então o objetivo, gente,
+é a partir da amostra vocês estabelecer</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2188-1
+00:15:06.470 --> 00:15:14.256
+<v Marcus Antonio Viana Duarte>conclusões para toda a população.
+A média altura média da mulher brasileira.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2233-0
+00:15:14.656 --> 00:15:20.310
+<v Marcus Antonio Viana Duarte>Está entre.
+Eu tenho 90% de a toda a estatística tem</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2233-1
+00:15:20.310 --> 00:15:28.416
+<v Marcus Antonio Viana Duarte>que estar associada a uma confiança.
+Eu tenho 90% de confiança que a altura</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2233-2
+00:15:28.416 --> 00:15:31.296
+<v Marcus Antonio Viana Duarte>média da mulher brasileira.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2270-0
+00:15:31.736 --> 00:15:40.190
+<v Marcus Antonio Viana Duarte>Está entre 1 e 58 e 1 e 66 morreu. Ah,
+mas eu quero 100% de confiança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2270-1
+00:15:40.190 --> 00:15:47.096
+<v Marcus Antonio Viana Duarte>A altura média da população brasileira
+está entre zero e.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2272-0
+00:15:47.376 --> 00:15:48.896
+<v Marcus Antonio Viana Duarte>18 m de altura.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2306-0
+00:15:50.136 --> 00:15:54.634
+<v Marcus Antonio Viana Duarte>Ah, mas 18 m não existe. Você quer 100%?
+Com certeza,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2306-1
+00:15:54.634 --> 00:16:01.464
+<v Marcus Antonio Viana Duarte>toda mulher do Brasil que você pegar a
+altura dela tá entra em 0 m e 18 m, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2306-2
+00:16:01.464 --> 00:16:03.296
+<v Marcus Antonio Viana Duarte>Então lembre-se disso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2320-0
+00:16:04.376 --> 00:16:08.896
+<v Marcus Antonio Viana Duarte>Estatísticas sem uma confiança e sem um
+intervalo dessa confiança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2324-0
+00:16:11.136 --> 00:16:11.976
+<v Marcus Antonio Viana Duarte>Tem pouco valor?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2326-0
+00:16:14.496 --> 00:16:14.576
+<v Marcus Antonio Viana Duarte>Ok?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2385-0
+00:16:16.776 --> 00:16:21.337
+<v Marcus Antonio Viana Duarte>Então a nossa aleatória, né?
+Você pegar as suas variáveis aleatórias,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2385-1
+00:16:21.337 --> 00:16:24.465
+<v Marcus Antonio Viana Duarte>o que que é uma variáveis aleatória,
+professor,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2385-2
+00:16:24.465 --> 00:16:30.003
+<v Marcus Antonio Viana Duarte>variáveis aleatória é quando você associa
+um resultado do experimento ao número, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2385-3
+00:16:30.003 --> 00:16:33.586
+<v Marcus Antonio Viana Duarte>Normalmente,
+se o resultado do experimento for número,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2385-4
+00:16:33.586 --> 00:16:35.736
+<v Marcus Antonio Viana Duarte>você já usa o próprio número, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2435-0
+00:16:37.176 --> 00:16:43.438
+<v Marcus Antonio Viana Duarte>Ah, a Maria mediu 1 m e 72.
+A minha variável aleatória para Maria vai</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2435-1
+00:16:43.438 --> 00:16:47.284
+<v Marcus Antonio Viana Duarte>ser 30.
+Aí você tá querendo atrapalhar seu</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2435-2
+00:16:47.284 --> 00:16:52.114
+<v Marcus Antonio Viana Duarte>trabalho, né?
+Se se a altura dela a variado aleatória</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2435-3
+00:16:52.114 --> 00:16:54.976
+<v Marcus Antonio Viana Duarte>da Maria vai ser 1 e 72, beleza.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2450-0
+00:16:55.576 --> 00:16:58.959
+<v Marcus Antonio Viana Duarte>Mas teoricamente,
+é simplesmente o número que você dá para</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2450-1
+00:16:58.959 --> 00:17:00.736
+<v Marcus Antonio Viana Duarte>um resultado de um experimento.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2479-0
+00:17:02.056 --> 00:17:06.967
+<v Marcus Antonio Viana Duarte>A estatística é uma medida numérica
+calculada a partir dos dados amostrais.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2479-1
+00:17:06.967 --> 00:17:10.456
+<v Marcus Antonio Viana Duarte>Lembrando que a estatística é uma
+variável aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2494-0
+00:17:11.856 --> 00:17:16.736
+<v Marcus Antonio Viana Duarte>Ou seja, se você faz 3 estatísticas,
+vai dar 3 resultados diferentes.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2510-0
+00:17:18.176 --> 00:17:24.256
+<v Marcus Antonio Viana Duarte>O parâmetro é uma medida numérica da
+população. Morreu certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2531-0
+00:17:25.976 --> 00:17:30.016
+<v Marcus Antonio Viana Duarte>Já falei bastante disso,
+espero que vocês tenham decorado,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2531-1
+00:17:30.016 --> 00:17:33.576
+<v Marcus Antonio Viana Duarte>então tá aí. Normalmente a população,
+a gente joga.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2553-0
+00:17:35.536 --> 00:17:40.467
+<v Marcus Antonio Viana Duarte>A letra grega, né?
+A média que que é a média,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2553-1
+00:17:40.467 --> 00:17:43.896
+<v Marcus Antonio Viana Duarte>a média é o CG da população, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2554-0
+00:17:45.416 --> 00:17:45.656
+<v Marcus Antonio Viana Duarte>É?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2593-0
+00:17:48.096 --> 00:17:52.068
+<v Marcus Antonio Viana Duarte>E que Na Na amostra, né?
+A amostra é finita.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2593-1
+00:17:52.068 --> 00:17:58.777
+<v Marcus Antonio Viana Duarte>Você tem n resultados aleatórios,
+você some esses resultados e eu obtenho o</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2593-2
+00:17:58.777 --> 00:18:01.336
+<v Marcus Antonio Viana Duarte>que a gente chama do x barra.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2637-0
+00:18:03.616 --> 00:18:10.568
+<v Marcus Antonio Viana Duarte>Então OX barra é a estatística da média
+da população. Tem outras, tem,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2637-1
+00:18:10.568 --> 00:18:15.659
+<v Marcus Antonio Viana Duarte>tem mediana, tem moda,
+tem um Monte e é geométrica,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2637-2
+00:18:15.659 --> 00:18:20.456
+<v Marcus Antonio Viana Duarte>tem um Monte de médias aí,
+a de estatística pra.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2640-0
+00:18:23.176 --> 00:18:24.136
+<v Marcus Antonio Viana Duarte>Desvio padrão.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2649-0
+00:18:25.576 --> 00:18:27.576
+<v Marcus Antonio Viana Duarte>Que é o é que é o segundo momento.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2675-0
+00:18:28.976 --> 00:18:33.307
+<v Marcus Antonio Viana Duarte>Central que normalmente,
+na estatística e variância desde o padrão</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2675-1
+00:18:33.307 --> 00:18:37.056
+<v Marcus Antonio Viana Duarte>de tirar a raiz quadrada,
+só para normalizar as unidades.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2687-0
+00:18:38.336 --> 00:18:42.616
+<v Marcus Antonio Viana Duarte>Segundo momento central, né?
+Mas ele é representado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2698-0
+00:18:45.416 --> 00:18:48.456
+<v Marcus Antonio Viana Duarte>Estatisticamente,
+a gente utiliza essa brincadeira aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2758-0
+00:18:50.616 --> 00:18:54.263
+<v Marcus Antonio Viana Duarte>Então é isso,
+então é uma estatística inferencial é um</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2758-1
+00:18:54.263 --> 00:18:58.506
+<v Marcus Antonio Viana Duarte>conjunto de procedimentos que permite,
+a partir de uma amostra,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2758-2
+00:18:58.506 --> 00:19:03.677
+<v Marcus Antonio Viana Duarte>fazer diferenças para a população.
+Se são variados, aleatório, independentes,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2758-3
+00:19:03.677 --> 00:19:08.251
+<v Marcus Antonio Viana Duarte>identicamente, distribuído,
+então constitui uma amostra aleatória de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2758-4
+00:19:08.251 --> 00:19:09.776
+<v Marcus Antonio Viana Duarte>uma população infinita.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2759-0
+00:19:10.296 --> 00:19:10.416
+<v Marcus Antonio Viana Duarte>Tá?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2785-0
+00:19:13.056 --> 00:19:16.205
+<v Marcus Antonio Viana Duarte>Se ela se constitui uma moça aleatória,
+tá x barra,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2785-1
+00:19:16.205 --> 00:19:19.656
+<v Marcus Antonio Viana Duarte>média emoção é dada aqui e esse aqui é
+valer essa moção.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2793-0
+00:19:21.016 --> 00:19:22.976
+<v Marcus Antonio Viana Duarte>São exemplos de estatística.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2812-0
+00:19:24.216 --> 00:19:29.302
+<v Marcus Antonio Viana Duarte>Bom,
+aí vem 2 conceitos que é super importante</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2812-1
+00:19:29.302 --> 00:19:30.816
+<v Marcus Antonio Viana Duarte>pra gente ter.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2814-0
+00:19:33.376 --> 00:19:34.056
+<v Marcus Antonio Viana Duarte>Cegueto.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2838-0
+00:19:36.416 --> 00:19:42.983
+<v Marcus Antonio Viana Duarte>A desigualdade de shaibe, chefe,
+seja cá uma variável aleatória,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2838-1
+00:19:42.983 --> 00:19:46.216
+<v Marcus Antonio Viana Duarte>com uma distribuição arbitrária.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2883-0
+00:19:47.536 --> 00:19:54.262
+<v Marcus Antonio Viana Duarte>Média mi valor médio quadrático fi ao
+quadrado de variância Sigma 2.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2883-1
+00:19:54.262 --> 00:20:02.352
+<v Marcus Antonio Viana Duarte>Certo o nosso amigo Sheik chevx demonstra
+tranquilamente que a probabilidade de um</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2883-2
+00:20:02.352 --> 00:20:06.056
+<v Marcus Antonio Viana Duarte>resultado de um experimento aleatório.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2905-0
+00:20:06.416 --> 00:20:12.826
+<v Marcus Antonio Viana Duarte>Ser maior ou igual a épsilon, certo?
+Ele é menor igual do que o seu valor</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2905-1
+00:20:12.826 --> 00:20:16.896
+<v Marcus Antonio Viana Duarte>médio ao quadrático sobre épsilon ao
+quadrado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2938-0
+00:20:19.776 --> 00:20:26.835
+<v Marcus Antonio Viana Duarte>O que que isso significa?
+Significa que não significa nada agora,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2938-1
+00:20:26.835 --> 00:20:33.466
+<v Marcus Antonio Viana Duarte>significa o porquê da média.
+Se vocês aqui da isso aqui é pra</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2938-2
+00:20:33.466 --> 00:20:34.856
+<v Marcus Antonio Viana Duarte>demonstração.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2952-0
+00:20:35.096 --> 00:20:37.280
+<v Marcus Antonio Viana Duarte>Eu não estou com ela,
+eu já coloquei tudo aqui que a antiga Men,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2952-1
+00:20:37.280 --> 00:20:39.296
+<v Marcus Antonio Viana Duarte>a gente clica, clica, clica, clica, clica.
+Isso é bom, vai.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2969-0
+00:20:41.256 --> 00:20:45.976
+<v Marcus Antonio Viana Duarte>Mas o que significa mesmo tá aqui?
+Quando você substitui o segundo momento.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2992-0
+00:20:48.136 --> 00:20:53.803
+<v Marcus Antonio Viana Duarte>Pelo segundo movimento central, né?
+Você chega que é a probabilidade de que</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/2992-1
+00:20:53.803 --> 00:20:55.816
+<v Marcus Antonio Viana Duarte>ocorra um evento aleatório.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3040-0
+00:20:57.496 --> 00:21:03.297
+<v Marcus Antonio Viana Duarte>Menos a média ser maior do que uma
+constante vezes a seu desvio padrão,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3040-1
+00:21:03.297 --> 00:21:09.419
+<v Marcus Antonio Viana Duarte>ele é menor igual a um sobre ser ao
+quadrado. Morreu galera. Então isso aí,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3040-2
+00:21:09.419 --> 00:21:14.736
+<v Marcus Antonio Viana Duarte>por isso que a gente fica na *****,
+na *****, na *****, na *****.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3076-0
+00:21:15.416 --> 00:21:21.081
+<v Marcus Antonio Viana Duarte>Na média, significa o seguinte,
+a probabilidade de acontecer alguma coisa</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3076-1
+00:21:21.081 --> 00:21:25.751
+<v Marcus Antonio Viana Duarte>muito longe da média,
+não importa qual que é a distribuição,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3076-2
+00:21:25.751 --> 00:21:28.736
+<v Marcus Antonio Viana Duarte>ela cai com o quadrado dessa distancia.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3103-0
+00:21:29.856 --> 00:21:37.777
+<v Marcus Antonio Viana Duarte>Parametrizada pelo desvio padrão,
+então a minha média deu 25.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3103-1
+00:21:37.777 --> 00:21:42.376
+<v Marcus Antonio Viana Duarte>Minha média é mostral deu 25, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3123-0
+00:21:44.216 --> 00:21:51.535
+<v Marcus Antonio Viana Duarte>O meu desvio padrão é 3.
+Qual que é a probabilidade de obter um</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3123-1
+00:21:51.535 --> 00:21:53.136
+<v Marcus Antonio Viana Duarte>resultado? 50?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3125-0
+00:21:55.136 --> 00:21:55.536
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3130-0
+00:21:58.496 --> 00:21:59.816
+<v Marcus Antonio Viana Duarte>Vão fazer essa brincadeira?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3142-0
+00:22:01.176 --> 00:22:04.176
+<v Marcus Antonio Viana Duarte>Deixa eu pegar uma ferramenta aqui para
+me ajudar.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3147-0
+00:22:11.216 --> 00:22:13.776
+<v Marcus Antonio Viana Duarte>Vamos lá e a média.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3150-0
+00:22:16.296 --> 00:22:18.016
+<v Marcus Antonio Viana Duarte>20, pronto.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3154-0
+00:22:19.376 --> 00:22:20.696
+<v Marcus Antonio Viana Duarte>Eu disse o padrão.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3157-0
+00:22:23.296 --> 00:22:24.216
+<v Marcus Antonio Viana Duarte>É 3.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3177-0
+00:22:25.696 --> 00:22:32.177
+<v Marcus Antonio Viana Duarte>Qual que é a probabilidade de obter o
+resultado acima de é maior, que é 30?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3177-1
+00:22:32.177 --> 00:22:33.456
+<v Marcus Antonio Viana Duarte>Então vamos lá.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3188-0
+00:22:38.776 --> 00:22:42.736
+<v Marcus Antonio Viana Duarte>X barra é o valor que eu quero. Vamos lá.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3190-0
+00:22:44.376 --> 00:22:45.016
+<v Marcus Antonio Viana Duarte>30.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3195-0
+00:22:46.696 --> 00:22:48.616
+<v Marcus Antonio Viana Duarte>Menos a média.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3200-0
+00:22:52.216 --> 00:22:54.176
+<v Marcus Antonio Viana Duarte>É circo, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3208-0
+00:22:55.696 --> 00:22:59.136
+<v Marcus Antonio Viana Duarte>A resposta dividido por s.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3213-0
+00:23:00.456 --> 00:23:03.776
+<v Marcus Antonio Viana Duarte>É um 66, então.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3222-0
+00:23:05.456 --> 00:23:06.976
+<v Marcus Antonio Viana Duarte>Um sobre isso ao quadro.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3235-0
+00:23:12.416 --> 00:23:17.096
+<v Marcus Antonio Viana Duarte>Zero 36.
+Como isso aqui é módulo é pros 2 lados.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3243-0
+00:23:19.456 --> 00:23:21.896
+<v Marcus Antonio Viana Duarte>Então ainda pego isso aqui, divido por 2.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3279-0
+00:23:24.896 --> 00:23:31.866
+<v Marcus Antonio Viana Duarte>Então eu posso falar com toda certeza que
+a probabilidade de uma população que tem</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3279-1
+00:23:31.866 --> 00:23:36.736
+<v Marcus Antonio Viana Duarte>média de 25 dizem o padrão 3.
+Eu obtenho o resultado. 30.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3314-0
+00:23:37.936 --> 00:23:44.130
+<v Marcus Antonio Viana Duarte>É melhor que 18% que legal. Eduardo,
+quer dizer que você não precisa ver nada,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3314-1
+00:23:44.130 --> 00:23:49.696
+<v Marcus Antonio Viana Duarte>mas você já tem condições de até montar o
+intervalo de confiança? Tem.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3360-0
+00:23:50.936 --> 00:23:56.242
+<v Marcus Antonio Viana Duarte>A ferramenta existe para ajudar.
+Eu gosto tanto disso aí que eu uso até o</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3360-1
+00:23:56.242 --> 00:23:59.540
+<v Marcus Antonio Viana Duarte>apelido.
+Eu não falo desigualdade shebchevse.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3360-2
+00:23:59.540 --> 00:24:04.057
+<v Marcus Antonio Viana Duarte>Eu falo o meu amigo em chebie, certo?
+Em manutenção preditiva,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3360-3
+00:24:04.057 --> 00:24:06.136
+<v Marcus Antonio Viana Duarte>a gente usa isso pra caramba.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3371-0
+00:24:06.496 --> 00:24:11.136
+<v Marcus Antonio Viana Duarte>Está certo, vamos lá.
+Eduardinha se OISS for.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3374-0
+00:24:12.456 --> 00:24:13.136
+<v Marcus Antonio Viana Duarte>4, Hein?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3381-0
+00:24:20.416 --> 00:24:21.936
+<v Marcus Antonio Viana Duarte>Mas é mesmo brincadeira, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3384-0
+00:24:23.336 --> 00:24:24.576
+<v Marcus Antonio Viana Duarte>30, menos mais.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3389-0
+00:24:30.376 --> 00:24:31.296
+<v Marcus Antonio Viana Duarte>Cadê o Ah?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3395-0
+00:24:35.656 --> 00:24:37.256
+<v Marcus Antonio Viana Duarte>Vamos, sou vencer ao quadrado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3398-0
+00:24:43.576 --> 00:24:44.496
+<v Marcus Antonio Viana Duarte>Por 2?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3400-0
+00:24:46.576 --> 00:24:47.136
+<v Marcus Antonio Viana Duarte>Nu?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3407-0
+00:24:48.776 --> 00:24:50.416
+<v Marcus Antonio Viana Duarte>32%, cara.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3428-0
+00:24:55.536 --> 00:25:00.096
+<v Marcus Antonio Viana Duarte>Aí a ficou alta, né?
+Então gente média só tem valor se o</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3428-1
+00:25:00.096 --> 00:25:02.016
+<v Marcus Antonio Viana Duarte>desempadrão for pequeno.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3473-0
+00:25:04.416 --> 00:25:12.008
+<v Marcus Antonio Viana Duarte>Então, é 2 coisas associadas, não é?
+O salário médio meio do Bill Gates da</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3473-1
+00:25:12.008 --> 00:25:18.891
+<v Marcus Antonio Viana Duarte>2000000 de dólar, beleza, qual que é,
+qual que é? AO desvio padrão,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3473-2
+00:25:18.891 --> 00:25:21.016
+<v Marcus Antonio Viana Duarte>uns 4000000 de dólar?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3482-0
+00:25:22.096 --> 00:25:26.096
+<v Marcus Antonio Viana Duarte>Resultado, essa média nossa,
+isso é pra quê? Pra nada.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3501-0
+00:25:27.216 --> 00:25:30.626
+<v Marcus Antonio Viana Duarte>Certo, lembre-se disso.
+Médio e importante é porque,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3501-1
+00:25:30.626 --> 00:25:33.456
+<v Marcus Antonio Viana Duarte>por causa da desigualdade de cheia de
+chat.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3525-0
+00:25:34.576 --> 00:25:38.274
+<v Marcus Antonio Viana Duarte>A ocorrência da uma,
+a probabilidade da ocorrência fora da</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3525-1
+00:25:38.274 --> 00:25:40.656
+<v Marcus Antonio Viana Duarte>média cai com o quadrado da distancia.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3555-0
+00:25:41.856 --> 00:25:47.090
+<v Marcus Antonio Viana Duarte>Mas ela só tem valor se o desvio padrão
+também for pequeno.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3555-1
+00:25:47.090 --> 00:25:53.719
+<v Marcus Antonio Viana Duarte>Se o desvio padrão for muito grande,
+a probabilidade de você ter coisas bem</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3555-2
+00:25:53.719 --> 00:25:55.376
+<v Marcus Antonio Viana Duarte>longe da amerd, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3593-0
+00:25:57.696 --> 00:26:02.994
+<v Marcus Antonio Viana Duarte>Se. Se eu chegar pra você e falar assim,
+Ah, ixa, na média dá 10,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3593-1
+00:26:02.994 --> 00:26:09.014
+<v Marcus Antonio Viana Duarte>mas a probabilidade de dar 100 é 50%.
+Pra que que serviu a média pra nada?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3593-2
+00:26:09.014 --> 00:26:09.736
+<v Marcus Antonio Viana Duarte>Concordo.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3630-0
+00:26:12.696 --> 00:26:16.040
+<v Marcus Antonio Viana Duarte>Agora, se você falar assim,
+a média é a 10,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3630-1
+00:26:16.040 --> 00:26:22.044
+<v Marcus Antonio Viana Duarte>mas a probabilidade de você obter um
+valor igual a 12 é de 2%. O rapaz, então,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3630-2
+00:26:22.044 --> 00:26:25.616
+<v Marcus Antonio Viana Duarte>na média ou 3, dá 10 mesmo, né?
+Você entendeu?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3658-0
+00:26:29.496 --> 00:26:34.297
+<v Marcus Antonio Viana Duarte>Então vocês vão passar a chamar o shebi
+chefe de shebi, ele é amiguinho.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3658-1
+00:26:34.297 --> 00:26:37.256
+<v Marcus Antonio Viana Duarte>Essa expressão a gente tem que saber de
+cor.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3669-0
+00:26:40.096 --> 00:26:43.496
+<v Marcus Antonio Viana Duarte>Média, sem esse cara aqui não vai nada.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3684-0
+00:26:45.936 --> 00:26:50.296
+<v Marcus Antonio Viana Duarte>E média só é importante porque, uh,
+vai cair com quadrado a distancia, beleza?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3729-0
+00:26:51.936 --> 00:26:56.639
+<v Marcus Antonio Viana Duarte>A distribuição da média, né?
+Ela tem uma distribuição,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3729-1
+00:26:56.639 --> 00:27:02.367
+<v Marcus Antonio Viana Duarte>a Esperança matemática,
+que é integral de mesmo infinito de p DeX,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3729-2
+00:27:02.367 --> 00:27:07.496
+<v Marcus Antonio Viana Duarte>estatística de XA Esperança.
+Dela é a DeX barra, é a média.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3749-0
+00:27:08.736 --> 00:27:14.246
+<v Marcus Antonio Viana Duarte>E a variância DeX barra Ah, esse aí.
+Outra coisa que vocês têm que saber de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3749-1
+00:27:14.246 --> 00:27:14.536
+<v Marcus Antonio Viana Duarte>cor.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3790-0
+00:27:15.896 --> 00:27:21.514
+<v Marcus Antonio Viana Duarte>Nós adoramos x barra, né?
+X barra pra cá x barra pra lá x barra pra</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3790-1
+00:27:21.514 --> 00:27:25.975
+<v Marcus Antonio Viana Duarte>cá, x barra, pra lá.
+A variança DeX barra é Sigma é a</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3790-2
+00:27:25.975 --> 00:27:28.536
+<v Marcus Antonio Viana Duarte>variância da população sobre n.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3810-0
+00:27:29.776 --> 00:27:35.054
+<v Marcus Antonio Viana Duarte>Não entendi nada.
+O que que você quer dizer com isso? Ora,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3810-1
+00:27:35.054 --> 00:27:39.616
+<v Marcus Antonio Viana Duarte>conforme você vai aumentando o tamanho da
+amostra.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3820-0
+00:27:40.816 --> 00:27:43.656
+<v Marcus Antonio Viana Duarte>A sua variância do x barra vai caindo.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3873-0
+00:27:46.176 --> 00:27:51.234
+<v Marcus Antonio Viana Duarte>Então quer dizer que se eu pegar 2
+pessoas para calcular a média da</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3873-1
+00:27:51.234 --> 00:27:56.813
+<v Marcus Antonio Viana Duarte>população brasileira e pegar 2000,
+a variância da 2000 vai ser menor que a</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3873-2
+00:27:56.813 --> 00:28:00.086
+<v Marcus Antonio Viana Duarte>de 2? Aham, Ah, que bom isso aí,
+salva nós.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3873-3
+00:28:00.086 --> 00:28:03.656
+<v Marcus Antonio Viana Duarte>Então por isso que o pessoal adoro estes
+barco.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3889-0
+00:28:04.376 --> 00:28:10.610
+<v Marcus Antonio Viana Duarte>Certo? Por causa dessa característica,
+aumenta o tamanho da amostra.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3889-1
+00:28:10.610 --> 00:28:12.416
+<v Marcus Antonio Viana Duarte>Seu erro vai caindo.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3902-0
+00:28:13.696 --> 00:28:19.336
+<v Marcus Antonio Viana Duarte>Lidearmente com isso muito bom,
+mas tem um probleminha também.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3959-0
+00:28:22.056 --> 00:28:25.398
+<v Marcus Antonio Viana Duarte>Quando a gente está trabalhando com
+estatística,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3959-1
+00:28:25.398 --> 00:28:29.422
+<v Marcus Antonio Viana Duarte>nós usamos o que a gente chama de
+estatística paramétrica,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3959-2
+00:28:29.422 --> 00:28:34.332
+<v Marcus Antonio Viana Duarte>aquelas que depende de parâmetro depende
+da média de depende de padrão,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3959-3
+00:28:34.332 --> 00:28:38.083
+<v Marcus Antonio Viana Duarte>depende daqui,
+quadrado depende da da custosa esquilos</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3959-4
+00:28:38.083 --> 00:28:38.696
+<v Marcus Antonio Viana Duarte>etcetera.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3966-0
+00:28:39.976 --> 00:28:42.216
+<v Marcus Antonio Viana Duarte>Aí a gente vai comparar 2 populações.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3974-0
+00:28:44.616 --> 00:28:47.216
+<v Marcus Antonio Viana Duarte>População um, a população 2.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3983-0
+00:28:49.216 --> 00:28:52.176
+<v Marcus Antonio Viana Duarte>Teoreticamente a gente usa, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/3996-0
+00:28:53.616 --> 00:28:58.736
+<v Marcus Antonio Viana Duarte>A mesa da população,
+um a variando da população. 2 sim.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4036-0
+00:29:00.616 --> 00:29:06.544
+<v Marcus Antonio Viana Duarte>Né? Por exemplo, isso aqui mais 3 vezes,
+se estiver bem longe da da média,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4036-1
+00:29:06.544 --> 00:29:12.473
+<v Marcus Antonio Viana Duarte>mais 3 dias padrão da segunda população,
+não tem nada que as população são</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4036-2
+00:29:12.473 --> 00:29:13.816
+<v Marcus Antonio Viana Duarte>diferentes, cara.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4092-0
+00:29:15.096 --> 00:29:20.768
+<v Marcus Antonio Viana Duarte>Um tem média 10 como variança 3,
+o outro tem média 20 com variança,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4092-1
+00:29:20.768 --> 00:29:26.690
+<v Marcus Antonio Viana Duarte>2 10 totalmente diferente de 20.
+O Duarte falou que a probabilidade de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4092-2
+00:29:26.690 --> 00:29:32.194
+<v Marcus Antonio Viana Duarte>acontecer uma coisa fora é longe,
+então você você discrimina, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4092-3
+00:29:32.194 --> 00:29:34.696
+<v Marcus Antonio Viana Duarte>Sua IA fala assim a população.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4096-0
+00:29:34.816 --> 00:29:38.136
+<v Marcus Antonio Viana Duarte>Um é diferente da população dos 2. Ótimo.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4099-0
+00:29:39.576 --> 00:29:40.536
+<v Marcus Antonio Viana Duarte>Funciona, legal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4146-0
+00:29:41.976 --> 00:29:46.822
+<v Marcus Antonio Viana Duarte>Lógico que a gente trabalha com amostra,
+isso aqui a gente não sabe.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4146-1
+00:29:46.822 --> 00:29:50.403
+<v Marcus Antonio Viana Duarte>O problema acontece o seguinte,
+você vai comparar,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4146-2
+00:29:50.403 --> 00:29:54.687
+<v Marcus Antonio Viana Duarte>usar estatísticas para comparar 2
+populações com ele grande?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4146-3
+00:29:54.687 --> 00:29:57.776
+<v Marcus Antonio Viana Duarte>Se o ele é grande,
+o que que vai acontecer?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4158-0
+00:30:01.096 --> 00:30:05.176
+<v Marcus Antonio Viana Duarte>A sua, a sua varia a sua.
+O senhor dizia o padrão amostral.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4197-0
+00:30:06.576 --> 00:30:14.673
+<v Marcus Antonio Viana Duarte>Vai ser muito pequeno, certo?
+Aí você chega à conclusão que OX barra de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4197-1
+00:30:14.673 --> 00:30:18.496
+<v Marcus Antonio Viana Duarte>10 é diferente do x barra de 10.1.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4200-0
+00:30:19.736 --> 00:30:21.696
+<v Marcus Antonio Viana Duarte>Porque você usou um n igual a 1000.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4226-0
+00:30:23.176 --> 00:30:30.867
+<v Marcus Antonio Viana Duarte>Certo, então isso é perigoso.
+Análise de comparação de população com</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4226-1
+00:30:30.867 --> 00:30:34.656
+<v Marcus Antonio Viana Duarte>ele, maior que 30 pé atrás, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4242-0
+00:30:38.856 --> 00:30:41.736
+<v Marcus Antonio Viana Duarte>Tô tentando ensinar tudo que eu sei de
+estatística em meia hora, tá bom?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4285-0
+00:30:43.056 --> 00:30:46.808
+<v Marcus Antonio Viana Duarte>Mas é importante vocês saber,
+vocês tem que saber,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4285-1
+00:30:46.808 --> 00:30:50.706
+<v Marcus Antonio Viana Duarte>aí eu vou fazer comparação de vou usar
+uma hipótese,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4285-2
+00:30:50.706 --> 00:30:56.517
+<v Marcus Antonio Viana Duarte>vou usar uns testes de t pra comparar 2
+população, câmbio, bom de câmbio ruim,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4285-3
+00:30:56.517 --> 00:30:58.576
+<v Marcus Antonio Viana Duarte>beleza, vou usar 400 que na.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4294-0
+00:30:59.136 --> 00:31:02.936
+<v Marcus Antonio Viana Duarte>Ferrou-se,
+eles vão dar obrigatoriamente diferente.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4313-0
+00:31:05.056 --> 00:31:10.376
+<v Marcus Antonio Viana Duarte>Porque a variância da amostra vai estar
+lá embaixo, dividiu por 400, pô.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4333-0
+00:31:11.776 --> 00:31:14.385
+<v Marcus Antonio Viana Duarte>Ei,
+feus não tem estatística para grande</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4333-1
+00:31:14.385 --> 00:31:17.056
+<v Marcus Antonio Viana Duarte>número de amostros, é só estudar um pouco.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4335-0
+00:31:19.696 --> 00:31:20.296
+<v Marcus Antonio Viana Duarte>E aí?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4346-0
+00:31:21.736 --> 00:31:27.816
+<v Marcus Antonio Viana Duarte>Se a gente dividir de Barão menos a média.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4373-0
+00:31:29.336 --> 00:31:36.833
+<v Marcus Antonio Viana Duarte>Sobre SE, sobre a higiene,
+isso tem uma distribuição ZA famosa</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4373-1
+00:31:36.833 --> 00:31:43.496
+<v Marcus Antonio Viana Duarte>distribuição normal. Certo?
+Isso a gente usa de montal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4412-0
+00:31:45.216 --> 00:31:50.729
+<v Marcus Antonio Viana Duarte>A medida que a gente entende é infinito.
+Nós vamos pra distribuição normal,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4412-1
+00:31:50.729 --> 00:31:56.387
+<v Marcus Antonio Viana Duarte>padrão só pra vocês ver a potência,
+isso aí eu teoremo no limite central, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4412-2
+00:31:56.387 --> 00:32:00.376
+<v Marcus Antonio Viana Duarte>Se você tem variáveis aleatórias,
+comédia mi variança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4433-0
+00:32:01.336 --> 00:32:08.307
+<v Marcus Antonio Viana Duarte>Sigma, aí se você criar variar,
+avaliatória Xi menos mi sobre Sigma,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4433-1
+00:32:08.307 --> 00:32:09.216
+<v Marcus Antonio Viana Duarte>aí somar.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4486-0
+00:32:11.416 --> 00:32:16.450
+<v Marcus Antonio Viana Duarte>Quando ele tende em infinito,
+você tem a famosa distribuição normal pra</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4486-1
+00:32:16.450 --> 00:32:20.504
+<v Marcus Antonio Viana Duarte>vocês verem o poder da ***** aqui dá um
+exemplo de jogar,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4486-2
+00:32:20.504 --> 00:32:26.027
+<v Marcus Antonio Viana Duarte>dado a probabilidade de sair o resultado
+de um de um jogo de dado a fácil para</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4486-3
+00:32:26.027 --> 00:32:26.376
+<v Marcus Antonio Viana Duarte>cima.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4488-0
+00:32:27.296 --> 00:32:28.056
+<v Marcus Antonio Viana Duarte>É constante.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4528-0
+00:32:29.816 --> 00:32:34.574
+<v Marcus Antonio Viana Duarte>Certo,
+é 100% ÷ 6 qualquer face sai igual se</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4528-1
+00:32:34.574 --> 00:32:41.765
+<v Marcus Antonio Viana Duarte>você pega e a soma de do resultado de 2
+dados já vira distribuição.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4528-2
+00:32:41.765 --> 00:32:43.456
+<v Marcus Antonio Viana Duarte>Triangular isso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4531-0
+00:32:45.216 --> 00:32:46.656
+<v Marcus Antonio Viana Duarte>43 já, hã.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4538-0
+00:32:48.856 --> 00:32:51.656
+<v Marcus Antonio Viana Duarte>Se você pega 3 dados.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4564-0
+00:32:53.576 --> 00:32:57.706
+<v Marcus Antonio Viana Duarte>4 dados, ou seja,
+você somou 4 variáveis aleatórias que a</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4564-1
+00:32:57.706 --> 00:33:00.696
+<v Marcus Antonio Viana Duarte>distribuição mais ****** que tem uniforme.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4617-0
+00:33:01.856 --> 00:33:06.859
+<v Marcus Antonio Viana Duarte>Certo? Qualquer resultado pode dar.
+Você pegou uma variável aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4617-1
+00:33:06.859 --> 00:33:12.425
+<v Marcus Antonio Viana Duarte>Somou com 2, somou com 3. Somos com 4,
+o trem já tá com a cara danada da nossa</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4617-2
+00:33:12.425 --> 00:33:16.160
+<v Marcus Antonio Viana Duarte>querida destruição normal, certo?
+Então essa teoria.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4617-3
+00:33:16.160 --> 00:33:18.696
+<v Marcus Antonio Viana Duarte>Mas o limite central ele é violento?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4669-0
+00:33:19.256 --> 00:33:21.593
+<v Marcus Antonio Viana Duarte>Tá?
+Se você tem mais que 10 variável</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4669-1
+00:33:21.593 --> 00:33:24.878
+<v Marcus Antonio Viana Duarte>aleatória,
+somando com certeza sua distribuição vai</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4669-2
+00:33:24.878 --> 00:33:28.099
+<v Marcus Antonio Viana Duarte>ser normal.
+Tem que tomar muito cuidado quando vai</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4669-3
+00:33:28.099 --> 00:33:32.268
+<v Marcus Antonio Viana Duarte>fazer teste de normalidade,
+aí eu vou fazer teste de normalidade.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4669-4
+00:33:32.268 --> 00:33:36.185
+<v Marcus Antonio Viana Duarte>Tem 10000 resultados,
+vai lá fazer que você vai ver o que que</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4669-5
+00:33:36.185 --> 00:33:36.816
+<v Marcus Antonio Viana Duarte>vai estar.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4671-0
+00:33:38.216 --> 00:33:39.176
+<v Marcus Antonio Viana Duarte>Beleza.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4672-0
+00:33:40.576 --> 00:33:40.976
+<v Marcus Antonio Viana Duarte>Paty.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4686-0
+00:33:44.096 --> 00:33:49.056
+<v Marcus Antonio Viana Duarte>É lógico que eu vou por isso aí No No,
+no nosso files, aí.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4708-0
+00:33:50.696 --> 00:33:56.032
+<v Marcus Antonio Viana Duarte>Olha isso, muito carinho. Ah,
+eu não sei nada de que estatístico.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4708-1
+00:33:56.032 --> 00:33:58.296
+<v Marcus Antonio Viana Duarte>Eu sou burro em estatístico.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4733-0
+00:33:59.696 --> 00:34:07.320
+<v Marcus Antonio Viana Duarte>Pessoal, saber as coisas,
+o que que é cada coisa a vossa aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4726-0
+00:34:05.616 --> 00:34:06.256
+<v marcusfilipesr>O norte.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4733-1
+00:34:07.320 --> 00:34:07.656
+<v Marcus Antonio Viana Duarte>Oi.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4777-0
+00:34:08.616 --> 00:34:11.315
+<v marcusfilipesr>E aí, no caso,
+na maioria das da da do dos pontos,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4777-1
+00:34:11.315 --> 00:34:15.548
+<v marcusfilipesr>então a gente sempre vai estar utilizando
+Oo pressuposto de variável aleatória,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4777-2
+00:34:15.548 --> 00:34:18.776
+<v marcusfilipesr>então, amostra aleatória,
+um sistema aleatório vai ser isso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4782-0
+00:34:16.496 --> 00:34:20.306
+<v Marcus Antonio Viana Duarte>Oi. Ah, a gente sempre.
+A gente sempre trabalha porque o mundo</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4782-1
+00:34:20.306 --> 00:34:21.576
+<v Marcus Antonio Viana Duarte>real é aleatório, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4800-0
+00:34:24.216 --> 00:34:27.529
+<v Marcus Antonio Viana Duarte>Você vai pedir alguma coisa se você manda
+o outro medir,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4800-1
+00:34:27.529 --> 00:34:30.376
+<v Marcus Antonio Viana Duarte>ele vai vir com o resultado diferente,
+concorda?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4805-0
+00:34:32.496 --> 00:34:33.496
+<v marcusfilipesr>Sim, sim.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4822-0
+00:34:33.816 --> 00:34:36.587
+<v Marcus Antonio Viana Duarte>Então,
+todas as análises que a gente faz de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4822-1
+00:34:36.587 --> 00:34:39.294
+<v Marcus Antonio Viana Duarte>sinal,
+a gente sempre está trabalhando com</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4822-2
+00:34:39.294 --> 00:34:40.616
+<v Marcus Antonio Viana Duarte>variáveis aleatórias.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4854-0
+00:34:41.856 --> 00:34:46.533
+<v Marcus Antonio Viana Duarte>Dificilmente a gente consegue escapar
+disso, né? Então vou aproveitar,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4854-1
+00:34:46.533 --> 00:34:50.090
+<v Marcus Antonio Viana Duarte>vou fazer só mais uma coisinha aqui.
+Nós vamos matar,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4854-2
+00:34:50.090 --> 00:34:53.976
+<v Marcus Antonio Viana Duarte>não vou até o final do slide é grande,
+mas vou ficar aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4878-0
+00:34:56.376 --> 00:34:59.021
+<v Marcus Antonio Viana Duarte>Isso aí,
+coisas que nós temos que saber da vida,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4878-1
+00:34:59.021 --> 00:35:01.881
+<v Marcus Antonio Viana Duarte>tal da inferência estatística.
+Então essa é a ideia.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4878-2
+00:35:01.881 --> 00:35:03.176
+<v Marcus Antonio Viana Duarte>Nós temos uma população.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4931-0
+00:35:05.176 --> 00:35:08.932
+<v Marcus Antonio Viana Duarte>Normalmente,
+a distribuição pode ser desconhecida ou</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4931-1
+00:35:08.932 --> 00:35:12.829
+<v Marcus Antonio Viana Duarte>você pode até desconhecer conhecer a
+distribuição. Ah,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4931-2
+00:35:12.829 --> 00:35:17.293
+<v Marcus Antonio Viana Duarte>qual que é a distribuição da altura média
+do homem brasileiro?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4931-3
+00:35:17.293 --> 00:35:22.536
+<v Marcus Antonio Viana Duarte>Qual que é a distribuição, uai,
+o Duarte falou que precisa ser somado 10.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4970-0
+00:35:24.056 --> 00:35:28.033
+<v Marcus Antonio Viana Duarte>É, variava aleatória,
+o trem já vir de distribuição normal,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4970-1
+00:35:28.033 --> 00:35:31.480
+<v Marcus Antonio Viana Duarte>com certeza a altura média do a variável
+aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4970-2
+00:35:31.480 --> 00:35:36.518
+<v Marcus Antonio Viana Duarte>A altura média da população brasileira
+tem a distribuição normal. Tô certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/4970-3
+00:35:36.518 --> 00:35:37.976
+<v Marcus Antonio Viana Duarte>Tá errado, certo isso?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5011-0
+00:35:41.136 --> 00:35:44.841
+<v Marcus Antonio Viana Duarte>Mas em f aí, legal,
+se eu conheço a distribuição,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5011-1
+00:35:44.841 --> 00:35:49.212
+<v Marcus Antonio Viana Duarte>eu faço o que eu quiser, faz,
+mas por você a distribuição,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5011-2
+00:35:49.212 --> 00:35:52.546
+<v Marcus Antonio Viana Duarte>quando você vai olhar a distribuição
+normal,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5011-3
+00:35:52.546 --> 00:35:56.176
+<v Marcus Antonio Viana Duarte>você precisa de 2 parâmetrozinho lá,
+mi e signa.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5087-0
+00:35:57.616 --> 00:36:00.878
+<v Marcus Antonio Viana Duarte>O Duarte falou que não tem jeito de saber
+esses 3.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5087-1
+00:36:00.878 --> 00:36:05.354
+<v Marcus Antonio Viana Duarte>Por isso que a gente tem que fazer
+inferência estatística para coisa.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5087-2
+00:36:05.354 --> 00:36:10.342
+<v Marcus Antonio Viana Duarte>Por melhor que você sempre representa.
+Esse experimento retira 3 bolas de uma</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5087-3
+00:36:10.342 --> 00:36:13.795
+<v Marcus Antonio Viana Duarte>urna com reposição.
+Define-se uma variável aleatória,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5087-4
+00:36:13.795 --> 00:36:17.376
+<v Marcus Antonio Viana Duarte>cujo valor representa o número total de
+bolas vermelho.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5102-0
+00:36:17.416 --> 00:36:23.577
+<v Marcus Antonio Viana Duarte>Lei escolhida qual a probabilidade das 3
+bolas serem selecionadas serem vermelhas?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5102-1
+00:36:23.577 --> 00:36:24.616
+<v Marcus Antonio Viana Duarte>Ué, tranquilo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5109-0
+00:36:26.016 --> 00:36:27.696
+<v Marcus Antonio Viana Duarte>Quais os valores possível DeX?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5121-0
+00:36:29.496 --> 00:36:33.016
+<v Marcus Antonio Viana Duarte>É o é zero ou é um ou é 2 ou é 3?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5123-0
+00:36:34.536 --> 00:36:34.936
+<v Marcus Antonio Viana Duarte>Céu.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5135-0
+00:36:37.896 --> 00:36:40.696
+<v Marcus Antonio Viana Duarte>Qualquer distribuição de problema DeX é
+fácil, isso é abdominal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5192-0
+00:36:42.416 --> 00:36:45.360
+<v Marcus Antonio Viana Duarte>É a.
+É a primeira coisa que a gente faz é</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5192-1
+00:36:45.360 --> 00:36:48.725
+<v Marcus Antonio Viana Duarte>coisa de estatística,
+é brincar com essa *****.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5192-2
+00:36:48.725 --> 00:36:53.351
+<v Marcus Antonio Viana Duarte>Quais os parâmetros da vida da mia?
+Tranquilo np n é quantas, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5192-3
+00:36:53.351 --> 00:36:57.136
+<v Marcus Antonio Viana Duarte>No nosso caso,
+ele é 3 EPA probabilidade de vermelho.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5195-0
+00:36:57.736 --> 00:37:00.856
+<v Marcus Antonio Viana Duarte>L tá fácil p FIFA.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5200-0
+00:37:02.336 --> 00:37:04.056
+<v Marcus Antonio Viana Duarte>Eu não sei, tá?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5249-0
+00:37:05.376 --> 00:37:11.064
+<v Marcus Antonio Viana Duarte>Tem uma coisa aqui, pega uma imagem. Olha,
+não, eu vou mexer com a de pirâmide.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5249-1
+00:37:11.064 --> 00:37:14.191
+<v Marcus Antonio Viana Duarte>Eu pego a imagem,
+pega um Pix lá da imagem,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5249-2
+00:37:14.191 --> 00:37:18.244
+<v Marcus Antonio Viana Duarte>qual que é a probabilidade do Pix estar
+entre 100 e 150?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5249-3
+00:37:18.244 --> 00:37:20.376
+<v Marcus Antonio Viana Duarte>Olha os valores possíveis DeX.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5269-0
+00:37:20.616 --> 00:37:27.736
+<v Marcus Antonio Viana Duarte>Isso aí é, vamos lá, né? É aquele 8 bits,
+né? Tá entre zero 255.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5275-0
+00:37:28.936 --> 00:37:30.576
+<v Marcus Antonio Viana Duarte>Qual a distribuição que promete isso?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5312-0
+00:37:31.976 --> 00:37:35.492
+<v Marcus Antonio Viana Duarte>Esquecido? Então,
+quais os que parentes são necessários</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5312-1
+00:37:35.492 --> 00:37:38.757
+<v Marcus Antonio Viana Duarte>para definir a distribuição?
+Também não sei. Então,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5312-2
+00:37:38.757 --> 00:37:41.896
+<v Marcus Antonio Viana Duarte>por isso que a gente é obrigado a fazer
+isso, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5370-0
+00:37:43.536 --> 00:37:49.399
+<v Marcus Antonio Viana Duarte>Ou você tem a distribuição desconhecida,
+ou os parâmetros são desconhecidos,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5370-1
+00:37:49.399 --> 00:37:53.586
+<v Marcus Antonio Viana Duarte>então a gente pega uma amostra aleatória
+da população,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5370-2
+00:37:53.586 --> 00:37:59.753
+<v Marcus Antonio Viana Duarte>lembrando de que a amostra é aleatória.
+Mas eu sei qual que é a probabilidade de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5370-3
+00:37:59.753 --> 00:38:01.656
+<v Marcus Antonio Viana Duarte>cada elemento da amostra.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5383-0
+00:38:02.856 --> 00:38:07.485
+<v Marcus Antonio Viana Duarte>Eu sei quantos Paulistas que tem lá eu
+sei quantos gaúchos, senão ela não É Ela,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5383-1
+00:38:07.485 --> 00:38:08.056
+<v Marcus Antonio Viana Duarte>é Antônio.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5384-0
+00:38:09.816 --> 00:38:10.096
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5437-0
+00:38:11.616 --> 00:38:15.901
+<v Marcus Antonio Viana Duarte>AI a Petrobras,
+80% dos dutos é duto rígido,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5437-1
+00:38:15.901 --> 00:38:21.328
+<v Marcus Antonio Viana Duarte>20% é flexível.
+Se eu for fazer um estudo de corrosão de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5437-2
+00:38:21.328 --> 00:38:25.231
+<v Marcus Antonio Viana Duarte>duto,
+amostra aleatória da minha amostra</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5437-3
+00:38:25.231 --> 00:38:29.896
+<v Marcus Antonio Viana Duarte>aleatória,
+80% tem que ser vinda de duto rígido.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5478-0
+00:38:30.256 --> 00:38:34.322
+<v Marcus Antonio Viana Duarte>20% tem que vir de dutos flexíveis, certo,
+pessoal,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5478-1
+00:38:34.322 --> 00:38:40.576
+<v Marcus Antonio Viana Duarte>não é sair pegando aleatoriamente 20
+minutos lá e fazer um experimento, não tá?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5478-2
+00:38:40.576 --> 00:38:45.736
+<v Marcus Antonio Viana Duarte>Depois que você definiu, olha,
+nós vamos trabalhar, é o seguinte.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5524-0
+00:38:46.296 --> 00:38:50.903
+<v Marcus Antonio Viana Duarte>Nós vamos fazer 10,
+nós vamos pegar 8 do turrijo, 2 flexíveis,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5524-1
+00:38:50.903 --> 00:38:56.167
+<v Marcus Antonio Viana Duarte>a quais os 8 dos dos turrijo nós vamos
+pegar aí sim, joga os dados, tá?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5524-2
+00:38:56.167 --> 00:39:00.408
+<v Marcus Antonio Viana Duarte>Nós vamos pegar o da bacia de tal,
+nós vamos pegar o tal,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5524-3
+00:39:00.408 --> 00:39:02.016
+<v Marcus Antonio Viana Duarte>nós vamos pegar o tal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5530-0
+00:39:03.496 --> 00:39:06.256
+<v Marcus Antonio Viana Duarte>Certo, mas você sabe quem.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5549-0
+00:39:07.376 --> 00:39:13.216
+<v Marcus Antonio Viana Duarte>80% dos seus experimentos é duto rígido.
+Pegaram isso é fundamental.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5589-0
+00:39:15.456 --> 00:39:20.022
+<v Marcus Antonio Viana Duarte>Então,
+a ideia é inferir a característica da</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5589-1
+00:39:20.022 --> 00:39:25.298
+<v Marcus Antonio Viana Duarte>população,
+então a amostra ela tem n indivíduos que</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5589-2
+00:39:25.298 --> 00:39:30.776
+<v Marcus Antonio Viana Duarte>a gente fala que AA amostra tem n graus
+de Liberdade.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5614-0
+00:39:31.416 --> 00:39:39.014
+<v Marcus Antonio Viana Duarte>O que é graus de Liberdade na engenharia,
+graus de Liberdade são variáveis</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5614-1
+00:39:39.014 --> 00:39:42.256
+<v Marcus Antonio Viana Duarte>independentes. Uma não é, não é?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5632-0
+00:39:43.456 --> 00:39:52.896
+<v Marcus Antonio Viana Duarte>Y é igual cax. Quanto da Liberdade é isso?
+Porque a variável independente é x.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5692-0
+00:39:54.616 --> 00:39:59.203
+<v Marcus Antonio Viana Duarte>Vou fazer um experimento aleatório.
+Cada resultado que eu sei quanto é que</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5692-1
+00:39:59.203 --> 00:40:03.422
+<v Marcus Antonio Viana Duarte>vale tem uma relação. Não,
+eu só vou saber o resultado depois que eu</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5692-2
+00:40:03.422 --> 00:40:06.847
+<v Marcus Antonio Viana Duarte>faço o experimento.
+Então cada resultado do experimento</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5692-3
+00:40:06.847 --> 00:40:09.537
+<v Marcus Antonio Viana Duarte>aleatório é uma variatória,
+é independente.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5692-4
+00:40:09.537 --> 00:40:11.616
+<v Marcus Antonio Viana Duarte>Então se eu faço uma amosta de 20.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5699-0
+00:40:12.016 --> 00:40:16.096
+<v Marcus Antonio Viana Duarte>A minha amostra tem 20° de Liberdade,
+certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5732-0
+00:40:18.296 --> 00:40:21.532
+<v Marcus Antonio Viana Duarte>Aí vai, vai, vai dando coisa. Então vai,
+quando você você faz.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5732-1
+00:40:21.532 --> 00:40:24.922
+<v Marcus Antonio Viana Duarte>Quando você faz o experimento,
+na realidade você está fazendo uma</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5732-2
+00:40:24.922 --> 00:40:26.616
+<v Marcus Antonio Viana Duarte>realização da variável aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5734-0
+00:40:28.456 --> 00:40:28.576
+<v Marcus Antonio Viana Duarte>Bom.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5788-0
+00:40:31.096 --> 00:40:35.597
+<v Marcus Antonio Viana Duarte>Quando você faz isso,
+você vai montar a sua amostra aleatória</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5788-1
+00:40:35.597 --> 00:40:40.170
+<v Marcus Antonio Viana Duarte>com os cuidados que eu já falei. Tá?
+Então a população, gente,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5788-2
+00:40:40.170 --> 00:40:45.324
+<v Marcus Antonio Viana Duarte>ela tem uma distribuição de probabilidade
+ou né? Uma função densidade,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5788-3
+00:40:45.324 --> 00:40:48.882
+<v Marcus Antonio Viana Duarte>probabilidade,
+normalmente a gente usa a função,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5788-4
+00:40:48.882 --> 00:40:50.696
+<v Marcus Antonio Viana Duarte>densidade, probabilidade.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5826-0
+00:40:51.616 --> 00:40:58.843
+<v Marcus Antonio Viana Duarte>Ela tem os seus parâmetros, né? Ah,
+a distribuição que eu tenho é normal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5826-1
+00:40:58.843 --> 00:41:06.070
+<v Marcus Antonio Viana Duarte>Beleza e levado a menos x menos.
+5 quais são os parâmetros que tem bi e 5</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5826-2
+00:41:06.070 --> 00:41:06.656
+<v Marcus Antonio Viana Duarte>tem 2.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5866-0
+00:41:07.376 --> 00:41:11.186
+<v Marcus Antonio Viana Duarte>O objetivo da estatística é através de
+uma amostra,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5866-1
+00:41:11.186 --> 00:41:16.094
+<v Marcus Antonio Viana Duarte>você achar uma distribuição amostral,
+achar estatísticas, ou seja,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5866-2
+00:41:16.094 --> 00:41:19.976
+<v Marcus Antonio Viana Duarte>estatísticas são utilizadas para estimar
+parâmetros.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5884-0
+00:41:21.736 --> 00:41:27.204
+<v Marcus Antonio Viana Duarte>Muito importante esse conceito,
+parâmetro de um valor fixo estatística é</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5884-1
+00:41:27.204 --> 00:41:28.776
+<v Marcus Antonio Viana Duarte>uma variar aleatória.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5924-0
+00:41:30.896 --> 00:41:35.472
+<v Marcus Antonio Viana Duarte>Se é uma variável aleatória,
+você vai ter que dar um intervalo de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5924-1
+00:41:35.472 --> 00:41:40.187
+<v Marcus Antonio Viana Duarte>confiança Pra Ela, uma confiança. Então,
+a estatística pontual, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5924-2
+00:41:40.187 --> 00:41:44.555
+<v Marcus Antonio Viana Duarte>Que é a nossa estatística ou intervalar,
+né? Pontual AT Smith,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5924-3
+00:41:44.555 --> 00:41:46.496
+<v Marcus Antonio Viana Duarte>o resultado da x bar deu 10.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5936-0
+00:41:47.056 --> 00:41:50.536
+<v Marcus Antonio Viana Duarte>Beleza, Eduardo, você gostou do resultado?
+Pra mim não vale nada.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5983-0
+00:41:51.856 --> 00:41:57.035
+<v Marcus Antonio Viana Duarte>O Duarte é chato,
+eu tenho que falar Pra Ele que eu tenho</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5983-1
+00:41:57.035 --> 00:42:01.143
+<v Marcus Antonio Viana Duarte>90% de confiança,
+que tá entre 9 e meio e 11,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5983-2
+00:42:01.143 --> 00:42:06.768
+<v Marcus Antonio Viana Duarte>aí ele ele acredita, beleza, né?
+Se você tem 90% de confiança,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5983-3
+00:42:06.768 --> 00:42:09.536
+<v Marcus Antonio Viana Duarte>com o resultado deve tá 2 e 30.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/5994-0
+00:42:11.456 --> 00:42:14.856
+<v Marcus Antonio Viana Duarte>Possível parar é melhor,
+você vai aumentar o seu n, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6051-0
+00:42:16.656 --> 00:42:21.734
+<v Marcus Antonio Viana Duarte>Então AA estatística maior, aleatória,
+que estima um parâmetro, tá,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6051-1
+00:42:21.734 --> 00:42:27.709
+<v Marcus Antonio Viana Duarte>isso às vezes é chamado de estimador
+estimador de médio estimador de variância.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6051-2
+00:42:27.709 --> 00:42:33.160
+<v Marcus Antonio Viana Duarte>A estimativa é o valor estimado, tá?
+Os estimador tem que ter a seguinte</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6051-3
+00:42:33.160 --> 00:42:34.056
+<v Marcus Antonio Viana Duarte>propriedade.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6063-0
+00:42:34.976 --> 00:42:41.856
+<v Marcus Antonio Viana Duarte>E não pode ter tendência que isso
+significa. Significa que a Esperança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6104-0
+00:42:43.296 --> 00:42:47.762
+<v Marcus Antonio Viana Duarte>Matemática do meu estimador é igual o meu
+parâmetro,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6104-1
+00:42:47.762 --> 00:42:53.491
+<v Marcus Antonio Viana Duarte>que que é Esperança é o limite de n
+entendendo a infinito. Ou seja,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6104-2
+00:42:53.491 --> 00:42:56.776
+<v Marcus Antonio Viana Duarte>se a minha amostra se for muito grande.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6118-0
+00:42:58.016 --> 00:43:03.936
+<v Marcus Antonio Viana Duarte>Com certeza o valor da minha estimada vai
+ser igual no meu parâmetro.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6121-0
+00:43:05.896 --> 00:43:07.296
+<v Marcus Antonio Viana Duarte>Consistência.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6158-0
+00:43:08.896 --> 00:43:14.556
+<v Marcus Antonio Viana Duarte>O limite quando ele tem de infinito do
+valor do seu valor estimado,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6158-1
+00:43:14.556 --> 00:43:19.383
+<v Marcus Antonio Viana Duarte>menos o valor do parâmetro real ser maior
+do que um apps,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6158-2
+00:43:19.383 --> 00:43:22.296
+<v Marcus Antonio Viana Duarte>esse épsilon maior que zero é zero.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6160-0
+00:43:23.696 --> 00:43:24.136
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6198-0
+00:43:25.656 --> 00:43:30.885
+<v Marcus Antonio Viana Duarte>Estimador pode ter de tudo. Lógico, né?
+Que no mundo precisa de engenheiro que</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6198-1
+00:43:30.885 --> 00:43:33.665
+<v Marcus Antonio Viana Duarte>nada ganha,
+ganha os melhores estimadores</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6198-2
+00:43:33.665 --> 00:43:36.776
+<v Marcus Antonio Viana Duarte>estatísticos normalmente são tendenciosos,
+né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6206-0
+00:43:39.176 --> 00:43:43.296
+<v Marcus Antonio Viana Duarte>Mas, como seu iene é finito.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6231-0
+00:43:44.776 --> 00:43:49.362
+<v Marcus Antonio Viana Duarte>Ou seja,
+o valor real você vai achar mesmo. Então,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6231-1
+00:43:49.362 --> 00:43:54.936
+<v Marcus Antonio Viana Duarte>você prefere usar um tendencioso que que
+seja mais eficiente?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6262-0
+00:43:56.296 --> 00:44:01.788
+<v Marcus Antonio Viana Duarte>Tá? Ou seja,
+ele converge mais rapidamente para o</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6262-1
+00:44:01.788 --> 00:44:10.136
+<v Marcus Antonio Viana Duarte>valor real, né? Então é exemplificando,
+eu tenho 2 estimador pra uma coisa.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6264-0
+00:44:11.216 --> 00:44:12.376
+<v Marcus Antonio Viana Duarte>O estimador um.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6310-0
+00:44:15.376 --> 00:44:21.295
+<v Marcus Antonio Viana Duarte>Ele é. Ele tem baias, ou seja,
+se eu fizer o infinito experimento,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6310-1
+00:44:21.295 --> 00:44:25.623
+<v Marcus Antonio Viana Duarte>ele não vai acertar o estimador 2 não tem
+baias,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6310-2
+00:44:25.623 --> 00:44:30.216
+<v Marcus Antonio Viana Duarte>só que o estimador um ele é mais
+eficiente que o 2.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6360-0
+00:44:30.896 --> 00:44:35.886
+<v Marcus Antonio Viana Duarte>Aí eu só vou fazer 10 avostro. Ora,
+se ele é mais eficiente,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6360-1
+00:44:35.886 --> 00:44:42.512
+<v Marcus Antonio Viana Duarte>significa que com 10 avós ele vai estar
+mais perto do valor real do que o outro.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6360-2
+00:44:42.512 --> 00:44:47.256
+<v Marcus Antonio Viana Duarte>Isso que a diferença porque que as mesmas
+sabendo que eu.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6394-0
+00:44:47.696 --> 00:44:52.684
+<v Marcus Antonio Viana Duarte>Estimador tem baias,
+você acaba usando ele, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6394-1
+00:44:52.684 --> 00:44:59.726
+<v Marcus Antonio Viana Duarte>A única coisa que não pode acontecer é
+consistência. Ah, porque lá vai.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6394-2
+00:44:59.726 --> 00:45:03.736
+<v Marcus Antonio Viana Duarte>A média é 10. Se usar AN igual a 5 dá 12.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6442-0
+00:45:04.256 --> 00:45:10.421
+<v Marcus Antonio Viana Duarte>Se eu usar ele igual a 7, dá 15.
+Se eu usar ele igual a 20, dá 3.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6442-1
+00:45:10.421 --> 00:45:16.118
+<v Marcus Antonio Viana Duarte>Se eu usar ele igual a 30, dá 14. Aí,
+pelo amor de Deus, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6442-2
+00:45:16.118 --> 00:45:23.776
+<v Marcus Antonio Viana Duarte>Um parâmetro que você vai ter que acertar
+é ON. Qual ON que vai ficar mais perto?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6485-0
+00:45:25.096 --> 00:45:28.969
+<v Marcus Antonio Viana Duarte>OOOO estimador,
+ele tem que ser consistência,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6485-1
+00:45:28.969 --> 00:45:33.684
+<v Marcus Antonio Viana Duarte>que significa o seguinte,
+se o parando verdadeiro é 10,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6485-2
+00:45:33.684 --> 00:45:38.736
+<v Marcus Antonio Viana Duarte>eu usei n 10 5 amostras e deu 12.
+Se eu colocar 10 amostra.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6533-0
+00:45:39.536 --> 00:45:42.913
+<v Marcus Antonio Viana Duarte>Certo, ele vai estar aí,
+tem que dar uns e meio,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6533-1
+00:45:42.913 --> 00:45:47.186
+<v Marcus Antonio Viana Duarte>se eu usar 100 Amos,
+você tem que dar 10 ponto, alguma coisa.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6533-2
+00:45:47.186 --> 00:45:50.563
+<v Marcus Antonio Viana Duarte>Ele não pode ficar dançando pra lá e pra
+cá não.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6533-3
+00:45:50.563 --> 00:45:55.456
+<v Marcus Antonio Viana Duarte>Aí esse estimador não pode usar nunca.
+Esse pode pra pequenas amossas.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6557-0
+00:45:56.376 --> 00:46:01.903
+<v Marcus Antonio Viana Duarte>Desde que ele seja mais eficiente,
+não é mesmo? Então, a ideia é essa. Ó,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6557-1
+00:46:01.903 --> 00:46:05.786
+<v Marcus Antonio Viana Duarte>o estivador pode ser preciso,
+mas não exato, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6557-2
+00:46:05.786 --> 00:46:08.176
+<v Marcus Antonio Viana Duarte>Esse é o exemplo do alvo, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6588-0
+00:46:13.656 --> 00:46:19.715
+<v Marcus Antonio Viana Duarte>Esse estimador ele tem a seguinte
+característica, os 2 erros que existe, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6588-1
+00:46:19.715 --> 00:46:25.616
+<v Marcus Antonio Viana Duarte>Que normal de estimação é o baias e a
+variança. Aqui nós temos o seguinte.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6629-0
+00:46:26.656 --> 00:46:31.614
+<v Marcus Antonio Viana Duarte>Ele tem uma variância pequena,
+os tiros está todo em torno desse ponto</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6629-1
+00:46:31.614 --> 00:46:34.826
+<v Marcus Antonio Viana Duarte>aqui, dizem o padrão. É bem pequenininho,
+né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6629-2
+00:46:34.826 --> 00:46:38.736
+<v Marcus Antonio Viana Duarte>A probabilidade de sair alguma coisa bem
+fora da média.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6631-0
+00:46:40.416 --> 00:46:41.336
+<v Marcus Antonio Viana Duarte>É quase zero.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6640-0
+00:46:42.696 --> 00:46:44.976
+<v Marcus Antonio Viana Duarte>Então ele é preciso, só que ele tem baias.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6642-0
+00:46:47.376 --> 00:46:47.856
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6669-0
+00:46:50.496 --> 00:46:55.324
+<v Marcus Antonio Viana Duarte>Exato, mas não é preciso.
+Isso aí é o segundo atirador,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6669-1
+00:46:55.324 --> 00:46:59.376
+<v Marcus Antonio Viana Duarte>Marcos Duarte PA PA PA PA, PA,
+PA PA na média.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6709-0
+00:47:00.936 --> 00:47:05.527
+<v Marcus Antonio Viana Duarte>Vai dar aqui,
+mas a variância de todo o tamanho, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6709-1
+00:47:05.527 --> 00:47:09.954
+<v Marcus Antonio Viana Duarte>Eu brinco muito,
+se for pra eu tô lá no ônibus com um</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6709-2
+00:47:09.954 --> 00:47:14.545
+<v Marcus Antonio Viana Duarte>revólver na cabeça.
+Se for buscar um atirador de elite,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6709-3
+00:47:14.545 --> 00:47:15.856
+<v Marcus Antonio Viana Duarte>eu prefiro esse.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6725-0
+00:47:17.056 --> 00:47:20.657
+<v Marcus Antonio Viana Duarte>Certo, que aí o comandante chega lá,
+o fulano chega um pouquinho para cá.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6725-1
+00:47:20.657 --> 00:47:21.776
+<v Marcus Antonio Viana Duarte>A mira que você acerta.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6752-0
+00:47:23.096 --> 00:47:28.012
+<v Marcus Antonio Viana Duarte>Que esse aqui acerta em qualquer lugar,
+mas se ele atirar 10000 vezes,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6752-1
+00:47:28.012 --> 00:47:32.096
+<v Marcus Antonio Viana Duarte>ele consegue matar o cara,
+inclusive quem tiver perto, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6762-0
+00:47:33.616 --> 00:47:37.096
+<v Marcus Antonio Viana Duarte>Beleza, eu posso ser,
+nem preciso nem exata.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6790-0
+00:47:39.336 --> 00:47:43.447
+<v Marcus Antonio Viana Duarte>Marco Antônio praticando tiro ao alvo,
+nunca vai passar perto do alvo porque eu</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6790-1
+00:47:43.447 --> 00:47:45.296
+<v Marcus Antonio Viana Duarte>detesto armas, sou contra armamento.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6792-0
+00:47:46.496 --> 00:47:47.176
+<v Marcus Antonio Viana Duarte>Ferros?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6797-0
+00:47:48.936 --> 00:47:50.296
+<v Marcus Antonio Viana Duarte>E esse aqui é o sonho, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6824-0
+00:47:52.816 --> 00:47:57.474
+<v Marcus Antonio Viana Duarte>Que nunca acontece, além de ser preciso,
+ele é exato.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6824-1
+00:47:57.474 --> 00:48:02.736
+<v Marcus Antonio Viana Duarte>Precisão significa o seguinte, variância,
+erro de variância.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6828-0
+00:48:04.056 --> 00:48:06.016
+<v Marcus Antonio Viana Duarte>Né? Exatidão?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6831-0
+00:48:12.296 --> 00:48:13.256
+<v Marcus Antonio Viana Duarte>Diz respeito.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6861-0
+00:48:14.496 --> 00:48:18.070
+<v Marcus Antonio Viana Duarte>A erro de baias,
+erro de baias é o seguinte,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6861-1
+00:48:18.070 --> 00:48:22.279
+<v Marcus Antonio Viana Duarte>pode dar 800000 tiro.
+Nenhum deles vai acertar aqui,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6861-2
+00:48:22.279 --> 00:48:25.296
+<v Marcus Antonio Viana Duarte>esse aqui que é o valor real do param.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6888-0
+00:48:28.456 --> 00:48:32.639
+<v Marcus Antonio Viana Duarte>Certo, precisão da ***** até ela que é,
+vai, vai saindo dali,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6888-1
+00:48:32.639 --> 00:48:36.416
+<v Marcus Antonio Viana Duarte>mas puta que da ***** cada hora ser um
+valor diferente.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6894-0
+00:48:37.736 --> 00:48:39.336
+<v Marcus Antonio Viana Duarte>Ok, isso é importante saber.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6895-0
+00:48:40.696 --> 00:48:41.096
+<v Marcus Antonio Viana Duarte>Não.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6943-0
+00:48:42.816 --> 00:48:47.767
+<v Marcus Antonio Viana Duarte>A ideia é essa, seja x uma avaliatória,
+normalmente distribuída como é,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6943-1
+00:48:47.767 --> 00:48:51.205
+<v Marcus Antonio Viana Duarte>de ami e variância. Sigma quadrada,
+desconhecida,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6943-2
+00:48:51.205 --> 00:48:55.261
+<v Marcus Antonio Viana Duarte>retira uma amostra do tamanho n com
+finalidade de estimar,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6943-3
+00:48:55.261 --> 00:48:57.736
+<v Marcus Antonio Viana Duarte>mi e Sigma quadrado, certo? Olha lá.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6985-0
+00:48:58.736 --> 00:49:01.644
+<v Marcus Antonio Viana Duarte>De quem vai ver os horários da mostra.
+Você Combinado?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6985-1
+00:49:01.644 --> 00:49:05.821
+<v Marcus Antonio Viana Duarte>A gente produzir uma boa estimativa de
+mim. Aí a gente tem os messos momentos.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6985-2
+00:49:05.821 --> 00:49:09.099
+<v Marcus Antonio Viana Duarte>Mestre, é isso aí.
+É aí que você vai escolher os estimadores,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6985-3
+00:49:09.099 --> 00:49:09.416
+<v Marcus Antonio Viana Duarte>certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/6988-0
+00:49:11.136 --> 00:49:12.016
+<v Marcus Antonio Viana Duarte>Então, por exemplo.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7041-0
+00:49:13.936 --> 00:49:18.417
+<v Marcus Antonio Viana Duarte>Eu vou calcular a média.
+Eu posso simplesmente falar o seguinte,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7041-1
+00:49:18.417 --> 00:49:23.518
+<v Marcus Antonio Viana Duarte>faço um experimento, ó. Na média,
+o resultado é esse. Você está doido aí,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7041-2
+00:49:23.518 --> 00:49:28.067
+<v Marcus Antonio Viana Duarte>gente? Ele não pertence à população.
+Se ele pertence à população,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7041-3
+00:49:28.067 --> 00:49:32.616
+<v Marcus Antonio Viana Duarte>a média não pertence à população,
+ele pode ser muito bem a média.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7043-0
+00:49:34.056 --> 00:49:34.176
+<v Marcus Antonio Viana Duarte>É?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7045-0
+00:49:36.096 --> 00:49:36.536
+<v Marcus Antonio Viana Duarte>Tudo bem.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7075-0
+00:49:37.816 --> 00:49:45.130
+<v Marcus Antonio Viana Duarte>Pode ser e existe também o nosso amigo x
+Barrinha é se ele, em vez de fazer um só,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7075-1
+00:49:45.130 --> 00:49:50.416
+<v Marcus Antonio Viana Duarte>você faz uns 10, soma os bichos de vidros,
+certo? Tudo bem.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7095-0
+00:49:52.496 --> 00:49:56.837
+<v Marcus Antonio Viana Duarte>Tá, então eu coloco OX, barra,
+cena isso aqui,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7095-1
+00:49:56.837 --> 00:49:59.976
+<v Marcus Antonio Viana Duarte>então já tem 2 estimador de médio.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7101-0
+00:50:02.056 --> 00:50:03.936
+<v Marcus Antonio Viana Duarte>Beleza, mas qual que é o melhor?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7114-0
+00:50:08.016 --> 00:50:12.576
+<v Marcus Antonio Viana Duarte>O estimador de preferência ele deve ser
+não tendencioso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7136-0
+00:50:14.696 --> 00:50:19.786
+<v Marcus Antonio Viana Duarte>Olha a Esperança de micar.
+Isso aqui ainda, se não tendência,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7136-1
+00:50:19.786 --> 00:50:23.644
+<v Marcus Antonio Viana Duarte>se você,
+se você fizer infinitos experimentos,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7136-2
+00:50:23.644 --> 00:50:24.136
+<v Marcus Antonio Viana Duarte>crava.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7160-0
+00:50:25.696 --> 00:50:34.638
+<v Marcus Antonio Viana Duarte>E variância mínima, seja ele é eficiente,
+então vamos lá, então,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7160-1
+00:50:34.638 --> 00:50:40.416
+<v Marcus Antonio Viana Duarte>se o se o estimador, OKOKOKOO estimador k.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7177-0
+00:50:41.336 --> 00:50:48.576
+<v Marcus Antonio Viana Duarte>Tive uma variância menor do que OJA.
+Gente fala que OK é mais eficiente.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7179-0
+00:50:49.856 --> 00:50:49.936
+<v Marcus Antonio Viana Duarte>Tá?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7188-0
+00:50:51.696 --> 00:50:58.136
+<v Marcus Antonio Viana Duarte>Tem 2 estimador na média aqui x barra,
+e o único resultado pronto.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7217-0
+00:51:00.576 --> 00:51:10.037
+<v Marcus Antonio Viana Duarte>Esperança DeX barra a Esperança da soma
+Esperança de de uma variável aleatória é</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7217-1
+00:51:10.037 --> 00:51:12.256
+<v Marcus Antonio Viana Duarte>a é o é, é a média.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7220-0
+00:51:13.616 --> 00:51:14.896
+<v Marcus Antonio Viana Duarte>Tem o limite central?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7237-0
+00:51:16.456 --> 00:51:20.696
+<v Marcus Antonio Viana Duarte>Estimador é o integral.
+O integral é uma transformação linear.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7281-0
+00:51:22.656 --> 00:51:29.466
+<v Marcus Antonio Viana Duarte>A Esperança de um somatório é o somatório.
+As esperanças. Então, beleza, Ah,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7281-1
+00:51:29.466 --> 00:51:35.302
+<v Marcus Antonio Viana Duarte>bom estimador x barra. Ele não tem baias,
+se você quiser infinir,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7281-2
+00:51:35.302 --> 00:51:39.016
+<v Marcus Antonio Viana Duarte>o experimento terá certo e esse aqui olha.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7306-0
+00:51:41.936 --> 00:51:46.015
+<v Marcus Antonio Viana Duarte>Esperança de uma variante aleatória é o
+próprio valor,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7306-1
+00:51:46.015 --> 00:51:52.096
+<v Marcus Antonio Viana Duarte>então nenhum dos 2 estimadores aqui são
+tendenciosos, mas vamos lá, na variância.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7326-0
+00:51:54.976 --> 00:51:57.883
+<v Marcus Antonio Viana Duarte>Você que mostra bem, é esse?
+É esse exemplo. É bem simplesinho.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7326-1
+00:51:57.883 --> 00:51:59.336
+<v Marcus Antonio Viana Duarte>O exemplo mostra bem para vocês.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7368-0
+00:52:01.056 --> 00:52:05.528
+<v Marcus Antonio Viana Duarte>O que que vem a ser eficiência e o que
+que vem a ser Bach e certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7368-1
+00:52:05.528 --> 00:52:09.265
+<v Marcus Antonio Viana Duarte>Variance esbarra, de fato,
+está aqui variança disso aí,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7368-2
+00:52:09.265 --> 00:52:13.136
+<v Marcus Antonio Viana Duarte>tem o terreno limite central que eu não
+vou passar nisso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7425-0
+00:52:14.656 --> 00:52:19.038
+<v Marcus Antonio Viana Duarte>Você nunca soma variância,
+variância de uma soma de eventos</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7425-1
+00:52:19.038 --> 00:52:25.098
+<v Marcus Antonio Viana Duarte>aleatórios, você não pode sair, é somando,
+não, você pode salvar o quadrado deles,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7425-2
+00:52:25.098 --> 00:52:30.502
+<v Marcus Antonio Viana Duarte>certo? Então vai lá, corta de carro,
+corta aqui lá o catequinho de carro,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7425-3
+00:52:30.502 --> 00:52:31.816
+<v Marcus Antonio Viana Duarte>nós chegamos aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7432-0
+00:52:32.936 --> 00:52:36.536
+<v Marcus Antonio Viana Duarte>A variância DeX barra é acima ao OPA.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7459-0
+00:52:38.776 --> 00:52:42.426
+<v Marcus Antonio Viana Duarte>Ah, tá aqui, mantém uma passagem.
+A variância de Xi,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7459-1
+00:52:42.426 --> 00:52:46.696
+<v Marcus Antonio Viana Duarte>é lógico que é a própria variância,
+ele pertence à população.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7461-0
+00:52:48.576 --> 00:52:49.296
+<v Marcus Antonio Viana Duarte>Então, beleza.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7509-0
+00:52:50.576 --> 00:52:56.981
+<v Marcus Antonio Viana Duarte>Então OX barra, os 2 são não tendenciosos,
+mas OX barra a variança dele é Sigma 2</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7509-1
+00:52:56.981 --> 00:53:02.917
+<v Marcus Antonio Viana Duarte>sobre n. Esse aqui é só sigmar 2,
+então se ON for maior do que um se ON for</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7509-2
+00:53:02.917 --> 00:53:05.416
+<v Marcus Antonio Viana Duarte>igual a um, esse é igual a esse.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7565-0
+00:53:07.256 --> 00:53:11.014
+<v Marcus Antonio Viana Duarte>OX barra.
+Ele é mais eficiente do que o pontual?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7565-1
+00:53:11.014 --> 00:53:15.538
+<v Marcus Antonio Viana Duarte>Então, consequentemente,
+todo mundo adora OX Barrinha, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7565-2
+00:53:15.538 --> 00:53:21.212
+<v Marcus Antonio Viana Duarte>Conforme você vai aumentando ele,
+você vai aumentando AA probabilidade de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7565-3
+00:53:21.212 --> 00:53:24.816
+<v Marcus Antonio Viana Duarte>atingir o valor real da sua,
+do seu parâmetro.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7578-0
+00:53:25.976 --> 00:53:29.636
+<v Marcus Antonio Viana Duarte>É isso aí,
+a variança também aqui é a variança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7578-1
+00:53:29.636 --> 00:53:30.856
+<v Marcus Antonio Viana Duarte>É um exemplo de.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7583-0
+00:53:32.856 --> 00:53:35.056
+<v Marcus Antonio Viana Duarte>De cebaias, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7594-0
+00:53:36.896 --> 00:53:39.536
+<v Marcus Antonio Viana Duarte>Ele faz um Monte 1000000 de 3, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7603-0
+00:53:41.056 --> 00:53:43.416
+<v Marcus Antonio Viana Duarte>Pode fazer isso na luz,
+você dá uma canseira.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7620-0
+00:53:45.176 --> 00:53:51.016
+<v Marcus Antonio Viana Duarte>Mas depois de muito, né? Que trefe chega,
+né, que é a variância desse estimado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7629-0
+00:53:52.536 --> 00:53:55.656
+<v Marcus Antonio Viana Duarte>É ele mesmo sobre ele, ou seja.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7641-0
+00:53:58.656 --> 00:54:02.056
+<v Marcus Antonio Viana Duarte>Não importo ele,
+o valor exato não vai ser nunca.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7688-0
+00:54:03.736 --> 00:54:09.596
+<v Marcus Antonio Viana Duarte>Ah, Duarte, mas se OM for 10000, Hein,
+Hein, Hein? Pra 1999, ÷ 10000,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7688-1
+00:54:09.596 --> 00:54:16.210
+<v Marcus Antonio Viana Duarte>é quase um muito bem engenheiro pra
+engenheiro. 10 aqui já resolve o problema,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7688-2
+00:54:16.210 --> 00:54:19.056
+<v Marcus Antonio Viana Duarte>vai pra matemática, é tendencioso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7691-0
+00:54:20.016 --> 00:54:21.376
+<v Marcus Antonio Viana Duarte>Nossa, aí, consegue aí.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7719-0
+00:54:22.736 --> 00:54:26.104
+<v Marcus Antonio Viana Duarte>Certo, engenheiro, vê uma vaca no pasto,
+malhado,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7719-1
+00:54:26.104 --> 00:54:30.616
+<v Marcus Antonio Viana Duarte>eu já acho que todas as vacas do país é
+Malhada, certo? Mas Cocal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7722-0
+00:54:32.696 --> 00:54:34.296
+<v Marcus Antonio Viana Duarte>Por isso que.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7741-0
+00:54:35.496 --> 00:54:42.170
+<v Marcus Antonio Viana Duarte>Esse estivador é tendencioso,
+por isso que a gente usa esse famoso NN,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7741-1
+00:54:42.170 --> 00:54:43.016
+<v Marcus Antonio Viana Duarte>menos um.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7782-0
+00:54:44.656 --> 00:54:48.518
+<v Marcus Antonio Viana Duarte>Esse é não tendencioso,
+por isso que da conta que você vai</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7782-1
+00:54:48.518 --> 00:54:53.165
+<v Marcus Antonio Viana Duarte>calcular a variância e mesmo se divide
+por n se divide por n menos um,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7782-2
+00:54:53.165 --> 00:54:58.336
+<v Marcus Antonio Viana Duarte>a explicação matemática eles demonstram,
+mas a explicação lógica é o seguinte.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7811-0
+00:55:00.336 --> 00:55:07.346
+<v Marcus Antonio Viana Duarte>Você tem n variáveis aleatórias,
+ela tem n graus de Liberdade quando você</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7811-1
+00:55:07.346 --> 00:55:12.176
+<v Marcus Antonio Viana Duarte>calcula OX barra,
+você perdeu o grau de Liberdade.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7831-0
+00:55:13.296 --> 00:55:17.888
+<v Marcus Antonio Viana Duarte>Certo, porque, ora,
+o senhor tem n menos um resultado?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7831-1
+00:55:17.888 --> 00:55:20.976
+<v Marcus Antonio Viana Duarte>EOX barra eu sei quanto é que vale n.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7875-0
+00:55:22.176 --> 00:55:26.980
+<v Marcus Antonio Viana Duarte>Então, o último resultado,
+ele é dependente dos dos anteriores EOX</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7875-1
+00:55:26.980 --> 00:55:30.564
+<v Marcus Antonio Viana Duarte>bar, então ele já não é mais variado,
+dependente,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7875-2
+00:55:30.564 --> 00:55:35.367
+<v Marcus Antonio Viana Duarte>por isso que a gente a gente fala assim,
+perdi quando eu fiz isso,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7875-3
+00:55:35.367 --> 00:55:37.016
+<v Marcus Antonio Viana Duarte>perdi melhor Liberdade.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7887-0
+00:55:38.416 --> 00:55:41.976
+<v Marcus Antonio Viana Duarte>Então essa aqui que é a lógica que é a
+explicação da coisa, tá bom?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7928-0
+00:55:44.056 --> 00:55:47.790
+<v Marcus Antonio Viana Duarte>Então eu só vou fazer mais 2 coisinhas
+aqui,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7928-1
+00:55:47.790 --> 00:55:52.851
+<v Marcus Antonio Viana Duarte>nós matamos intervalo com confiança pra
+mi é o famoso t, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7928-2
+00:55:52.851 --> 00:55:58.576
+<v Marcus Antonio Viana Duarte>Vou calcular intervalo com confiança pra
+média, vou usar OT teste t.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7932-0
+00:55:59.296 --> 00:55:59.536
+<v Marcus Antonio Viana Duarte>Então?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7941-0
+00:56:02.416 --> 00:56:05.136
+<v Marcus Antonio Viana Duarte>Eu sei que x da distribuição normal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7949-0
+00:56:06.496 --> 00:56:09.536
+<v Marcus Antonio Viana Duarte>Benjamin variância, sim ao quadrado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7953-0
+00:56:11.296 --> 00:56:12.056
+<v Marcus Antonio Viana Duarte>X barra?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7962-0
+00:56:13.616 --> 00:56:16.216
+<v Marcus Antonio Viana Duarte>Cisbarra é uma distribuição normal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7979-0
+00:56:17.416 --> 00:56:25.306
+<v Marcus Antonio Viana Duarte>Ele é não tendenciou.
+A média é mi e a variância é Sigma 2</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/7979-1
+00:56:25.306 --> 00:56:26.376
+<v Marcus Antonio Viana Duarte>sobre m.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8004-0
+00:56:28.416 --> 00:56:35.197
+<v Marcus Antonio Viana Duarte>Se eu pegar x menos me sobre siglas sobre
+raiz n você tem uma distribuição normal</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8004-1
+00:56:35.197 --> 00:56:35.776
+<v Marcus Antonio Viana Duarte>padrão.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8031-0
+00:56:37.096 --> 00:56:40.185
+<v Marcus Antonio Viana Duarte>Então é essa que é a jogada do intervalo
+de confiança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8031-1
+00:56:40.185 --> 00:56:44.566
+<v Marcus Antonio Viana Duarte>Eu não sei qual a distribuição que eu
+estou usando para calcular um intervalo</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8031-2
+00:56:44.566 --> 00:56:45.296
+<v Marcus Antonio Viana Duarte>de confiança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8044-0
+00:56:46.456 --> 00:56:52.536
+<v Marcus Antonio Viana Duarte>Mas eu sei que isto aqui tem distribuição
+normal.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8090-0
+00:56:55.096 --> 00:56:58.962
+<v Marcus Antonio Viana Duarte>Certo,
+estatística é uma disciplina maravilhosa.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8090-1
+00:56:58.962 --> 00:57:05.195
+<v Marcus Antonio Viana Duarte>Vale a pena, igual Machado de Assis,
+a gente é obrigado a ler Machado de Assis</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8090-2
+00:57:05.195 --> 00:57:10.639
+<v Marcus Antonio Viana Duarte>para passar no vestibular.
+Aí você fica com ódio de Machado de Assis</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8090-3
+00:57:10.639 --> 00:57:12.296
+<v Marcus Antonio Viana Duarte>nunca mais que lê um.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8106-0
+00:57:14.096 --> 00:57:17.616
+<v Marcus Antonio Viana Duarte>Mas depois que você tiver mais calmo,
+você vai ver que Machado de Assis é bom.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8142-0
+00:57:18.936 --> 00:57:22.580
+<v Marcus Antonio Viana Duarte>Você ficou de com ódio da estatística no
+segundo período,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8142-1
+00:57:22.580 --> 00:57:26.161
+<v Marcus Antonio Viana Duarte>agora que você já está Maduro,
+pega o livro estatístico,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8142-2
+00:57:26.161 --> 00:57:28.736
+<v Marcus Antonio Viana Duarte>aí você vai ver que tem bem interessante.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8171-0
+00:57:33.016 --> 00:57:35.577
+<v Marcus Antonio Viana Duarte>Lembrando que a iá tá aí a iá não vai
+acabar.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8171-1
+00:57:35.577 --> 00:57:39.696
+<v Marcus Antonio Viana Duarte>E se você quer ser bom e iá é bom você
+ser bom em estatística também, tá?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8202-0
+00:57:41.336 --> 00:57:44.342
+<v Marcus Antonio Viana Duarte>Então essa é grande.
+O grande segredo da coisa. Ah,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8202-1
+00:57:44.342 --> 00:57:47.926
+<v Marcus Antonio Viana Duarte>eu tenho 10 de um lá.
+Eu quero saber o intervalo de confiança</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8202-2
+00:57:47.926 --> 00:57:50.296
+<v Marcus Antonio Viana Duarte>da média, qualquer de serviço, eu sei lá.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8240-0
+00:57:52.296 --> 00:57:56.303
+<v Marcus Antonio Viana Duarte>Ah,
+mas eu sei que OX bar menos um mês sobre</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8240-1
+00:57:56.303 --> 00:58:03.781
+<v Marcus Antonio Viana Duarte>signos sobre higiene tem discussão normal,
+Hum, discussão normal lá, nosso querido,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8240-2
+00:58:03.781 --> 00:58:06.096
+<v Marcus Antonio Viana Duarte>sim. Então, beleza, então.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8265-0
+00:58:07.296 --> 00:58:11.889
+<v Marcus Antonio Viana Duarte>Dado Oz,
+uma variante aleatória z menos ZA</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8265-1
+00:58:11.889 --> 00:58:17.976
+<v Marcus Antonio Viana Duarte>probabilidade de modo de ZC maior do que
+um determinado.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8277-0
+00:58:20.576 --> 00:58:23.696
+<v Marcus Antonio Viana Duarte>Então uma variável aleatória ser maior do
+que.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8292-0
+00:58:25.376 --> 00:58:29.938
+<v Marcus Antonio Viana Duarte>Um z é alfa,
+isso aí chama nível de significância do</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8292-1
+00:58:29.938 --> 00:58:31.056
+<v Marcus Antonio Viana Duarte>teste, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8294-0
+00:58:33.296 --> 00:58:33.696
+<v Marcus Antonio Viana Duarte>E?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8303-0
+00:58:35.416 --> 00:58:37.689
+<v Marcus Antonio Viana Duarte>Então,
+a probabilidade de isso acontecer está</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8303-1
+00:58:37.689 --> 00:58:37.936
+<v Marcus Antonio Viana Duarte>aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8345-0
+00:58:39.936 --> 00:58:45.294
+<v Marcus Antonio Viana Duarte>A probabilidade de menos z ser menor
+igual AZ menos coisa é um menos Salto</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8345-1
+00:58:45.294 --> 00:58:50.224
+<v Marcus Antonio Viana Duarte>isso aí a gente chama de nível de
+confiança significante. Está aqui,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8345-2
+00:58:50.224 --> 00:58:54.082
+<v Marcus Antonio Viana Duarte>trabalho de confiança,
+então beleza z esse cara aqui,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8345-3
+00:58:54.082 --> 00:58:55.296
+<v Marcus Antonio Viana Duarte>eu jogo ele aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8358-0
+00:58:58.696 --> 00:59:02.696
+<v Marcus Antonio Viana Duarte>Mexidinha pra lá, mexidinha pra cá,
+então tá aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8397-0
+00:59:04.536 --> 00:59:11.189
+<v Marcus Antonio Viana Duarte>A probabilidade de que x barra menos z
+desvia o padrão sobre a higiene ser menor</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8397-1
+00:59:11.189 --> 00:59:15.296
+<v Marcus Antonio Viana Duarte>do que mi,
+que é ser menor do que x barra mais z.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8440-0
+00:59:16.656 --> 00:59:22.389
+<v Marcus Antonio Viana Duarte>Sigma sobre a higiene, é o menos alfa,
+então isso é que a gente define como</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8440-1
+00:59:22.389 --> 00:59:27.292
+<v Marcus Antonio Viana Duarte>sendo o bendito o intervalo de confiança.
+Aí você pode calcular.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8440-2
+00:59:27.292 --> 00:59:32.496
+<v Marcus Antonio Viana Duarte>É lógico que você tem que conhecer Sigma.
+Eduardo não conhece nunca.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8461-0
+00:59:32.936 --> 00:59:40.735
+<v Marcus Antonio Viana Duarte>Calma, gente. O Sigma na experimentação,
+ele tá amarrado com o procedimento da</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8461-1
+00:59:40.735 --> 00:59:42.216
+<v Marcus Antonio Viana Duarte>experimentação.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8476-0
+00:59:43.736 --> 00:59:47.150
+<v Marcus Antonio Viana Duarte>Então,
+o laboratório dos ou 6 já fez mais de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8476-1
+00:59:47.150 --> 00:59:48.136
+<v Marcus Antonio Viana Duarte>10000 testes.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8496-0
+00:59:50.776 --> 00:59:54.615
+<v Marcus Antonio Viana Duarte>A varinha, você é tanto. Ah,
+vamos fazer aí umas 5 amostras,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8496-1
+00:59:54.615 --> 00:59:55.936
+<v Marcus Antonio Viana Duarte>aí vamos mexer nisso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8541-0
+00:59:57.416 --> 01:00:02.385
+<v Marcus Antonio Viana Duarte>E pra ver se dá uma melhorada no nosso
+processo produtivo ou não? Ah,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8541-1
+01:00:02.385 --> 01:00:06.076
+<v Marcus Antonio Viana Duarte>mas qual que é o signo?
+Se o laboratório é o mesmo,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8541-2
+01:00:06.076 --> 01:00:11.896
+<v Marcus Antonio Viana Duarte>o pessoal que vai fazer isso experimento
+é o mesmo, o signo não vai mudar, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8557-0
+01:00:12.976 --> 01:00:17.896
+<v Marcus Antonio Viana Duarte>Então essa que é a ideia? Então aí você,
+né? Aí peguei esse exemplo.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8618-0
+01:00:19.016 --> 01:00:25.136
+<v Marcus Antonio Viana Duarte>Uma variável aleatória qualquer da
+distribuição desconhecida como média ami,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8618-1
+01:00:25.136 --> 01:00:29.190
+<v Marcus Antonio Viana Duarte>também desconhecida e variança Sigma 2
+igual a 16.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8618-2
+01:00:29.190 --> 01:00:34.038
+<v Marcus Antonio Viana Duarte>Retire essa amostra em 25 valores,
+calcula a média amostral.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8618-3
+01:00:34.038 --> 01:00:37.296
+<v Marcus Antonio Viana Duarte>Construa um intervalo de confiança em 95.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8625-0
+01:00:37.576 --> 01:00:42.496
+<v Marcus Antonio Viana Duarte>Por cento para mim suporte esbarra 12 e
+meio, beleza, isso aí lá.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8634-0
+01:00:44.016 --> 01:00:46.816
+<v Marcus Antonio Viana Duarte>Não seja isso aqui, que é 95%.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8677-0
+01:00:48.336 --> 01:00:56.082
+<v Marcus Antonio Viana Duarte>Então, a confiança de 95%,
+como a confiança de 95%, ela é bicaldão,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8677-1
+01:00:56.082 --> 01:01:02.461
+<v Marcus Antonio Viana Duarte>nós temos que colocar 2 e meio para cá,
+2 meio para cá,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8677-2
+01:01:02.461 --> 01:01:05.536
+<v Marcus Antonio Viana Duarte>e aí a soma delas dá 50% 5.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8691-0
+01:01:08.456 --> 01:01:10.758
+<v Marcus Antonio Viana Duarte>Bom,
+aí a gente tem que descobrir quanto é que</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8691-1
+01:01:10.758 --> 01:01:11.296
+<v Marcus Antonio Viana Duarte>vale cizer.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8713-0
+01:01:12.776 --> 01:01:17.293
+<v Marcus Antonio Viana Duarte>Vai lá Na Na tabela hoje em dia não
+existe, né? Você vai lá no Paint,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8713-1
+01:01:17.293 --> 01:01:19.616
+<v Marcus Antonio Viana Duarte>vai lá no matilab em qualquer lugar.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8739-0
+01:01:21.296 --> 01:01:28.759
+<v Marcus Antonio Viana Duarte>Oz de 97.5 é um ponto 96, beleza,
+então você joga lá na nossa expressão tá</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8739-1
+01:01:28.759 --> 01:01:29.256
+<v Marcus Antonio Viana Duarte>aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8744-0
+01:01:30.936 --> 01:01:31.936
+<v Marcus Antonio Viana Duarte>Faz lá as conta.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8790-0
+01:01:33.416 --> 01:01:39.225
+<v Marcus Antonio Viana Duarte>Você vai chegar,
+você tem 95% de confiança que o valor da</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8790-1
+01:01:39.225 --> 01:01:47.136
+<v Marcus Antonio Viana Duarte>média está entre 1113 e 2 e 14 ponto 26.
+Isso chama-se intervalo de confiança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8824-0
+01:01:48.656 --> 01:01:52.700
+<v Marcus Antonio Viana Duarte>Ô Duarte,
+mas qual que é o valor mais provável aí,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8824-1
+01:01:52.700 --> 01:01:58.172
+<v Marcus Antonio Viana Duarte>Hein? Como bom engenheiro,
+a gente coloca lá no meio, né? Ah, 2.7 2.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8824-2
+01:01:58.172 --> 01:02:01.423
+<v Marcus Antonio Viana Duarte>7 não?
+Intervalo e confiança significa o</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8824-3
+01:02:01.423 --> 01:02:02.136
+<v Marcus Antonio Viana Duarte>seguinte.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8844-0
+01:02:03.536 --> 01:02:13.038
+<v Marcus Antonio Viana Duarte>Qualquer número entre 1113 2 tem a mesma
+probabilidade de ser o valor real do</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8844-1
+01:02:13.038 --> 01:02:14.256
+<v Marcus Antonio Viana Duarte>parâmetro.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8904-0
+01:02:16.616 --> 01:02:23.103
+<v Marcus Antonio Viana Duarte>Então qualquer número entre 1113 2 e 1426
+8 tem 95% de chance de seu valor real da</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8904-1
+01:02:23.103 --> 01:02:26.698
+<v Marcus Antonio Viana Duarte>média.
+Isso é um outro erro muito comum que a</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8904-2
+01:02:26.698 --> 01:02:31.075
+<v Marcus Antonio Viana Duarte>gente comete,
+a gente acha que o centro do intervalo de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8904-3
+01:02:31.075 --> 01:02:31.856
+<v Marcus Antonio Viana Duarte>confiança.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8910-0
+01:02:32.216 --> 01:02:35.976
+<v Marcus Antonio Viana Duarte>É mais média que o resto, né? Não, certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8956-0
+01:02:38.256 --> 01:02:44.004
+<v Marcus Antonio Viana Duarte>Beleza, então você está olhando ali,
+você está fazendo uma análise de processo</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8956-1
+01:02:44.004 --> 01:02:49.752
+<v Marcus Antonio Viana Duarte>da influência do processo num determinado
+parâmetro, nó, rapaz, a temperatura,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/8956-2
+01:02:49.752 --> 01:02:54.336
+<v Marcus Antonio Viana Duarte>o intervalo de confiança ali entre ela
+está entre menos 3 e 5.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9009-0
+01:02:54.816 --> 01:02:58.364
+<v Marcus Antonio Viana Duarte>Olha, gente,
+se ela pode ser negativa e pode ser</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9009-1
+01:02:58.364 --> 01:03:01.622
+<v Marcus Antonio Viana Duarte>positiva,
+1 hora ela 1 hora ela influencia o</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9009-2
+01:03:01.622 --> 01:03:07.053
+<v Marcus Antonio Viana Duarte>processo pra menos outra hora o processo
+mais, mais o que que a gente faz,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9009-3
+01:03:07.053 --> 01:03:11.976
+<v Marcus Antonio Viana Duarte>vai melhor eu esquecer essa daí.
+Água a influência dela é zero, pô.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9041-0
+01:03:13.416 --> 01:03:22.716
+<v Marcus Antonio Viana Duarte>Não tem essa história que a deu,
+é menos ponto 9 + 3 anão AA influência é</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9041-1
+01:03:22.716 --> 01:03:28.371
+<v Marcus Antonio Viana Duarte>positiva,
+porque porque é uma limonha certo,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9041-2
+01:03:28.371 --> 01:03:30.256
+<v Marcus Antonio Viana Duarte>passou no zero.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9044-0
+01:03:31.296 --> 01:03:32.256
+<v Marcus Antonio Viana Duarte>Esquece.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9088-0
+01:03:33.816 --> 01:03:38.571
+<v Marcus Antonio Viana Duarte>Todo mundo que está dentro do intervalo
+de de confiança tem a mesma probabilidade.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9088-1
+01:03:38.571 --> 01:03:42.925
+<v Marcus Antonio Viana Duarte>Se o valor real do parâmetro e os
+matemáticos nem aceitam essa afirmação de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9088-2
+01:03:42.925 --> 01:03:45.216
+<v Marcus Antonio Viana Duarte>engenheiro que eu estou fazendo, não tá?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9124-0
+01:03:46.896 --> 01:03:49.624
+<v Marcus Antonio Viana Duarte>Como obter intervalo de confiança mais
+Estreito,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9124-1
+01:03:49.624 --> 01:03:53.355
+<v Marcus Antonio Viana Duarte>ou você diminui o nível de confiança em
+vez de ser 95, vou por 90,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9124-2
+01:03:53.355 --> 01:03:55.136
+<v Marcus Antonio Viana Duarte>porque senão não defendo a tese.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9134-0
+01:03:56.576 --> 01:03:59.896
+<v Marcus Antonio Viana Duarte>Detalhe,
+quando você tá mexendo com a gente grande.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9164-0
+01:04:01.176 --> 01:04:04.247
+<v Marcus Antonio Viana Duarte>Tá,
+eu vou fazer aqui o experimento grandão</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9164-1
+01:04:04.247 --> 01:04:07.667
+<v Marcus Antonio Viana Duarte>aqui na Embraer pra ver se ele pode mexer
+nisso.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9164-2
+01:04:07.667 --> 01:04:11.296
+<v Marcus Antonio Viana Duarte>Esse intervalo de confiança é definido a
+anteriori.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9209-0
+01:04:13.056 --> 01:04:17.167
+<v Marcus Antonio Viana Duarte>E isso envolve vida de gente,
+então nós vamos colocar 99.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9209-1
+01:04:17.167 --> 01:04:22.625
+<v Marcus Antonio Viana Duarte>9 aí depois se o treino errado. Ah,
+vamos dar uma baixadinha no intervalo de</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9209-2
+01:04:22.625 --> 01:04:26.736
+<v Marcus Antonio Viana Duarte>confiança. Isso é roubado, tá?
+Isso nem estatística, não.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9234-0
+01:04:28.256 --> 01:04:32.758
+<v Marcus Antonio Viana Duarte>Outra maneira aumenta n, né?
+Se você for aumentando esse trem aqui,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9234-1
+01:04:32.758 --> 01:04:35.936
+<v Marcus Antonio Viana Duarte>1 hora a coisa você aumenta aqui,
+diminui aqui.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9236-0
+01:04:37.576 --> 01:04:38.016
+<v Marcus Antonio Viana Duarte>Certo?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9247-0
+01:04:39.816 --> 01:04:42.656
+<v Marcus Antonio Viana Duarte>Bom aí que vem, né? Cores de matemático.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9252-0
+01:04:46.336 --> 01:04:48.056
+<v Marcus Antonio Viana Duarte>Calculou, calculou.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9306-0
+01:04:50.296 --> 01:04:54.474
+<v Marcus Antonio Viana Duarte>Que falam o seguinte,
+os matemáticos dizem o seguinte,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9306-1
+01:04:54.474 --> 01:05:00.625
+<v Marcus Antonio Viana Duarte>o intervalo de confiança não significa
+que a média está dentro desse valor. Não.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9306-2
+01:05:00.625 --> 01:05:04.955
+<v Marcus Antonio Viana Duarte>Isso significa que se você fizer
+infinitos experimentos,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9306-3
+01:05:04.955 --> 01:05:08.296
+<v Marcus Antonio Viana Duarte>95% dos resultados vai estar dentro
+desses.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9308-0
+01:05:08.696 --> 01:05:09.656
+<v Marcus Antonio Viana Duarte>Valores?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9316-0
+01:05:11.776 --> 01:05:14.376
+<v Marcus Antonio Viana Duarte>O engenheiro tá bom,
+o médico tá aí dentro.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9324-0
+01:05:17.976 --> 01:05:19.696
+<v Marcus Antonio Viana Duarte>Vai ter a distribuição que enquadra.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9331-0
+01:05:23.776 --> 01:05:27.176
+<v Marcus Antonio Viana Duarte>E vamos por aí, a fora.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9352-0
+01:05:33.296 --> 01:05:39.232
+<v Marcus Antonio Viana Duarte>Nós é. Vamos parar por aqui, tá?
+Nós temos a aula inteira para brincar com</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9352-1
+01:05:39.232 --> 01:05:40.736
+<v Marcus Antonio Viana Duarte>isso. Galou galera.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9400-0
+01:05:42.056 --> 01:05:45.723
+<v Marcus Antonio Viana Duarte>E o que eu queria eu fiz.
+Eu montei um exemplozinho, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9366-0
+01:05:43.816 --> 01:05:44.216
+<v marcusfilipesr>Beleza.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9400-1
+01:05:45.723 --> 01:05:50.355
+<v Marcus Antonio Viana Duarte>Eu montei um exemplo legalzinho pra gente
+fazer procedimentos modernos,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9400-2
+01:05:50.355 --> 01:05:53.186
+<v Marcus Antonio Viana Duarte>mas deixa próxima hora.
+A gente faz ele tá?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9400-3
+01:05:53.186 --> 01:05:56.016
+<v Marcus Antonio Viana Duarte>Eu acho que já tá falando 3 demais,
+tá bom?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9409-0
+01:05:57.336 --> 01:06:01.216
+<v Marcus Antonio Viana Duarte>Beleza, então na próxima aula.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9407-0
+01:05:59.496 --> 01:05:59.936
+<v &#193;lisson Carvalho Vasconcelos>Beleza.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9408-0
+01:05:59.976 --> 01:06:00.576
+<v marcusfilipesr>Beleza.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9436-0
+01:06:02.616 --> 01:06:05.686
+<v Marcus Antonio Viana Duarte>Na próxima aula, vamos lá,
+aí aí é o seguinte, próxima aula,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9436-1
+01:06:05.686 --> 01:06:08.957
+<v Marcus Antonio Viana Duarte>nós ainda estamos na parte fundamental,
+ação, ela vai continuar,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9436-2
+01:06:08.957 --> 01:06:10.416
+<v Marcus Antonio Viana Duarte>ela vai ser online, está bom.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9471-0
+01:06:12.136 --> 01:06:16.102
+<v Marcus Antonio Viana Duarte>Quando tiver o laboratório,
+eu aviso com 2 semanas de antecedência,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9471-1
+01:06:16.102 --> 01:06:20.883
+<v Marcus Antonio Viana Duarte>os laboratório nós vamos ter que ter toda
+uma base que vai acontecer lá pro final</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9471-2
+01:06:20.883 --> 01:06:21.816
+<v Marcus Antonio Viana Duarte>de setembro, ok?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9534-0
+01:06:24.736 --> 01:06:28.323
+<v Marcus Antonio Viana Duarte>Combinado? Então, na próxima quarta,
+no mesmo bat horário,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9477-0
+01:06:25.736 --> 01:06:25.976
+<v marcusfilipesr>Ok?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9484-0
+01:06:27.656 --> 01:06:28.176
+<v &#193;lisson Carvalho Vasconcelos>Combinado?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9534-1
+01:06:28.323 --> 01:06:32.153
+<v Marcus Antonio Viana Duarte>nós vamos explorar que aí eu posso,
+a gente vai trabalhar bem.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9534-2
+01:06:32.153 --> 01:06:35.315
+<v Marcus Antonio Viana Duarte>Essa estatística,
+estatística é fundamental. Gente,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9534-3
+01:06:35.315 --> 01:06:38.841
+<v Marcus Antonio Viana Duarte>se vocês não souberem aqui que um
+intervalo com a fiança,</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9534-4
+01:06:38.841 --> 01:06:41.576
+<v Marcus Antonio Viana Duarte>como é que bota uma bossa,
+como é que coisa?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9582-0
+01:06:43.056 --> 01:06:46.187
+<v Marcus Antonio Viana Duarte>Aí vocês estão,
+faz melhor vocês nem mexer com</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9582-1
+01:06:46.187 --> 01:06:51.316
+<v Marcus Antonio Viana Duarte>experimentação, Combinado? Então,
+bom final de semana para vocês na próxima.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9554-0
+01:06:49.656 --> 01:06:50.216
+<v Victor Goncalves Marques>Beleza.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9582-2
+01:06:51.316 --> 01:06:54.514
+<v Marcus Antonio Viana Duarte>E outra coisa,
+vocês podiam perguntar mais, né?</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9582-3
+01:06:54.514 --> 01:06:59.177
+<v Marcus Antonio Viana Duarte>Eu estou cansado de falar, fala, fala,
+fala, fala, pelo amor de Deus.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9582-4
+01:06:59.177 --> 01:06:59.976
+<v Marcus Antonio Viana Duarte>Quem foi AA.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9599-0
+01:07:01.216 --> 01:07:06.816
+<v Marcus Antonio Viana Duarte>Franciele Franciele, se você estiver vivo,
+ainda desliga AA gravação, aí vai.</v>
+
+15332757-9a46-4fa3-a98f-7d927d6dbfd0/9605-0
+01:07:09.456 --> 01:07:11.256
+<v Marcus Antonio Viana Duarte>Alô, galera, até mais pra vocês.</v>

@@ -1,0 +1,325 @@
+/* Import shared variables */
+@import url('./variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--gradient-primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: var(--background-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-xl);
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.header h1 {
+    color: var(--text-primary);
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-xs);
+}
+
+.header p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-lg);
+}
+
+.presentations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.presentation-card {
+    background: var(--background-light);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    text-decoration: none;
+    color: inherit;
+    transition: all var(--transition-fast);
+    border: 2px solid transparent;
+}
+
+.presentation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-sm);
+    border-color: var(--primary-color);
+}
+
+.presentation-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.presentation-card h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+    font-size: var(--font-size-xl);
+}
+
+.presentation-card p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+}
+
+.footer {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-light);
+    color: var(--text-secondary);
+}
+
+.footer p {
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Progress Page Styles */
+.progress-content {
+    text-align: left;
+    margin-top: var(--spacing-lg);
+}
+
+.progress-section {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: var(--background-light);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-light);
+}
+
+.progress-section h2 {
+    color: var(--text-primary);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.progress-section h2 i {
+    color: var(--primary-color);
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: var(--spacing-sm);
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+}
+
+/* Milestones */
+.milestone {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.milestone-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.milestone-item.completed {
+    background: #e8f5e8;
+    border-left: 4px solid #4caf50;
+}
+
+.milestone-item.in-progress {
+    background: #fff3e0;
+    border-left: 4px solid #ff9800;
+}
+
+.milestone-item.pending {
+    background: #f5f5f5;
+    border-left: 4px solid #9e9e9e;
+}
+
+.milestone-item i {
+    font-size: 1.2rem;
+    min-width: 20px;
+}
+
+.milestone-item.completed i {
+    color: #4caf50;
+}
+
+.milestone-item.in-progress i {
+    color: #ff9800;
+}
+
+.milestone-item.pending i {
+    color: #9e9e9e;
+}
+
+.milestone-item span {
+    font-weight: 500;
+    color: var(--text-primary);
+    flex: 1;
+}
+
+.milestone-item small {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+/* Results Grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.result-card {
+    background: var(--background-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    text-align: center;
+    border: 1px solid var(--border-light);
+    transition: all var(--transition-fast);
+}
+
+.result-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.result-card h3 {
+    color: var(--text-primary);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+}
+
+.result-number {
+    font-size: var(--font-size-3xl);
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+}
+
+.result-card p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+/* Next Steps */
+.next-steps {
+    list-style: none;
+    padding: 0;
+}
+
+.next-steps li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.next-steps li:last-child {
+    border-bottom: none;
+}
+
+.next-steps li i {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: var(--gradient-primary);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    margin-bottom: var(--spacing-md);
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-lg);
+    }
+    
+    .header h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .presentations {
+        grid-template-columns: 1fr;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .milestone-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+    
+    .milestone-item small {
+        margin-left: 28px;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento - Gantt Chart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Import shared variables */
+        @import url('./css/variables.css');
+
+        body {
+            margin: var(--background-white);
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .frame-container {
+            background: var(--background-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            padding: var(--spacing-xl);
+            width: 90%;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            background-color: var(--background-white);
+            padding: var(--spacing-md) var(--spacing-lg);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: var(--font-size-2xl);
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .iframe-container {
+            flex: 1;
+            width: 100%;
+            background: var(--background-white);
+            border-radius: var(--radius-md) var(--radius-md) 0 0;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: var(--spacing-sm) var(--spacing-md);
+            }
+            
+            .header h1 {
+                font-size: var(--font-size-xl);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="frame-container">
+        <div class="header">
+            <h1>Acompanhamento - Gantt Chart</h1>
+        </div>
+        <div class="iframe-container">
+            <iframe src="gant_clean.html" title="Gantt Chart"></iframe>
+        </div>
+    </div>
+</body>
+</html>

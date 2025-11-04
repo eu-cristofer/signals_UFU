@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gantt Chart - Signals & Systems Literature Review</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f5f7fa;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    #gantt-container {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 700px;
+    }
+
+    .gantt-content {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    #phase-panel {
+      width: 200px;
+      background: #f8f9fa;
+      border-right: 1px solid #dee2e6;
+      overflow-y: auto;
+    }
+
+    #gantt-main {
+      flex: 1;
+      overflow: auto;
+      position: relative;
+    }
+
+    .phase-item {
+      padding: 12px 16px;
+      border-bottom: 1px solid #e9ecef;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #6c757d;
+      font-size: 16px;
+    }
+
+    .error {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #dc3545;
+      font-size: 16px;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* SVG Grid Styles */
+    .gantt-svg {
+      display: block;
+    }
+
+    .grid-background {
+      fill: #ffffff;
+    }
+
+    .grid-row-line, .grid-column-line {
+      stroke: #e0e0e0;
+      stroke-width: 1;
+    }
+
+    .header-background {
+      fill: #f8f9fa;
+    }
+
+    .upper-header-cell, .lower-header-cell {
+      stroke: #dee2e6;
+    }
+
+    .upper-header-text {
+      font-weight: 600;
+      fill: #495057;
+    }
+
+    .lower-header-text {
+      fill: #6c757d;
+    }
+
+    /* Button styles */
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    button:active {
+      background: #004085;
+    }
+
+    /* Enhanced Phase Panel Styles */
+    .phase-panel-header {
+      height: 65px;
+      background: #f8f9fa;
+      border-bottom: 2px solid #dee2e6;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #495057;
+    }
+
+    .phase-block {
+      border-bottom: 1px solid #e9ecef;
+      background: #f8f9fa;
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.2s ease;
+    }
+
+    .phase-block:hover {
+      background: #e9ecef;
+    }
+
+    .phase-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 4px;
+    }
+
+    /* Task Bar Styles */
+    .task-bar {
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .task-bar:hover {
+      opacity: 0.9;
+    }
+
+    .bar-background {
+      transition: all 0.2s ease;
+    }
+
+    .bar-progress {
+      pointer-events: none;
+    }
+
+    .bar-label {
+      pointer-events: none;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Signals & Systems Literature Review Gantt Chart</h1>
+  
+  <div id="gantt-container">
+    <div class="gantt-content">
+      <div id="phase-panel">
+        <div class="loading">Loading phases...</div>
+      </div>
+      <div id="gantt-main">
+        <div class="loading">Loading chart...</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { GanttChart, loadGanttData } from './dist/gantt-chart.es.js';
+
+    loadGanttData('data/literature-review-tasks.json')
+      .then(data => {
+        const gantt = new GanttChart(data, {
+          container: '#gantt-container',
+          viewMode: 'Week'
+        });
+        window.gantt = gantt;
+
+        const container = document.querySelector('#gantt-container');
+        if (container) {
+          // Create a toolbar
+          const toolbar = document.createElement('div');
+          toolbar.style.cssText = `
+          padding: 10px;
+          background: #f8f9fa;
+          border-bottom: 1px solid #dee2e6;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        `;
+
+          // --- Layers Dropdown ---
+          const layersContainer = document.createElement('div');
+          layersContainer.style.position = 'relative';
+
+          const layersButton = document.createElement('button');
+          layersButton.innerHTML = '&#9776; Layers'; // Hamburger icon
+          layersButton.style.cssText = 'padding: 5px 10px; cursor: pointer;';
+          layersContainer.appendChild(layersButton);
+
+          const layersDropdown = document.createElement('div');
+          layersDropdown.style.cssText = `
+          display: none;
+          position: absolute;
+          background: white;
+          border: 1px solid #dee2e6;
+          border-radius: 4px;
+          padding: 10px;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          z-index: 10;
+          width: 160px;
+        `;
+          layersDropdown.innerHTML = `
+          <label style="display: block; margin-bottom: 8px;">
+            <input type="checkbox" id="toggle-phase-bars" checked> Phase Bars
+          </label>
+          <label style="display: block;">
+            <input type="checkbox" id="toggle-phase-labels" checked> Phase Labels
+          </label>
+        `;
+          layersContainer.appendChild(layersDropdown);
+
+          layersButton.onclick = () => {
+            const isHidden = layersDropdown.style.display === 'none';
+            layersDropdown.style.display = isHidden ? 'block' : 'none';
+          };
+
+          // --- View Mode Buttons ---
+          const viewModeContainer = document.createElement('div');
+          viewModeContainer.innerHTML = `
+          <button onclick="window.gantt.setViewMode('Day')" style="margin: 0 2px; padding: 5px 10px; cursor: pointer;">D</button>
+          <button onclick="window.gantt.setViewMode('Week')" style="margin: 0 2px; padding: 5px 10px; cursor: pointer;">W</button>
+          <button onclick="window.gantt.setViewMode('Month')" style="margin: 0 2px; padding: 5px 10px; cursor: pointer;">M</button>
+          <button onclick="window.gantt.setViewMode('Year')" style="margin: 0 2px; padding: 5px 10px; cursor: pointer;">Y</button>
+        `;
+
+          toolbar.appendChild(layersContainer);
+          toolbar.appendChild(viewModeContainer);
+          container.prepend(toolbar);
+
+          // --- EVENT LISTENERS FOR LAYERS ---
+          document.getElementById('toggle-phase-bars')?.addEventListener('change', (e) => {
+            const isChecked = e.target.checked;
+            gantt.getBarManager()?.setPhaseBarsVisibility(isChecked);
+          });
+
+          document.getElementById('toggle-phase-labels')?.addEventListener('change', (e) => {
+            const isChecked = e.target.checked;
+            gantt.getBarManager()?.setPhaseLabelsVisibility(isChecked);
+          });
+        }
+      })
+      .catch(error => {
+        console.error('Failed to load Gantt data:', error);
+        const container = document.querySelector('#gantt-container');
+        if (container) {
+          container.innerHTML = `<div class="error"><div>❌ Failed to load data</div><div style="font-size: 14px;">${error.message}</div></div>`;
+        }
+      });
+  </script>
+</body>
+</html> 

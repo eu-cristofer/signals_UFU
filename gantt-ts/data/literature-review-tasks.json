@@ -1,0 +1,144 @@
+{
+  "phases": [
+    {
+      "id": "phase1",
+      "name": "Fundação",
+      "color": "#3498db"
+    },
+    {
+      "id": "phase2",
+      "name": "Conceitos Essenciais",
+      "color": "#e74c3c"
+    },
+    {
+      "id": "phase3",
+      "name": "Tópicos Avançados",
+      "color": "#f39c12"
+    },
+    {
+      "id": "phase4",
+      "name": "Aplicações",
+      "color": "#2ecc71"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task1",
+      "name": "Sinais de Tempo Contínuo",
+      "start": "2025-01-01",
+      "end": "2025-01-15",
+      "progress": 100,
+      "phase": "phase1",
+      "dependencies": []
+    },
+    {
+      "id": "task2",
+      "name": "Sinais de Tempo Discreto",
+      "start": "2025-01-10",
+      "end": "2025-01-25",
+      "progress": 80,
+      "phase": "phase1",
+      "dependencies": ["task1"]
+    },
+    {
+      "id": "task3",
+      "name": "Operações com Sinais",
+      "start": "2025-01-20",
+      "end": "2025-02-05",
+      "progress": 60,
+      "phase": "phase1",
+      "dependencies": ["task2"]
+    },
+    {
+      "id": "task4",
+      "name": "Teoria de Sistemas LTI",
+      "start": "2025-01-28",
+      "end": "2025-02-15",
+      "progress": 40,
+      "phase": "phase2",
+      "dependencies": ["task3"]
+    },
+    {
+      "id": "task5",
+      "name": "Convolução",
+      "start": "2025-02-01",
+      "end": "2025-02-20",
+      "progress": 30,
+      "phase": "phase2",
+      "dependencies": ["task4"]
+    },
+    {
+      "id": "task6",
+      "name": "Séries de Fourier",
+      "start": "2025-02-10",
+      "end": "2025-02-28",
+      "progress": 20,
+      "phase": "phase2",
+      "dependencies": ["task5"]
+    },
+    {
+      "id": "task7",
+      "name": "Transformada de Fourier",
+      "start": "2025-02-22",
+      "end": "2025-03-15",
+      "progress": 10,
+      "phase": "phase2",
+      "dependencies": ["task6"]
+    },
+    {
+      "id": "task8",
+      "name": "Transformada de Laplace",
+      "start": "2025-03-01",
+      "end": "2025-03-20",
+      "progress": 0,
+      "phase": "phase3",
+      "dependencies": ["task7"]
+    },
+    {
+      "id": "task9",
+      "name": "Transformada Z",
+      "start": "2025-03-10",
+      "end": "2025-03-28",
+      "progress": 0,
+      "phase": "phase3",
+      "dependencies": ["task8"]
+    },
+    {
+      "id": "task10",
+      "name": "Teoria da Amostragem",
+      "start": "2025-03-20",
+      "end": "2025-04-05",
+      "progress": 0,
+      "phase": "phase3",
+      "dependencies": ["task9"]
+    },
+    {
+      "id": "task11",
+      "name": "Projeto de Filtros",
+      "start": "2025-03-25",
+      "end": "2025-04-15",
+      "progress": 0,
+      "phase": "phase4",
+      "dependencies": ["task10"]
+    },
+    {
+      "id": "task12",
+      "name": "Aplicações de Processamento de Sinais",
+      "start": "2025-04-05",
+      "end": "2025-04-25",
+      "progress": 0,
+      "phase": "phase4",
+      "dependencies": ["task11"]
+    },
+    {
+      "id": "task13",
+      "name": "Sistemas de Comunicação",
+      "start": "2025-04-15",
+      "end": "2025-05-05",
+      "progress": 0,
+      "phase": "phase4",
+      "dependencies": ["task12"]
+    }
+  ]
+}
+

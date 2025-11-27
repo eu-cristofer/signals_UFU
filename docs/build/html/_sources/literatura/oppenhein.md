@@ -1,7 +1,5 @@
 # Obras Clássicas
 
-**Objetivo:** Este capitúlo estrutura a revisão da literatura fundamental em análise de sinais e sistemas, 
-
 ---
 
 ## 📖 Signals and Systems - Oppenheim & Willsky
@@ -22,13 +20,6 @@
 | **10** | **Análise de Fourier de Sinais Discretos** | ⭐⭐⭐⭐ Transição para processamento digital | 701-780 |
 
 ### 📋 **Plano de Fichamento Estruturado**
-
-
-
-
-
-
-
 
 #### 🗓️ **Cronograma Sugerido (12 semanas)**
 

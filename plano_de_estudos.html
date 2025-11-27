@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+
+
+<html lang="pt" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Plano de Estudos &#8212; Documentação Análise de Sinais UFU 1.0</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=37c40417"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="_static/translations.js?v=5f54a428"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'plano_de_estudos';</script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Pesquisar" href="search.html" />
+    <link rel="next" title="Obras Clássicas" href="literatura/oppenhein.html" />
+    <link rel="prev" title="Análise de Sinais UFU - Notas de aula" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="pt"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/signals_logo.png" class="logo__image only-light" alt="Documentação Análise de Sinais UFU 1.0 - Home"/>
+    <img src="_static/signals_logo.png" class="logo__image only-dark pst-js-only" alt="Documentação Análise de Sinais UFU 1.0 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Pesquisar" aria-label="Pesquisar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Pesquisar</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sumário:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Plano de Estudos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="literatura/oppenhein.html">Obras Clássicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aula_01/motivacao.html">Da Incerteza à Previsão</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aula_01/signals.html">Signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aula_01/fft.html">FFT</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/eu-cristofer/signals_UFU" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Repositório fonte"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Baixe esta página">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/plano_de_estudos.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Baixar arquivo fonte"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir em PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo tela cheia"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Pesquisar" aria-label="Pesquisar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Plano de Estudos</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Conteúdo </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referências</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-1-fundamentos-e-conexoes-iniciais">Fase 1: Fundamentos e Conexões Iniciais</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-2-modelagem-de-sistemas-reais-e-analise-digital">Fase 2: Modelagem de Sistemas Reais e Análise Digital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-3-topicos-avancados-e-foco-na-pesquisa">Fase 3: Tópicos Avançados e Foco na Pesquisa</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="plano-de-estudos">
+<h1>Plano de Estudos<a class="headerlink" href="#plano-de-estudos" title="Link to this heading">#</a></h1>
+<blockquote>
+<div><p><em>Atualizado em <strong>27.XI.2025</strong></em>.</p>
+</div></blockquote>
+<p>Este planto tem por objetivo estruturar um estudo integrado da literatura clássica abordando Vibrações Mecânicas e Processamento de Sinais, com foco em aplicações para detecção de falhas em máquinas rotativas.</p>
+<hr class="docutils" />
+<section id="referencias">
+<h2>Referências<a class="headerlink" href="#referencias" title="Link to this heading">#</a></h2>
+<p>Para o referido objetivo, as seguintes obras foram adotadas: <strong>Rao</strong>, “Mechanical Vibrations” <span id="id1">[<a class="reference internal" href="#id9" title="Singiresu S. Rao. Mechanical vibrations. Pearson, Harlow, United Kingdom, sixth edition in si units, global edition edition, 2018. ISBN 978-1-292-17860-8 978-1-292-17861-5.">1</a>]</span> e <strong>Oppenheim</strong>, “Signals and Systems” <span id="id2">[<a class="reference internal" href="#id7" title="Alan V. Oppenheim, Alan S. Willsky, and Syed Hamid Nawab. Signals and systems. Prentice-Hall signal processing series. Prentice Hall, Upper Saddle River, NJ, 2. ed edition, 1997. ISBN 978-0-13-814757-0.">2</a>]</span>.</p>
+<p>Dados completos das referências adotadas:</p>
+<div class="docutils container" id="id3">
+<div role="list" class="citation-list">
+<div class="citation" id="id9" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Singiresu S. Rao. <em>Mechanical vibrations</em>. Pearson, Harlow, United Kingdom, sixth edition in si units, global edition edition, 2018. ISBN 978-1-292-17860-8 978-1-292-17861-5.</p>
+</div>
+<div class="citation" id="id7" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>Alan V. Oppenheim, Alan S. Willsky, and Syed Hamid Nawab. <em>Signals and systems</em>. Prentice-Hall signal processing series. Prentice Hall, Upper Saddle River, NJ, 2. ed edition, 1997. ISBN 978-0-13-814757-0.</p>
+</div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="fase-1-fundamentos-e-conexoes-iniciais">
+<h2>Fase 1: Fundamentos e Conexões Iniciais<a class="headerlink" href="#fase-1-fundamentos-e-conexoes-iniciais" title="Link to this heading">#</a></h2>
+<p><strong>Objetivo:</strong> Construir o vocabulário básico de ambas as áreas, entendendo como um sinal de vibração é gerado (Rao) e como ele pode ser representado e analisado matematicamente (Oppenheim).</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Tópico de Vibrações (Rao) ⚙️</p></th>
+<th class="head text-left"><p>Capítulos (Rao)</p></th>
+<th class="head text-left"><p>Tópico de Sinais (Oppenheim) 📊</p></th>
+<th class="head text-left"><p>Capítulos (Oppenheim)</p></th>
+<th class="head text-left"><p>Objetivo da Semana</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Fundamentos da Vibração e Vibração Livre de Sistemas com 1 GDL</strong></p></td>
+<td class="text-left"><p><strong>Cap. 1:</strong> Fundamentals of Vibration <br> <strong>Cap. 2:</strong> Free Vibration of Single-Degree-of-Freedom Systems</p></td>
+<td class="text-left"><p><strong>Introdução aos Sinais e Sistemas</strong></p></td>
+<td class="text-left"><p><strong>Cap. 1:</strong> Signals and Systems</p></td>
+<td class="text-left"><p>Entender a “anatomia” de uma vibração (equação do movimento) e a “anatomia” de um sinal (representação matemática).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Vibração Forçada (Harmonicamente Excitada) de Sistemas com 1 GDL</strong></p></td>
+<td class="text-left"><p><strong>Cap. 3:</strong> Harmonically Excited Vibration</p></td>
+<td class="text-left"><p><strong>Sistemas Lineares Invariantes no Tempo (LTI)</strong></p></td>
+<td class="text-left"><p><strong>Cap. 2:</strong> Linear Time-Invariant Systems</p></td>
+<td class="text-left"><p>Conectar a <strong>causa</strong> (força, desbalanceamento) com o <strong>efeito</strong> (sinal de vibração resultante) usando o conceito de resposta de um sistema a uma entrada.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Vibração Sob Condições Gerais de Força</strong> (foco em forças periódicas)</p></td>
+<td class="text-left"><p><strong>Cap. 4:</strong> Vibration Under General Forcing Conditions (Seções 4.1 a 4.4)</p></td>
+<td class="text-left"><p><strong>Análise de Sinais Periódicos: Séries de Fourier</strong> <br> <strong>A Transformada de Fourier (Tempo Contínuo)</strong></p></td>
+<td class="text-left"><p><strong>Cap. 3:</strong> Fourier Series Representation of Periodic Signals <br> <strong>Cap. 4:</strong> The Continuous-Time Fourier Transform</p></td>
+<td class="text-left"><p><strong>Ponto Chave:</strong> Unificar o conceito de Fourier, vendo como ele descreve tanto a <em>força de excitação</em> (Rao) quanto o <em>sinal de resposta</em> (Oppenheim).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="fase-2-modelagem-de-sistemas-reais-e-analise-digital">
+<h2>Fase 2: Modelagem de Sistemas Reais e Análise Digital<a class="headerlink" href="#fase-2-modelagem-de-sistemas-reais-e-analise-digital" title="Link to this heading">#</a></h2>
+<p><strong>Objetivo:</strong> Aplicar os fundamentos a sistemas mais complexos (Múltiplos GDLs, Rotores) e focar nas ferramentas computacionais que você efetivamente usará no seu projeto. Esta fase deve ser desenvolvida em paralelo com o início do seu trabalho prático no software ROSS.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Tópico de Vibrações (Rao) ⚙️</p></th>
+<th class="head text-left"><p>Capítulos (Rao)</p></th>
+<th class="head text-left"><p>Tópico de Sinais (Oppenheim) 📊</p></th>
+<th class="head text-left"><p>Capítulos (Oppenheim)</p></th>
+<th class="head text-left"><p>Objetivo da Semana</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Sistemas com Dois Graus de Liberdade</strong></p></td>
+<td class="text-left"><p><strong>Cap. 5:</strong> Two-Degree-of-Freedom Systems</p></td>
+<td class="text-left"><p><strong>Amostragem</strong></p></td>
+<td class="text-left"><p><strong>Cap. 7:</strong> Sampling</p></td>
+<td class="text-left"><p>Entender como modelar sistemas com múltiplos modos de vibrar e como coletar dados desses sistemas para um computador (Teorema de Nyquist, aliasing).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Dinâmica de Rotores</strong> (Tópico Central para sua Dissertação)</p></td>
+<td class="text-left"><p><strong>Cap. 11:</strong> Mechanical Vibration and Rotor Dynamics (foco nas seções de velocidade crítica, resposta a desbalanceamento, etc.)</p></td>
+<td class="text-left"><p><strong>A Transformada de Fourier de Tempo Discreto (DTFT)</strong> <br> <strong>A Transformada Discreta de Fourier (DFT)</strong></p></td>
+<td class="text-left"><p><strong>Cap. 5:</strong> The Discrete-Time Fourier Transform (conceitual) <br> <strong>Seções 8.6 e 8.7</strong> do <strong>Cap. 8:</strong> The Discrete Fourier Transform</p></td>
+<td class="text-left"><p><strong>Foco Prático:</strong> Aprender a física dos sinais que o ROSS irá gerar (Rotores) e a ferramenta matemática (DFT/FFT) que você usará para analisá-los.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Determinação de Frequências Naturais e Vettres Modais</strong> <br> <strong>Método dos Elementos Finitos (MEF)</strong></p></td>
+<td class="text-left"><p><strong>Cap. 6:</strong> Multi-Degree-of-Freedom Systems <br> <strong>Cap. 8:</strong> The Finite Element Method</p></td>
+<td class="text-left"><p><strong>Propriedades e Aplicações da DFT</strong></p></td>
+<td class="text-left"><p><strong>Cap. 8 e 9:</strong> (revisar DFT e suas aplicações como filtragem e correlação)</p></td>
+<td class="text-left"><p>Aprofundar no método numérico por trás do ROSS (MEF) e nas técnicas para aplicar a FFT corretamente (janelamento, vazamento espectral, etc.).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="fase-3-topicos-avancados-e-foco-na-pesquisa">
+<h2>Fase 3: Tópicos Avançados e Foco na Pesquisa<a class="headerlink" href="#fase-3-topicos-avancados-e-foco-na-pesquisa" title="Link to this heading">#</a></h2>
+<p><strong>Objetivo:</strong> Transicionar dos livros-texto para a literatura específica da sua proposta, usando a base construída para entender e implementar os Espectros de Ordem Superior (HOS).</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Ação de Pesquisa 🔬</p></th>
+<th class="head text-left"><p>Leitura de Apoio e Referência</p></th>
+<th class="head text-left"><p>Objetivo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><strong>Modelagem de Falhas (Trincas) no ROSS:</strong> Investigar como a trinca introduz não-linearidades no modelo (ex: rigidez variante no tempo).</p></td>
+<td class="text-left"><p><strong>Rao (referência):</strong> <code class="docutils literal notranslate"><span class="pre">Cap.</span> <span class="pre">13:</span> <span class="pre">Nonlinear</span> <span class="pre">Vibration</span></code>. <br> <strong>Artigos:</strong> Buscar por “breathing crack model”, “rotor dynamics with crack”.</p></td>
+<td class="text-left"><p>Entender a <strong>origem física</strong> das assinaturas não-lineares que você buscará nos sinais de vibração.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><strong>Estudo de Espectros de Ordem Superior (HOS):</strong> Focar na leitura do artigo de Sinha (2007) e outros artigos sobre bi-espectro e tri-espectro.</p></td>
+<td class="text-left"><p><strong>Oppenheim (referência):</strong> Usar como consulta para qualquer dúvida fundamental sobre teoria de sinais (convolução, correlação, propriedades de Fourier) que surgir ao ler os artigos.</p></td>
+<td class="text-left"><p>Aprender a teoria por trás da <strong>ferramenta de análise principal</strong> do seu trabalho.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><strong>Implementação e Análise:</strong> Começar a implementar algoritmos (em Python/MATLAB) para calcular o bi-espectro dos sinais simulados pelo ROSS.</p></td>
+<td class="text-left"><p>Documentação de bibliotecas científicas (ex: <code class="docutils literal notranslate"><span class="pre">scipy.signal</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, e possíveis pacotes específicos de análise espectral como <code class="docutils literal notranslate"><span class="pre">scipy.signal.csd</span></code>, além de exemplos e artigos que detalham implementação prática de bi-espectro); consultar códigos de referência em repositórios como GitHub ou MATLAB File Exchange.</p></td>
+<td class="text-left"><p>Consolidar a capacidade de aplicar ferramentas de análise de espectros de ordem superior em dados simulados, identificando possíveis desafios práticos e estabelecendo uma base reprodutível para a etapa experimental da dissertação.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Análise de Sinais UFU - Notas de aula</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="literatura/oppenhein.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">próximo</p>
+        <p class="prev-next-title">Obras Clássicas</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Conteúdo
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referências</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-1-fundamentos-e-conexoes-iniciais">Fase 1: Fundamentos e Conexões Iniciais</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-2-modelagem-de-sistemas-reais-e-analise-digital">Fase 2: Modelagem de Sistemas Reais e Análise Digital</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fase-3-topicos-avancados-e-foco-na-pesquisa">Fase 3: Tópicos Avançados e Foco na Pesquisa</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+De Cristofer Antoni
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Cristofer Antoni.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

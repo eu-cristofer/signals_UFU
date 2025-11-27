@@ -1,0 +1,19 @@
+flowchart LR
+    Client((Client))
+    Viewer((Dashboard Viewer))
+
+    subgraph Tracker_Server["Tracker Server"]
+        UC1([Browse HTML pages])
+        UC2([Update task collection])
+        UC3([Update single task])
+        UC4([Fetch static data])
+    end
+
+    Client --> UC1
+    Client --> UC2
+    Client --> UC3
+    Viewer --> UC1
+    Viewer --> UC4
+
+    UC2 -. requires .-> UC4
+    UC3 -. requires .-> UC4

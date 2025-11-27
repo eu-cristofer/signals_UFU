@@ -9,6 +9,7 @@ This tutorial provides a complete walkthrough for creating a documentation proje
 Before you begin, ensure you have the following software installed on your system:
 
 * **Python and pip**: Sphinx is a Python tool. Download from [python.org](https://python.org).
+* **Conda or Mamba (optional but recommended)**: Required if you want to recreate the repo's `environment.yml`. Install [Miniforge](https://github.com/conda-forge/miniforge) or [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge).
 * **A LaTeX Distribution**: Required for building PDF documents.
     * **Windows**: [MiKTeX](https://miktex.org/)
     * **macOS**: [MacTeX](https://www.tug.org/mactex/)
@@ -25,18 +26,24 @@ Before you begin, ensure you have the following software installed on your syste
     cd my-docs
     ```
 
-2.  **Create a Virtual Environment** (recommended) and activate it:
+2.  **Install your Python dependencies**:
+
+    *Option A (recommended) – reuse the project's `environment.yml`:*
+    ```bash
+    # From the repository root
+    conda env create -f environment.yml
+    conda activate signals
+    ```
+    Need to add or upgrade packages later? Run `conda env update -f environment.yml --prune` to stay in sync with the repo.
+
+    *Option B – use a plain virtual environment + pip:*
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-
-3.  **Install Sphinx**:
-    ```bash
     pip install sphinx
     ```
 
-4.  **Run Quick-Start**: This utility generates your project structure.
+3.  **Run Quick-Start**: This utility generates your project structure.
     ```bash
     sphinx-quickstart
     ```
@@ -50,7 +57,7 @@ Before you begin, ensure you have the following software installed on your syste
 
 By default, Sphinx uses reStructuredText. To use Markdown, you need the `myst-parser` extension.
 
-1.  **Install `myst-parser`**:
+1.  **Make sure `myst-parser` is installed**. If you created the Conda environment from `environment.yml`, this dependency is already available. Otherwise, install it manually:
     ```bash
     pip install myst-parser
     ```
@@ -140,7 +147,7 @@ To render math formulas correctly in both HTML and PDF from Markdown files:
 
 To manage and display citations:
 
-1.  **Install the Extension**:
+1.  **Install the Extension**: Already included in `environment.yml`. If you're not using that Conda environment, install it via pip.
     ```bash
     pip install sphinxcontrib-bibtex
     ```
@@ -187,6 +194,19 @@ From your project's root directory, run the following commands:
 * **Build PDF**: `make latexpdf` (Output is in `build/latex`)
 * **Clean Build**: `make clean` (Deletes the `build` folder; useful for troubleshooting)
 
+If your platform does not ship with `make`, call `sphinx-build` directly:
+
+1. **Manual HTML build**
+    ```bash
+    sphinx-build -b html source build/html
+    ```
+
+2. **Manual PDF build**
+    ```bash
+    sphinx-build -b latex source build/latex
+    cd docs/build/latex
+    latexmk -pdf my-project.tex  # or run pdflatex three times if latexmk is unavailable
+    ```
 ---
 
 ## 8. Deploying to GitHub Pages 🌐
@@ -204,7 +224,7 @@ From your project's root directory, run the following commands:
     git remote add origin [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
     ```
 
-3.  **Install `ghp-import`**: This tool simplifies deployment.
+3.  **Install `ghp-import`**: This tool simplifies deployment. It is bundled in `environment.yml`, but if you are using your own virtual environment install it manually.
     ```bash
     pip install ghp-import
     ```

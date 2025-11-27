@@ -93,9 +93,3 @@ Manages different types of presentations (qualification, defense, progress repor
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Architecture**: MVC Pattern
 - **Presentation**: Reveal.js (for presentations)
-
-## Author
-
-Cristofer Antoni Souza Costa  
-Universidade Federal de Uberlândia  
-Programa de Pós-Graduação em Engenharia Mecânica

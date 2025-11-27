@@ -1,65 +1,375 @@
+
 <!DOCTYPE html>
 
-<html lang="pt" data-content_root="../">
+
+<html lang="pt" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Da Incerteza à Previsão &#8212; Documentação Análise de Sinais UFU - Notas de aula 1.0</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
-    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=12dfc556" />
+    <title>Da Incerteza à Previsão &#8212; Documentação Análise de Sinais UFU 1.0</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
-    <script src="../_static/documentation_options.js?v=bbb231ee"></script>
-    <script src="../_static/doctools.js?v=9a2dae69"></script>
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=37c40417"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../_static/translations.js?v=5f54a428"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/translations.js?v=beaedd51"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'aula_01/motivacao';</script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Pesquisar" href="../search.html" />
     <link rel="next" title="Signals" href="signals.html" />
-    <link rel="prev" title="Notas de aula" href="../index.html" />
-   
-  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+    <link rel="prev" title="Obras Clássicas" href="../literatura/oppenhein.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="pt"/>
+  </head>
   
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
   
   
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-  </head><body>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
 
-          <div class="body" role="main">
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/signals_logo2.png" class="logo__image only-light" alt="Documentação Análise de Sinais UFU 1.0 - Home"/>
+    <script>document.write(`<img src="../_static/signals_logo2.png" class="logo__image only-dark" alt="Documentação Análise de Sinais UFU 1.0 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Pesquisar" aria-label="Pesquisar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Pesquisar</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Sumário:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../plano_de_estudos.html">Plano de Estudos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../literatura/oppenhein.html">Obras Clássicas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Da Incerteza à Previsão</a></li>
+<li class="toctree-l1"><a class="reference internal" href="signals.html">Signals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fft.html">FFT</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/eu-cristofer/signals_UFU" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Repositório fonte"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Baixe esta página">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/aula_01/motivacao.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Baixar arquivo fonte"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir em PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo tela cheia"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Pesquisar" aria-label="Pesquisar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Da Incerteza à Previsão</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
             
+            <div>
+                <h2> Conteúdo </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios">Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios">A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-paradoxo-da-analise-aleatoria">O Paradoxo da Análise Aleatória</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-sistema-dinamico-como-um-filtro-natural">O Sistema Dinâmico como um Filtro Natural</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#da-aleatoriedade-a-analise-estatistica-estruturada">Da Aleatoriedade à Análise Estatística Estruturada</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">Conclusão</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referências</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
   <section class="tex2jax_ignore mathjax_ignore" id="da-incerteza-a-previsao">
-<h1>Da Incerteza à Previsão<a class="headerlink" href="#da-incerteza-a-previsao" title="Link to this heading">¶</a></h1>
+<h1>Da Incerteza à Previsão<a class="headerlink" href="#da-incerteza-a-previsao" title="Link to this heading">#</a></h1>
 <section id="como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios">
-<h2>Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios<a class="headerlink" href="#como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios" title="Link to this heading">¶</a></h2>
+<h2>Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios<a class="headerlink" href="#como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios" title="Link to this heading">#</a></h2>
 <p><strong>Resumo:</strong> A análise de sinais é um campo fundamental da engenharia e da física, tradicionalmente dividindo os sinais em duas categorias: determinísticos e aleatórios. Enquanto os primeiros são completamente previsíveis por meio de funções matemáticas, os últimos apresentam uma natureza imprevisível que desafia a análise direta. Este artigo explora como a interação de sinais aleatórios com sistemas dinâmicos — entidades físicas com massa, amortecimento e rigidez — atua como um processo de filtragem, revelando padrões e permitindo uma análise preditiva através de métodos estatísticos.</p>
 </section>
 <section id="a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios">
-<h2>A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios<a class="headerlink" href="#a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios" title="Link to this heading">¶</a></h2>
+<h2>A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios<a class="headerlink" href="#a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios" title="Link to this heading">#</a></h2>
 <p>No campo do processamento de sinais, a primeira etapa de qualquer análise é a classificação do sinal. Conforme destacado pelo professor Duarte, essa classificação se divide em dois grandes grupos:</p>
-<p><strong>Sinais Determinísticos:</strong> São aqueles cujo comportamento pode ser descrito com precisão por uma função matemática explícita. O valor do sinal em qualquer instante futuro é conhecido, desde que suas condições iniciais e a função que o rege sejam conhecidas. Um exemplo clássico, citado na explanação, é o sinal de vibração gerado pelo desbalanceamento de um rotor. A não coincidência entre o centro de massa e o centro geométrico de rotação gera uma força centrífuga que se manifesta como uma vibração senoidal ou cossenoidal, perfeitamente modelável <span id="id1">[<a class="reference internal" href="#id6" title="D. J. Inman. Engineering vibration. Pearson, Boston, fourth edition edition, 2014. ISBN 978-0-13-287169-3.">1</a>]</span>. A equação que descreve essa força de desbalanceamento é dada por:</p>
+<p><strong>Sinais Determinísticos:</strong> São aqueles cujo comportamento pode ser descrito com precisão por uma função matemática explícita. O valor do sinal em qualquer instante futuro é conhecido, desde que suas condições iniciais e a função que o rege sejam conhecidas. Um exemplo clássico, citado na explanação, é o sinal de vibração gerado pelo desbalanceamento de um rotor. A não coincidência entre o centro de massa e o centro geométrico de rotação gera uma força centrífuga que se manifesta como uma vibração senoidal ou cossenoidal, perfeitamente modelável <span id="id1">[<a class="reference internal" href="#id7" title="D. J. Inman. Engineering vibration. Pearson, Boston, fourth edition edition, 2014. ISBN 978-0-13-287169-3.">1</a>]</span>. A equação que descreve essa força de desbalanceamento é dada por:</p>
 <div class="math notranslate nohighlight">
 \[F_u = m_u \cdot e \cdot \omega^2 \sin(\omega t)\]</div>
 <p>onde <span class="math notranslate nohighlight">\(m_u\)</span> é a massa desbalanceada, <span class="math notranslate nohighlight">\(e\)</span> é a excentricidade, e <span class="math notranslate nohighlight">\(\omega\)</span> é a velocidade angular.</p>
-<p><strong>Sinais Aleatórios (ou Estocásticos):</strong> Em contraste, são sinais cujo valor futuro não pode ser previsto com exatidão a partir de seus valores passados. Eles não seguem um padrão repetitivo e devem ser caracterizados por suas propriedades estatísticas, como média (<span class="math notranslate nohighlight">\(\mu\)</span>), variância (<span class="math notranslate nohighlight">\(\sigma^2\)</span>) e densidade espectral de potência (<span class="math notranslate nohighlight">\(S_{xx}(f)\)</span>). Exemplos comuns incluem o ruído térmico em um circuito eletrônico, a turbulência de um fluido ou as ondas do mar que atuam sobre um navio <span id="id2">[<a class="reference internal" href="#id7" title="Julius S. Bendat and Allan G. Piersol. Random data: analysis and measurement procedures. Wiley series in probability and statistics. Wiley, Hoboken, N.J, 4th ed edition, 2010. ISBN 978-0-470-24877-5.">2</a>]</span>.</p>
+<p><strong>Sinais Aleatórios (ou Estocásticos):</strong> Em contraste, são sinais cujo valor futuro não pode ser previsto com exatidão a partir de seus valores passados. Eles não seguem um padrão repetitivo e devem ser caracterizados por suas propriedades estatísticas, como média (<span class="math notranslate nohighlight">\(\mu\)</span>), variância (<span class="math notranslate nohighlight">\(\sigma^2\)</span>) e densidade espectral de potência (<span class="math notranslate nohighlight">\(S_{xx}(f)\)</span>). Exemplos comuns incluem o ruído térmico em um circuito eletrônico, a turbulência de um fluido ou as ondas do mar que atuam sobre um navio <span id="id2">[<a class="reference internal" href="#id6" title="Julius S. Bendat and Allan G. Piersol. Random data: analysis and measurement procedures. Wiley series in probability and statistics. Wiley, Hoboken, N.J, 4th ed edition, 2010. ISBN 978-0-470-24877-5.">2</a>]</span>.</p>
 </section>
 <section id="o-paradoxo-da-analise-aleatoria">
-<h2>O Paradoxo da Análise Aleatória<a class="headerlink" href="#o-paradoxo-da-analise-aleatoria" title="Link to this heading">¶</a></h2>
+<h2>O Paradoxo da Análise Aleatória<a class="headerlink" href="#o-paradoxo-da-analise-aleatoria" title="Link to this heading">#</a></h2>
 <p>A natureza imprevisível dos sinais aleatórios levanta uma questão fundamental: se não podemos prever o que acontecerá no próximo instante, qual o propósito de analisá-los? A resposta, como elucidado pelo professor Duarte, não está no sinal em si, mas na sua interação com um sistema dinâmico.</p>
 <p>Um sistema dinâmico é qualquer sistema físico que possui a capacidade de armazenar e dissipar energia. Seus componentes fundamentais são massa (que armazena energia cinética), rigidez (que armazena energia potencial) e amortecimento (que dissipa energia). O comportamento desses sistemas é governado por leis físicas, como a Segunda Lei de Newton, que afirma que a somatória das forças é igual à massa vezes a aceleração:</p>
 <div class="math notranslate nohighlight">
 \[\sum F = m \cdot a\]</div>
 </section>
 <section id="o-sistema-dinamico-como-um-filtro-natural">
-<h2>O Sistema Dinâmico como um Filtro Natural<a class="headerlink" href="#o-sistema-dinamico-como-um-filtro-natural" title="Link to this heading">¶</a></h2>
+<h2>O Sistema Dinâmico como um Filtro Natural<a class="headerlink" href="#o-sistema-dinamico-como-um-filtro-natural" title="Link to this heading">#</a></h2>
 <p>Quando um sinal aleatório atua como uma excitação (entrada) para um sistema dinâmico, o sistema não responde de forma totalmente aleatória. Em vez disso, ele atua como um filtro, moldando a resposta (saída) de acordo com suas próprias características intrínsecas.</p>
 <p>Este conceito de “filtragem” ocorre porque todo sistema dinâmico possui frequências naturais (ou modos de vibração), que são as frequências nas quais o sistema tende a oscilar com maior amplitude quando perturbado. Quando o sinal de entrada aleatório, que pode ser considerado como contendo um amplo espectro de frequências (ruído branco, por exemplo), atravessa o sistema, as componentes de frequência próximas às frequências naturais do sistema são amplificadas, enquanto outras são atenuadas <span id="id3">[<a class="reference internal" href="#id8" title="Alan V. Oppenheim and Roland W. Schafer. Discrete-time signal processing. Always learning. Pearson, Harlow, third edition, pearson new international edition edition, 2014. ISBN 978-1-292-02572-8 978-1-292-03815-5.">3</a>]</span>.</p>
 <p>Matematicamente, em um contexto digital, a resposta do sistema em um instante <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(x[k]\)</span>, depende dos valores passados da resposta e da excitação. Uma forma discretizada da equação do movimento pode ser expressa como uma equação de diferenças:</p>
@@ -71,26 +381,26 @@
 <p>onde <span class="math notranslate nohighlight">\(h(t)\)</span> é a resposta ao impulso do sistema.</p>
 </section>
 <section id="da-aleatoriedade-a-analise-estatistica-estruturada">
-<h2>Da Aleatoriedade à Análise Estatística Estruturada<a class="headerlink" href="#da-aleatoriedade-a-analise-estatistica-estruturada" title="Link to this heading">¶</a></h2>
+<h2>Da Aleatoriedade à Análise Estatística Estruturada<a class="headerlink" href="#da-aleatoriedade-a-analise-estatistica-estruturada" title="Link to this heading">#</a></h2>
 <p>O resultado deste processo é que o sinal de saída, embora ainda possua um caráter aleatório, não é mais “totalmente bagunçado”. Ele carrega a “assinatura” do sistema dinâmico pelo qual passou. As frequências dominantes no sinal de resposta correspondem às frequências naturais do sistema.</p>
 <p>Portanto, ao analisar estatisticamente o sinal de resposta — por exemplo, calculando sua <strong>Densidade Espectral de Potência</strong> (PSD):</p>
 <div class="math notranslate nohighlight">
 \[S_{yy}(f) = |H(f)|^2 S_{xx}(f)\]</div>
-<p>onde <span class="math notranslate nohighlight">\(S_{xx}(f)\)</span> é a PSD do sinal de entrada e <span class="math notranslate nohighlight">\(H(f)\)</span> é a função de transferência do sistema — podemos identificar esses picos de energia e, a partir deles, inferir propriedades críticas do sistema físico, como sua rigidez, amortecimento e possíveis danos estruturais <span id="id4">[<a class="reference internal" href="#id9" title="Robert Bond Randall. Vibration-based condition monitoring: industrial, aerospace and automotive applications. Wiley, Chichester, 2011. ISBN 978-0-470-97766-8.">4</a>]</span>. É assim que a análise de vibrações em uma ponte excitada pelo vento (sinal aleatório) pode revelar sua saúde estrutural.</p>
+<p>onde <span class="math notranslate nohighlight">\(S_{xx}(f)\)</span> é a PSD do sinal de entrada e <span class="math notranslate nohighlight">\(H(f)\)</span> é a função de transferência do sistema — podemos identificar esses picos de energia e, a partir deles, inferir propriedades críticas do sistema físico, como sua rigidez, amortecimento e possíveis danos estruturais <span id="id4">[<a class="reference internal" href="#id10" title="Robert Bond Randall. Vibration-based condition monitoring: industrial, aerospace and automotive applications. Wiley, Chichester, 2011. ISBN 978-0-470-97766-8.">4</a>]</span>. É assim que a análise de vibrações em uma ponte excitada pelo vento (sinal aleatório) pode revelar sua saúde estrutural.</p>
 </section>
 <section id="conclusao">
-<h2>Conclusão<a class="headerlink" href="#conclusao" title="Link to this heading">¶</a></h2>
+<h2>Conclusão<a class="headerlink" href="#conclusao" title="Link to this heading">#</a></h2>
 <p>A análise de sinais aleatórios, longe de ser um exercício fútil, é uma ferramenta poderosa para entender o mundo físico. A chave para desvendar a informação contida em um sinal aparentemente caótico é reconhecer o papel fundamental dos sistemas dinâmicos. Ao atuarem como filtros naturais, esses sistemas impõem uma ordem à aleatoriedade, permitindo que, através de ferramentas estatísticas, possamos extrair informações valiosas sobre suas próprias características. A aparente imprevisibilidade da entrada se transforma em conhecimento sobre o sistema, tornando a análise de sinais aleatórios um pilar essencial para o diagnóstico de falhas, o monitoramento de estruturas e o projeto de sistemas robustos.</p>
 </section>
 <section id="referencias">
-<h2>Referências<a class="headerlink" href="#referencias" title="Link to this heading">¶</a></h2>
+<h2>Referências<a class="headerlink" href="#referencias" title="Link to this heading">#</a></h2>
 <div class="docutils container" id="id5">
 <div role="list" class="citation-list">
-<div class="citation" id="id6" role="doc-biblioentry">
+<div class="citation" id="id7" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>D. J. Inman. <em>Engineering vibration</em>. Pearson, Boston, fourth edition edition, 2014. ISBN 978-0-13-287169-3.</p>
 </div>
-<div class="citation" id="id7" role="doc-biblioentry">
+<div class="citation" id="id6" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
 <p>Julius S. Bendat and Allan G. Piersol. <em>Random data: analysis and measurement procedures</em>. Wiley series in probability and statistics. Wiley, Hoboken, N.J, 4th ed edition, 2010. ISBN 978-0-470-24877-5.</p>
 </div>
@@ -98,7 +408,7 @@
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">3</a><span class="fn-bracket">]</span></span>
 <p>Alan V. Oppenheim and Roland W. Schafer. <em>Discrete-time signal processing</em>. Always learning. Pearson, Harlow, third edition, pearson new international edition edition, 2014. ISBN 978-1-292-02572-8 978-1-292-03815-5.</p>
 </div>
-<div class="citation" id="id9" role="doc-biblioentry">
+<div class="citation" id="id10" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">4</a><span class="fn-bracket">]</span></span>
 <p>Robert Bond Randall. <em>Vibration-based condition monitoring: industrial, aerospace and automotive applications</em>. Wiley, Chichester, 2011. ISBN 978-0-470-97766-8.</p>
 </div>
@@ -108,82 +418,109 @@
 </section>
 
 
-          </div>
-          
-        </div>
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../literatura/oppenhein.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Obras Clássicas</p>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="Main">
-        <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="../index.html">Análise de Sinais UFU - Notas de aula</a></h1>
-
-
-
-
-
-
-
-
-<h3>Navegação</h3>
-<p class="caption" role="heading"><span class="caption-text">Sumário:</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Da Incerteza à Previsão</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios">Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios">A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#o-paradoxo-da-analise-aleatoria">O Paradoxo da Análise Aleatória</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#o-sistema-dinamico-como-um-filtro-natural">O Sistema Dinâmico como um Filtro Natural</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#da-aleatoriedade-a-analise-estatistica-estruturada">Da Aleatoriedade à Análise Estatística Estruturada</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#conclusao">Conclusão</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#referencias">Referências</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="signals.html">Signals</a></li>
-</ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="../index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="../index.html" title="capítulo anterior">Notas de aula</a></li>
-      <li>Next: <a href="signals.html" title="próximo capítulo">Signals</a></li>
-  </ul></li>
-</ul>
+    </a>
+    <a class="right-next"
+       href="signals.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">próximo</p>
+        <p class="prev-next-title">Signals</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
-<search id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Pesquisa rápida</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Ir" />
-    </form>
-    </div>
-</search>
-<script>document.getElementById('searchbox').style.display = "block"</script>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Conteúdo
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#como-sistemas-dinamicos-revelam-ordem-em-sinais-aleatorios">Como Sistemas Dinâmicos Revelam Ordem em Sinais Aleatórios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-dicotomia-fundamental-sinais-deterministicos-e-aleatorios">A Dicotomia Fundamental: Sinais Determinísticos e Aleatórios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-paradoxo-da-analise-aleatoria">O Paradoxo da Análise Aleatória</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-sistema-dinamico-como-um-filtro-natural">O Sistema Dinâmico como um Filtro Natural</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#da-aleatoriedade-a-analise-estatistica-estruturada">Da Aleatoriedade à Análise Estatística Estruturada</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusao">Conclusão</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referencias">Referências</a></li>
+</ul>
+  </nav></div>
 
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+De Cristofer Antoni
+</p>
 
-
-
-
-
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &#169;2025, Cristofer Antoni.
-      
-      |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
-      
-      |
-      <a href="../_sources/aula_01/motivacao.md.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
+  </div>
+  
+  <div class="footer-item">
     
 
+  <p class="copyright">
     
+      © Copyright 2025, Cristofer Antoni.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

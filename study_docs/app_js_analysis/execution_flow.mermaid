@@ -1,0 +1,41 @@
+flowchart TD
+    Start([Start server]) --> InitExpress[Initialize Express app]
+    InitExpress --> QueueInit[Create file operation queue]
+    QueueInit --> Middleware[Register middleware]
+    Middleware --> JSONMW[express.json parser]
+    Middleware --> StaticPublic[Serve /public assets]
+    Middleware --> StaticModules[Expose /node_modules]
+    Middleware --> StaticData[Expose /data]
+
+    Middleware --> Routes[Register routes]
+    Routes --> Home[GET / -> index.html]
+    Routes --> Dashboard[GET /dashboard -> dashboard.html]
+    Routes --> Progresso[GET /progresso -> progresso.html]
+    Routes --> Gantt[GET /gantt -> gantt_frame.html]
+    Routes --> GanttClean[GET /gantt-clean -> gant_clean.html]
+
+    Routes --> UpdateTasks[PUT /api/tasks]
+    UpdateTasks --> ValidatePayload[Validate array or object format]
+    ValidatePayload --> ChooseFile[Select tasks file from query]
+    ChooseFile --> QueueWrite[Queue write operation]
+    QueueWrite --> PersistTasks[fs.writeFile JSON]
+    PersistTasks --> UpdateResponse[(200 OK)]
+
+    Routes --> UpdateSingle[PUT /api/tasks/:taskId]
+    UpdateSingle --> QueueRMW[Queue read-modify-write]
+    QueueRMW --> ReadFile[readTasksFile with retry]
+    ReadFile --> FormatBranch{Array data?}
+    FormatBranch -->|Yes| TaskArray[Use task array]
+    FormatBranch -->|No| TaskObject[Use data.tasks]
+    TaskArray --> FindTask[Find task by id]
+    TaskObject --> FindTask
+    FindTask -->|Found| MergeTask[Merge request body into task]
+    MergeTask --> PersistSingle[fs.writeFile JSON]
+    PersistSingle --> UpdateSingleResponse[(200 OK)]
+    FindTask -->|Not found| NotFound[(404 Task not found)]
+
+    Routes --> NotFoundRoute[Fallback 404]
+    NotFoundRoute --> End404[(404 plain text)]
+
+    Middleware --> Listen[app.listen PORT]
+    Listen --> End([Server ready])

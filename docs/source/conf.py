@@ -3,10 +3,30 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
+
+# Fix for Windows home directory issue (works in both PowerShell and Git Bash)
+if os.name == 'nt':  # Windows
+    # Set USERPROFILE if not already set
+    if not os.environ.get('USERPROFILE'):
+        # Handle both Windows and Git Bash paths
+        if 'MSYSTEM' in os.environ:  # Git Bash/MSYS2
+            os.environ['USERPROFILE'] = '/c/Users/EMKA'
+        else:  # Regular Windows
+            os.environ['USERPROFILE'] = r'C:\Users\EMKA'
+    
+    # Set HOME if not already set
+    if not os.environ.get('HOME'):
+        if 'MSYSTEM' in os.environ:  # Git Bash/MSYS2
+            os.environ['HOME'] = '/c/Users/EMKA'
+        else:  # Regular Windows
+            os.environ['HOME'] = r'C:\Users\EMKA'
+
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Análise de Sinais UFU - Notas de aula'
+project = 'Análise de Sinais UFU'
 copyright = '2025, Cristofer Antoni'
 author = 'Cristofer Antoni'
 release = '1.0'
@@ -15,7 +35,7 @@ release = '1.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'myst_nb',                  # Jupyter Notebook integration with MyST Markdown (includes myst_parser)
+    'myst_nb',                  # Jupyter Notebook + Markdown (already bundles myst_parser)
     'sphinxcontrib.bibtex',     # Bibliography and citation management
 ]
 
@@ -55,7 +75,13 @@ nb_execution_timeout = 30
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 mathjax_path = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
-html_theme = 'alabaster'
+html_logo = "_static/images/signals_logo.png"
+html_theme = 'sphinx_book_theme'
+html_theme_options = {
+    "repository_url": "https://github.com/eu-cristofer/signals_UFU",
+    "repository_provider": "github",
+    "use_repository_button": True,
+}
 html_static_path = ['_static']
 
 # -- Options for LaTeX output ------------------------------------------------

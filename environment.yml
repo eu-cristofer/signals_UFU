@@ -16,6 +16,7 @@ dependencies:
   - nbsphinx
   - myst-parser
   - myst-nb
+  - seaborn
   - sphinx
   - sphinx-book-theme
   - sphinx-copybutton

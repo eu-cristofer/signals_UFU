@@ -30,6 +30,8 @@ This project aims to support a comprehensive literature review and practical stu
 
 ### Programa do Curso
 
+O programa do curso conforme proposto pelo professor Marcus Antonio Ferreira Duarte.
+
 | Letra | Tópico                                                                 | Carga Horária         |
 |-------|------------------------------------------------------------------------|-----------------------|
 | A     | Descrições básicas e propriedades de sinais                            | 04 teóricas           |
@@ -46,7 +48,7 @@ This project aims to support a comprehensive literature review and practical stu
 
 - **Descrição básica e propriedades estatísticas de sinais:** funções de correlação e auto densidades espectrais.
 - **Análise de sistemas físicos lineares.**
-- **Análise de sistemas físicos lineares – Erros nos estimadores.**
+- **Análise de sistemas físicos lineares** – Erros nos estimadores.
 - Aulas adicionais podem ser elaboradas para auxiliar o desenvolvimento da dissertação/tese do aluno.
 
 ### 🎯 Learning Objectives

@@ -1,7 +1,15 @@
 
+// Import the Express framework for building web applications
 const express = require('express');
+
+// Import the 'path' module to handle and transform file paths
 const path = require('path');
+
+// Import the 'fs' module's promise API for asynchronous file system operations
 const fs = require('fs').promises;
+
+
+// Create an instance of the Express application
 const app = express();
 const PORT = 3000;
 

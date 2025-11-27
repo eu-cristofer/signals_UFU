@@ -1,0 +1,32 @@
+classDiagram
+    class ExpressApp {
+        +use(middleware)
+        +get(path, handler)
+        +put(path, handler)
+        +listen(PORT)
+    }
+    class FileOperationQueue {
+        -fileOperationQueue: Promise
+        +queueFileOperation(operation)
+    }
+    class TasksFileRepository {
+        +readTasksFile(filePath, retries)
+        +writeTasks(data, filename)
+        +updateTask(taskId, payload, filename)
+    }
+    class StaticAssetRouter {
+        +servePublic()
+        +serveNodeModules()
+        +serveData()
+        +htmlRoutes()
+    }
+    class TasksController {
+        +putTasks(req, res)
+        +putTaskById(req, res)
+    }
+
+    ExpressApp --> StaticAssetRouter : configures
+    ExpressApp --> TasksController : registers routes
+    TasksController --> TasksFileRepository : reads/writes JSON
+    TasksController --> FileOperationQueue : serializes IO
+    TasksFileRepository --> FileOperationQueue : queued writes

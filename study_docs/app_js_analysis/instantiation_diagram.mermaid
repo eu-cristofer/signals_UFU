@@ -1,0 +1,21 @@
+sequenceDiagram
+    autonumber
+    participant Node as Node.js Runtime
+    participant App as Express App
+    participant Queue as FileOperationQueue
+    participant Repo as TasksFileRepository
+    participant Router as Routes/Middleware
+
+    Node->>App: require('express')
+    Node->>App: const app = express()
+    App->>Queue: initialize Promise.resolve()
+    App->>Router: app.use(express.json())
+    App->>Router: app.use(static paths)
+    App->>Router: register HTML routes
+    App->>Router: register PUT /api/tasks
+    App->>Router: register PUT /api/tasks/:taskId
+    Router->>Repo: resolve file paths via path.join
+    Router->>Queue: queueFileOperation(fn)
+    Queue-->>Repo: execute queued operation
+    Node->>App: app.listen(PORT)
+    App-->>Node: console startup summary

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gantt Chart</title>
+    <link rel="stylesheet" href="../node_modules/frappe-gantt/dist/frappe-gantt.css">
+    <style>
+        :root {
+            /* Colors */
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --text-primary: #333;
+            --text-secondary: #666;
+            --background-white: #ffffff;
+            --background-light: #f8f9fa;
+            --border-light: #eee;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            
+            /* Border radius */
+            --radius-sm: 10px;
+            --radius-md: 15px;
+            --radius-lg: 20px;
+            
+            /* Font sizes */
+            --font-size-sm: 0.9rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.1rem;
+            --font-size-xl: 1.3rem;
+            --font-size-2xl: 2rem;
+            --font-size-3xl: 2.5rem;
+            
+            /* Transitions */
+            --transition-fast: 0.3s ease;
+            
+            /* Shadows */
+            --shadow-sm: 0 15px 30px var(--shadow-color);
+            --shadow-md: 0 20px 40px var(--shadow-color);
+            
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--gradient-primary);
+            min-height: 100vh;
+            padding: var(--spacing-lg);
+        }
+
+        /* Main container styling */
+        .gantt-container {
+            background: var(--background-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            padding: var(--spacing-xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Style the main heading */
+        h1 {
+            text-align: center;
+            color: var(--text-primary);
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-lg);
+            font-weight: 600;
+        }
+
+        /* Gantt chart container styling */
+        #gantt {
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-md) 0;
+            background-color: var(--background-white);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-fast);
+        }
+
+        #gantt:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        /* Custom styling for Gantt chart elements */
+        .gantt-container .bar {
+            border-radius: var(--radius-sm);
+        }
+
+        .gantt-container .bar-progress {
+            border-radius: var(--radius-sm);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .gantt-container {
+                padding: var(--spacing-lg);
+                margin: var(--spacing-sm);
+            }
+            
+            h1 {
+                font-size: var(--font-size-2xl);
+            }
+            
+            #gantt {
+                padding: var(--spacing-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gantt-container">
+        <h1>Planejamento - Gantt Chart</h1>
+        <div id="gantt"></div>
+    </div>
+    
+    <script src="../node_modules/frappe-gantt/dist/frappe-gantt.js"></script>
+    <script>
+        // Define the tasks data for the Gantt chart
+        // Each task object contains: id, name, start date, end date, and progress percentage
+        let tasks = [
+            {
+                id: 'Task 1',           // Unique identifier for the task
+                name: 'Task 1',         // Display name of the task
+                start: '2024-01-01',    // Start date in YYYY-MM-DD format
+                end: '2024-01-05',      // End date in YYYY-MM-DD format
+                progress: 100           // Progress percentage (0-100)
+            },
+            {
+                id: 'Task 2',
+                name: 'Task 2',
+                start: '2024-01-03',    // This task starts 2 days after Task 1
+                end: '2024-01-08',      // Overlaps with Task 1 and Task 3
+                progress: 60            // 60% completed
+            },
+            {
+                id: 'Task 3',
+                name: 'Task 3',
+                start: '2024-01-06',    // Starts after Task 1 ends
+                end: '2024-01-12',      // Longest duration task
+                progress: 30            // Only 30% completed
+            }
+        ];
+
+        // Initialize the Gantt chart
+        // Parameters: target element selector, tasks array, configuration options
+        let gantt = new Gantt("#gantt", tasks, {
+            view_mode: 'Week',
+            view_mode_select: true,
+            scroll_to: 'start',
+            today_button: true,
+            
+
+            // Event handler for when a task's date is changed by dragging
+            on_date_change: function (task, start, end) {
+                console.log('Task date changed:', task, start, end);
+                // Find the task in our tasks array and update its dates
+                const taskToUpdate = tasks.find(t => t.id === task.id);
+                if (taskToUpdate) {
+                    taskToUpdate.start = start;  // Update start date
+                    taskToUpdate.end = end;      // Update end date
+                }
+            },
+            // Event handler for when a task's progress is changed
+            on_progress_change: function (task, progress) {
+                console.log('Task progress changed:', task, progress);
+                // Find the task in our tasks array and update its progress
+                const taskToUpdate = tasks.find(t => t.id === task.id);
+                if (taskToUpdate) {
+                    taskToUpdate.progress = progress;  // Update progress percentage
+                }
+            }
+        });
+    </script>
+</body>
+</html>

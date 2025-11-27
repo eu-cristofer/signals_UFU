@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gantt Test</title>
+    <link rel="stylesheet" href="../node_modules/frappe-gantt/dist/frappe-gantt.css">
+    <style>
+        body { font-family: sans-serif; }
+        .gantt .bar-label { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Clean Room Gantt Test</h1>
+    <p>Try resizing the tasks below. Hover over the edges until you see the ↔ cursor.</p>
+    <svg id="gantt"></svg>
+
+    <script src="../node_modules/frappe-gantt/dist/frappe-gantt.js"></script>
+    <script>
+        let tasks = [
+            {
+                id: 'Task 1',
+                name: 'Test Task 1',
+                start: '2025-10-01',
+                end: '2025-10-08',
+                progress: 40
+            },
+            {
+                id: 'Task 2',
+                name: 'Test Task 2',
+                start: '2025-10-06',
+                end: '2025-10-12',
+                progress: 20,
+                dependencies: 'Task 1'
+            }
+        ];
+
+        var gantt = new Gantt("#gantt", tasks, {
+            // Making sure the chart is interactive
+            readonly: false,
+
+            on_date_change: function (task, start, end) {
+                console.log(`Task "${task.name}" date changed to: ${start} - ${end}`);
+            }
+        });
+    </script>
+</body>
+</html>

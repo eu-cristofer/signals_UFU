@@ -1,10 +1,8 @@
-# Obras Clássicas
+# Signals and Systems
 
----
+**Oppenheim & Willsky**
 
-## 📖 Signals and Systems - Oppenheim & Willsky
-
-### 🎯 **Capítulos Essenciais**
+## 🎯 **Capítulos Essenciais**
 
 | Capítulo | Tópico | Relevância para HOS | Páginas |
 |----------|--------|-------------------|---------|
@@ -19,9 +17,9 @@
 | **9** | **Sistemas de Controle Realimentado** | ⭐⭐⭐⭐ Estabilidade e controle | 621-700 |
 | **10** | **Análise de Fourier de Sinais Discretos** | ⭐⭐⭐⭐ Transição para processamento digital | 701-780 |
 
-### 📋 **Plano de Fichamento Estruturado**
+## 📋 **Plano de Fichamento Estruturado**
 
-#### 🗓️ **Cronograma Sugerido (12 semanas)**
+### 🗓️ **Cronograma Sugerido (12 semanas)**
 
 | Semana | Capítulo(s) | Foco Principal | Tempo Estimado |
 |--------|-------------|----------------|----------------|
@@ -32,7 +30,7 @@
 | **9-10** | **8-9** | Aplicações em comunicação e controle | 12h |
 | **11-12** | **10** | Transição para sinais discretos | 8h |
 
-#### 📝 **Metodologia de Fichamento**
+### 📝 **Metodologia de Fichamento**
 
 **Para cada capítulo, criar:**
 
@@ -58,9 +56,9 @@
 
 ---
 
-### 🔍 **Perguntas Fundamentais por Capítulo**
+## 🔍 **Perguntas Fundamentais por Capítulo**
 
-#### 📊 **Capítulo 1: Sinais e Sistemas**
+### 📊 **Capítulo 1: Sinais e Sistemas**
 
 > **🎯 Objetivo:** Estabelecer fundamentos para modelagem e classificação de sistemas
 
@@ -77,7 +75,7 @@
 - [ ] Como classificar sistemas de máquinas rotativas (linear/não-linear, causal/não-causal)?
 - [ ] Qual a diferença entre sistemas com e sem memória para análise de falhas?
 
-#### ⚙️ **Capítulo 2: Sistemas Lineares Invariantes no Tempo (LTI)**
+### ⚙️ **Capítulo 2: Sistemas Lineares Invariantes no Tempo (LTI)**
 
 > **🎯 Objetivo:** Compreender a base matemática para análise de sistemas
 
@@ -96,7 +94,7 @@
 
 ---
 
-#### 🌊 **Capítulo 3: Representação de Sinais Periódicos em Série de Fourier**
+### 🌊 **Capítulo 3: Representação de Sinais Periódicos em Série de Fourier**
 
 > **🚨 CRÍTICO para HOS** | **⭐ Prioridade Máxima**
 
@@ -115,7 +113,7 @@
 - [ ] Como o fenômeno de Gibbs afeta a análise de sinais com descontinuidades?
 - [ ] Qual a relação entre a convergência da série e a suavidade do sinal?
 
-#### 📈 **Capítulo 4: Transformada de Fourier Contínua**
+### 📈 **Capítulo 4: Transformada de Fourier Contínua**
 
 > **🚨 CRÍTICO para HOS** | **⭐ Prioridade Máxima**
 
@@ -136,7 +134,7 @@
 
 ---
 
-#### ⚡ **Capítulo 5: Transformada de Laplace**
+### ⚡ **Capítulo 5: Transformada de Laplace**
 
 > **🎯 Foco:** Modelagem de sistemas contínuos
 
@@ -155,7 +153,7 @@
 - [ ] Como a estabilidade do sistema se relaciona com a detecção de falhas?
 - [ ] Como usar a ROC para analisar a estabilidade de sistemas com falhas?
 
-#### 🔧 **Capítulo 6: Análise de Sistemas LTI por Transformada de Laplace**
+### 🔧 **Capítulo 6: Análise de Sistemas LTI por Transformada de Laplace**
 
 > **🎯 Foco:** Análise de estabilidade e resposta de sistemas
 
@@ -175,7 +173,7 @@
 
 ---
 
-#### 📊 **Capítulo 7: Amostragem**
+### 📊 **Capítulo 7: Amostragem**
 
 > **💻 Foco:** Teorema da amostragem e conversão A/D
 
@@ -194,7 +192,7 @@
 - [ ] Como escolher filtros anti-aliasing adequados para análise de HOS?
 - [ ] Qual o impacto da quantização na análise de espectros de ordem superior?
 
-#### 📡 **Capítulo 8: Sistemas de Comunicação**
+### 📡 **Capítulo 8: Sistemas de Comunicação**
 
 > **🎯 Foco:** Aplicações práticas de modulação
 
@@ -212,7 +210,7 @@
 - [ ] Qual a relação entre modulação e não-linearidades do sistema?
 - [ ] Como usar técnicas de demodulação para análise de falhas?
 
-#### 🎛️ **Capítulo 9: Sistemas de Controle Realimentado**
+### 🎛️ **Capítulo 9: Sistemas de Controle Realimentado**
 
 > **🎯 Foco:** Estabilidade e controle de sistemas
 
@@ -230,7 +228,7 @@
 - [ ] Qual a relação entre margens de estabilidade e detecção de falhas?
 - [ ] Como usar critérios de estabilidade para validação de modelos?
 
-#### 🔢 **Capítulo 10: Análise de Fourier de Sinais Discretos**
+### 🔢 **Capítulo 10: Análise de Fourier de Sinais Discretos**
 
 > **💻 Foco:** Transição para processamento digital
 
@@ -250,9 +248,9 @@
 
 ---
 
-### 🚀 **Perguntas Específicas para HOS (Espectros de Ordem Superior)**
+## 🚀 **Perguntas Específicas para HOS (Espectros de Ordem Superior)**
 
-#### 🧠 **Conceitos Avançados**
+### 🧠 **Conceitos Avançados**
 
 > **🎯 Foco:** Fundamentos teóricos de HOS
 
@@ -263,7 +261,7 @@
 
 ---
 
-#### 🔧 **Aplicação Prática**
+### 🔧 **Aplicação Prática**
 
 > **💡 Foco:** Implementação e processamento
 
@@ -274,9 +272,9 @@
 
 ---
 
-### 📊 **Perguntas de Metodologia**
+## 📊 **Perguntas de Metodologia**
 
-#### ✅ **Validação e Comparação**
+### ✅ **Validação e Comparação**
 
 > **🔬 Foco:** Rigor científico e reprodutibilidade
 
@@ -287,7 +285,7 @@
 
 ---
 
-#### 💻 **Implementação Computacional**
+### 💻 **Implementação Computacional**
 
 > **⚙️ Foco:** Aspectos práticos de implementação
 
@@ -297,9 +295,9 @@
 
 ---
 
-### 🎯 **Perguntas de Pesquisa Avançada**
+## 🎯 **Perguntas de Pesquisa Avançada**
 
-#### 💡 **Inovação e Contribuição**
+### 💡 **Inovação e Contribuição**
 
 > **🌟 Foco:** Contribuições originais e avanços
 
@@ -310,7 +308,7 @@
 
 ---
 
-#### 🏭 **Aplicação Industrial**
+### 🏭 **Aplicação Industrial**
 
 > **🔧 Foco:** Viabilidade e aplicabilidade prática
 
@@ -321,11 +319,11 @@
 
 ---
 
-### 🎓 **Dica de Pesquisador Sênior**
+## 🎓 **Dica de Pesquisador Sênior**
 
 > **💡 Abordagem Ativa de Leitura**
 
-#### 🚨 **Não leia passivamente!** 
+### 🚨 **Não leia passivamente!** 
 
 Para cada conceito, pergunte-se:
 
@@ -336,22 +334,22 @@ Para cada conceito, pergunte-se:
 
 ---
 
-#### 🎯 **Resultado Esperado**
+### 🎯 **Resultado Esperado**
 
 Essa abordagem ativa transformará sua leitura em uma **ferramenta poderosa** para desenvolver uma dissertação **inovadora** e **tecnicamente sólida**.
 
 ---
 
-### 📚 **Plano de Fichamento Detalhado**
+## 📚 **Plano de Fichamento Detalhado**
 
-#### 🎯 **Objetivos do Fichamento**
+### 🎯 **Objetivos do Fichamento**
 
 1. **Compreensão Profunda:** Dominar conceitos fundamentais de sinais e sistemas
 2. **Aplicação Prática:** Conectar teoria com problemas de detecção de falhas
 3. **Preparação para HOS:** Estabelecer base sólida para espectros de ordem superior
 4. **Desenvolvimento de Pesquisa:** Identificar oportunidades de contribuição original
 
-#### 📋 **Template de Fichamento por Capítulo**
+### 📋 **Template de Fichamento por Capítulo**
 
 **Para cada capítulo, preencher:**
 
@@ -384,7 +382,7 @@ Essa abordagem ativa transformará sua leitura em uma **ferramenta poderosa** pa
 - **Referências:** [Livros, artigos, recursos adicionais]
 ```
 
-#### 🗓️ **Cronograma Detalhado de Estudo**
+### 🗓️ **Cronograma Detalhado de Estudo**
 
 | Semana | Capítulo | Atividades | Entregáveis | Tempo |
 |--------|----------|------------|-------------|-------|
@@ -401,7 +399,7 @@ Essa abordagem ativa transformará sua leitura em uma **ferramenta poderosa** pa
 | **11** | **10** | Leitura + Exercícios + Fichamento | Fichamento Cap. 10 | 4h |
 | **12** | **Revisão** | Revisão Geral + Síntese | Síntese Final | 4h |
 
-#### 📊 **Sistema de Avaliação do Progresso**
+### 📊 **Sistema de Avaliação do Progresso**
 
 **Para cada capítulo, avaliar:**
 
@@ -412,7 +410,7 @@ Essa abordagem ativa transformará sua leitura em uma **ferramenta poderosa** pa
 
 **Meta:** Média ≥ 4.0 em todas as categorias
 
-#### 🎯 **Marcos de Progresso**
+### 🎯 **Marcos de Progresso**
 
 - [ ] **Marco 1 (Semana 4):** Domínio dos fundamentos de Fourier
 - [ ] **Marco 2 (Semana 6):** Compreensão de sistemas LTI e Laplace
@@ -420,9 +418,9 @@ Essa abordagem ativa transformará sua leitura em uma **ferramenta poderosa** pa
 - [ ] **Marco 4 (Semana 10):** Aplicações em comunicação e controle
 - [ ] **Marco 5 (Semana 12):** Síntese completa e preparação para HOS
 
-#### 📝 **Resumo de Progresso**
+### 📝 **Resumo de Progresso**
 
-#### ✅ **Checklist Geral**
+### ✅ **Checklist Geral**
 
 - [ ] Revisar capítulos fundamentais (1-10)
 - [ ] Completar fichamentos estruturados
@@ -434,7 +432,7 @@ Essa abordagem ativa transformará sua leitura em uma **ferramenta poderosa** pa
 - [ ] Identificar contribuições originais
 - [ ] Avaliar aplicabilidade industrial
 
-#### 📈 **Métricas de Sucesso**
+### 📈 **Métricas de Sucesso**
 
 - **Quantitativas:**
   - 10 fichamentos completos

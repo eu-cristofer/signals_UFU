@@ -8,7 +8,7 @@ Este planto tem por objetivo estruturar um estudo integrado da literatura cláss
 
 ## Referências
 
-Para o referido objetivo, as seguintes obras foram adotadas: **Rao**, "Mechanical Vibrations" {cite}`rao_mechanical_2018` e **Oppenheim**, "Signals and Systems" {cite}`oppenheim_signals_1997`.
+Para o referido objetivo, as seguintes obras foram adotadas: **Rao**, "Mechanical Vibrations" {cite}`rao_mechanical_2018`; e **Oppenheim**, "Signals and Systems" {cite}`oppenheim_signals_1997`.
 
 Dados completos das referências adotadas:
 
